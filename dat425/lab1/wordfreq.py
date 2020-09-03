@@ -5,15 +5,20 @@ def tokenize(lines):
         for word in splitted:
             new_word = ""
             new_char = ""
-            char_before = False
             for char in word:
                 if char.isalpha():
+                    if new_char:
+                        tokens.append(new_char)
+                        new_char = ""
                     new_word += char
-                elif char != "":
+                elif char != "" and char != "\t":
                     if new_word:
                         tokens.append(new_word.lower())
                         new_word = ""
-                    new_char += char
+                    if char.isdigit():
+                        new_char += char
+                    else:
+                        tokens.append(char)
                 else:
                     continue
             if new_word:
@@ -24,7 +29,7 @@ def tokenize(lines):
     return tokens
 
 
-def count_words(words, stopwords):
+def countWords(words, stopwords):
     count_dict = {}
 
     for word in words:
@@ -33,13 +38,14 @@ def count_words(words, stopwords):
                 count_dict[word] += 1
             else:
                 count_dict[word] = 1
-    count_list = [[i, count_dict[i]] for i in count_dict.keys()]
-    count_list.sort(key=lambda x:-x[1])
 
-    return count_list
+    return count_dict
 
 
-#tokens = tokenize(open("./lab1/examples/article1.txt", "r").read().splitlines())
-#stopwords = ["the"]
-#count_words(tokens, stopwords)
-# tokenize(open("./test.txt", "r").read().splitlines())
+def printTopMost(frequencies, limit):
+    count_list = [[i, frequencies[i]] for i in frequencies.keys()]
+    count_list.sort(key=lambda x: -x[1])
+
+    filtered_words = count_list[:limit]
+    for word in filtered_words:
+        print(word[0].ljust(19), str(word[1]).rjust(5))
