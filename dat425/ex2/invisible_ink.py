@@ -24,13 +24,20 @@ def txt2invisible(txt):
 
 
 def invisible2bin(inv):
-	# TODO
-    pass
+    bin = ""
+    for i in inv:
+        if i == " ":
+            bin += "0"
+        elif i == "\t":
+            bin += "1"
+    return "".join(bin)
 
 
 def bin2txt(bin):
-	# TODO
-    pass
+    txt = ""
+    for byte in [bin[i:i+8] for i in range(0, len(bin), 8)]:
+        txt += chr(bc.bin2dec(byte))
+    return txt
 
 
 def invisible2txt(inv):
@@ -38,7 +45,16 @@ def invisible2txt(inv):
 
 
 def main():
-	# TODO
-	pass
+    mode = sys.argv[1]
+    input_file = open(sys.argv[2], "r").read()
+    out_file = open("secret.txt", "w")
+    if mode == "encode":
+        inv = txt2invisible(input_file)
+        out_file.write(inv)
+        print(inv)
+    elif mode == "decode":
+        txt = invisible2txt(input_file)
+        print(txt)
+
 
 main()
