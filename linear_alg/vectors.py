@@ -63,17 +63,24 @@ def sqrt_ans(num):
     return f"√{square}"
 
 
-# p1 = 2, -1, 2
-# p2 = -1, -2, 1
+# scalar = -5, -4, 6
+# p1 = -5, -2, 4
+# p2 = -4, -1, 0
 # prod = cross_product(p1, p2)
+# print(prod)
 # print(expr_len(prod["expr"])*(1/2))
-length = expr_len({"i": 7, "j": 8, "k": -5})
-print(round(length, 4), sqrt_ans(length))
 
+# scalar = -1,5,-3
+# p1 = -4,-4,4
+# p2 = 4,-2,-5
+# prod = cross_product(p1, p2)
+# print(prod)
+# print(expr_len(prod["expr"])*(1/2))
 
+# length = expr_len({"i": 7, "j": 8, "k": -5})
+# print(round(length, 4), sqrt_ans(length))
 
-
-
-
-
-
+p1 = -3,0,-7
+p2 = 1,-5,1
+prod = cross_product(p1, p2)
+print(prod)
