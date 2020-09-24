@@ -26,7 +26,9 @@ class FifteenModel:
 		return self.state[row][col]
 
 	def tryMove(self, row, col):
-		if abs(row-self.hole[0]) <= 1 and abs(col-self.hole[1]) <= 1:
+		abs_row = abs(row-self.hole[0])
+		abs_col = abs(col-self.hole[1])
+		if (abs_row == 1 and abs_col == 0) or (abs_row == 0 and abs_col == 1):
 			val = self.state[row][col]
 			self.state[row][col] = 0
 			self.state[self.hole[0]][self.hole[1]] = val
