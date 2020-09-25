@@ -1,19 +1,13 @@
 
-def transpose(matrix):
-    old_size = len(matrix), len(matrix[0])
-    new_size = old_size[1], old_size[0]
-    new_matrix = []
-    flat = []
-    for row in matrix:
-        for col in row:
-            flat.append(col)
 
-    i = 0
-    for r in range(new_size[0]):
+def transpose(matrix):
+    if not matrix:
+        return []
+    new_matrix = []
+    for i in range(len(matrix[0])):
         new_matrix.append([])
-        for _ in range(new_size[1]):
-            new_matrix[r].append(flat[i])
-            i += 1
+        for r in range(len(matrix)):
+            new_matrix[i].append(matrix[r][i])
 
     return new_matrix
 
@@ -52,4 +46,10 @@ def invert(matrix):
 
 
 def loadtxt(file):
-    pass  # TODO: implement
+    lines = open(file, "r").read().splitlines()
+    matrix = []
+    for line in lines:
+        ls = line.split("\t")
+        if len(ls) == 2:
+            matrix.append([float(ls[0]), float(ls[1])])
+    return matrix
