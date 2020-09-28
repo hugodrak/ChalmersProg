@@ -119,7 +119,7 @@ class Player:
 
         center_distance = self.getX() - proj.getX()
 
-        collision_distance = self._game.getBallSize() + self._game.getCannonSize()
+        collision_distance = self._game.getBallSize() + self.get_size()
 
         if abs(center_distance) <= collision_distance:
             distance = 0
@@ -130,6 +130,9 @@ class Player:
                 distance = center_distance + collision_distance
 
         return distance
+
+    def get_size(self) -> int:
+        return self._game.getCannonSize()
 
     def getScore(self):
         """ The current score of this player """

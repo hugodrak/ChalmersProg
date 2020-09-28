@@ -18,6 +18,12 @@ def graphicPlay():
     # HINT: Creating a GraphicGame is a good start. 
     # HINT: You can look at the text interface for some inspiration
     # Note that this code should not directly work with any drawing or such, all that is done by the methods in the classes
+
+    g = Game(20,10)
+    gg =GraphicGame(g)
+
+
+
     pass
 
 
