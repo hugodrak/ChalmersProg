@@ -19,23 +19,15 @@ from gamemodel import Game, Projectile, Player
 from graphics import *
 
 
-# TODO: There needs to be a class called GraphicGame here.
-# Its constructor should take only a Game object.
-# TODO: In addition to the methods of Game, GraphicGame needs to have a getWindow method that returns the main GraphWin object the game is played in
-# HINT: Look at the other classes in this file, the GraphicGame class should "wrap around" a Game object the same way GraphicPlayer wraps around a Player
-# HINT: These lines are good for creating a window:
-#  win = GraphWin("Cannon game" , 640, 480, autoflush=False)
-#  win.setCoords(-110, -10, 110, 155)
-# HINT: Don't forget to call draw() on every component you create, otherwise they will not be visible
-# HINT: You need to get the Players from the Game object (the model), wrap them into GraphicPlayers and store them, and all get-methods for players (e.g. getCurrentPlayer) must return the Graphical versions
-
 class GraphicGame:
     def __init__(self, game: Game):
         self._game = game
 
+        # Create the game-window object
         self._win = GraphWin('Cannon game', 640, 480, autoflush=False)
         self._win.setCoords(-120, -10, 120, 155)
 
+        # Draw the ground
         Line(Point(-100, 0), Point(100, 0)).draw(self._win)
 
         self._players = {
@@ -80,16 +72,19 @@ class GraphicGame:
         return self._win
 
     def run(self):
+        """Run the main game-loop"""
         while True:
 
             player = self.getCurrentPlayer()
             aim, velocity = player.getAim()
 
+
+            # Get shoot-input from user
             dialog = InputDialog(aim, velocity, self.getCurrentWind())
 
             action, angle, velocity = dialog.interact()
-            print(action, angle, velocity)
             dialog.close()
+
             if action == "Quit":
                 break
 
@@ -99,6 +94,7 @@ class GraphicGame:
                 update(200)
 
             if self.getOtherPlayer().projectileDistance(gproj) == 0:
+                # We have a hit
                 player.increaseScore()
                 self.newRound()
 
@@ -106,10 +102,6 @@ class GraphicGame:
 
 
 class GraphicPlayer:
-    # TODO: We need a constructor here! The constructor needs to take a Player object as parameter and store it in self.player for the methods below to work.
-    # HINT: The constructor should create and draw the graphical elements of the player (score and cannon)
-    # HINT: The constructor probably needs a few additional parameters e.g. to access the game window.
-
     def __init__(self, player: Player, window: GraphWin):
         self.player = player
         self.window = window
@@ -117,6 +109,7 @@ class GraphicPlayer:
         x = self.player.getX()
         size = player.get_size()
 
+        # Bounding size of the cannon
         cannon_rect = Rectangle(
             Point(x - size / 2, 0), Point(x + size / 2, size)
         )
@@ -163,18 +156,15 @@ class GraphicPlayer:
         self._update_score_label()
 
     def _update_score_label(self):
+        """Updates the score-label on screen"""
         self._score_label.setText(f'Score: {self.player.getScore()}')
 
     def get_ball_size(self) -> int:
-        return self.player._game.getBallSize()
+        return self.player.get_ball_size()
 
 
 class GraphicProjectile:
     """ A graphic wrapper around the Projectile class (adapted from ShotTracker in book)"""
-
-    # TODO: This one also needs a constructor, and it should take a Projectile object as parameter and store it in self.proj.
-    # Hint: We are also going to need access to the game window
-    # Hint: There is no color attribute in the Projectile class, either it needs to be passed to the constructor here or Projectile needs to be modified.
 
     def __init__(self, projectile: Projectile, player: GraphicPlayer):
         self.proj = projectile
@@ -187,7 +177,6 @@ class GraphicProjectile:
         self.proj.update(dt)
         self.remove()
         self.draw()
-        # TODO: Graphic stuff needs to happen here.
 
     def getX(self):
         return self.proj.getX()
@@ -233,9 +222,10 @@ class InputDialog:
         self.random = Button(win, Point(1, 5), 1.75, .5, "Random fire!")
         self.random.activate()
 
-    """ Runs a loop until the user presses either the quit or fire button """
-
     def interact(self):
+        """ Runs a loop until the user presses either the quit or fire button,
+            returns a tuple of what action the user selected, the current angle and velocity
+         """
         while True:
             pt = self.win.getMouse()
             if self.quit.clicked(pt):
@@ -245,16 +235,14 @@ class InputDialog:
             if self.random.clicked(pt):
                 return "Fire! random", random.random() * 70 + 10, random.random() * 50 + 10
 
-    """ Returns the current values of (angle, velocity) as entered by the user"""
-
     def close(self):
+        """ Returns the current values of (angle, velocity) as entered by the user"""
         self.win.close()
 
 
-""" A general button class (from the book) """
-
-
 class Button:
+    """ A general button class (from the book) """
+
     """A button is a labeled rectangle in a window.
     It is activated or deactivated with the activate()
     and deactivate() methods. The clicked(p) method

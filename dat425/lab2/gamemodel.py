@@ -11,7 +11,6 @@ class Game:
     def __init__(self, cannonSize, ballSize):
         """ Create a game with a given size of cannon (length of sides) and projectiles (radius) """
 
-        # HINT: This constructor needs to create two players according to the rules specified in the assignment text
         self._cannon_size = cannonSize
         self._ball_size = ballSize
 
@@ -80,7 +79,7 @@ class Player:
     """ Models a player """
 
     def __init__(self, game: Game, position_x: float, position_y: float, fire_to_right: bool, color: str):
-        # HINT: It should probably take the Game that creates it as parameter and some additional properties that differ between players (like firing-direction, position and color)
+        """Creates a new player."""
         self._game = game
         self._color = color
         self._position_x = position_x
@@ -94,13 +93,11 @@ class Player:
 
     def fire(self, angle, velocity):
         """ Create and return a projectile starting at the centre of this players cannon. Replaces any previous projectile for this player. """
-        # The projectile should start in the middle of the cannon of the firing player
-        # HINT: Your job here is to call the constructor of Projectile with all the right values
-        # Some are hard-coded, like the boundaries for x-position, others can be found in Game or Player
 
         self._aim_angle = angle
         self._aim_velocity = velocity
 
+        # Adjust for the right player fires to the left
         if not self._fire_to_right:
             angle = 180 - angle
 
@@ -111,33 +108,36 @@ class Player:
 
     def projectileDistance(self, proj):
         """ Gives the x-distance from this players cannon to a projectile. If the cannon and the projectile touch (assuming the projectile is on the ground and factoring in both cannon and projectile size) this method should return 0"""
-        # HINT: both self (a Player) and proj (a Projectile) have getX()-methods.
-        # HINT: This method should give a negative value if the projectile missed to the left and positive if it missed to the right.
-        # The distance should be how far the projectile and cannon are from touching, not the distance between their centers.
-        # You probably need to use getCannonSize and getBallSize from Game to compensate for the size of cannons/cannonballs
 
-        # TODO: check what direction is positive / negative
-
+        # Distance between the center of the objects
         center_distance = proj.getX() - self.getX()
 
-        collision_distance = self._game.getBallSize() + self.get_size() / 2
+        # The combined radius of the objects
+        collision_distance = self.get_ball_size() + self.get_size() / 2
 
         if abs(center_distance) <= collision_distance:
+            # We have a collision
             distance = 0
         else:
+            # Subtract the total width of the colliding objects
             if center_distance > 0:
+                # Round towards zero
                 distance = center_distance - collision_distance
             else:
+                # Round towards zero
                 distance = center_distance + collision_distance
 
         return distance
+
+    def get_ball_size(self):
+        return self._game.getBallSize()
 
     def get_size(self) -> int:
         return self._game.getCannonSize()
 
     def getScore(self):
         """ The current score of this player """
-        return self._score  # TODO: this is just a dummy value
+        return self._score
 
     def increaseScore(self):
         """ Increase the score of this player by 1."""
@@ -145,7 +145,7 @@ class Player:
 
     def getColor(self):
         """ Returns the color of this player (a string)"""
-        return self._color  # TODO: this is just a dummy value
+        return self._color
 
     def getX(self):
         """ The x-position of the centre of this players cannon """

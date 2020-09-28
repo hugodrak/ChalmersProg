@@ -1,5 +1,4 @@
 # Imports everything from both model and graphics
-from gamemodel import *
 from gamegraphics import *
 
 
