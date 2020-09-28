@@ -12,6 +12,8 @@
 
 
 # This is the only place where graphics should be imported!
+from typing import Optional
+
 from gamemodel import Game, Projectile, Player
 from graphics import *
 
@@ -35,19 +37,46 @@ class GraphicGame:
 
         Line(Point(-100, 0), Point(100, 0)).draw(self._win)
 
-        self._players = [
-            GraphicPlayer(player, self._win) for player in self._game.getPlayers()
-        ]
+        self._players = {
+            player: GraphicPlayer(player, self._win) for player in self._game.getPlayers()
+        }
 
-        self._win.getMouse()
+    def _get_graphicsplayer_from_player(self, player):
+        return self._players[player]
 
     def next_player(self):
         self._game.nextPlayer()
 
-    def get_current_player(self):
-        return self._players[
-            self._game.getCurrentPlayerNumber()
-        ]
+    def getCurrentPlayer(self):
+        return self._get_graphicsplayer_from_player(
+            self._game.getCurrentPlayer()
+        )
+
+    def getPlayers(self):
+        return list(self._players.values())
+
+    def getCurrentPlayerNumber(self):
+        return self._game.getCurrentPlayerNumber()
+
+    def getOtherPlayer(self):
+        return self._get_graphicsplayer_from_player(
+            self._game.getOtherPlayer()
+        )
+
+    def getCurrentWind(self):
+        return self._game.getCurrentWind()
+
+    def setCurrentWind(self, val):
+        return self._game.setCurrentWind(val)
+
+    def nextPlayer(self):
+        return self._game.nextPlayer()
+
+    def newRound(self):
+        self._game.newRound()
+
+    def getWindow(self):
+        return self._win
 
 
 class GraphicPlayer:
@@ -62,20 +91,31 @@ class GraphicPlayer:
         x = self.player.getX()
         size = player.get_size()
 
-        rect = Rectangle(
+        cannon_rect = Rectangle(
             Point(x - size / 2, 0), Point(x + size / 2, size)
         )
-        rect.setFill(self.player.getColor())
-        rect.draw(window)
+
+        cannon_rect.setFill(self.player.getColor())
+        cannon_rect.draw(self.window)
+
+        self._score_label = Text(Point(x, -5), '')
+        self._score_label.draw(self.window)
+        self._update_score_label()
+
+        self._cannon_rect = cannon_rect
+
+        self._projectile: Optional[GraphicProjectile] = None
 
     def fire(self, angle, vel):
         # Fire the cannon of the underlying player object
         proj = self.player.fire(angle, vel)
 
-        # TODO: We need to undraw the old GraphicProjectile for this player (if there is one).
+        if self._projectile is not None:
+            self._projectile.remove()
 
-        # TODO: proj is a Projectile, but we should return a GraphicProjectile here! We need to create a GraphicProjectile "wrapping" around proj.
-        return proj
+        self._projectile = GraphicProjectile(proj, self)
+
+        return self._projectile
 
     def getAim(self):
         return self.player.getAim()
@@ -94,7 +134,13 @@ class GraphicPlayer:
 
     def increaseScore(self):
         self.player.increaseScore()
-        # TODO: This seems like a good place to update the score text.
+        self._update_score_label()
+
+    def _update_score_label(self):
+        self._score_label.setText(f'Score: {self.player.getScore()}')
+
+    def get_ball_size(self) -> int:
+        return self.player._game.getBallSize()
 
 
 class GraphicProjectile:
@@ -104,12 +150,17 @@ class GraphicProjectile:
     # Hint: We are also going to need access to the game window
     # Hint: There is no color attribute in the Projectile class, either it needs to be passed to the constructor here or Projectile needs to be modified.
 
-    def __init__(self, projectile: Projectile):
+    def __init__(self, projectile: Projectile, player: GraphicPlayer):
         self.proj = projectile
+        self.player = player
+        self._graphics_circle = None
+        self.draw()
 
     def update(self, dt):
         # update the projectile
         self.proj.update(dt)
+        self.remove()
+        self.draw()
         # TODO: Graphic stuff needs to happen here.
 
     def getX(self):
@@ -121,17 +172,20 @@ class GraphicProjectile:
     def isMoving(self):
         return self.proj.isMoving()
 
-    # TODO: There needs to be a way of undrawing the projectile.
-    # HINT: All graphical components in graphics.py have undraw()-methods    
+    def draw(self):
+        self._graphics_circle = Circle(Point(self.getX(), self.getY()), self.player.get_ball_size())
+        self._graphics_circle.setFill(self.player.getColor())
+        self._graphics_circle.draw(self.player.window)
 
-
-""" A somewhat specific input dialog class (adapted from the book) """
+    def remove(self):
+        self._graphics_circle.undraw()
 
 
 class InputDialog:
-    """ Takes the initial angle and velocity values, and the current wind value """
+    """ A somewhat specific input dialog class (adapted from the book) """
 
     def __init__(self, angle, vel, wind):
+        """ Takes the initial angle and velocity values, and the current wind value """
         self.win = win = GraphWin("Fire", 200, 300)
         win.setCoords(0, 4.5, 4, .5)
         Text(Point(1, 1), "Angle").draw(win)

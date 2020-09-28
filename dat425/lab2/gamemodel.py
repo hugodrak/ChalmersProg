@@ -16,9 +16,9 @@ class Game:
         self._ball_size = ballSize
 
         self._players = [Player(
-            self, -100, 0, True, 'blue'
+            self, -90, 0, True, 'blue'
         ), Player(
-            self, 100, 0, False, 'red'
+            self, 90, 0, False, 'red'
         )]
 
         # 0 for player1, 1 for player2
@@ -101,7 +101,11 @@ class Player:
         # HINT: Your job here is to call the constructor of Projectile with all the right values
         # Some are hard-coded, like the boundaries for x-position, others can be found in Game or Player
 
-        proj = Projectile(angle, velocity, self._game.getCurrentWind(), self.getX(), self.getY(), -1000, 1000)
+        if not self._fire_to_right:
+            angle = 180 - angle
+
+        proj = Projectile(angle, velocity, self._game.getCurrentWind(), self.getX(), self.getY() + self.get_size() / 2,
+                          -1000, 1000)
 
         self._aim_angle = angle
         self._aim_velocity = velocity
@@ -117,9 +121,9 @@ class Player:
 
         # TODO: check what direction is positive / negative
 
-        center_distance = self.getX() - proj.getX()
+        center_distance = proj.getX() - self.getX()
 
-        collision_distance = self._game.getBallSize() + self.get_size()
+        collision_distance = self._game.getBallSize() + self.get_size() / 2
 
         if abs(center_distance) <= collision_distance:
             distance = 0
