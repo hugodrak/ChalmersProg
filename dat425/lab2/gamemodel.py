@@ -71,9 +71,6 @@ class Game:
 
     def newRound(self):
         """ Start a new round with a random wind value (-10 to +10) """
-        # HINT: random.random() gives a random value between 0 and 1
-        # multiplying this by 20 gives a random value between 0 and 20
-        # how do you shift a value between 0 and 20 to one between -10 and +10?
 
         new_wind = random.random() * 20 - 10
         self.setCurrentWind(new_wind)
@@ -101,14 +98,14 @@ class Player:
         # HINT: Your job here is to call the constructor of Projectile with all the right values
         # Some are hard-coded, like the boundaries for x-position, others can be found in Game or Player
 
+        self._aim_angle = angle
+        self._aim_velocity = velocity
+
         if not self._fire_to_right:
             angle = 180 - angle
 
         proj = Projectile(angle, velocity, self._game.getCurrentWind(), self.getX(), self.getY() + self.get_size() / 2,
                           -1000, 1000)
-
-        self._aim_angle = angle
-        self._aim_velocity = velocity
 
         return proj
 

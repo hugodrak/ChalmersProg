@@ -12,6 +12,7 @@
 
 
 # This is the only place where graphics should be imported!
+import random
 from typing import Optional
 
 from gamemodel import Game, Projectile, Player
@@ -77,6 +78,31 @@ class GraphicGame:
 
     def getWindow(self):
         return self._win
+
+    def run(self):
+        while True:
+
+            player = self.getCurrentPlayer()
+            aim, velocity = player.getAim()
+
+            dialog = InputDialog(aim, velocity, self.getCurrentWind())
+
+            action, angle, velocity = dialog.interact()
+            print(action, angle, velocity)
+            dialog.close()
+            if action == "Quit":
+                break
+
+            gproj = player.fire(angle, velocity)
+            while gproj.isMoving():
+                gproj.update(1 / 50)
+                update(200)
+
+            if self.getOtherPlayer().projectileDistance(gproj) == 0:
+                player.increaseScore()
+                self.newRound()
+
+            self.nextPlayer()
 
 
 class GraphicPlayer:
@@ -187,7 +213,7 @@ class InputDialog:
     def __init__(self, angle, vel, wind):
         """ Takes the initial angle and velocity values, and the current wind value """
         self.win = win = GraphWin("Fire", 200, 300)
-        win.setCoords(0, 4.5, 4, .5)
+        win.setCoords(0, 5.5, 4, .5)
         Text(Point(1, 1), "Angle").draw(win)
         self.angle = Entry(Point(3, 1), 5).draw(win)
         self.angle.setText(str(angle))
@@ -204,6 +230,8 @@ class InputDialog:
         self.fire.activate()
         self.quit = Button(win, Point(3, 4), 1.25, .5, "Quit")
         self.quit.activate()
+        self.random = Button(win, Point(1, 5), 1.75, .5, "Random fire!")
+        self.random.activate()
 
     """ Runs a loop until the user presses either the quit or fire button """
 
@@ -211,16 +239,13 @@ class InputDialog:
         while True:
             pt = self.win.getMouse()
             if self.quit.clicked(pt):
-                return "Quit"
+                return "Quit", None, None
             if self.fire.clicked(pt):
-                return "Fire!"
+                return "Fire!", float(self.angle.getText()), float(self.vel.getText())
+            if self.random.clicked(pt):
+                return "Fire! random", random.random() * 70 + 10, random.random() * 50 + 10
 
     """ Returns the current values of (angle, velocity) as entered by the user"""
-
-    def getValues(self):
-        a = float(self.angle.getText())
-        v = float(self.vel.getText())
-        return a, v
 
     def close(self):
         self.win.close()
