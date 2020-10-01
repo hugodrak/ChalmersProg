@@ -36,7 +36,7 @@ def textFinishShot(game, proj):
     other = game.getOtherPlayer()
 
     # Check if we won
-    distance = other.projectileDistance(proj) 
+    distance = other.projectileDistance(proj)
     if distance == 0.0:
         print('Direct hit! ' + player.getColor() + ' player wins the round!')
         player.increaseScore()
@@ -48,7 +48,7 @@ def textFinishShot(game, proj):
 
     # Switch active player
     game.nextPlayer()
-    
+
 """ The main game loop """
 def textPlay():
     game = gamemodel.Game(10,3)

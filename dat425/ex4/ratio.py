@@ -5,7 +5,7 @@ class Ratio:
         gcd = math.gcd(num, denom)
         self.num = num//gcd
         self.denom = denom//gcd
-    
+
     def __repr__(self):
         return f"Ratio({self.num},{self.denom})"
 
@@ -26,7 +26,7 @@ class Ratio:
         num = (a*d)-(c*b)
         denom = b*d
         return Ratio(num, denom)
-    
+
     def __mul__(self, other):
         a = self.num
         b = self.denom
@@ -49,7 +49,7 @@ class Ratio:
         if float(self) > float(other):
             return True
         return False
-    
+
     def __ge__(self, other):
         if self > other or self == other:
             return True
@@ -64,12 +64,12 @@ class Ratio:
         if self < other or self == other:
             return True
         return False
-    
+
     def __float__(self):
         return self.num/self.denom
-    
+
     def __int__(self):
         return self.num//self.denom
 
-    def __str__(self):
+    def pp(self):
         return f"{self.num}/{self.denom}"
