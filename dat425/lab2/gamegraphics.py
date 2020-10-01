@@ -30,6 +30,7 @@ class GraphicGame:
         # Draw the ground
         Line(Point(-100, 0), Point(100, 0)).draw(self._win)
 
+        # loads the players from graphic player class
         self._players = {
             player: GraphicPlayer(player, self._win) for player in self._game.getPlayers()
         }
@@ -77,7 +78,6 @@ class GraphicGame:
 
             player = self.getCurrentPlayer()
             aim, velocity = player.getAim()
-
 
             # Get shoot-input from user
             dialog = InputDialog(aim, velocity, self.getCurrentWind())
