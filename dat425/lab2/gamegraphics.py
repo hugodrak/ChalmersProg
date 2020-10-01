@@ -263,6 +263,7 @@ class Button:
         self.rect.draw(win)
         self.label = Text(center, label)
         self.label.draw(win)
+        self.active = 0
         self.deactivate()
 
     def clicked(self, p):

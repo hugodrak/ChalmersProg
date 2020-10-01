@@ -1,10 +1,6 @@
 from math import sin, cos, radians
 import random
 
-
-# TODO: Deal with all TODOs in this file and also remove the TODO and HINT comments.
-
-
 class Game:
     """ This is the model of the game"""
 
@@ -191,14 +187,14 @@ class Projectile:
         yvel1 = self.yvel - 9.8 * time
         xvel1 = self.xvel + self.wind * time
 
-        # Move based on the average velocity in the time period 
+        # Move based on the average velocity in the time period
         self.xPos = self.xPos + time * (self.xvel + xvel1) / 2.0
         self.yPos = self.yPos + time * (self.yvel + yvel1) / 2.0
 
         # make sure yPos >= 0
         self.yPos = max(self.yPos, 0)
 
-        # Make sure xLower <= xPos <= mUpper   
+        # Make sure xLower <= xPos <= mUpper
         self.xPos = max(self.xPos, self.xLower)
         self.xPos = min(self.xPos, self.xUpper)
 
