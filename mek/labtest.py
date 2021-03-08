@@ -3,25 +3,34 @@ import scipy.integrate
 import matplotlib.pyplot as plt
 import math
 
-def f(t,xi):
 
-    xi_prim2 = -0.5*xi
-    xi_prim = np.array([-np.exp(-t)])
-    return xi_prim
+def f(t, z):
+    z1 = z[0]
+    z2 = z[1]
+
+    result = np.array([
+        z2,
+        -4 / 7 * z2 + 5 / 7 * z1 + 9 / 7
+
+    ])
+
+    return result
+
+
 
 # initial condition
-y0=[1.0]
+z0 = [1.5, 0]
 
 # stop time
-tend=5
+tend = 5
 
 sol = scipy.integrate.solve_ivp(f,
                                 [0, tend],
-                                y0,
+                                z0,
                                 method='Radau',
-                                t_eval=np.linspace(0,tend,10000))
+                                t_eval=np.linspace(0, tend, 10000))
 
-plt.plot(sol.t,sol.y[0,:])
+plt.plot(sol.t, sol.y[0, :])
 plt.xlabel('time')
 plt.ylabel('eta(t)')
 plt.show()
