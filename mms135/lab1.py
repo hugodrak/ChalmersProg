@@ -44,9 +44,9 @@ def H(t, Y):
     y2 = Y[1]
 
     # Y[0] == y1, Y[1] = y2
-    func = ((w0**2)*Y[0] - fp(Y[0])*fpp(Y[0])*(Y[1]**2) - fp(Y[0])*g) / (fp(Y[0])**2 + 1)
+    func = ((w0**2)*y1 - fp(y1)*fpp(y1)*(y2**2) - fp(y1)*g) / (fp(y1)**2 + 1)
 
-    return [Y[1], func]
+    return [y2, func]
 
 
 def solver(plot):
