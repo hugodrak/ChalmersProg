@@ -19,7 +19,12 @@ import matplotlib.pyplot as plt
 global a, b, w0, g
 a = 5
 b = 6
-w0 = 3.0 # 3.0
+# w0 = 3.0 # 3.0, optimal: 14.152
+# w0 = 10.0
+# w0 = 14.15161
+# w0 = 14.15162
+w0 = 14.155
+
 g = 9.81
 
 
@@ -62,36 +67,48 @@ def solver(plot):
     # calculate pos in fixed coordinate system
     xs = []
     ys = []
-    zs = sol.y[0]  # f(xi)
+    zs = f(sol.y[0])  # f(xi),
     for i, t in enumerate(sol.t):
-        xi = sol.y[1][i]
+        xi = sol.y[0][i] ## Used xi' but xi should be used.
         x = xi * np.cos(w0 * t)
         y = xi * np.sin(w0 * t)
         xs.append(x)
         ys.append(y)
 
+    radius = np.sqrt(np.asarray(xs)**2+np.asarray(ys)**2)
 
     if plot:
+
         # 2D
-        plt.figure()
+        plt.figure("Radius/time")
+        plt.plot(sol.t, radius)
+        plt.ylim(-0.1, 0.7)
+        plt.xlabel("Time", fontsize=15)
+        plt.ylabel("Radius", fontsize=15)
+        plt.figure("xi(t)/time, 2D")
         plt.plot(sol.t, sol.y[0,:])
-        plt.xlabel("time", fontsize=20)
-        plt.ylabel(r"$ \xi(t)$", fontsize=20)
-        plt.title(f'w0: {w0}', fontsize=18, fontweight='bold')
+        plt.ylim(-0.6, 0.6)
+        plt.xlabel("Time", fontsize=15)
+        plt.ylabel(r"$ \xi(t) = Z$", fontsize=15)
+        plt.title(f'w0: {w0}', fontsize=15, fontweight='bold')
 
         # 3D
 
-        fig = plt.figure()
+        fig = plt.figure("X,Y,Z, 3D")
         three_D = fig.add_subplot(111, projection='3d')
         three_D.plot(xs, ys, zs)
 
-        three_D.set_xlabel('$X$', fontsize=20)
-        three_D.set_ylabel('$Y$', fontsize=20)
+        three_D.set_xlabel('$X$', fontsize=15)
+        three_D.set_ylabel('$Y$', fontsize=15)
         three_D.zaxis.set_rotate_label(False)
-        three_D.set_zlabel('$Z$', fontsize=20)
-        three_D.set_title(f'w0: {w0}', fontsize=18, fontweight='bold')
+        three_D.set_zlabel('$Z$', fontsize=15)
+        three_D.set_xlim(-0.5, 0.5)
+        three_D.set_ylim(-0.5, 0.5)
+        three_D.set_zlim(0.0, 3.5)
+        three_D.set_title(f'w0: {w0}', fontsize=15, fontweight='bold')
 
         plt.show()
+
 
 
 solver(plot=True)
