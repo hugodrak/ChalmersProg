@@ -27,17 +27,27 @@ def hessian(func, **at):
         result_matrix[indices[0], indices[1]] = differentiated
 
     sympy.pprint(result_matrix)
+    print('Eigenvalues')
+    for eigenvalue in result_matrix.eigenvals():
+        sympy.pprint(eigenvalue)
 
 
 def test_hessian():
     x, y = sympy.symbols('x y')
 
-    func = x + 8 * y + 1 / x / y
+    #func = x * sympy.exp(-x ** 3 + y ** 3)
     hessian(func)
-    hessian(func, x=2, y=1 / 5)
+    hessian(func, x=sympy.Rational(1, sympy.root(3, 3)), y=0)
+
+
+def temp():
+    x, y = sympy.symbols('x y')
+
+    func = x * sympy.exp(-sympy.Pow(x, 3) + sympy.Pow(y, 3))
+    func.subs(x=sympy.Rational(1, sympy.root(3, 3)), y=0)
 
 
 if __name__ == '__main__':
     sympy.init_printing(use_unicode=True)
-
-    test_hessian()
+    temp()
+    # test_hessian()
