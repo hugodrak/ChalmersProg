@@ -1,0 +1,86 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 ['r1_grasp_pos2', 'r1_to_home', 'r2_grasp_pos1', 'r2_to_pos2', 'r2_release_pos2', 'r2_to_pos3', 'r2_grasp_pos3', 'r2_to_pos1', 'r2_release_pos1']\
+\
+init B,R,G -> G,B,R\
+\
+ros2 topic pub /goal handlers_msgs/msg/CubeState "\{'pos1':'blue_cube', 'pos2':'red_cube', 'pos3\'92:\'92green_cube'\}"\
+\
+ros2 topic pub /goal handlers_msgs/msg/CubeState "\{'pos1\'92:\'92green\'92, 'pos2\'92:\'92blue_cube', 'pos3\'92:\'92red_cube'\}"\
+\
+\'97\'97\'97\'97\'97\'97\'97\
+Demo1: Turtle:\
+\
+start vnc.\
+\
+open vs code and open src/py_pubsub\
+. install/setup.bash\
+colcon build --packages-select py_pubsub\
+\
+in vnc: \
+ros2 run turtlesim turtlesim_node\
+\
+ros2 run py_pubsub talker\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+run all tests in planner\
+, show simulator\
+in vnc: ./launch_simulation.bash\
+python3 -m runner\
+ros2 topic pub /goal handlers_msgs/msg/CubeState "\{'pos1\'92:\'92blue_cube\'92, 'pos2\'92:\'92red_cube', 'pos3\'92:\'92green_cube'\}"\
+\
+\
+\
+\
+handlers_msgs.msg.CubeState(pos1='blue_cube', pos2='green_cube', pos3='red_cube')\
+We got a new goal: And(guards=(Eq(variable='pos1_col', value_or_variable='blue_cube'), Eq(variable='pos2_col', value_or_variable='green_cube'), Eq(variable='pos3_col', value_or_variable='red_cube')))\
+handlers_msgs.msg.CubeState(pos1='blue_cube', pos2='green_cube', pos3='red_cube')\
+Traceback (most recent call last):\
+  File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main\
+    return _run_code(code, main_globals, None,\
+  File "/usr/lib/python3.8/runpy.py", line 87, in _run_code\
+    exec(code, run_globals)\
+  File "/planner/py_ctrl/runner/__main__.py", line 5, in <module>\
+    runner.ctrl.run()\
+  File "/planner/py_ctrl/runner/ctrl.py", line 221, in run\
+    rclpy.spin(runner)\
+  File "/opt/ros/galactic/lib/python3.8/site-packages/rclpy/__init__.py", line 196, in spin\
+    executor.spin_once()\
+  File "/opt/ros/galactic/lib/python3.8/site-packages/rclpy/executors.py", line 707, in spin_once\
+    raise handler.exception()\
+  File "/opt/ros/galactic/lib/python3.8/site-packages/rclpy/task.py", line 239, in __call__\
+    self._handler.send(None)\
+  File "/opt/ros/galactic/lib/python3.8/site-packages/rclpy/executors.py", line 415, in handler\
+    await call_coroutine(entity, arg)\
+  File "/opt/ros/galactic/lib/python3.8/site-packages/rclpy/executors.py", line 329, in _execute_timer\
+    await await_or_execute(tmr.callback)\
+  File "/opt/ros/galactic/lib/python3.8/site-packages/rclpy/executors.py", line 107, in await_or_execute\
+    return callback(*args)\
+  File "/planner/py_ctrl/runner/ctrl.py", line 133, in ticker\
+    new_p = plan(self.state, goal, self.model, 30)\
+  File "/planner/py_ctrl/planner/plan.py", line 225, in plan\
+    d = djikstra_plan(state, goal, model, max_depth)\
+  File "/planner/py_ctrl/planner/plan.py", line 164, in djikstra_plan\
+    cost = calc_cost(s[0], next_state)\
+  File "/planner/py_ctrl/planner/plan.py", line 43, in calc_cost\
+    set1 = set(s1.items())\
+TypeError: unhashable type: 'CubeState'\
+\
+\
+State(state=\{'r1_ref': 'home', 'r1_grip': False, 'r2_ref': 'home', 'r2_grip': False, 'r1_act': 'home', 'r1_gripping': False, 'r2_act': 'home', 'r2_gripping': False, 'r1_holding': False, 'r2_holding': False, 'pos1_col': 'red_cube', 'pos2_col': 'blue_cube', 'pos3_col': 'green_cube', 'r1_to_home': 'i', 'r1_to_pos1': 'i', 'r1_grasp_pos1': 'i', 'r1_release_pos1': 'i', 'r1_to_pos2': 'i', 'r1_grasp_pos2': 'i', 'r1_release_pos2': 'i', 'r1_to_pos3': 'i', 'r1_grasp_pos3': 'i', 'r1_release_pos3': 'i', 'r2_to_home': 'i', 'r2_to_pos1': 'i', 'r2_grasp_pos1': 'i', 'r2_release_pos1': 'i', 'r2_to_pos2': 'i', \
+'r2_grasp_pos2': 'i', \
+'r2_release_pos2': 'i', \
+'r2_to_pos3': 'i', \
+'r2_grasp_pos3': 'i', \
+'r2_release_pos3': 'i', \
+'runner_goal': handlers_msgs.msg.CubeState(pos1='blue_cube', pos2='green_cube', pos3='red_cube'), 'runner_plan': None, 'step_in_plan': None, 'plan_status': None\})\
+\
+\
+\
+Testing: dba:25 > cba:20  (ERROR: should be <)\
+\
+}
