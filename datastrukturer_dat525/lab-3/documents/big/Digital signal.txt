@@ -1,0 +1,37 @@
+A digital signal is a signal that is being used to represent data as a sequence of discrete values; at any given time it can only take on one of a finite number of values. This contrasts with an analog signal, which represents continuous values; at any given time it represents a real number within a continuous range of values. 
+Simple digital signals represent information in discrete bands of analog levels. All levels within a band of values represent the same information state. In most digital circuits, the signal can have two possible values; this is called a binary signal or logic signal.  They are represented by two voltage bands: one near a reference value (typically termed as ground or zero volts), and the other a value near the supply voltage. These correspond to the two values "zero" and "one" (or "false" and "true") of the Boolean domain, so at any given time a binary signal represents one binary digit (bit).  Because of this discretization, relatively small changes to the analog signal levels do not leave the discrete envelope, and as a result are ignored by signal state sensing circuitry.  As a result, digital signals have noise immunity; electronic noise, provided it is not too great, will not affect digital circuits, whereas noise always degrades the operation of analog signals to some degree.Digital signals having more than two states are occasionally used; circuitry using such signals is called multivalued logic.  For example, signals that can assume three possible states are called three-valued logic.   
+In a digital signal, the physical quantity representing the information may be a variable electric current or voltage, the intensity, phase or polarization of an optical or other electromagnetic field, acoustic pressure, the magnetization of a magnetic storage media, etcetera. Digital signals are used in all digital electronics, notably computing equipment and data transmission.
+
+
+The term digital signal has related definitions in different contexts.
+
+
+ 
+In digital electronics a digital signal is a pulse train (a pulse amplitude modulated signal), i.e. a sequence of fixed-width square-wave electrical pulses or light pulses, each occupying one of a discrete number of levels of amplitude. A special case is a logic signal or a binary signal, which varies between a low and a high signal level.
+
+
+
+In digital signal processing, a digital signal is a representation of a physical signal that is a sampled and quantized. A digital signal is an abstraction which is discrete in time and amplitude. The signal's value only exists at regular time intervals, since only the values of the corresponding physical signal at those sampled moments are significant for further digital processing. The digital signal is a sequence of codes drawn from a finite set of values. The digital signal may be stored, processed or transmitted physically as a pulse-code modulation (PCM) signal.
+
+
+
+In digital communications, a digital signal is a continuous-time physical signal, alternating between a discrete number of waveforms, representing a bitstream. The shape of the waveform depends the transmission scheme, which may be either a line coding scheme allowing baseband transmission; or a digital modulation scheme, allowing passband transmission over long wires or over a limited radio frequency band. Such a carrier-modulated sine wave is considered a digital signal in literature on digital communications and data transmission, but considered as a bitstream converted to an analog signal in electronics and computer networking.In communications, sources of interference are usually present, and noise is frequently a significant problem. The effects of interference are typically minimized by filtering off interfering signals as much as possible and by using data redundancy. The main advantages of digital signals for communications are often considered to be the noise immunity to noise capability, and the ability, in many cases such as with audio and video data, to use data compression to greatly decrease the bandwidth that is required on the communication media.
+
+
+
+A waveform that switches representing the two states of a Boolean value (0 and 1, or low and high, or false and true) is referred to as a digital signal or logic signal or binary signal when it is interpreted in terms of only two possible digits.
+The two states are usually represented by some measurement of an electrical property: Voltage is the most common, but current is used in some logic families.  A threshold is designed for each logic family.  When below that threshold, the signal is low, when above high.
+The clock signal is a special digital signal that is used to synchronize many digital circuits. The image shown can be considered the waveform of a clock signal. Logic changes are triggered either by the rising edge or the falling edge. The rising edge is the transition from a low voltage (level 1 in the diagram) to a high voltage (level 2). The falling edge is the transition from a high voltage to a low one.
+Although in a highly simplified and idealized model of a digital circuit, we may wish for these transitions to occur instantaneously, no real world circuit is purely resistive and therefore no circuit can instantly change voltage levels.  This means that during a short, finite transition time the output may not properly reflect the input, and will not correspond to either a logically high or low voltage.
+
+
+
+To create a digital signal, an analog signal must be modulated with a control signal to produce it. The simplest modulation, a type of unipolar encoding, is simply to switch on and off a DC signal, so that high voltages represent a '1' and low voltages are '0'.
+In digital radio schemes one or more carrier waves are amplitude, frequency or phase modulated by the control signal to produce a digital signal suitable for transmission.
+Asymmetric Digital Subscriber Line (ADSL) over telephone wires, does not primarily use binary logic; the digital signals for individual carriers are modulated with different valued logics, depending on the Shannon capacity of the individual channel.
+
+
+
+Digital signals may be sampled by a clock signal at regular intervals by passing the signal through a flip-flop. When this is done, the input is measured at the clock edge, and the signal from that time. The signal is then held steady until the next clock. This process is the basis of synchronous logic.
+Asynchronous logic also exists, which uses no single clock, and generally operates more quickly, and may use less power, but is significantly harder to design.
+

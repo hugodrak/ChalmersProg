@@ -1,0 +1,93 @@
+A ticker symbol or stock symbol is an abbreviation used to uniquely identify publicly traded shares of a particular stock on a particular stock market. A stock symbol may consist of letters, numbers or a combination of both. "Ticker symbol" refers to the symbols that were printed on the ticker tape of a ticker tape machine.
+
+
+Stock symbols are unique identifiers assigned to each security traded on a particular market. A stock symbol can consist of letters, numbers, or a combination of both, and is a way to uniquely identify that stock.  The symbols were kept as short as possible to reduce the number of characters that had to be printed on the ticker tape, and to make it easy to recognize by traders and investors.
+The allocation of symbols and formatting convention is specific to each stock exchange.  In the US, for example, stock tickers are typically between 1 and 4 letters and represent the company name where possible.  For example, US-based computer company stock Apple Inc. traded on the NASDAQ exchange has the symbol AAPL, while the motor company Ford's stock that is traded on the New York Stock Exchange has the single-letter ticker F.  In Europe, most exchanges use three-letter codes, for example Dutch consumer goods company Unilever traded on the Amsterdam Euronext exchange has the symbol UNA.  While in Asia, numbers are often used as stock tickers to avoid issues for international investors when using non-Latin scripts.  For example, the bank HSBC's stock traded on the Hong Kong Stock Exchange has the ticker symbol 0005.
+Symbols sometimes change to reflect mergers. Prior to the 1999 merger with Mobil Oil, Exxon used a phonetic spelling of the company "XON" as its ticker symbol.  The symbol of the firm after the merger was "XOM".  Symbols are sometimes reused. In the US the single-letter symbols are particularly sought after as vanity symbols.  For example, since Mar 2008 Visa Inc. has used the symbol V that had previously been used by Vivendi which had delisted and given up the symbol.To fully qualify a stock, both the ticker and the exchange or country of listing needs to be known. On many systems both must be specified to uniquely identify the security.  This is often done by appending the location or exchange code to the ticker.
+
+
+Although stock tickers identify a security, they are exchange dependent, generally limited to stocks and can change.  These limitations have led to the development of other codes in financial markets to identify securities for settlement purposes.  The most prevalent of these is the International Securities Identifying Number (ISIN).  An ISIN uniquely identifies a security and its structure is defined in ISO 6166.  Securities for which ISINs are issued include bonds, commercial paper, stocks, and warrants.  The ISIN code is a 12-character alpha-numerical code that does not contain information characterizing financial instruments, but serves for uniform identification of a security at trading and settlement.
+The ISIN identifies the security, not the exchange (if any) on which it trades; it is therefore not a replacement for the ticker symbol. For instance, Daimler AG stock trades on twenty-two different stock exchanges worldwide, and is priced in five different currencies; it has the same ISIN on each (DE0007100000), though not the same ticker symbol. ISIN cannot specify a particular trade in this case, and another identifier, typically the three- or four-letter exchange code (such as the Market Identifier Code) will have to be specified in addition to the ISIN.
+
+
+While usually a stock ticker identifies a security that can be traded, stock market indices are also sometimes assigned a symbol, even though they can generally not be traded. Symbols for indices are usually distinguished by adding a symbol in front of the name, such as a caret (^) or a dot. For example, Reuters lists the Nasdaq Composite index under the symbol .IXIC.
+
+
+
+
+In Australia the Australian Securities Exchange  uses the following conventions:
+3 character base symbol, with the first and third character being alphanumeric, the second alphabetic. ETFs, ETMFs can be either 3 or 4 characters.  Exchange traded warrants and exchange-traded options are 6 characters.  ETOs can have numbers in the sixth character.
+
+
+In Canada the Toronto Stock Exchange TSX and the TSXV use the following special codes after the ticker symbol:
+
+
+In the United Kingdom, prior to 1996, stock codes were known as EPICs, named after the London Stock Exchange's Exchange Price Information Computer (e.g.: "MKS" for Marks and Spencer).  Following the introduction of the Sequence trading platform in 1996, EPICs were renamed Tradable Instrument Display Mnemonics (TIDM), but they are still widely referred to as EPICs.  Stocks can also be identified using their SEDOL (Stock Exchange Daily Official List) number or their ISIN (International Securities Identification Number).
+
+
+In the United States, modern letter-only ticker symbols were developed by Standard & Poor's (S&P) to bring a national standard to investing. Previously, a single company could have many different ticker symbols as they varied between the dozens of individual stock markets.  The term ticker refers to the noise made by the ticker tape machines once widely used by stock exchanges.
+The S&P system was later standardized by the securities industry and modified as years passed. Stock symbols for preferred stock have not been standardized.Some companies use a well-known product as their ticker symbol.  Belgian brewer InBev, the brewer of Budweiser beer, uses "BUD" as its three-letter ticker for American Depository Receipts, symbolizing its premier product in the United States.  Its rival, the Molson Coors Brewing Company, uses a similarly beer-related symbol, "TAP". Likewise, Southwest Airlines pays tribute to its headquarters at Love Field in Dallas through its "LUV" symbol. Cedar Fair Entertainment Company, which operates large amusement parks in the United States, uses "FUN" as its symbol. Harley-Davidson uses "HOG" for its Harley Owners Group.  Yamana Gold uses "AUY", because on the periodic table of elements, "Au" is the symbol for gold.  Sotheby's (the famous auction house) uses the symbol "BID".
+While most symbols come from the company's name, sometimes it happens the other way around. Tricon Global, owner of KFC, Pizza Hut and Taco Bell, adopted the symbol "YUM" to represent its corporate mission when the company was spun out of PepsiCo in 1997. In 2002, the company changed its name to match its symbol, adopting the name Yum! Brands.Symbols sometimes change to reflect mergers. Prior to the 1999 merger with Mobil Oil, Exxon used a phonetic spelling of the company "XON" as its ticker symbol.  The symbol of the firm after the merger was "XOM". After Hewlett-Packard merged with Compaq, the new firm took on the ticker symbol "HPQ".  (The former symbols were HWP and CPQ.) AT&T's ticker symbol is simply "T"; accordingly, the company is referred to simply as "Telephone" on Wall Street (the T symbol is so well known that when the company was purchased by SBC, it took the AT&T name, capitalizing on its history and keeping the desired single letter symbol).
+Some examples of US Stock symbols include:
+
+A – Agilent Technologies
+AAPL – Apple
+BRK.A - Berkshire Hathaway (class A shares)
+C – Citigroup
+GOOG – Alphabet Inc.
+HOG – Harley-Davidson
+HPQ - Hewlett-Packard
+INTC – Intel
+KO – The Coca-Cola Company
+LUV - Southwest Airlines (after their main hub at Love Field)
+MMM – Minnesota Mining and Manufacturing (3M)
+MSFT – Microsoft
+T - AT&T
+TGT – Target Corporation
+TXN – Texas Instruments
+WMT – WalmartFormerly, a glance at a U.S. stock symbol and its appended codes would allow an investor to determine where a stock trades; however in July 2007, the SEC approved a rule change allowing companies moving from the New York Stock Exchange to the Nasdaq to retain their three letter symbols; DirecTV was one of the first companies to make this move.  When first implemented, the rule change did not apply to companies with one or two letter symbols, but subsequently any stock was able to move from the NYSE to the Nasdaq without changing its symbol.  CA, Inc., which trades under the symbol CA, moved from the NYSE to the Nasdaq in April 2008 and kept its two-letter symbol.
+
+
+A: Agilent Technologies.  Previously used by Anaconda Co, American Medical Buildings Inc, Attwoods PLC, Astra AB.
+B: Barnes Group.  Previously used by Bankers Utilities Corp and Baldwin Lima Hamilton Corp.
+C: Citigroup.  Previously used by Chrysler.
+D: Dominion Resources.  Previously used by Douglas Aircraft Inc and Dart Industries Inc.
+E: Eni SpA .  Previously used by Erie Lackawanna Railway Co and Transco Energy Co.
+F: Ford Motor Company.
+G: Genpact.  Previously used by Genpact, Greyhound Dial Corp and Gillette.
+H: Hyatt.  Previously used Hupp Corp, Hardee's Food Systems Inc, Harcourt General Inc, Helm Resources Inc and Realogy Corporation.
+I: IntelSat Global Holdings SA.  Previously used by Itel Corp and First Interstate Bancorp.
+K: Kellogg.
+L: Loews Corporation.  Previously used by Liberty Financial Companies Inc, Sinclair Oil Corp, and Liberty Media.
+M: Macy's, Inc..  Previously used by Marcor Inc.
+O: Realty Income Corporation.  Previously used by Odetics Inc.
+R: Ryder System Inc..  Previously used by Uniroyal Inc and LF Rothschild Holdings Inc.
+S: Sprint Corporation.  Previously used by Sears, Roebuck & Company.
+T: AT&T Inc.  Previously used by AT&T Corp.
+V: Visa Inc..  Previously used by Vivendi, New York New Haven & Hartford Railroad, Irving Bank Corp, Vivra Inc and Viking General Corp.
+W: Wayfair.  Previously used by Westvaco.
+X: U.S. Steel.  Previously used by USX Corp.
+Y: Alleghany Corporation.
+Z: Zillow Previously Woolworth Corp.Unassigned letters: 
+
+J: Previously used by J Net Enterprises Inc and Standard Oil Co of New Jersey.
+N: Previously used by Inco, and NetSuite.
+P: Previously used by Pandora Media, Inc. and Phillips Petroleum Company.
+Q: Previously used by Quintiles Transnational Holdings Inc and  Qwest Communications International Inc.
+U: Previously used by US Airways Group Inc and United Corp.
+
+
+In countries where Arabic script is used, and in East Asia, transliterated Latin script versions of company names may be confusing to an unpracticed Western reader; stock symbols provide a simple means of clear communication in the workplace. Many Asian countries use numerical or alphanumerical ticker symbols instead of characters to facilitate international trade.
+
+Industrial and Commercial Bank of China – 01398 [Hong Kong]
+HSBC – 00005 [Hong Kong]
+DBS Bank – D05 [Singapore]
+Jardine C&C – C07 [Singapore]
+TonenGeneral Sekiyu KK – 5012 [Japan]
+Toshiba Corp – 6502 [Japan]
+China CITIC Bank Corp Ltd – 601998 [Shanghai – China]
+Hubei Golden Ring Co Ltd – 000615 [Shenzhen – China]
+ASUSTeK – 2357 [Taiwan]
+Chunghwa Telecom Co Ltd – 2412 [Taiwan]
+Saudi Electricity Company - 5110 [Saudi Arabia]
+

@@ -1,0 +1,43 @@
+Nasdaq Nordic is the common name for the subsidiaries of Nasdaq, Inc. that provide financial services and operate marketplaces for securities in the Nordic, Baltic, and Caucasian regions of Europe.Historically, the operations have been known by the company name OMX AB (Aktiebolaget Optionsmäklarna/Helsinki Stock Exchange), which was created in 2003 upon a merger between OM AB and HEX plc. In 2015, the legal entity OMX AB was renamed Nasdaq AB, but it also operates under the alias Nasdaq OMX AB. The operations have been part of Nasdaq, Inc. (formerly known as Nasdaq OMX Group) since February 2008.Nasdaq Nordic has two divisions, OMX Exchanges, which operates eight stock exchanges mainly in the Nordic and Baltic countries, and OMX Technology, which develops and markets systems for financial transactions used by OMX Exchanges, as well as by other stock exchanges.
+
+
+
+
+OM AB (Optionsmäklarna) was a futures exchange founded by Olof Stenhammar in the 1980s to introduce trading in standardized option contracts in Sweden. OM acquired the Stockholm Stock Exchange in 1998 and unsuccessfully attempted acquisition of the London Stock Exchange in 2001. During the dot-com bubble in the early 21st century OM, together with investment bank Morgan Stanley Dean Witter, launched a virtual European stock exchange called Jiway. The project was not successful and was cancelled on 14 October 2002.
+
+
+On 3 September 2003 the Helsinki Stock Exchange (HEX) merged with OM, and the joint company became OM HEX. On 31 August 2004, the brand name of the company was changed to OMX. OMX then acquired the Copenhagen Stock Exchange in January 2005 for €164 million. On 19 September 2006 the Iceland Stock Exchange owner Eignarhaldsfelagid Verdbrefathing (EV) announced it would be acquired by OMX in a deal valuing the company at 250 million SEK. The transaction was completed by the end of the year.The company took a 10% stake in Oslo Børs Holding ASA, the owner of the Oslo Stock Exchange in October 2006. As of September 2016, Nasdaq is not a major shareholder in the Oslo Stock Exchange holding company, which following a merger is currently called Oslo Børs VPS Holding ASA. Nasdaq has, however, publicly stated its interest in eventually acquiring the Oslo Stock Exchange.OMX acquired the Armenian Stock Exchange and Central Depository in November 2007.
+
+
+In December 2005 OMX started First North, an alternative exchange for smaller companies, in Denmark. The First North exchange expanded to Stockholm in June 2006, Iceland in January 2007 and Helsinki in April 2007. The Markets Technology division of Computershare was acquired in 2006. The acquisition greatly expanded its product offerings and made its client list the largest of all trading system technology providers.
+The group launched a virtual Nordic Stock Exchange on 2 October 2006, after merging the individual lists of shares traded at its three wholly owned Nordic exchanges into a combined Nordic List. Companies listed on the Iceland Stock Exchange have also since been merged into the list. OMX also launched a pan-regional benchmark index, the OMX Nordic 40, on the same date, however the individual exchanges have also retained their own national benchmark indices.
+
+
+
+On 25 May 2007, NASDAQ agreed to buy OMX for US$3.7 billion. In August 2007, however, Borse Dubai offered US$4 billion, prompting speculation of a bidding war. On 20 September 2007, Borse Dubai agreed to stop competing to buy OMX in return for a 20% stake and 5 percent of votes in NASDAQ as well as NASDAQ's then 28% stake in the London Stock Exchange. In a complex transaction, Borse Dubai acquired 97.2% of OMX's outstanding shares before selling them on to NASDAQ. The newly merged company was renamed the NASDAQ OMX Group upon completion of the deal on 27 February 2008.
+
+
+
+The following exchanges, with official market names within parentheses, are operated by Nasdaq Nordic:
+Copenhagen Stock Exchange (Nasdaq Copenhagen)
+Stockholm Stock Exchange (Nasdaq Stockholm)
+Helsinki Stock Exchange (Nasdaq Helsinki)
+Iceland Stock Exchange (Nasdaq Iceland)
+Tallinn Stock Exchange (Nasdaq Baltic)
+Riga Stock Exchange (Nasdaq Baltic)
+Vilnius Stock Exchange (Nasdaq Baltic)
+Armenian Stock Exchange (completed November 2007, renamed Nasdaq OMX Armenia in 2009)
+
+
+The company's stock market activities are categorized into three divisions:
+
+Nordic Market (Copenhagen, Stockholm, Helsinki, Iceland)
+Baltic Market (Tallinn, Riga, Vilnius)
+First North (alternative exchange)
+
+
+In North America OMX supports its most high-profile customers such as the Financial Industry Regulatory Authority (FINRA), ICAP, ISE, and IDCG which are powered by OMX trading systems such as X-stream, CLICK, CONDICO and SAXESS.
+OMX is the world's leading provider of central securities depository (CSD) technology. Its Equator CSD product is used by clients in Europe, the Middle East, Africa and the Caribbean.
+Central counterparty clearing (CCC) technology is a significant potential growth area for OMX. OMX's SECUR clearing and Genium trading platform facilitate trade novation, derivatives clearing, risk management and improved liquidity. SECUR clearing and Genium trading technology are in production around the world.
+OMX's technology customers include:
+

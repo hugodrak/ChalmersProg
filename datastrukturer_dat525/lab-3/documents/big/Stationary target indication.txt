@@ -1,0 +1,5 @@
+Stationary target indication (STI) is a mode of operation for radar that enables the operator to discriminate between a target and clutter. 
+
+
+In contrast to another mode, moving target indication (MTI), it cannot take an advantage of the fact that the target moves with respect to clutter. Therefore, the radar must exploit some intrinsic characteristics of the target which are different from those of clutter. The simplest method is available when the apparent size of the target is relatively small with respect to clutter source. In this case the reduced pulse and beam width, which matches the expected target size, may produce good signal to noise ratio (target to clutter ratio). Additional discrimination capabilities rely on target imaging or scattering properties of the target. 
+

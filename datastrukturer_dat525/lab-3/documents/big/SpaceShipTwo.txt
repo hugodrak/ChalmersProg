@@ -1,0 +1,85 @@
+The Scaled Composites Model 339 SpaceShipTwo (SS2) is an air-launched suborbital spaceplane type designed for space tourism. It is manufactured by The Spaceship Company, a California-based company owned by Virgin Galactic.
+SpaceShipTwo is carried to its launch altitude by a Scaled Composites White Knight Two, before being released to fly on into the upper atmosphere powered by its rocket engine. It then glides back to Earth and performs a conventional runway landing. The spaceship was officially unveiled to the public on 7 December 2009 at the Mojave Air and Space Port in California. On 29 April 2013, after nearly three years of unpowered testing, the first one constructed successfully performed its first powered test flight.Virgin Galactic plans to operate a fleet of five SpaceShipTwo spaceplanes in a private passenger-carrying service and has been taking bookings for some time, with a suborbital flight carrying an updated ticket price of US$250,000. The spaceplane could also be used to carry scientific payloads for NASA and other organizations.On 31 October 2014, during a test flight, the first SpaceShipTwo VSS Enterprise broke up in flight and crashed in the Mojave desert. A preliminary investigation suggested that the craft's descent device deployed too early. One pilot was killed; the other was treated for a serious shoulder injury after parachuting from the stricken spacecraft.The second SpaceShipTwo spacecraft, VSS Unity, was unveiled on 19 February 2016.
+The vehicle is undergoing flight testing. Its first flight to space (above 50 miles altitude), VSS Unity VP03, took place on 13 December 2018.
+
+
+The SpaceShipTwo project is based in part on technology developed for the first-generation SpaceShipOne, which was part of the Scaled Composites Tier One program, funded by Paul Allen. The Spaceship Company licenses this technology from Mojave Aerospace Ventures, a joint venture of Paul Allen and Burt Rutan, the designer of the predecessor technology.
+SpaceShipTwo is a low-aspect-ratio passenger spaceplane. Its capacity will be eight people — six passengers and two pilots. The apogee of the new craft will be approximately 110 km (68 mi) in the lower thermosphere, 10 km (6.2 mi) higher than the Kármán line which was SpaceShipOne's target, although the last flight of SpaceShipOne reached a one-time altitude of 112 km (70 mi). SpaceShipTwo will reach 4,200 km/h (2,600 mph), using a single hybrid rocket engine — the RocketMotorTwo. It launches from its mother ship, White Knight Two, at an altitude of 15,000 metres (50,000 ft), and reaches supersonic speed within 8 seconds. After 70 seconds, the rocket engine cuts out and the spacecraft will coast to its peak altitude. SpaceShipTwo's crew cabin is 3.7 m (12 ft) long and 2.3 m (7.5 ft) in diameter. The wing span is 8.2 m (27 ft), the length is 18 m (60 ft) and the tail height is 4.6 m (15 ft).SpaceShipTwo uses a feathered reentry system, feasible due to the low speed of reentry.  In contrast, orbital spacecraft re-enter at orbital speeds, closer to 25,000 km/h (16,000 mph), using heat shields. SpaceShipTwo is furthermore designed to re-enter the atmosphere at any angle. It will decelerate through the atmosphere, switching to a gliding position at an altitude of 24 km (15 mi), and will take 25 minutes to glide back to the spaceport.
+SpaceShipTwo and White Knight Two are, respectively, roughly twice the size of the first-generation SpaceShipOne and mothership White Knight, which won the Ansari X Prize in 2004. SpaceShipTwo has 43 and 33 cm (17 and 13 in) -diameter windows for the passengers' viewing pleasure, and all seats will recline back during landing to decrease the discomfort of G-forces. Reportedly, the craft can land safely even if a catastrophic failure occurs during flight. In 2008, Burt Rutan remarked on the safety of the vehicle:
+
+This vehicle is designed to go into the atmosphere in the worst case straight in or upside down and it'll correct. This is designed to be at least as safe as the early airliners in the 1920s ... Don’t believe anyone that tells you that the safety will be the same as a modern airliner, which has been around for 70 years.
+In September 2011, the safety of SpaceShipTwo's feathered reentry system was tested when the crew briefly lost control of the craft during a gliding test flight. Control was reestablished after the spaceplane entered its feathered configuration, and it landed safely after a 7-minute flight.
+
+
+
+
+SpaceShipTwo (and the WhiteKnightTwo launcher aircraft) are built by The Spaceship Company, originally formed as a joint venture between Scaled Composites and Virgin Galactic. Virgin Galactic bought out Scaled Composites' interest in TSC in 2012, and TSC is now a wholly owned subsidiary of Virgin Galactic.The launch customer of SpaceShipTwo is Virgin Galactic, who have ordered five vehicles. The first SS2 was named VSS Enterprise. The "VSS" prefix stands for "Virgin Space Ship".  VSS Enterprise was the first to fly; it was destroyed in a crash on 31 October 2014. The build of VSS Unity was about 65 percent complete in early November 2014, and Virgin Galactic expected it to be complete in 2015. It was unveiled in February 2016 and performed its first powered flight in April 2018. The third SpaceShipTwo was expected to commence construction by the end of 2015.
+
+
+SpaceShipTwo is launched from the WhiteKnightTwo launcher aircraft, which takes off from the Mojave Air and Space Port in California during testing. Spaceport America (formerly Southwest Regional Spaceport), a US$212 million spaceport in New Mexico, partly funded by the state government, will become the permanent launch site when commercial launches begin.
+
+
+
+
+
+On 28 September 2006, Virgin Group founder Sir Richard Branson unveiled a mock-up of the SpaceShipTwo passenger cabin at the NextFest exposition at the Jacob K. Javits Convention Center in New York. The design of the vehicle was revealed to the press in January 2008, with the statement that the vehicle itself was around 60% complete. On 7 December 2009, the official unveiling and rollout of SpaceShipTwo took place. The event involved the first SpaceShipTwo being christened by then-Governor of California Arnold Schwarzenegger as the VSS Enterprise.
+
+
+On 26 July 2007, an explosion occurred during an oxidizer flow test at the Mojave Air and Space Port, where early-stage tests were being conducted on SpaceShipTwo's systems. The oxidizer test included filling the oxidizer tank with 4,500 kilograms (10,000 lb)  of nitrous oxide, followed by a 15-second cold-flow injector test. Although the tests did not ignite the gas, three employees were killed and three injured by flying shrapnel.
+
+
+The hybrid rocket engine design for SpaceShipTwo has been problematic and caused extensive delays to the flight test program.  The original rocket engine design was based on hydroxyl-terminated polybutadiene (HTPB) fuel and nitrous oxide oxidizer, sometimes referred to as an N2O/HTPB engine. It was developed by Scaled Composites subcontractor Sierra Nevada Corporation (SNC) from 2009 to early 2014.  In May 2014, Virgin Galactic announced a change to the hybrid engine to be used in SpaceShipTwo, and took the development effort in-house to Virgin Galactic, terminating the contract with Sierra Nevada and halting all development work on the first-generation rocket engine. Virgin then modified the engine design to include a change of the hybrid rocket fuel from a HTPB to a polyamide fuel formulation.  In October 2015, Virgin announced that it was considering changing back to the original HTPB fuel.
+
+
+In May 2014, Virgin Galactic took over engine development from Sierra Nevada and announced a change to the fuel to be used in the SpaceShipTwo hybrid rocket engine.  Rather than the rubber-based HTPB-fuel engine—engines that had experienced serious engine stability issues on firings longer than approximately 20 seconds—the engine would now be based on a solid fuel composed of a type of plastic called thermoplastic polyamide.  The plastic fuel was projected to have better performance (by several unspecified measures) and was projected to allow SpaceShipTwo to make flights to a higher altitude.As of May 2014 when the version 2 engine by Virgin Galactic was publicly announced, the engine had already completed full-duration burns of over 60 seconds in ground tests on an engine test stand.
+The second-generation engine design also required the modification to the SS2 airframe to fit additional tanks in the wings of SpaceShipTwo—one holding methane and the other containing helium—in order to ensure a proper burn and shut-down of the new engine. 
+Additional ground tests were performed of the new engine between May and October 2014.
+
+
+Following a series of rocket engine tests, Virgin announced in October 2015 that they would be changing the rocket motor back to hydroxyl-terminated polybutadiene (HTPB), with a similar formulation as they used earlier in the development program before switching to a nylon-based fuel grain.  They will use HTPB to power the SpaceShipTwo when it resumes flight following the loss of the initial SS2 test vehicle in October 2014.  Full qualification tests remain to be completed.
+
+
+
+The second-generation RocketMotorTwo engine is a variant of the earlier SNC basic design, but is fueled by polyamide plastic fuel, while continuing to use the same nitrous oxide oxidizer. The second-generation engine is now made in-house by Virgin Galactic rather than by SNC. By December 2012, 15 full-scale tests had been successfully conducted, and additional ground tests continued into March 2013. In June 2012, the Federal Aviation Administration (FAA) issued a rocket testing permit to Scaled Composites, allowing it to begin SS2 test flights powered by RocketMotorTwo; the first such powered flight took place on 29 April 2013. The engine produces 60,000 pounds-force (270 kN) of thrust.
+
+
+
+
+In September 2012, Virgin Galactic announced that the unpowered subsonic glide flight test program was essentially complete. In October 2012, Scaled Composites installed key components of the rocket engine, and SpaceShipTwo performed its first glide flight with the engine installed in December 2012.The spacecraft's first powered test flight took place on 29 April 2013. SpaceshipTwo reached supersonic speeds in this first powered flight. On 5 September 2013, the second powered flight was made by SpaceShipTwo. The first powered test flight of 2014—and third overall—occurred 10 January 2014. The spacecraft reached an altitude of 22,000 metres (71,000 ft) and a speed of Mach 1.4 (1,491.5 km/h; 926.8 mph). The WhiteKnightTwo carrier aircraft released SpaceShipTwo (VSS Enterprise) at an altitude of 14,000 metres (46,000 ft).
+
+
+
+On 31 October 2014, SpaceShipTwo VSS Enterprise suffered an in-flight breakup during a powered flight test, resulting in a crash killing one pilot and injuring the other. It was coincidentally the first flight to use the new type of fuel, based on nylon plastic grains. The crash is believed to have involved a premature deployment of the feathering mechanism, which is normally used to aid in a safe descent. SpaceShipTwo was still in powered ascent when the feathering mechanism deployed.  Disintegration was observed two seconds later.As of October 2014, SpaceShipTwo had conducted 54 test flights. The spacecraft had used its "feathered" wing configuration during ten of these test flights.The National Transportation Safety Board conducted an independent investigation into the accident.  In July 2015, the NTSB released a report which cited inadequate design safeguards, poor pilot training, lack of rigorous federal oversight and a potentially anxious co-pilot without recent flight experience as important factors in the 2014 crash. While the co-pilot was faulted for prematurely deploying the ship's feathering mechanism, the ship's designers were also faulted for not creating a fail-safe system that could have guarded against such premature deployment.
+
+
+In October 2015, it was reported that the second SpaceShipTwo would make its first flight in 2016.VSS Unity was unveiled in February 2016.
+A phase of testing called "Integrated Vehicle Ground Testing" began on VSS Unity in February 2016.Between 8 September and 30 November 2016, Virgin Galactic conducted a series of captive-carry flights of Unity, including planned glide flights (1 and 3 November) for which the glide portion of the flight was cancelled because of wind speed. Glide flights of Unity began on 3 December 2016.After several glide flights over the preceding months, in July 2017, Richard Branson suggested that the craft was to begin powered tests at three-week intervals. In September 2017, CEO George Whitesides suggested that engine testing was complete, and that only a "small number of glide flights" remained before VSS Unity would begin powered tests flights. In October 2017, Branson suggested that SpaceShipTwo could reach space within three months, and that he could travel to space aboard a SpaceShipTwo within six months. A seventh high speed glide test was completed in January 2018.
+On 13 December 2018, SpaceShipTwo VSS Unity reached its highest altitude of 82.72 km (51.4 miles.) This surpassed the US Government definition of space at 80 km (50 miles) but not the standard used elsewhere at 100 km (62.1 miles) Despite the debate on where outer space begins, Mark Stucky would receive his astronaut wings, while Frederick W. Sturckow would not as he has already flown on the Space Shuttle four times.Following a successful February 2019 spaceflight, VSS Unity began to undergo modifications in preparation for commercial service; this includes an upgrading the flight deck and installing a passenger cabin.
+
+
+SpaceShipTwo's total development costs were estimated at around $400 million in May 2011, a significant increase over the 2007 estimate of $108 million.
+
+
+The duration of the flights will be approximately 2.5 hours, though only a few minutes of that will be in space. The price will initially be $200,000. More than 65,000 would-be space tourists applied for the first batch of 100 tickets. By December 2007, Virgin Galactic had 200 paid-up customers on its books for the early flights, and 95% were passing the 6-8 g centrifuge tests. By the start of 2011, that number had increased to over 400 paid customers, and to 575 by early 2013. In April 2013, Virgin Galactic announced that the price for a seat would increase 25 percent to $250,000 before the middle of May 2013, and would remain at $250,000 "until the first 1,000 people have traveled, so that it matches up with inflation since [Virgin Galactic] started."Following 50–100 test flights, the first paying customers were expected to fly aboard the craft in 2014. Refining the projected schedule in late 2009, Virgin Galactic declined to announce a firm timetable for commercial flights, but did reiterate that initial flights would take place from Spaceport America. Operational roll-out will be based on a "safety-driven schedule".
+In addition to making suborbital passenger launches, Virgin Galactic will market SpaceShipTwo for suborbital space science missions.
+
+
+By March 2011, Virgin Galactic had submitted SpaceShipTwo as a reusable launch vehicle for carrying research payloads in response to NASA's suborbital reusable launch vehicle (sRLV) solicitation, which is a part of the agency's Flight Opportunities Program. Virgin projects research flights with a peak altitude of 110 km (68 mi). These flights will provide approximately four minutes of microgravity for research payloads. Payload mass and microgravity levels have not yet been specified. The NASA research flights could begin during the test flight certification program for SpaceShipTwo.
+
+
+In August 2005, the president of Virgin Galactic stated that if the suborbital service with SpaceShipTwo is successful, the follow-up SpaceShipThree would be an orbital craft. In 2008, Virgin Galactic suggested that it may develop a high-speed passenger vehicle to offer transport through point-to-point suborbital spaceflight.
+
+
+Sources:General characteristics
+
+Crew: 2
+Capacity: 6 passengers
+Length: 18.3 m (60 ft)
+Wingspan: 8.3 m (27 ft)
+Height: 5.5 m (18 ft – rudders down)
+Loaded weight: 9,740 kg (21,428 lb)
+Powerplant: 1 × RocketMotorTwo liquid/solid hybrid rocket enginePerformance
+
+Maximum speed: 4,000 km/h (2,500 mph)
+Service ceiling: 110 km (VSS Enterprise), above ca. 80.5 km (VSS Unity) (361,000 ft (VSS Enterprise), above 264,000 ft (VSS Unity))
+

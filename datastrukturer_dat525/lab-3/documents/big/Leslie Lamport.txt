@@ -1,0 +1,31 @@
+Leslie B. Lamport (born February 7, 1941) is an American computer scientist. Lamport is best known for his seminal work in distributed systems, and as the initial developer of the document preparation system LaTeX and the author of its first manual. Leslie Lamport was the winner of the 2013 Turing Award for imposing clear, well-defined coherence on the seemingly chaotic behavior of distributed computing systems, in which several autonomous computers communicate with each other by passing messages. He devised important algorithms and developed formal modeling and verification protocols that improve the quality of real distributed systems. These contributions have resulted in improved correctness, performance, and reliability of computer systems.
+
+
+A graduate of the Bronx High School of Science, he received a B.S. in mathematics from the Massachusetts Institute of Technology in 1960, and M.A. and Ph.D. degrees in mathematics from Brandeis University, respectively in 1963 and 1972. His dissertation was about singularities in analytic partial differential equations.
+
+
+Lamport worked as a computer scientist at Massachusetts Computer Associates from 1970 to 1977, SRI International from 1977 to 1985, and Digital Equipment Corporation and Compaq from 1985 to 2001. In 2001 he joined Microsoft Research in Mountain View, California, which closed in 2014.
+
+
+Lamport's research contributions have laid the foundations of the theory of distributed systems. Among his most notable papers are
+
+"Time, Clocks, and the Ordering of Events in a Distributed System", which received the PODC Influential Paper Award in 2000,
+"How to Make a Multiprocessor Computer That Correctly Executes Multiprocess Programs", which defined the notion of sequential consistency,
+"The Byzantine Generals' Problem",
+"Distributed Snapshots: Determining Global States of a Distributed System" and
+"The Part-Time Parliament".These papers relate to such concepts as logical clocks (and the happened-before relationship) and Byzantine failures. They are among the most cited papers in the field of computer science, and describe algorithms to solve many fundamental problems in distributed systems, including:
+
+the Paxos algorithm for consensus,
+the bakery algorithm for mutual exclusion of multiple threads in a computer system that require the same resources at the same time,
+the Chandy-Lamport algorithm for the determination of consistent global states (snapshot), and
+the Lamport signature, one of the prototypes of the digital signature.
+
+
+When Donald Knuth began issuing the early releases of TeX in the early 1980s, Lamport — due to his personal need of writing a book — also began working on a set of macros based on it, hoping that it would later become its standard macro package. This set of macros would later become known as LaTeX, for which Lamport would subsequently be approached in 1983 by Peter Gordon, an Addison-Wesley editor, who proposed that Lamport turn its user manual into a book.In September 1984, Lamport released version 2.06a of the LaTeX macros, and in August 1985, LaTeX 2.09 — the last version of Lamport's LaTeX — would be released as well. Meanwhile, Addison-Wesley released Lamport's first LaTeX user manual, LaTeX: A Document Preparation System, in 1986, which purportedly sold "more than a few hundred thousands" copies, and on August 21, 1989, at a TeX User Group meeting at Stanford, Lamport would agree to turn over the maintenance and development of LaTeX to Frank Mittelbach, who, along with Chris Rowley and Rainer Schöpf, would form the LaTeX3 team, subsequently releasing LaTeX 2e, the current version of LaTeX, in 1994.
+
+
+Lamport is also known for his work on temporal logic, where he introduced the temporal logic of actions (TLA). Among his more recent contributions is TLA+, a language for specifying and reasoning about concurrent and reactive systems, that he describes in the book Specifying Systems: The TLA+ Language and Tools for Hardware and Software Engineers and defines as a "quixotic attempt to overcome engineers' antipathy towards mathematics".
+
+
+Lamport received the 2013 Turing Award for "fundamental contributions to the theory and practice of distributed and concurrent systems, notably the invention of concepts such as causality and logical clocks, safety and liveness, replicated state machines, and sequential consistency" in 2014. He was elected to Fellow of ACM (2014). He also received five honorary doctorates from European universities: University of Rennes and Christian Albrechts University of Kiel in 2003, EPFL in 2004, University of Lugano in 2006, and Nancy-Université in 2007. In 2004, he received the IEEE Emanuel R. Piore Award. In 2005, the paper "Reaching Agreement in the Presence of Faults" received the Dijkstra Prize. In honor of Lamport's sixtieth birthday, a lecture series was organized at the 20th Symposium on Principles of Distributed Computing (PODC 2001). In 2008, he received the IEEE John von Neumann Medal. In 2011, he was elected to the United States National Academy of Sciences. He was named ACM Fellow 2014 for fundamental contributions to the theory and practice of distributed and concurrent systems.
+

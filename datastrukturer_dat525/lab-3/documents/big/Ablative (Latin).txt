@@ -1,0 +1,38 @@
+In Latin grammar, the ablative case (in Latin, cāsus ablātīvus) is one of the six cases of nouns. Traditionally, it is the sixth case (Latin: cāsus sextus, cāsus latīnus). It has forms and functions derived from the Proto-Indo-European ablative, instrumental, and locative. It expresses concepts similar to those of the English prepositions from; with, by; and in, at.  It is sometimes called the adverbial case, since phrases in the ablative can be translated as adverbs: incrēdibilī celeritāte, "with incredible speed", or "very quickly"
+
+
+
+
+Some uses of the ablative descend from the Proto-Indo-European ablative case.
+
+Ablative of separation implies that some person or thing is separated from another. No active movement from one location to the next occurs; furthermore, ablatives of separation sometimes lack a preposition, particularly with certain verbs like careō or līberō. For example, Cicerō hostēs ab urbe prohibuit, "Cicero kept the enemy away from the city"; eōs timōre līberāvit, "he freed them from fear".
+Ablative of place from which describes active motion away from a place. Nouns, either proper or common, are almost always used in this sense with accompanying prepositions ab/ā/abs, "from"; ex/ē, "out of"; or dē, "down from". For example, ex agrīs, "from the fields"; ex Graeciā in Italiam nāvigāvērunt, "They sailed from Greece to Italy."It can also be used for the whole to which a certain number belongs or is a part. Example: ex eīs ūnus "one of them".Cities and small islands, as well as the word domus, use this ablative even without a preposition: Athēnīs discessit "he departed from Athens".Ablative of personal agent marks the agent by whom the action of a passive verb is performed. The agent is always preceded by ab/ā/abs. Example: Caesar ā deīs admonētur, "Caesar is warned by the gods".
+Ablative of comparison is used with comparative adjectives, where English would use the conjunction "than". Example: aere perennius "longer-lasting than bronze".
+Ablative of cause marks the reason why the subject performs an action: exsiluī gaudiō "I jumped with joy".
+
+
+Some uses of the ablative descend from the Proto-Indo-European instrumental case.
+
+Ablative of instrument or of means marks the means by which an action is carried out: oculīs vidēre, "to see with the eyes". This is equivalent to the instrumental case found in some other languages. Deponent verbs in Latin sometimes use the ablative of means idiomatically: ūtitur stilō literally means "he is benefiting himself by means of a stylus (writing instrument)"; however, the phrase is more aptly translated "he is using a stylus".
+Ablative of agent is a more generalized version of the ablative of personal agent, used when the agent is an inanimate object. When the agent is a person, the preposition ā/ab is used, for example rēx ā mīlitibus interfectus est "The king was killed by the soldiers"; but when the agent is a thing, the preposition is omitted and the ablative case is sufficient, for example: rēx armīs mīlitum interfectus est "the king was killed by the weapons of the soldiers".
+Ablative of manner describes the manner in which an action was carried out. The preposition cum (meaning "with") is used
+when no adjective describes the noun (cum cūrā, "with care"), or
+optionally after the adjective(s) and before the noun: magnā (cum) cūrā, "with great care".
+Ablative of attendant circumstances is similar: magnō cum clāmōre cīvium ad urbem perveniunt ("They reach the city to the great clamour of the citizens")
+Ablative of accompaniment describes with whom something was done. Nouns and pronouns in this construction are always accompanied by the preposition cum: cum eīs, "with them"; cum amīcīs vēnērunt, "They came with friends."
+Ablative of degree of difference is used with comparative adjectives and words implying comparison: aliquot ante annīs "a few years earlier" (lit. "earlier by a few years").
+Ablative of specification denotes the thing in respect to which something is specified: maior nātū "older by birth".
+Ablative of description or of quality is an ablative modified by an adjective or genitive that expresses a quality that something has: vir summā virtūte "a gentleman of highest virtue".
+
+
+Some meanings of the ablative descend from the Proto-Indo-European locative case.
+
+Ablative of place where marks a location where an action occurred. It usually appears with a preposition, such as in, but not always; e.g., hōc locō "in this place"
+Ablative of time when and within which marks the time when or within which an action occurred. E.g., aestāte, "in summer"; eō tempore, "at that time"; paucīs hōrīs id faciet, "within a few hours he will do it." Compare with the accusative of time, which was used for duration of time and—in classical Latin, following Greek—for dates of the form ante diem N. Kal./Non./Id. (In early Latin, such dates were given in the ablative instead.)
+Ablative absolute describes the circumstances surrounding an action; e.g., urbe captā, cīvēs fūgērunt, "with the city having been captured, the citizens fled."
+
+
+The ablative case is very frequently used with prepositions, for example ex urbe "out of the city", cum eō "with him". Four prepositions (in "in/into", sub "under/to the foot of", subter "under", super "over") may take either an accusative or an ablative. In the case of the first two, the accusative indicates motion, and the ablative indicates no motion. For instance, in urbe means "in the city"; in urbem, "into the city". In the case of super, the accusative means "above" or "over", and the ablative means "concerning".The prepositions which are followed by the ablative case are the following:
+
+See also: SIDSPACE
+

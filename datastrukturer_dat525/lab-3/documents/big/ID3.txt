@@ -1,0 +1,103 @@
+ID3 is a metadata container most often used in conjunction with the MP3 audio file format. It allows information such as the title, artist, album, track number, and other information about the file to be stored in the file itself.
+ID3 is also specified by Apple as a timed metadata in HTTP Live Streaming, carried as a PID in the main transport stream or in separate audio TS.
+There are two unrelated versions of ID3: ID3v1 and ID3v2. ID3v1 takes the form of a 128-byte segment at the end of an MP3 file containing a fixed set of data fields. ID3v1.1 is a slight modification which adds a "track number" field at the expense of a slight shortening of the "comment" field. ID3v2 is structurally very different from ID3v1, consisting of an extensible set of "frames" located at the start of the file, each with a frame identifier (a three- or four-byte string) and one piece of data. 83 types of frames are declared in the ID3v2.4 specification, and applications can also define their own types. There are standard frames for containing cover art, BPM, copyright and license, lyrics, and arbitrary text and URL data, as well as other things. Three versions of ID3v2 have been documented, each of which has extended the frame definitions.
+ID3 is a de facto standard for metadata in MP3 files; no standardization body was involved in its creation nor has such an organization given it a formal approval status. It competes with the APE tag in this arena.
+Lyrics3v1 and Lyrics3v2 were tag standards implemented before ID3v2, for adding lyrics to mp3 files. The difference with ID3v2 is that Lyrics3 is always on the end of an MP3 file, after the ID3v1 tag.
+
+
+The MP3 standard did not include a method for storing file metadata. In 1996 Eric Kemp had the idea to add a small chunk of data to the audio file, thus solving the problem. The method, now known as ID3v1, quickly became the de facto standard for storing metadata in MP3s.The ID3v1 tag occupies 128 bytes, beginning with the string TAG 128 bytes from the end of the file. The tag was placed at the end of the file to maintain compatibility with older media players. Some players would play a small burst of static when they read the tag, but most ignored it, and almost all modern players will correctly skip it. This tag allows 30 bytes each for the title, artist, album, and a "comment", four bytes for the year, and a byte to identify the genre of the song from a predefined list of 80 values (Winamp later extended this list to 148 values).One improvement to ID3v1 was made by Michael Mutschler in 1997. Since the comment field was too small to write anything useful, he decided to trim it by two bytes and use those two bytes to store the track number. Such tags are referred to as ID3v1.1.
+
+
+Strings are either space- or zero-padded. Unset string entries are filled using an empty string. ID3v1 is 128 bytes long.
+ID3v1 pre-defines a set of genres denoted by numerical codes. Winamp extended the list by adding more genres in its own music player, which were later adopted by others (though some are of dubious value: e.g. "Primus" is one specific band, not a genre, and "Negerpunk" appears to be a racist joke in Swedish). However, support for the extended Winamp list is not universal. In some cases, only the genres up to 125 are supported.
+
+
+The Enhanced tag is an extra data block before an ID3v1 tag, which extends the title, artist and album fields to 60 bytes each, offers a freetext genre, a one-byte (values 0–5) speed and the start and stop time of the music in the MP3 file, e.g., for fading in. If none of the fields are used, it will be automatically omitted.
+Some programs supporting ID3v1 tags can read the extended tag, but writing may leave stale values in the extended block. The extended block is not an official standard and is only supported by few programs, not including XMMS or Winamp. The Enhanced tag is sometimes referred to as the "extended" tag.
+The Enhanced tag is 227 bytes long, and placed before the ID3v1 tag.
+
+
+ID3v1.2 purpose is to add small improvements to ID3v1.1 informal standard without breaking the ID3v1 informal standard
+The ID3v1.2 tag will not cause any issues in legacy decoders/players (old ones)
+
+
+
+
+
+
+Genres 142–147 were added in the 1 June 1998  release of Winamp 1.91; genres 148–191 were added in Winamp 5.6 (30 November  2010).
+
+
+
+In 1998, a new specification called ID3v2 was created by multiple contributors. Although it bears the name ID3, its structure is very different from ID3v1.
+ID3v2 tags are of variable size, and usually occur at the start of the file, which aids streaming media as the metadata is essentially available as soon as the file starts streaming instead of requiring the entire file to be read first as is the case with ID3v1. ID3v2 tags consist of a number of frames, each of which contains a piece of metadata. For example, the TIT2 frame contains the title, and the WOAR frame contains the URL of the artist's website. Frames can be up to 16MB in length, while total tag size is limited to 256MB. The internationalization problem was solved by allowing the encoding of strings not only in ISO-8859-1, but also in Unicode.
+
+Textual frames are marked with an encoding byte. $00 – ISO-8859-1 (LATIN-1, Identical to ASCII for values smaller than 0x80).
+$01 – UCS-2 encoded Unicode with BOM, in ID3v2.2 and ID3v2.3.
+$02 – UTF-16BE encoded Unicode without BOM, in ID3v2.4.
+$03 – UTF-8 encoded Unicode, in ID3v2.4.
+
+However, mojibake is still common when using local encodings instead of Unicode. In particular, some Japanese editors are known to use Shift JIS encoding, which usually has disastrous effects: it will not work with any standard-compliant software regardless of local settings (since it is not supported by the standard), will not work outside Japan (since Shift JIS has very little support outside Japan), and will not even work on all Japanese computers even with a specifically non-compliant reader (as it is software-dependent and settings-dependent).
+There are 83 types of frames declared in the ID3v2.4 specification, and applications can also define their own types. There are standard frames for containing cover art, BPM, copyright and license, lyrics, and arbitrary text and URL data, as well as other things.
+There are three versions of ID3v2:
+
+ID3v2.2
+v2.2 was the first public version of ID3v2. It used three character frame identifiers rather than four (TT2 for the title instead of TIT2). Most of the common v2.3 and v2.4 frames have direct analogues in v2.2. Now this standard is considered obsolete.
+ID3v2.3
+v2.3 expanded the frame identifier to four characters, and added a number of frames. A frame can contain multiple values, separated with a null byte. This is the most widely used version of ID3v2 tags.
+ID3v2.4
+v2.4 was published on November 1, 2000, and remains the latest version. It allows textual data to be encoded in UTF-8, which was a common practice in earlier tags (despite the standard, since it was not supported yet) because it has several noticeable advantages over UTF-16. Another new feature allows the addition of a tag to the end of the file before other tags (like ID3v1).
+No version of Windows Explorer or Windows Media Player—up to and including Windows 10 (initial release) and WMP 12, respectively—interprets ID3v2.4 tags correctly. These programs can interpret ID3v2.3 and earlier, however. Windows Explorer finally supports reading ID3v2.4 tags with the Windows 10 Creators Update (version 1703), but the new Windows 10 version still cannot interpret the ID3v2.4 tag correctly with some of non-English and Asian characters.
+
+
+There is a loose de facto standard for implementation of song ratings. Most apps will display 0 to 5 stars for any given song, and how the stars are expressed can vary. For instance, when rating a song in iTunes, the rating is not embedded in the tag in the music file, but is instead stored in a separate database that contains all of the iTunes metadata. Other media players can embed rating tags in music files, but not necessarily the same way, so as a result a song which is rated on one media player sometimes won't display the rating the same way, or at all, when played on other software or mobile device.However, there is a "Popularimeter" frame in the ID3v2 specification meant for this purpose. The frame is called POPM and Windows Explorer, Windows Media Player, Winamp, foobar2000, MediaMonkey, and other software all map roughly the same ranges of 0–255 to a 0–5 stars value for display.
+The following list details how Windows Explorer reads and writes the POPM frame:
+
+224–255 = 5 stars when READ with Windows Explorer, writes 255
+160–223 = 4 stars when READ with Windows Explorer, writes 196
+096-159 = 3 stars when READ with Windows Explorer, writes 128
+032-095 = 2 stars when READ with Windows Explorer, writes 64
+001-031 = 1 star when READ with Windows Explorer, writes 1Windows Explorer uses the following syntax:
+
+Windows Media Player 9 Series | 255 | 0
+
+The 0 is the play counter portion of POPM as per the ID3v2 POPM specification, which is not to be confused or conflated with the PCNT frame, which is a separate frame meant entirely for playcounts. If an app supports granularity however, it should write 1 for one full star, and then 2–31 would be granular points under one full star. Notably, the ID string Windows uses is not an email address, as called for in the specifications. Further, Windows Explorer and Windows Media Player up to and including Windows 7 and WMP 12 (possibly beyond) contain a bug such that, if one were to use them to rate files, any Replay Gain tags one would have will be corrupted. WMP also writes the same values as described above, and reads the same way as well, EXCEPT for the cutoff between 4 and 5 stars, which is slightly different and basically of no consequence. WMP uses 221/222 instead, for reasons that are not clear.
+
+
+The ID3v2 Chapter Addendum was published in December 2005 but is not widely supported as yet. It allows users to jump easily to specific locations or chapters within an audio file and can provide a synchronized slide show of images and titles during playback. Typical applications include Enhanced podcasts and it can be used in ID3v2.3 or ID3v2.4 tags.
+
+
+The metadata can contain an "Attached Picture" ID3 frame ('PIC' or 'APIC') containing an image. A field in this frame can indicate the picture type. The following types are defined: $00     Other
+$01     32x32 pixels 'file icon' (PNG only)
+$02     Other file icon
+$03     Cover (front)
+$04     Cover (back)
+$05     Leaflet page
+$06     Media (e.g. label side of CD)
+$07     Lead artist/lead performer/soloist
+$08     Artist/performer
+$09     Conductor
+$0A     Band/Orchestra
+$0B     Composer
+$0C     Lyricist/text writer
+$0D     Recording Location
+$0E     During recording
+$0F     During performance
+$10     Movie/video screen capture
+$11     A bright coloured fish
+$12     Illustration
+$13     Band/artist logotype
+$14     Publisher/Studio logotype
+
+
+Notes:
+
+Version 2.4 of the specification prescribes that all text fields (the fields that start with a T, except for TXXX) can contain multiple values separated by a null character. The null character varies by character encoding.
+
+
+
+ID3 tags may be edited in a variety of ways. On some platforms the file's properties may be edited by viewing extended information in the file manager. Additionally most audio players allow editing single or groups of files. Editing groups of files is often referred to as "batch tagging". There are also specialized applications, called taggers, which concentrate specifically on editing the tags and related tasks. Some, such as puddletag offer advanced features such as advanced batch tagging or editing based on regular expressions.
+
+
+ID3 tags were designed with MP3 in mind, so they would work without problems with MP3 and MP3Pro files. However, the tagsets are an independent part of the MP3 file and should be usable elsewhere. In practice, the only other formats which widely uses ID3v2 tags are AIFF and WAV. In AIFF the tag is stored inside an IFF chunk named "ID3". Windows media ASF files (WMA, WMV) have their own tagging formats but also support ID3 Tags embedded as attributes.MP4 also allows the embedding of an ID3 tag, and this is widely supported, especially in Apple's iTunes, which uses MP4 standards in its audio and video file formats. Apple also uses ID3 tags to provide a Parental Advisory or Clean Version (radio edit) rating for audio tracks or music videos bought on the iTunes Store. Other container-based formats use their own tagging formats. Example are Ogg and FLAC, which use Vorbis comments. Adding ID3 tags to these would break the container structure. Earlier versions of Winamp such as 2.xx have been proven able to add ID3v1 and ID3v2 tags to MP1 and MP2 files.
+

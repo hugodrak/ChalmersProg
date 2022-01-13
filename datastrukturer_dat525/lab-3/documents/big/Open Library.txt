@@ -1,0 +1,23 @@
+Open Library is an online  project intended to create "one web page for every book ever published". Created by Aaron Swartz, Brewster Kahle, Alexis Rossi, Anand Chitipothu, and Rebecca Malamud, Open Library is a project of the Internet Archive, a nonprofit organization. It has been  funded in part by grants from the California State Library and the Kahle/Austin Foundation.  Open Library provides online access to many public domain and out-of-print books.
+
+
+Its book information is collected from the Library of Congress, other libraries, and Amazon.com, as well as from user contributions through a Wiki-like interface. If books are available in digital form, a button labelled "Read" appears next to its catalog listing. Links to where books can be purchased or borrowed are also provided.
+There are different entities in the database:
+
+authors
+works (which are the aggregate of all books with the same title and text)
+editions (which are different publications of the corresponding works)Open Library claims to have 6 million authors and 20 million books (not works), and about one million public domain books available as digitized books. Tens of thousands of modern books were made available from four and then 150 libraries and publishers for ebook digital lending. Other books including in-print and in-copyright books have been scanned from copies in library collections, library discards, and donations, and are also being distributed in digital form.
+
+
+Open Library began in 2006 with Aaron Swartz as the original engineer and leader of the Open Library's technical team. The project was led by George Oates from April 2009 to December 2011. Oates was responsible for a complete site redesign during her tenure. In 2015, the project was continued by Giovanni Damiola and then Brenton Cheng and Mek Karpeles in 2016.
+The site was redesigned and relaunched in May 2010. Its codebase is on GitHub. The site uses Infobase, its own database framework based on PostgreSQL, and Infogami, its own Wiki engine written in Python. The source code to the site is published under the GNU Affero General Public License.
+
+
+In the week of October 21, 2019, the Open Library website introduced a Book Sponsorship program, which according to Cory Doctorow, "lets you direct a cash donation to pay for the purchase and scanning of any books. In return, you are first in line to check that book out when it is available, and then anyone who holds an Open Library library card can check it out.". The feature was developed by Mek Karpeles, Tabish Shaikh, and other members of the community.
+
+
+The website was relaunched adding ADA compliance and offering over 1 million modern and older books to the print disabled in May 2010  using the DAISY Digital Talking Book. Under certain provisions of United States copyright law, libraries are sometimes able to reproduce copyrighted works in formats accessible to users with disabilities..
+
+
+As of February 2019, the Open Library has been accused of mass copyright violation, via the systematic distribution of in-print, in-copyright books, by the American Authors Guild, the British Society of Authors, the Australian Society of Authors, the Science Fiction and Fantasy Writers of America, the US National Writers Union, and a coalition of 37 national and international organizations of "writers, translators, photographers, and graphic artists; unions, organizations, and federations representing the creators of works included in published books; book publishers; and reproduction rights and public lending rights organizations." The UK Society of Authors threatened legal action unless the Open Library agreed to cease distribution of copyrighted works by 1 February 2019. Individual authors reported that Open Library had ignored multiple DMCA takedown notices until after they made a fuss on the Internet Archive blog.
+

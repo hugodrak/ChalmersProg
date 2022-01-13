@@ -1,0 +1,12 @@
+attrs==21.2.0
+iniconfig==1.1.1
+lark==0.11.3
+packaging==21.0
+parsec==3.9
+pluggy==1.0.0
+py==1.10.0
+pyparsing==2.4.7
+pytest==6.2.5
+PyYAML==5.4.1
+toml==0.10.2
+autopep8==1.5.7

@@ -1,0 +1,21 @@
+Werner Hans Peter Vogels (born 3 October 1958) is the chief technology officer and vice president of Amazon in charge of driving technology innovation within the company. Vogels has broad internal and external responsibilities.
+
+
+Vogels studied computer science at The Hague University of Applied Sciences finishing in June 1989. Vogels received a Ph.D. in computer science from the Vrije Universiteit Amsterdam, Netherlands, supervised by Henri Bal and Andy Tanenbaum.
+
+
+After his mandatory military service that he served in the Royal Netherlands Navy, Vogels studied radiology, both diagnostics and therapy. He worked at the Antoni van Leeuwenhoekziekenhuis, part of the Netherlands Cancer Institute, from 1979 through 1985. In 1985 he returned to university to study computer science. After completing his studies, he pursued a career in computer science research.
+From 1991 through 1994, Vogels was a senior researcher at INESC in Lisboa, Portugal. He worked with Paulo Verissimo and Luis Rodrigues on fault-tolerant distributed systems, evolving the reliable group communication system that was developed in the context of the Delta-4 project.In 1994 he was invited to join the computer science department of Cornell University as a visiting scientist. From 1994 until 2004, Vogels was a research scientist at the Computer Science Department of Cornell University. He mainly conducted research in scalable reliable enterprise systems. He is the author of many conference and journal articles, mainly on distributed systems technologies for enterprise computing systems.He co-founded a company with Kenneth Birman and Robbert van Renesse in 1997 called Reliable Network Solutions, Inc. The company possessed U.S. patents on computer network resource monitoring and multicast protocols. From 1999 through 2002, he held vice president and chief technology officer positions with the company.He joined Amazon in September 2004 as the director of systems research. He was named chief technology officer in January 2005 and vice president in March of that year.
+Vogels described the deep technical nature of Amazon's infrastructure work in a paper about Amazon's Dynamo, the storage engine for Amazon's shopping cart. He is generally regarded as one of the world's top experts on ultra-scalable systems and uses his blog to educate the community about issues such as eventual consistency.In 2008, it became evident that Vogels was one of the architects behind Amazon's approach to cloud computing, the Amazon Web Services (AWS). During that year Vogels was continuously on the road to promote cloud computing and AWS and its benefits to the industry.
+
+
+2008: Information Week recognized Vogels for educational and promotional role in cloud computing with the 2008 CIO/CTO of the Year award.
+2009: Media Momentum Personality of the Year Award.
+2010:
+ReadWriteWeb voted on the "Cloud's Most Influential Executive" and selected Vogels with a double-digit margin.
+Vogels was named a TechTarget Top 10 Cloud Computing Leader in 2010, 2011, and 2012,
+2012: Led the list of Wired's Top 10 Cloud Influencers and Thought Leaders.
+2014:
+Vogels received the inaugural Holland on the Hill Heineken Award for "Substantial contributions to the US-Dutch economic relationship, a commitment to innovation and support for entrepreneurs".
+AdvisoryCloud ranked Vogels Top Chief Technology Officer.
+

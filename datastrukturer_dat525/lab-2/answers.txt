@@ -1,0 +1,87 @@
+/******************************************************************************
+** Lab 2: Autocomplete
+******************************************************************************/
+
+Group members:
+- Hugo Drakeskär
+- Gustav Sandrén
+- William Almqvist
+
+/******************************************************************************
+** 1. Describe how your firstIndexOf() method in RangeBinarySearch.java
+**    finds the first index of a key that equals the search key.
+******************************************************************************/
+
+It uses binary search and checks the ordering by the defined method.
+So if we have ['haj', 'hej', 'hej', 'inte', 'soja'] and searches for 'hej'
+We define a Left=0, Right=5 and Median index markers
+it will check the median and compare: 'inte' < 'hej'  == False
+then it will set the right limit to the index of the median 
+Then set the median to (0+5)//2 = 2
+and do this untill Left limit no longer is smaller than right limit.
+At the end it returns the Left limit if value at index L is equal search term
+
+
+/******************************************************************************
+** 2. State and justify the asymptotic complexity of the operations
+**    in the Autocomplete class in the dictionary size n.
+**    For all Matches and numberOfMatches, the asymptotic complexity
+**    should also depend on the matching terms m.
+**
+**    You may take the number of comparisons as a proxy for the runtime.
+******************************************************************************/
+
+sortDictionary: O(n*log(n))
+
+We use pythons built in sorter which by definition has complexity O(n*log(n))
+
+numberOfMatches: O(log(n))
+number of comparisions from last and first index of is 2*log(n) = O(log(n)) due to that we use
+binary search
+
+allMatches: O(log(n) + M*log(M))
+number of comparisions from last and first index of is 2*log(n) = O(log(n)) due to that we use
+binary search
+
+And due to that we sort on reverse weight we get the complexity of the sorting, which is worst case M*log(M)
+
+So the combined complexity is O(log(n) + M*log(M))
+
+/******************************************************************************
+** Appendix: General information
+**
+** A. Approximately how many hours did you spend on the assignment?
+******************************************************************************/
+
+- Hugo Drakeskär : 10
+- Gustav Sandrén: 10
+- William Almqvist: 10
+
+/******************************************************************************
+** B. Are there any known bugs / limitations?
+******************************************************************************/
+
+No
+
+/******************************************************************************
+** C. Did you collaborate with any other students on this lab?
+**    If so, please write in what way you collaborated and with whom.
+**    Also include any resources (including the web) that you may
+**    may have used in creating your design.
+******************************************************************************/
+
+No
+
+/******************************************************************************
+** D. Describe any serious problems you encountered.                    
+******************************************************************************/
+
+N/A
+
+/******************************************************************************
+** E. List any other comments here.
+**    Feel free to provide any feedback on how much you learned 
+**    from doing the assignment, and whether you enjoyed it.                                             
+******************************************************************************/
+
+N/A

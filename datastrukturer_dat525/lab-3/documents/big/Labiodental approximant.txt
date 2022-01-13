@@ -1,0 +1,15 @@
+The labiodental approximant is a type of consonantal sound, used in some spoken languages. It is similar to an English w pronounced with the teeth and lips held in the position used to articulate the letter V. The symbol in the International Phonetic Alphabet that represents this sound is ⟨ʋ⟩, and the equivalent X-SAMPA symbol is P or v\.
+The labiodental approximant is the typical realization of /v/ in the Indian South African variety of English. As the voiceless /f/ is also realized as an approximant ([ʋ̥]), it is also an example of a language contrasting voiceless and voiced labiodental approximants.
+
+
+Features of the labiodental approximant:
+
+Its manner of articulation is approximant, which means it is produced by narrowing the vocal tract at the place of articulation, but not enough to produce a turbulent airstream.
+Its place of articulation is labiodental, which means it is articulated with the lower lip and the upper teeth.
+Its phonation is voiced, which means the vocal cords vibrate during the articulation.
+It is an oral consonant, which means air is allowed to escape through the mouth only.
+Because the sound is not produced with airflow over the tongue, the central–lateral dichotomy does not apply.
+The airstream mechanism is pulmonic, which means it is articulated by pushing air solely with the lungs and diaphragm, as in most sounds.
+
+
+

@@ -1,0 +1,40 @@
+Plagiarism is the use of ideas, concepts or words from another source
+without appropriately acknowledging the source, in a setting where
+originality is expected. It is considered academic dishonesty and a
+breach of journalistic ethics. To tell if something is plagiarism, use
+the guideline: "if you did not write it yourself, you must give
+credit".
+
+Plagiarism is not the same as copyright infringement. Copyright
+infringement is a violation of the rights of a copyright holder, when
+copyrighted material is used without consent.  Plagiarism, in
+contrast, is concerned with false claims of authorship. Plagiarism is
+considered a moral offence, rather than usually a legal offence.
+
+For example, the works of William Shakespeare and Ludwig van
+Beethoven, as well as most early silent movies, are in the public
+domain either because they were created before copyright existed, or
+because their copyright has expired. It would not be a violation of
+copyright to quote Hamlet: "To be, or not to be, that is the question:
+Whether 'tis nobler in the mind to suffer the slings and arrows of
+outrageous fortune, or to take arms against a sea of troubles", etc., but it
+would be plagiarism to pretend that you thought of it yourself.
+
+The word "plagiarism" comes from the Latin word "plagiarius"
+(literally "kidnapper"), after the Roman poet Martial complained that
+another poet had "kidnapped his verses". The word plagiary was
+introduced into English in 1601 by dramatist Ben Jonson to describe
+someone who steals others' words.
+
+Software also exists to detect plagiarism. Plagiarism detection
+software serves two purposes: to uncover potential plagiarism and to
+deter students from plagiarizing. However, plagiarism detection
+software doesn't always yield accurate results and there are loopholes
+in these systems. For example, simple plagiarism detection programs
+can be outwitted by a process called "Rogeting". In its basic form,
+Rogeting simply consists of replacing words with their synonyms,
+chosen from a thesaurus. A plagiarism checker would not usually be
+able to detect the original source; however, the main drawback is that
+the new automatically-generated text might not sound natural or might
+not make sense at all, thus requiring the intervention of a human
+operator.

@@ -1,0 +1,54 @@
+Under Article 108 of the Basic Law of Hong Kong, the taxation system in Hong Kong is independent of, and different from, the taxation system in mainland China. In addition, under Article 106 of the Hong Kong Basic Law, Hong Kong enjoys independent public finance, and no tax revenue is handed over to the Central Government in China. The taxation system in Hong Kong is generally considered to be one of the most simple, transparent, and straightforward systems in the world. Taxes are collected through the Inland Revenue Department (IRD).
+Since the Common Law System is applied in Hong Kong, judgements by the Courts and Boards of Review in tax law cases are resorted to assist the interpretation of taxation rules and concepts. Furthermore, the Inland Revenue Department also issues Departmental Interpretation and Practice Notes (DIPNs) from time to time to clarify and elaborate on the tax rules and to smoothen the tax collection process.Taxes collected in Hong Kong can be generally classified as:
+
+Direct tax – including Salaries Tax, Property Tax and Profits Tax; the guiding statue is Inland Revenue Ordinance (Cap 112);
+Indirect tax – including Stamps Duty, Betting Duty, Estate Duty (abolished on 11 February 2006) and others.In the fiscal year 2013/14, Profits tax, an income tax on corporations constituted the largest source of tax collected by the government, followed by Salaries Tax, an income tax on individuals.
+
+
+Unlike most countries which apply both residential jurisdiction and territorial jurisdiction in determining the tax liability of a person, Hong Kong uses only the territorial source jurisdiction and disregards the concept of residence. Thus, only profits sourced in Hong Kong would be taxable whereas a person's overseas income will not be taxable. (As an exception, certain kinds of worldwide deemed trading receipts will be taxable for non-residents.)
+
+
+
+The wages and incomes received from employment are subjected to tax.
+
+
+
+Hong Kong Profits Tax is a tax levied on the net profits on business. Companies and individuals (sole proprietors) carrying out business in Hong Kong will be liable to Profits Tax provided that the profits are sourced in Hong Kong. The source of profits is one of the most controversial topics in the context of Hong Kong taxation. Principally, it is guided by an established set of tests and judgments in court cases. The Departmental Interpretation and Practice Notes provides viewpoints from IRD's perspective but these are subject to revision if major inconsistencies with court judgments are subsequently found. Certain kinds of deemed trading receipts are taxed irrespective of the source rule. Tax on these deemed trading receipts are collected by agents or other persons on withholding basis.  Tax liability may be measured by reference to gross income or turnover for deemed trading receipts and in case where profits cannot reliably ascertained. Capital gain is out of the scope of Hong Kong Profits Tax. However, whether a gain is in capital nature is debatable.
+Certain tax deductions are granted when expenses are incurred. Capital expenditure is not tax-deductible in general. Nevertheless, several kinds of capital expenditure are tax-deductible in the year of purchase or spreading over years, subject to the requirements in specific provisions. Allowances are granted for the purchase or construction of buildings and plants and machinery.For the fiscal year 2014/15, the Profits Tax rate is 16.5% for companies and 15% for individual sole proprietors. Half of the original rates will be charged on concessionary receipts including income derived from qualifying debt instruments and offshore reinsurance business.
+
+
+Property Tax is levied on the income from the letting of immovable property in Hong Kong. Property tax carries an immaterial proportion of the revenue of the government. For the year of assessment 2013/14, property tax amounts to 0.01% of the total revenue. The tax rules are straightforward and simple.
+Both individuals or corporate owners (including joint tenants) are liable to Properties Tax. However, corporate owners who carry out business in Hong Kong may either:
+
+apply for exemption of Property Tax; or
+deduct Property Tax from one's Profits Tax assessment.The tax is paid on 15% of the net assessable value, equal to assessable value minus deductions. Assessable Value includes:
+
+Rental income payable to the owner during the year of assessment;
+Other considerations not specifically attributable to a particular year of assessment (e.g. key money and non-refundable rental deposit). The amount will be spread over the tenancy period and subject for a maximum of 36 months. For illustration purpose, key money of HK$60,000 paid for the tenancy from 1 April 2014 to 31 March 2016 will be assessed as: HK$60,000 for the year of assessment 2014/15 and HK$60,000 for the year of assessment 2015/16.Deductions include:
+
+Standard deduction: 20% allowance on the assessable value less deducted rates, representing the repair expenses for the property;
+Other deductions: Rates paid by the owner of the property and irrecoverable rental income.
+
+
+
+
+Stamp Duty is collected upon existence of certain transactions in Hong Kong. The three major types of transactions that attract stamp duties are transfers of Hong Kong immovable properties, transfers of Hong Kong shares and leases of immovable properties. Stamp Duties are chargeable on dutiable instruments.
+
+
+
+
+
+No turnover tax (e.g. Value-Added Tax and Goods and Services Tax) has been imposed in Hong Kong. As a result, Hong Kong is considered to be favourable for profit shifting and conducting re-invoicing activities. In July 2006, Proposal of legislation of Goods and Services Tax (“GST”) was made by the Government, who argues that tax base in Hong Kong was urged to be broadened. Subsequently, due to fierce opposition of the general public, the proposal was dropped.
+
+
+
+
+Taxpayers who received Individual Tax Return are required to fill out the return in order to notify the IRD their Profits Tax, Salaries Tax and Property Tax positions.
+For regular taxpayers, normally IRD issues Salaries Tax Return to them on the first working day of May every year. They are also required to furnish the return within 1 month in normal case.
+
+
+In Hong Kong, it is IRD's general practice to issue Employer's Returns to Hong Kong Company in every April in the year. The employer is obliged to file the form within 1 month from the date of issue in order to notify IRD the amount of wages, salaries and other kinds of remuneration paid to the employees during the year of assessment ending 31 March every year. No Employer's return is required to be furnished for those employees who received HK$120,000 or less during the Year of Assessment.
+
+
+http://www.gov.hk/en/residents/taxes/etax/services/tax_computation.htm, Salaries Tax and Personal Assessment Calculator
+

@@ -1,0 +1,67 @@
+In electronics and telecommunications, jitter is the deviation from true periodicity of a presumably periodic signal, often in relation to a reference clock signal. In clock recovery applications it is called timing jitter. Jitter is a significant, and usually undesired, factor in the design of almost all communications links.
+Jitter can be quantified in the same terms as all time-varying signals, e.g., root mean square (RMS), or peak-to-peak displacement.  Also like other time-varying signals, jitter can be expressed in terms of spectral density.
+Jitter period is the interval between two times of maximum effect (or minimum effect) of a signal characteristic that varies regularly with time.  Jitter frequency, the more commonly quoted figure, is its inverse. ITU-T G.810 classifies jitter frequencies below 10 Hz as wander and frequencies at or above 10 Hz as jitter.Jitter may be caused by electromagnetic interference and crosstalk with carriers of other signals. Jitter can cause a display monitor to flicker, affect the performance of processors in personal computers, introduce clicks or other undesired effects in audio signals, and cause loss of transmitted data between network devices. The amount of tolerable jitter depends on the affected application.
+
+
+For clock jitter, there are three commonly used metrics:
+
+Absolute jitter
+The absolute difference in the position of a clock's edge from where it would ideally be.Period jitter (a.k.a. cycle jitter)
+The difference between any one clock period and the ideal or average clock period. Period jitter tends to be important in synchronous circuitry such as digital state machines where the error-free operation of the circuitry is limited by the shortest possible clock period (average period less maximum cycle jitter), and the performance of the circuitry is set by the average clock period. Hence, synchronous circuitry benefits from minimizing period jitter, so that the shortest clock period approaches the average clock period.Cycle-to-cycle jitter
+The difference in duration of any two adjacent clock periods.  It can be important for some types of clock generation circuitry used in microprocessors and RAM interfaces.In telecommunications, the unit used for the above types of jitter is usually the unit interval (UI) which quantifies the jitter in terms of a fraction of the transmission unit period. This unit is useful because it scales with clock frequency and thus allows relatively slow interconnects such as T1 to be compared to higher-speed internet backbone links such as OC-192.  Absolute units such as picoseconds are more common in microprocessor applications.  Units of degrees and radians are also used.
+
+If jitter has a Gaussian distribution, it is usually quantified using the standard deviation of this distribution. This translates to a RMS measurement for a zero-mean distribution.  Often, jitter distribution is significantly non-Gaussian.  This can occur if the jitter is caused by external sources such as power supply noise.  In these cases, peak-to-peak measurements may be more useful.  Many efforts have been made to meaningfully quantify distributions that are neither Gaussian nor have a meaningful peak level.  All have shortcomings but most tend to be good enough for the purposes of engineering work.  Note that typically, the reference point for jitter is defined such that the mean jitter is 0.In computer networking, jitter can refer to packet delay variation, the variation (statistical dispersion) in the delay of the packets.
+
+
+One of the main differences between random and deterministic jitter is that deterministic jitter is bounded and random jitter is unbounded.
+
+
+Random Jitter, also called Gaussian jitter, is unpredictable electronic timing noise. Random jitter typically follows a normal distribution due to being caused by thermal noise in an electrical circuit or due to the central limit theorem.  The central limit theorem states that composite effect of many uncorrelated noise sources, regardless of the distributions, approaches a normal distribution.
+
+
+Deterministic jitter is a type of clock or data signal jitter that is predictable and reproducible. The peak-to-peak value of this jitter is bounded, and the bounds can easily be observed and predicted. Deterministic jitter has a known non-normal distribution. Deterministic jitter can either be correlated to the data stream (data-dependent jitter) or uncorrelated to the data stream (bounded uncorrelated jitter). Examples of data-dependent jitter are duty-cycle dependent jitter (also known as duty-cycle distortion) and intersymbol interference.
+
+
+Total jitter (T) is the combination of random jitter (R) and deterministic jitter (D) and is computed in the context to a required bit error rate (BER) for the system:
+T = Dpeak-to-peak + 2nRrms,in which the value of n is based on the BER required of the link.
+A common BER used in communication standards such as Ethernet is 10−12.
+
+
+
+
+In analog-to-digital and  digital-to-analog conversion of signals, the sampling is normally assumed to be periodic with a fixed period—the time between every two samples is the same. If there is jitter present on the clock signal to the analog-to-digital converter or a digital-to-analog converter, the time between samples varies and instantaneous signal error arises. The error is proportional to the slew rate of the desired signal and the absolute value of the clock error.  The effect of jitter on the signal depends on the nature of the jitter. Random jitter tends to add broadband noise while periodic jitter tends to add errant spectral components, "birdys".  In some conditions, less than a nanosecond of jitter can reduce the effective bit resolution of a converter with a Nyquist frequency of 22 kHz to 14 bits.Sampling jitter is an important consideration in high-frequency signal conversion, or where the clock signal is especially prone to interference.
+
+
+In the context of computer networks, packet jitter or packet delay variation (PDV) is the variation in latency as measured in the variability over time of the end-to-end delay across a network. A network with constant delay has no packet jitter. Packet jitter is expressed as an average of the deviation from the network mean delay. PDV is an important quality of service factor in assessment of network performance.
+Transmitting a burst of traffic at a high rate followed by an interval or period of lower or zero rate transmission, may also be seen as a form of jitter, as it represents a deviation from the average transmission rate. However, unlike the jitter caused by variation in latency, transmitting in bursts may be seen a desirable feature, e.g. in variable bitrate transmissions.
+
+
+Video or image jitter occurs when the horizontal lines of video image frames are randomly displaced due to the corruption of synchronization signals or electromagnetic interference during video transmission. Model-based dejittering study has been carried out under the framework of digital image and video restoration.
+
+
+Testing for jitter and its measurement is of growing importance to electronics engineers because of increased clock frequencies in digital electronic circuitry to achieve higher device performance. Higher clock frequencies have commensurately smaller eye openings, and thus impose tighter tolerances on jitter. For example, modern computer motherboards have serial bus architectures with eye openings of 160 picoseconds or less. This is extremely small compared to parallel bus architectures with equivalent performance, which may have eye openings on the order of 1000 picoseconds.
+Jitter is measured and evaluated in various ways depending on the type of circuit under test. In all cases, the goal of jitter measurement is to verify that the jitter will not disrupt normal operation of the circuit.
+Testing of device performance for jitter tolerance may involve injection of jitter into electronic components with specialized test equipment.
+Jitter in serial bus architectures is measured by means of eye diagrams. There are standards for jitter measurement in serial bus architectures. The standards cover jitter tolerance, jitter transfer function and jitter generation, with the required values for these attributes varying among different applications. Where applicable, compliant systems are required to conform to these standards.
+A less direct approach—in which analog waveforms are digitized and the resulting data stream analyzed—is employed when measuring pixel jitter in frame grabbers.
+
+
+
+
+Anti-jitter circuits (AJCs) are a class of electronic circuits designed to reduce the level of jitter in a regular pulse signal. AJCs operate by re-timing the output pulses so they align more closely to an idealised pulse signal. They are widely used in clock and data recovery circuits in digital communications, as well as for data sampling systems such as the analog-to-digital converter and digital-to-analog converter. Examples of anti-jitter circuits include phase-locked loop and delay-locked loop. Inside digital to analog converters, jitter causes unwanted high-frequency distortions. In this case it can be suppressed with high fidelity clock signal usage.
+
+
+Jitter buffers or de-jitter buffers are used to counter jitter introduced by queuing in  packet switched networks so that a continuous playout of audio (or video) transmitted over the network can be ensured.  The maximum jitter that can be countered by a de-jitter buffer is equal to the buffering delay introduced before starting the play-out of the mediastream. In the context of packet-switched networks, the term packet delay variation is often preferred over jitter.
+Some systems use sophisticated delay-optimal de-jitter buffers that are capable of adapting the buffering delay to changing network jitter characteristics. These are known as adaptive de-jitter buffers and the adaptation logic is based on the jitter estimates computed from the arrival characteristics of the media packets. Adaptive de-jittering involves introducing discontinuities in the media play-out, which may appear offensive to the listener or viewer. Adaptive de-jittering is usually carried out for audio play-outs that feature a VAD/DTX encoded audio, that allows the lengths of the silence periods to be adjusted, thus minimizing the perceptual impact of the adaptation.
+
+
+A dejitterizer is a device that reduces jitter in a digital signal. A dejitterizer usually consists of an elastic buffer in which the signal is temporarily stored and then retransmitted at a rate based on the average rate of the incoming signal. A dejitterizer is usually ineffective in dealing with low-frequency jitter, such as waiting-time jitter.
+
+
+A filter can be designed to minimize the effect of sampling jitter. For more information, see the paper by S. Ahmed and T. Chen entitled, "Minimizing the effects of sampling jitters in wireless sensors networks".
+
+
+Jitter signal can be decomposed into Intrinsic Mode Functions (IMFs), which can be further applied for filtering or dejittering.
+
+
+

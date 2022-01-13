@@ -1,0 +1,16 @@
+A textboard is a simple kind of Internet forum that does not require registration. Textboards, like imageboards, were invented in Japan, but they remain relatively unknown outside it, in contrast to imageboards (such as 4chan).
+
+
+One of the key differences between textboards and traditional forums is that textboards allow users to post without registration, and often encourage anonymous discussion. Hiroyuki Nishimura, the founder of 2channel, says that the philosophy behind anonymous posting is that "all information is treated equally; only an accurate argument will work". Many textboards support a form of pseudo-registration by allowing users to use tripcodes, although users tend to post anonymously.
+Textboards tend to be much simpler than traditional forums. While forums software such as phpBB or vBulletin supports image or other media embedding, private messaging, polls, and various other features, textboards allow only the posting of text.
+
+
+Ayashii World (あやしいわーるど) – introduced anonymous posting.
+2channel – largest forum in Japan, receiving millions of posts a day.
+dis.4chan.org – formerly "world4ch", the textboard section of 4chan. Read only as of 7 April 2014.
+
+
+Kareha is a commonly used open-source textboard software loosely modelled on the scripts used on 2channel, and uses structured XHTML and CSS layout.
+Shiichan is another 2ch-type message board software written in PHP, created by Shii in 2004.
+Perfect Dark is a Japanese peer-to-peer file sharing (P2P) application that contains textboards.
+

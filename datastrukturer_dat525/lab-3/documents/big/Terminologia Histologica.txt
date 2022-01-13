@@ -1,0 +1,52 @@
+The Terminologia Histologica (TH) is the controlled vocabulary for use in cytology and histology. In April 2011, Terminologia Histologica was published online by the Federative International Programme on Anatomical Terminologies (FIPAT), the successor of FCAT.
+It was intended to replace Nomina Histologica. The Nomina Histologica was introduced in 1977, with the fourth edition of Nomina Anatomica.It was developed by the Federative International Committee on Anatomical Terminology.
+
+
+h1.00: Cytology [1]
+h2.00: General histology [2]
+H2.00.01.0.00001: Stem cells [3]
+H2.00.02.0.00001: Epithelial tissue [4]
+H2.00.02.0.01001: Epithelial cell
+H2.00.02.0.02001: Surface epithelium
+H2.00.02.0.03001: Glandular epithelium
+H2.00.03.0.00001: Connective and supportive tissues [5]
+H2.00.03.0.01001: Connective tissue cells
+H2.00.03.0.02001: Extracellular matrix
+H2.00.03.0.03001: Fibres of connective tissues
+H2.00.03.1.00001: Connective tissue proper
+H2.00.03.1.01001: Ligaments
+H2.00.03.2.00001: Mucoid connective tissue; Gelatinous connective tissue
+H2.00.03.3.00001: Reticular tissue
+H2.00.03.4.00001: Adipose tissue
+H2.00.03.5.00001: Cartilage tissue
+H2.00.03.6.00001: Chondroid tissue
+H2.00.03.7.00001: Bone tissue; Osseous tissue
+H2.00.04.0.00001: Haemotolymphoid complex [6]
+H2.00.04.1.00001: Blood cells
+H2.00.04.1.01001: Erythrocyte; Red blood cell
+H2.00.04.1.02001: Leucocyte; White blood cell
+H2.00.04.1.03001: Platelet; Thrombocyte
+H2.00.04.2.00001: Plasma
+H2.00.04.3.00001: Blood cell production
+H2.00.04.4.00001: Postnatal sites of haematopoiesis
+H2.00.04.4.01001: Lymphoid tissue
+H2.00.05.0.00001: Muscle tissue [7]
+H2.00.05.1.00001: Smooth muscle tissue
+H2.00.05.2.00001: Striated muscle tissue
+H2.00.06.0.00001: Nerve tissue [8]
+H2.00.06.1.00001: Neuron
+H2.00.06.2.00001: Synapse
+H2.00.06.2.00001: Neuroglia
+h3.01: Bones [9]
+h3.02: Joints [10]
+h3.03: Muscles [11]
+h3.04: Alimentary system [12]
+h3.05: Respiratory system [13]
+h3.06: Urinary system [14]
+h3.07: Genital system [15]
+h3.08: Endocrine system [16]
+h3.09: Cardiovascular system [17]
+h3.10: Lymphoid system [18]
+h3.11: Nervous system [19]
+h3.12: The Integument [20]
+

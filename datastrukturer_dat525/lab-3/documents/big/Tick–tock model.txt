@@ -1,0 +1,14 @@
+Tick–tock was a production model adopted in 2007 by chip manufacturer Intel. Under this model, every microarchitecture change (tock) was followed by a die shrink of the process technology (tick). Its replacement was announced in 2016, called "Process, Architecture, Optimization", and is similar to a tick–tock cycle, followed by an optimization phase.
+
+
+Every "tick" represented a shrinking of the process technology of the previous microarchitecture (sometimes introducing new instructions, as with Broadwell, released in late 2014) and every "tock" designated a new microarchitecture. These occurred roughly every year to 18 months. In 2014, Intel created a "tock refresh" of a tock in the form of a smaller update to the microarchitecture not considered a new generation in and of itself.
+In March 2016, Intel announced in a Form 10-K report that it deprecated the tick–tock cycle in favor of a three-step "process–architecture–optimization" model, under which three generations of processors are produced under a single manufacturing process, with the third generation out of three focusing on optimization. The first optimization of the Skylake architecture was Kaby Lake. Intel then announced a second optimization, Coffee Lake, making a total of four generations at 14 nm.
+
+
+
+
+
+Note: There is further the Xeon Phi. It has up to now undergone four development steps with a current top model that got the code name Knights Landing (shortcut: KNL; the predecessor code names all had the leading term Knights in their name) that is derived from the Silvermont architecture as used for the Intel Atom series but realized in a shrunk 14 nm (FinFET) technology.
+
+
+

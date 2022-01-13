@@ -1,0 +1,45 @@
+Payload Aerospace S.L. (PLD Space) is a Spanish company developing two partially-reusable launch vehicles called Miura 1 and Miura 5.
+Miura 1 is designed as a sounding rocket for sub-orbital flights to perform research or technology development in microgravity environment and/or in the upper atmosphere. Furthermore, Miura 1 is also serving as the technological demonstrator of the orbital launcher Miura 5.  Miura 5 will provide orbital launch capabilities for small payloads such as CubeSats or microsatellites, that need a flexible and dedicated launch vehicle and therefore can not fly with traditional launch vehicles. It is being designed to deliver a total payload mass up to 300 kg (660 lb) into low Earth orbit.Recovery of the first stage would be by the use of parachutes and splashdown for re-use.
+
+
+
+PLD Space was founded in 2011 by Raúl Torres and Raúl Verdú in Elche, Spain, and as of 2019 it employs more than 50 people. In August 2017 the company headquarter moved to new facilities in the Elche Industrial Park, where the assembly facilities for Miura 1 are located.Since 2014, the company is operating an engine test stand located at the Airport in Teruel, where they performed the first test of its liquid fuel engine on July 1, 2015. It was the first time a liquid rocket engine was tested in Spain, and the first time a private company in Europe tested a liquid rocket engine on its own facilities. PLD Space plans to expand their test facilities to include a vertical test stand to qualify the complete Miura 1 suborbital rocket.In early August 2018, PLD Space and the Teruel Airport Consortium signed the concession of a 13,337 m2 space at the airport for the PLD Space to test launcher technology. The agreement has a period of 25 years, with the option of an additional 10-year extension. PLD Space will invest euro €1M in infrastructure for the construction of a new control room, offices, access paths, a rocket engine maintenance hangar and a new test bench to test the complete Miura 1 rocket.On November 2018 PLD Reached an agreement with INTA to launch Miura 1 from El Arenosillo. The agreement is not limited to using the INTA facilities for launching but rather establishing a lasting relationship that will allow them to develop scientific, aerospace and technical knowledge.
+On July 2019, PLD Space reached an agreement with CNES to study the launch of Miura 5 from CSG, French Guiana.  As part of their agreement, INTA is also helping them procure a launch site, being El Hierro Launch Centre the best option from a technical point of view.
+
+
+
+The company has been funded through a series of investment rounds with institutional and private sources and up to now gathered investments worth around $10 million. In 2013 they closed a $1.6 million investment round, including a seed contract with the Spanish Government through the Centre for the Development of Industrial Technology (CDTI).
+PLD Space secured its first commercial contract as one of the partners in the Small Innovative Launcher for Europe (SMILE) program with the European Commission and the German Aerospace Center (DLR) in December 2015. The company is responsible for testing liquid propulsion engines for the DLR at its propulsion test facilities in the Airport of Teruel. In April 2016, PLD Space secured a further $1.56 million from Spain's TEPREL reusable launcher engine program. TEPREL (Acronym for Spanish Reusable Propulsion Technologies for Launchers) will help PLD Space to continue their liquid rocket engine program,\ the first one in Spain dedicated to boost the small satellite industry in Europe. This project will help PLD Space to develop a 35 kN rocket engine qualified for flight.
+In October 2016, The European Space Agency (ESA) selected PLD Space as the prime contractor for the "Liquid Propulsion Stage Recovery" project (LPSR) as part of the agency's Future Launchers Preparatory Programme (FLPP). The goal of this project is to study a strategy to recover the first stage of a launcher, making it partially reusable, with a prospected funding of $800,000. In a second investment round, closed in January 2017, the company secured $7.1 million, $3.2 million of that contributed by GMV. GMV also took the role to develop the complete avionics of Miura 1 and Miura 5, including guidance, navigation and control (GNC), telemetry and onboard software for both launchers. PLD Space received further $2.34 million in January 2018 through the European Commissions Medium-sized Enterprises (SME) Instrument Phase 2, as part of the European Union's Horizon 2020 program for research and innovation, a grant to support to the development of a pair of launchers designed for small satellites. In February 2018 PLD Space was one of the five companies chosen by ESA to perform a feasibility study proposing an economically viable, commercially self-sustaining microlauncher. For this, the company received a funding of $368,000.
+
+
+PLD Space is developing a liquid propellant rocket engine  technology to be used on their launchers. The TEPREL engine, called after the Spanish reusable engine program that is financing its development, uses kerosene and liquid oxygen as propellants. So far, several versions of this engine, intended to propel Miura 1, have been developed and tested on the company's own liquid propulsion test facilities located in Teruel, Spain.
+
+
+The TEPREL-DEMO engine was first tested in 2015. It is a calorimetric engine model, intended to demonstrate combustion stability as well as to acquire relevant information such as ignition and shut-down sequences, pressures and temperatures along the engine, thrust and propellant mass flow rates at different thrust profiles. Additionally, the engine served to test all associated hardware and software at PLD Space Propulsion Test Facilities. The engine is capable to produce a thrust of 28 kN at sea level.
+
+
+With the TEPREL-A engine, first tested in 2017, the company included several design upgrades, such as an improved injector geometry and a regenerative cooling system. The later enables the engine to fire for nearly 2 minutes, which is the envisaged nominal functioning duration for the suborbital launch vehicle Miura 1. At sea level, the engine produces a thrust of 32 kN.
+
+
+TEPREL-B is the first flight version of the TEPREL engine. Several design improvements have been implemented to reduce the overall weight of the engine. It is equipped with a thrust-vector-control system.
+
+
+
+
+Miura 1 (previously called Arion 1) was originally proposed as a two-stage rocket capable of achieving suborbital flight. It was originally planned to be 12 m long, with a capacity of 250 kg (551 lb). The engines were to use liquid oxygen and kerosene as propellants.In its final design, Miura 1 is a 12.7 m long 0.7 m diameter one-stage rocket, propelled by one TEPREL-B engine. The vehicle can fly a payload of up to 200 kg on a suborbital trajectory. In its first mission it will carry 100 kg of payload to an apogee of 150 km. Additionally, Miura 1 is equipped with a recovery system using its engines and parachutes that enable PLD Space to recover the vehicle from the ocean and re-use the complete launch vehicle. With this, it will be the first recoverable launch vehicle in Europe. Miura 1 is intended to be used for scientific research or technology development in a microgravity environment and/or in the upper atmosphere.  Furthermore, about 70% of the technology developed for Miura 1 is planned to be used on the Miura 5 orbital rocket.
+
+
+Miura 5 (previously called Arion 2) is a 20.7 m long three-stage launch vehicle, capable of inserting 300 kg of payload into a 400 km low Earth orbit, featuring a kick stage that can circularize the orbits of satellites. All three stages are planned to be liquid-propelled and its technology is inherited from Miura 1. The first stage is reusable by the combined use of its engines and parachutes for retrieval.
+
+
+In 2015 PLD Space conducted the first static fire test of its TEPREL-DEMO engine. On April 11, 2019 the company carried a successful drop test and recovery of the first stage of the Miura 5 rocket in El Arenosillo. The stage was dropped by a helicopter from a height of 5 km, decelerated using three parachutes, followed by a splashdown, where it was recovered. 
+
+
+
+
+The first test flight of Miura 1 is foreseen to take place in 2020 from an experimental rocket launch site in Huelva, southwestern Spain, called El Arenosillo, and it will carry a payload from the German Center of Applied Space Technology and Microgravity (ZARM). The commercial flight service will begin in 2020. Up to eight suborbital launches are targeted per year.
+
+
+The first test flight of Miura 5 is planned to take place in late 2022.
+

@@ -1,0 +1,23 @@
+The Extradition Clause or Interstate Rendition Clause of the United States Constitution is Article IV, Section 2, Clause 2, which provides for the extradition of a criminal back to the state where they allegedly committed a crime.
+
+
+Article IV, Section 2, Clause 2:
+
+A person charged in any state with treason, felony, or other crime, who shall flee from justice, and be found in another state, shall on demand of the executive authority of the state from which he fled, be delivered up, to be removed to the state having jurisdiction of the crime.
+
+
+Similar to a clause found in the Articles of Confederation, the Extradition Clause was included because the founders found that interstate rendition was separate from international extradition. Fearing that the clause was not self-executing, Congress passed the first rendition act in 1793 – now found under 18 U.S.C. § 3182.
+
+
+
+
+According to a book review in The New York Times in January 2015: 
+
+The Northwest Ordinance of July 1787 held that slaves "may be lawfully reclaimed" from free states and territories, and soon after, a fugitive slave clause — Article IV, Section 2 — was woven into the Constitution at the insistence of the Southern delegates, leading South Carolina's Charles Cotesworth Pinckney to boast, "We have obtained a right to recover our slaves in whatever part of America they may take refuge, which is a right we had not before."
+The meaning of the Extradition Clause was first tested before the Supreme Court in the case of Kentucky v. Dennison (1861). The case involved a man named Willis Lago who was wanted in Kentucky for helping a slave girl escape. He had fled to Ohio, where the governor, William Dennison, Jr., refused to extradite him back to Kentucky. In this case, the court ruled that, while it was the duty of a governor to return a fugitive to the state where the crime was committed, a governor could not be compelled through a writ of mandamus to do so.
+
+
+
+In 1987, the court reversed its decision under Dennison. The case involved an Iowan, Ronald Calder, who struck a married couple near Aguadilla, Puerto Rico. The husband survived but the wife, who was eight months pregnant, did not. Following the incident, Calder was charged with murder and let out on bail. While on bail, Ronald Calder fled to his home-state of Iowa. In May 1981, the Governor of Puerto Rico submitted a request to the Governor of Iowa for the extradition of Ronald Calder to face the murder charges. The Governor of Iowa refused the request, and the Governor of Puerto Rico filed a petition for a writ of mandamus in the United States District Court for the Southern District of Iowa. The Court rejected it, ruling that, under Kentucky v. Dennison, the Governor of Iowa was not obligated to return Calder. The United States Court of Appeals for the Eighth Circuit affirmed. The Supreme Court, overruling its existing precedent, reversed, ruling unanimously that the Federal Courts did indeed have the power to enforce a writ of mandamus and that Kentucky v. Dennison was outdated.
+Fugitives for whom extradition had been refused under the former rule are now subject to extradition.
+

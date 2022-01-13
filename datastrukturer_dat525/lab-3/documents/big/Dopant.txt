@@ -1,0 +1,24 @@
+A dopant, also called a doping agent, is a trace of impurity element that is introduced into a chemical material to alter its original electrical or optical properties. The amount of dopant necessary to cause changes is typically very low. When doped into crystalline substances, the dopant's atoms get incorporated into its crystal lattice. The crystalline materials are frequently either crystals of a semiconductor such as silicon and germanium for use in solid-state electronics, or transparent crystals for use in the production of various laser types; however, in some cases of the latter, noncrystalline substances such as glass can also be doped with impurities.
+In solid-state electronics using the proper types and amounts of dopants in semiconductors is what produces the p-type semiconductors and n-type semiconductors that are essential for making transistors and diodes.
+
+
+
+
+The procedure of doping tiny amounts of the metals chromium (Cr), neodymium (Nd), erbium (Er), thulium (Tm), ytterbium (Yb), and a few others, into transparent crystals, ceramics, or glasses is used to produce the active medium for solid-state lasers. It is in the electrons of the dopant atoms that a population inversion can be produced, and this population inversion is essential for the stimulated emission of photons in the operation of all lasers.
+In the case of the natural ruby, what has occurred is that a tiny amount of chromium dopant has been naturally distributed through a crystal of aluminium oxide (corundum). This chromium both gives a ruby its red color, and also enables a ruby to undergo a population inversion and act as a laser. The aluminium and oxygen atoms in the transparent crystal of aluminium oxide served simply to support the chromium atoms in a good spatial distribution, and otherwise, they do not have anything to do with the laser action.
+In other cases, such as in the neodymium YAG laser, the crystal is synthetically made and does not occur in nature. The man-made yttrium aluminium garnet crystal contains millions of yttrium atoms in it, and due to its physical size, chemical valence, etc., it works well to take the place of a small minority of yttrium atoms in its lattice, and to replace them with atoms from the rare-earth series of elements, such as neodymium. Then, these dopant atoms actually carry out the lasing process in the crystal. The rest of the atoms in the crystal consist of yttrium, aluminium, and oxygen atoms, but just as above, these other three elements function to simply support the neodymium atoms. In addition, the rare-earth element erbium can readily be used as the dopant rather than neodymium, giving a different wavelength of its output.
+In many optically-transparent hosts, such active centers may keep their excitation for a time on the order of milliseconds, and relax with stimulated emission, providing the laser action. The amount of dopant is usually measured in atomic percent. Usually the relative atomic percent is assumed in the calculations, taking into account that the dopant ion can substitute in only part of a site in a crystalline lattice. The doping can be also used to change the refraction index in optical fibers, especially in the double-clad fibers. The optical dopants are characterized with lifetime of excitation and the effective absorption and emission cross-sections, which are main parameters of an active dopant. Usually, the concentration of optical dopant is of order of few percent or even lower. At large density of excitation, the cooperative quenching (cross-relaxation) reduces the efficiency of the laser action.
+
+
+The medical field has some use for erbium-doped laser crystals for the laser scalpels that are used in laser surgery. Europium, neodymium, and other rare-earth elements are used to dope glasses for lasers. Holmium-doped and neodymium yttrium aluminium garnets (YAGs) are used as the active laser medium in some laser scalpels.
+
+
+In context of phosphors and scintillators, dopants are better known as activators, and are used to enhance the luminescence process.
+
+
+
+The addition of a dopant to a semiconductor, known as doping, has the effect of shifting the Fermi levels within the material. This results in a material with predominantly negative (n-type) or positive (p-type) charge carriers depending on the dopant variety. Pure semiconductors that have been altered by the presence of dopants are known as extrinsic semiconductors (see intrinsic semiconductor). Dopants are introduced into semiconductors in a variety of techniques: solid sources, gases, spin on liquid, and ion implanting. See ion implantation, surface diffusion, and solid sources footnote.
+
+
+The color of some gemstones is caused by dopants. For example, ruby and sapphire are both aluminium oxide, the former getting its red color from chromium atoms, and the latter doped with any of several elements, giving a variety of colors.
+

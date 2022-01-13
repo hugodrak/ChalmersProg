@@ -1,0 +1,43 @@
+The Federal Register (FR or sometimes Fed. Reg.) is the official journal of the federal government of the United States that contains government agency rules, proposed rules, and public notices. It is published every weekday, except on federal holidays. The final rules promulgated by a federal agency and published in the Federal Register are ultimately reorganized by topic or subject matter and codified in the Code of Federal Regulations (CFR), which is updated annually.
+The Federal Register is compiled by the Office of the Federal Register (within the National Archives and Records Administration) and is printed by the Government Publishing Office. There are no copyright restrictions on the Federal Register; as a work of the U.S. government, it is in the public domain.
+
+
+The Federal Register provides a means for the government to announce to the public changes to government requirements, policies, and guidance. 
+
+Proposed new rules and regulations
+Final rules
+Changes to existing rules
+Notices of meetings and adjudicatory proceedings
+Presidential documents including Executive orders, proclamations and administrative orders.Both proposed and final government rules are published in the Federal Register.  A Notice of Proposed Rulemaking (or "NPRM") typically requests public comment on a proposed rule and provides notice of any public meetings where a proposed rule will be discussed. The public comments are considered by the issuing government agency, and the text of a final rule along with a discussion of the comments is published in the Federal Register. Any agency proposing a rule in the Federal Register must provide contact information for people and organizations interested in making comments to the agencies and the agencies are required to address these concerns when it publishes its final rule on the subject.
+The notice and comment process, as outlined in the Administrative Procedure Act, gives the people a chance to participate in agency rulemaking. Publication of documents in the Federal Register also constitutes constructive notice, and its contents are judicially noticed.The United States Government Manual is published as a special edition of the Federal Register. Its focus is on programs and activities.
+
+
+Each daily issue of the printed Federal Register is organized into four categories:
+
+Presidential Documents (executive orders and proclamations)
+Rules and Regulations (including policy statements and interpretations of rules by federal agencies)
+Proposed Rules (including petitions to agencies from the public)
+Notices (such as scheduled hearings and meetings open to the public and grant applications)Citations from the Federal Register are [volume] FR [page number] ([date]), e.g., 71 FR 24924 (Apr. 7, 2006).
+The final rules promulgated by a federal agency and published in the Federal Register are ultimately reorganized by topic or subject matter and re-published (or "codified") in the Code of Federal Regulations (CFR), which is updated annually.
+
+
+Copies of the Federal Register may be obtained from the U.S. Government Publishing Office. Most law libraries associated with an American Bar Association–accredited law school will also have a set, as will federal depository libraries.
+
+
+The Federal Register has been available online since 1994. Federal depository libraries within the U.S. also receive copies of the text, either in paper or microfiche format. Outside the U.S., some major libraries may also carry the Federal Register.
+As part of the Federal E-Government eRulemaking Initiative, the web site Regulations.gov was established in 2003 to enable easy public access to agency dockets on rulemaking projects including the published Federal Register document. The public can use Regulations.gov to access entire rulemaking dockets from participating Federal agencies to include providing on-line comments directly to those responsible for drafting the rulemakings. To help federal agencies manage their dockets, the Federal Docket Management System (FDMS) was launched in 2005 and is the agency side of regulations.gov.
+In April 2009, Citation Technologies created a free, searchable website for Federal Register articles dating from 1996 to the present.GovPulse.us, a finalist in the Sunlight Foundation's Apps for America 2, provides a web 2.0 interface to the Federal Register, including sparklines of agency activity and maps of current rules.
+On July 25, 2010, the Federal Register 2.0 website went live. The new website is a collaboration between the developers who created GovPulse.us, the Government Publishing Office and the National Archives and Records Administration.
+On August 1, 2011, the Federal Register announced a new application programming interface (API) to facilitate programmatic access to the Federal Register content. The API is fully RESTful, utilizing the HATEOAS architecture with results delivered in the JSON format. Details are available at the developers page and Ruby and Python client libraries are available.
+
+
+In addition to purchasing printed copies or subscriptions, the contents of the Federal Register can be acquired via several commercial databases:
+
+Citation Technologies offers the complete Federal Register and Code of Federal Regulations (CFRs) through subscription-based web portals such as CyberRegs.
+HeinOnline (1936–): Full coverage available dating back to 1936 in an image-based searchable PDF format.
+LexisNexis (July 1, 1980–): Searchable text format since 45 FR 44251.
+Westlaw (January 1, 1981–): Searchable text format since 46 FR 1. The Unified Agenda and the official English text of the 1980 United Nations Convention on Contracts for the International Sale of Goods, which became effective January 1, 1988, are included. Sunshine Act Meeting Notices are not available prior to 1991. Unified Agenda documents are not available prior to October 1989.
+
+
+The Federal Register system of publication was created on July 26, 1935, under the Federal Register Act. The first issue of the Federal Register was published on March 16, 1936. In 1946 the Administrative Procedure Act required agencies to publish more information related to their rulemaking documents in the Federal Register.On March 11, 2014, Rep. Darrell Issa introduced the Federal Register Modernization Act (H.R. 4195), a bill that would require the Federal Register to be published (e.g., by electronic means), rather than printed, and that documents in the Federal Register be made available for sale or distribution to the public in published form. The American Association of Law Libraries (AALL) strongly opposed the bill, arguing that the bill undermines citizens' right to be informed by making it more difficult for citizens to find their government's regulations. According to AALL, a survey they conducted "revealed that members of the public, librarians, researchers, students, attorneys, and small business owners continue to rely on the print" version of the Federal Register. AALL also argued that the lack of print versions of the Federal Register and CFR would mean the 15 percent of Americans who don't use the internet would lose their access to that material. The House voted on July 14, 2014, to pass the bill 386–0.
+

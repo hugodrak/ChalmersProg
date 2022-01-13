@@ -1,0 +1,23 @@
+# This is a gitignore file.
+# It tells git which files and directories it should avoid tracking.
+# For an explanation of the format, see the following link:
+#   https://git-scm.com/docs/gitignore
+# You may edit this file according to your needs.
+
+### General ###
+
+# Backup files
+*~
+\#*#
+*.bak
+
+# Vim swap files
+*.swo
+*.swp
+
+### Python ###
+
+# Compiled modules
+__pycache__
+*.pyc
+*.pyo

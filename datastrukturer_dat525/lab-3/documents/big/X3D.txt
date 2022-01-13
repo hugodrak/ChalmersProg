@@ -1,0 +1,25 @@
+X3D is a royalty-free ISO/IEC standard for declaratively representing 3D computer graphics. File format support includes XML, ClassicVRML, Compressed Binary Encoding (CBE) and a draft JSON encoding. X3D became the successor to the Virtual Reality Modeling Language (VRML) in 2001. X3D features extensions to VRML (e.g. CAD, geospatial, humanoid animation, NURBS etc.), the ability to encode the scene using an XML syntax as well as the Open Inventor-like syntax of VRML97, or binary formatting, and enhanced application programming interfaces (APIs).
+The X3D extension supports multi-stage and multi-texture rendering; it also supports shading with lightmap and normalmap. Starting in 2010, X3D has supported deferred rendering architecture. Now X3D can import SSAO, CSM and Realtime Environment Reflection/Lighting. The user can also use optimizations including BSP/QuadTree/OctTree or culling in the X3D scene.
+X3D can work with other open source standards including XML, DOM and XPath.
+
+
+X3D defines several profiles (sets of components) for various levels of capability including X3D Core, X3D Interchange, X3D Interactive, X3D CADInterchange, X3D Immersive, and X3D Full. Browser makers can define their own component extensions prior to submitting them for standardisation by the Web3D Consortium. Formal review and approval is then performed by the International Organization for Standardization (ISO).
+Liaison and cooperation agreements are also in place between the Web3D Consortium and the World Wide Web Consortium (W3C), Open Geospatial Consortium (OGC), Digital Imaging and Communications in Medicine (DICOM) and the Khronos Group.
+A subset of X3D is XMT-A, a variant of XMT, defined in MPEG-4 Part 11. It was designed to provide a link between X3D and 3D content in MPEG-4 (BIFS).
+The abstract specification for X3D (ISO/IEC 19775) was first approved by the ISO in 2004. The XML and ClassicVRML encodings for X3D (ISO/IEC 19776) were first approved in 2005.
+
+
+There are several applications, most of which are open-source software, which natively parse and interpret X3D files, including the 3D graphics and animation editor Blender and the Sun Microsystems virtual world client Project Wonderland. An X3D applet is a software program that runs within a web browser and displays content in 3D, using OpenGL 3D graphics technology to display X3D content in several different browsers (IE, Safari, Firefox) across several different operating systems (Windows, Mac OS X, Linux). However, X3D has not received as wide acceptance as that of other, more notable software applications.
+In the 2000s, many companies such as Bitmanagement improved the quality level of virtual effects in X3D to the quality level of DirectX 9.0c, but at the expense of using proprietary solutions. All main features including game modeling are already complete. They include multi-pass render with low level setting for Z-buffer, BlendOp, AlphaOp, Stencil, Multi-texture, Shader with HLSL and GLSL support, real-time Render To Texture, Multi Render Target (MRT) and post-processing. Many demos shows that X3D already supports lightmap, normalmap, SSAO, CSM and real-time environment reflection along with other virtual effects.Striving to become the 3D standard for the Web, X3D is designed to be as integrated into HTML5 pages as other XML standards such as MathML and SVG. X3DOM is a proposed syntax model and its implementation as a script library that demonstrates how this integration can be achieved without a browser plugin, using only WebGL and JavaScript.
+
+
+
+
+WebGL: JavaScript API for rendering interactive 3D graphics and 2D graphics within any compatible web browser, managed by the Khronos Group
+3DMLW: 3D Markup Language for Web
+COLLADA: interchange file format for interactive 3D applications, managed by the Khronos Group
+O3D: developed by Google
+U3D: Ecma International standard ECMA-363
+VRML: precursor of X3D
+3MF: An XML-based format that includes 3D additive manufacturing data such as material properties.
+

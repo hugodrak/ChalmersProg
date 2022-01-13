@@ -1,0 +1,11 @@
+CiNii () is a bibliographic database service for material in Japanese academic libraries, especially focusing on Japanese works and English works published in Japan. The database was founded in April 2005 and is maintained by the National Institute of Informatics. The service searches from within the databases maintained by the NII itself [NII Electronic Library Service (NII-ELS) and Citation Database for Japanese Publications (CJP)], as well as the databases provided by the National Diet Library of Japan, institutional repositories, and other organizations.The database contains more than 15 million articles from more than 3,600 publications. A typical month (in 2012) saw more than 30 million accesses from 2.2 million unique visitors, and is the largest and most comprehensive database of its kind in Japan. Although the database is multidisciplinary, the largest portion of the queries it receives is in the humanities and social sciences field, perhaps because CiNii is the only database that covers Japanese scholarly works in this field (as opposed to the natural, formal, and medical sciences which benefit from other databases).
+
+
+The database assigns a unique identifier, NII Article ID (NAID), to each of its journal article entries. A different identifier, NII Citation ID (NCID or 書誌ID) aka NACSIS-CAT Record ID, is used for books.
+
+
+NCID BA04004867 for the 1951 Little, Brown edition and of The Catcher in the Rye
+NCID BB17611495 for the 2010 Penguin edition of The Catcher in the Rye
+NCID BA36680090 for a 1952 edition of Kiken na nenrei (危険な年齢), NCID BN01880084 for a 1964 edition of Rai-mugi batake de tsukamaete (ライ麦畑でつかまえて), and NCID BA61718322 for a 2003 edition of Kyatchā in za rai (キャッチャー・イン・ザ・ライ), all three being Japanese translations of The Catcher in the Rye
+NCID BB13715590 for a 1997 edition of Mai tian li de shou wang zhe (麦田里的守望者), a Chinese translation of The Catcher in the Rye.Identifiers are also assigned to authors of books, and of journal articles, in two separate series (so an author may have a different identifier value in each). For example, Shinsaku Kimoto is DA00432173 for books and 9000002393144 for journal articles.
+

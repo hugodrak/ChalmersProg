@@ -1,0 +1,8 @@
+SIKART is a biographical dictionary and a database on visual art in Switzerland and Liechtenstein. It is published online by the Swiss Institute for Art Research (SIAR). Conceptually and in content, it is an expanded and continually updated online version of the SIAR's 1998 Biographical Lexicon of Swiss Art, which featured 12,000 short entries and some 1,100 detailed biographical articles.
+
+
+SIKART states that it is aimed at both specialists and members of the general public with an interest in art. It covers professional artists from Switzerland and Liechtenstein "who work or have worked in the genres of painting, drawing, engraving, sculpture, video, installation, photography, performance and web art", but not artists "who worked or work exclusively in the applied arts (graphic art, design, bell foundry, gold work, ceramics, documentary photography, etc.)"The content is written in the language the artist is most associated with: French, Italian or German. The artists are rated with one to five stars according to their significance, which determines the depth of coverage. For all artists in SIKART, the database records the name (and any variants), the dates of birth and death, a brief CV, keywords and descriptors, lexica entries, a bibliography and a link to the artist's website (if any). For artists rated with three to five stars, biographical articles of two to four pages in length are also provided, as are digital reproductions of their artworks.
+
+
+SIKART is funded by the Swiss Confederation, the Swiss cantons and private donors. The website can be accessed free of charge, but at launch SIAR intended to charge for access at a later date so as to enable SIKART to operate independently of public funding.
+

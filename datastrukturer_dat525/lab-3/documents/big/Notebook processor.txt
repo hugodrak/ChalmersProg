@@ -1,0 +1,30 @@
+A notebook processor is a CPU optimized for notebook computers.
+One of the main characteristics differentiating notebook processors from other CPUs is low-power consumption.
+The notebook processor is becoming an increasingly important market segment in the semiconductor industry.  Notebook computers are an increasingly popular format of the broader category of mobile computers.  The objective of a notebook computer is to provide the performance and functionality of a desktop computer in a portable size and weight.
+Cell phones and PDAs use "system on a chip" integrated circuits that use less power than most notebook processors.
+While it is possible to use desktop processors in laptops, this practice is generally not recommended, as desktop processors heat faster than notebook processors and drain batteries faster.
+
+
+
+
+ARM architecture (used in Chromebooks, Windows 10 laptops, and Linux netbooks)
+MediaTek
+Nvidia: Tegra
+Qualcomm: Snapdragon
+Rockchip
+Samsung Electronics: Exynos
+x86
+AMD: A-Series APU, Ryzen Mobile
+Intel: Pentium M, Core Duo, Core 2 Duo and the budget Celeron M and quad-core
+
+
+PowerPC
+Freescale Semiconductor made PowerPC G4 processors for the pre-Intel Apple Computer notebooks.
+x86
+Transmeta: Crusoe and Efficeon
+
+
+
+		
+		
+

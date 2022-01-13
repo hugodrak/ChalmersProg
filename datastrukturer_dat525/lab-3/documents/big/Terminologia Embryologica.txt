@@ -1,0 +1,33 @@
+The Terminologia Embryologica (TE) is a standardized list of words used in the description of human embryologic and fetal structures. It was produced by the Federative International Committee on Anatomical Terminology on behalf of the International Federation of Associations of Anatomists and posted on the Internet since 2010. It has been approved by the General Assembly of the IFAA during the seventeenth International Congress of Anatomy in Cape Town (August 2009).
+It is analogous to the Terminologia Anatomica (TA), which standardizes terminology for adult human anatomy and which deals primarily with naked-eye adult anatomy. It succeeds the Nomina Embryologica, which was included as a component of the Nomina Anatomica.It was not included in the original version of the TA.
+
+
+e1.0: General terms [1]
+e2.0: Ontogeny [2]
+e3.0: Embryogeny [3]
+e4.0: General histology [4]
+e5.0: Bones; Skeletal system [5]
+e5.1: Joints; Articular system [6]
+e5.2: Muscles; Muscular system [7]
+e5.3: Face [8]
+e5.4: Alimentary system [9]
+e5.5: Respiratory system [10]
+e5.6: Urinary system [11]
+e5.7: Genital systems [12]
+e5.8: Coelom and septa [13]
+e5.9: Mesenchymal mesenteric masses [14]
+e5.10: Endocrine glands [15]
+e5.11: Cardiovascular system [16]
+e5.12: Lymphoid system [17]
+e5.13: Nervous system [18]
+e5.14: Central nervous system [19]
+e5.15: Peripheral nervous system [20]
+e5.16: Sense organs [21]
+e5.17: The integument [22]
+e6.0: Extraembryonic and fetal membranes [23]
+e7.0: Embryogenesis (-> 13 st) [24]
+e7.0: Embryogenesis (14 st ->) [25]
+e7.1: Fetogenesis [26]
+e7.2: Features of mature neonate [27]
+e8.0: Dysmorphia terms [28]
+

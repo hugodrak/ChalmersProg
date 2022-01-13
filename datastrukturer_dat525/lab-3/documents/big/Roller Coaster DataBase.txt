@@ -1,0 +1,12 @@
+Roller Coaster DataBase (RCDB) is a roller coaster and amusement park database begun in 1996 by Duane Marden. It has grown to feature statistics and photos of over 5000 roller coasters from around the world.Publications that have mentioned RCDB include The New York Times, Los Angeles Times, Toledo Blade, Orlando Sentinel, Time, Forbes, Mail & Guardian, and Chicago Sun-Times.
+
+
+RCDB was started in 1996 by Duane Marden, a computer programmer from Brookfield, Wisconsin. The website is run off web servers in Marden's basement and a location in St. Louis.
+
+
+
+Each roller coaster entry includes any of the following information for the ride: current amusement park location, type, status (existing, standing but not operating (SBNO), defunct), opening date, make/model, cost, capacity, length, height, drop, number of inversions, speed, duration, maximum vertical angle, trains, and special notes. Entries may also feature reader-contributed photos and/or press releases.The site also categorizes the rides into special orders, including a list of the tallest coasters, a list of the fastest coasters, a list of the most inversions on a coaster, a list of the parks with the most inversions, etc., each sortable by steel, wooden, or both. Each roller coaster entry links back to a page which lists all of that park's roller coasters, past and present, and includes a brief history and any links to fan web pages saluting the park.
+
+
+The site is available in ten languages: English, German, French, Spanish, Dutch, Portuguese, Italian, Swedish, Japanese and Simplified Chinese.
+

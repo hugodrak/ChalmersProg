@@ -1,0 +1,20 @@
+A lost comet is one which was not detected during its most recent perihelion passage. This generally happens when data is insufficient to reliably calculate the comet's location or if the solar elongation is unfavorable near perihelion passage. The D/ designation is used for a periodic comet that no longer exists or is deemed to have disappeared.Lost comets can be compared to lost asteroids (lost minor planets), although calculation of comet orbits differs because of nongravitational forces, such as emission of jets of gas from the nucleus. Some astronomers have specialized in this area, such as Brian G. Marsden, who successfully predicted the 1992 return of the once-lost periodic comet Swift–Tuttle.
+
+
+
+
+There are a number of reasons why a comet might be missed by astronomers during subsequent apparitions. Firstly, cometary orbits may be perturbed by interaction with the giant planets, such as Jupiter. This, along with nongravitational forces, can result in changes to the date of perihelion. Alternatively, it is possible that the interaction of the planets with a comet can move its orbit too far from the Earth to be seen or even eject it from the Solar System, as is believed to have happened in the case of Lexell's Comet. As some comets periodically undergo "outbursts" or flares in brightness, it may be possible for an intrinsically faint comet to be discovered during an outburst and subsequently lost.
+Comets can also run out of volatiles. Eventually most of the volatile material contained in a comet nucleus evaporates away, and the comet becomes a small, dark, inert lump of rock or rubble, an extinct comet that can resemble an asteroid (see Comets § Fate of comets). This may have occurred in the case of 5D/Brorsen, which was considered by Marsden to have probably "faded out of existence" in the late 19th century.
+
+Comets are in some cases known to have disintegrated during their perihelion passage, or at other points during their orbit. The best-known example is Biela's Comet, which was observed to split into two components before disappearing after its 1852 apparition. In modern times 73P/Schwassmann–Wachmann has been observed in the process of breaking up.
+
+
+Occasionally, the discovery of an object turns out to be a rediscovery of a previously lost object, which can be determined by calculating its orbit and matching calculated positions with the previously recorded positions. In the case of lost comets this is especially tricky. For example, the comet 177P/Barnard (also P/2006 M3), discovered by Edward Emerson Barnard on June 24, 1889, was rediscovered after 116 years in 2006. On July 19, 2006, 177P came within 0.36 AU of the Earth.
+
+
+Comets can be gone but not considered lost, even though they may not be expected back for hundreds or even thousands of years. With more powerful telescopes it has become possible to observe comets for longer periods of time after perihelion. For example, Comet Hale–Bopp was observable with the naked eye about 18 months after its approach in 1997. It is expected to remain observable with large telescopes until perhaps 2020, by which time it will be nearing 30th magnitude.Comets that have been lost or which have disappeared have names beginning with a D, according to current IAU conventions.
+
+
+
+Comets are typically observed on a periodic return. When they do not they are sometimes found again, while other times they may break up into fragments. These fragments can sometimes be further observed, but the comet is no longer expected to return. Other times a comet will not be considered lost until it does not appear at a predicted time. Comets may also collide with another object, such as Comet Shoemaker–Levy 9, which  collided with Jupiter in 1994.
+

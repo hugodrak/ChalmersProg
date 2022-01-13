@@ -1,0 +1,132 @@
+The Association for Computing Machinery (ACM) is an international learned society for computing. It was founded in 1947, and is the world's largest scientific and educational computing society. The ACM is a non-profit professional membership group, claiming nearly 100,000 student and professional members as of 2019. Its headquarters are in New York City.The ACM is an umbrella organization for academic and scholarly interests in computer science. Its motto is "Advancing Computing as a Science & Profession".
+
+
+The ACM was founded in 1947 under the name Eastern Association for Computing Machinery, which was changed the following year to the Association for Computing Machinery.
+
+
+
+ACM is organized into over 171 local chapters and 37 Special Interest Groups (SIGs), through which it conducts most of its activities. Additionally, there are over 500 college and university chapters. The first student chapter was founded in 1961 at the University of Louisiana at Lafayette.
+Many of the SIGs, such as SIGGRAPH, SIGPLAN, SIGCSE and SIGCOMM, sponsor regular conferences, which have become famous as the dominant venue for presenting innovations in certain fields. The groups also publish a large number of specialized journals, magazines, and newsletters.
+ACM also sponsors other computer science related events such as the worldwide ACM International Collegiate Programming Contest (ICPC), and has sponsored some other events such as the chess match between Garry Kasparov and the IBM Deep Blue computer.
+
+
+
+
+
+ACM publishes over 50 journals including the prestigious Journal of the ACM, and two general magazines for computer professionals, Communications of the ACM (also known as Communications or CACM) and Queue. Other publications of the ACM include:
+
+ACM XRDS, formerly "Crossroads", was redesigned in 2010 and is the most popular student computing magazine in the US.
+ACM Interactions, an interdisciplinary HCI publication focused on the connections between experiences, people and technology, and the third largest ACM publication.
+ACM Computing Surveys (CSUR)
+Computers in Entertainment (CIE)
+ACM Special Interest Group: Computers and Society (SIGCAS) 
+A number of journals, specific to subfields of computer science, titled ACM Transactions. Some of the more notable transactions include:
+ACM Transactions on Computer Systems (TOCS)
+IEEE/ACM Transactions on Computational Biology and Bioinformatics (TCBB)
+ACM Transactions on Computational Logic (TOCL)
+ACM Transactions on Computer-Human Interaction (TOCHI)
+ACM Transactions on Database Systems (TODS)
+ACM Transactions on Graphics (TOG)
+ACM Transactions on Mathematical Software (TOMS)
+ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM)
+IEEE/ACM Transactions on Networking (TON)
+ACM Transactions on Programming Languages and Systems (TOPLAS)Although Communications no longer publishes primary research, and is not considered a prestigious venue, many of the great debates and results in computing history have been published in its pages.
+ACM has made almost all of its publications available to paid subscribers online at its Digital Library and also has a Guide to Computing Literature. Individual members additionally have access to Safari Books Online and Books24x7. ACM also offers insurance, online courses, and other services to its members.
+In 1997, ACM Press published Wizards and Their Wonders: Portraits in Computing (ISBN 0897919602), written by Christopher Morgan, with new photographs by Louis Fabian Bachrach. The book is a collection of historic and current portrait photographs of figures from the computer industry.
+
+
+The ACM Portal is an online service of the ACM. 
+Its core are two main sections: ACM Digital Library and the ACM Guide to Computing Literature.The ACM Digital Library is the full-text collection of all articles published by the ACM in its articles, magazines and conference proceedings. The Guide is a bibliography in computing with over one million entries.
+The ACM Digital Library contains a comprehensive archive starting in the 1950s of the organization's journals, magazines, newsletters and conference proceedings. Online services include a forum called Ubiquity and Tech News digest. There is an extensive underlying bibliographic database containing key works of all genres from all major publishers of computing literature. This secondary database is a rich discovery service known as The ACM Guide to Computing Literature.
+ACM adopted a hybrid Open Access (OA) publishing model in 2013. Authors who do not choose to pay the OA fee must grant ACM publishing rights by either a copyright transfer agreement or a publishing license agreement.ACM was a "green" publisher before the term was invented. Authors may post documents on their own websites and in their institutional repositories with a link back to the ACM Digital Library's permanently maintained Version of Record.
+All metadata in the Digital Library is open to the world, including abstracts, linked references and citing works, citation and usage statistics, as well as all functionality and services. Other than the free articles, the full-texts are accessed by subscription.
+There is also a mounting challenge to the ACM's publication practices coming from the open access movement. Some authors see a centralized peer–review process as less relevant and publish on their home pages or on unreviewed sites like arXiv. Other organizations have sprung up which do their peer review entirely free and online, such as Journal of Artificial Intelligence Research (JAIR), Journal of Machine Learning Research (JMLR) and the Journal of Research and Practice in Information Technology.
+
+
+
+In addition to student and regular members, ACM has several advanced membership grades to recognize those with multiple years of membership and "demonstrated performance that sets them apart from their peers".The number of Fellows, Distinguished Members, and Senior Members cannot exceed 1%, 10%, and 25% of the total number of professional members, respectively.
+
+
+
+The ACM Fellows Program was established by Council of the Association for Computing Machinery in 1993 "to recognize and honor outstanding ACM members for their achievements in computer science and information technology and for their significant contributions to the mission of the ACM." There are 1163 Fellows as of 2019 out of about 100,000 members.
+
+
+In 2006, ACM began recognizing two additional membership grades, one which was called Distinguished Members. Distinguished Members (Distinguished Engineers, Distinguished Scientists, and Distinguished Educators) have at least 15 years of professional experience and 5 years of continuous ACM membership and "have made a significant impact on the computing field". Note that in 2006 when the Distinguished Members first came out, one of the three levels was called "Distinguished Member" and was changed about two years later to "Distinguished Educator". Those who already had the Distinguished Member title had their titles changed to one of the other three titles.
+
+
+Also in 2006, ACM began recognizing Senior Members. According to the ACM, "The Senior Members Grade recognizes those ACM members with at least 10 years of professional experience and 5 years of continuous Professional Membership who have demonstrated performance through technical leadership, and technical or professional contributions". Senior membership also requires 3 letters of reference
+
+
+While not technically a membership grade, the ACM recognizes distinguished speakers on topics in computer science. A distinguished speaker is appointed for a three-year period. There are usually about 125 current distinguished speakers. The ACM website describes these people as 'Renowned International Thought Leaders'. The distinguished speaker program is overseen by a committee 
+
+
+ACM has three kinds of chapters: Special Interest Groups, Professional Chapters, and Student Chapters.As of 2011, ACM has professional & SIG Chapters in 56 countries.As of 2014, there exist ACM student chapters in 41 different countries.
+
+
+
+
+
+ACM and its Special Interest Groups (SIGs) sponsors numerous conferences with 170 hosted worldwide in 2017. ACM Conferences page has an up-to-date complete list while a partial list is shown below. Most of the SIGs also have an annual conference. ACM conferences are often very popular publishing venues and are therefore very competitive. For example, the 2007 SIGGRAPH conference attracted about 30000 visitors, and CIKM only accepted 15% of the long papers that were submitted in 2005.
+
+MobiHoc: International Symposium on Mobile Ad Hoc Networking and ComputingThe ACM is a co–presenter and founding partner of the Grace Hopper Celebration of Women in Computing (GHC) with the Anita Borg Institute for Women and Technology.Some conferences are hosted by ACM student branches; this includes Reflections Projections, which is hosted by UIUC ACM.. In addition, ACM sponsors regional conferences. Regional conferences facilitate increased opportunities for collaboration between nearby institutions and they are well attended.
+For additional non-ACM conferences, see this list of computer science conferences.
+
+
+The ACM presents or co–presents a number of awards for outstanding technical and professional achievements and contributions in computer science and information technology.
+
+Over 30 of ACM's Special Interest Groups also award individuals for their contributions with a few listed below.
+
+
+
+The President of ACM for 2018–2020 is Cherri M. Pancake, Professor Emeritus at Oregon State University and Director of the Northwest Alliance for Computational Science and Engineering (NACSE). She is successor of Vicki L. Hanson (2016-2018), Distinguished Professor at the Rochester Institute of Technology and Visiting Professor at the University of Dundee; Alexander L. Wolf (2014–2016), Dean of the Jack Baskin School of Engineering at the University of California, Santa Cruz; Vint Cerf (2012–2014), an American computer scientist who is recognized as one of "the fathers of the Internet"; Alain Chesnais (2010–2012), a French citizen living in Toronto, Ontario, Canada, where he runs his company named Visual Transitions; and Dame Wendy Hall of the University of Southampton, UK (2008–2010).ACM is led by a Council consisting of the President, Vice-President, Treasurer, Past President, SIG Governing Board Chair, Publications Board Chair, three representatives of the SIG Governing Board, and seven Members–At–Large. This institution is often referred to simply as "Council" in Communications of the ACM.
+
+
+ACM has five "Boards" that make up various committees and subgroups, to help Headquarters staff maintain quality services and products. These boards are as follows:
+
+Publications Board
+SIG Governing Board
+Education Board
+Membership Services Board
+Practitioners Board
+
+
+ACM-W, the ACM council on women in computing, supports, celebrates, and advocates internationally for the full engagement of women in computing. ACM–W's main programs are regional celebrations of women in computing, ACM-W chapters, and scholarships for women CS students to attend research conferences. In India and Europe these activities are overseen by ACM-W India and ACM-W Europe respectively.  ACM-W collaborates with organizations such as the Anita Borg Institute, the National Center for Women & Information Technology (NCWIT), and Committee on the Status of Women in Computing Research (CRA-W).
+
+
+The ACM-W gives an annual Athena Lecturer Award to honor outstanding women researchers who have made fundamental contributions to computer science.  This program began in 2006. Speakers are nominated by SIG officers.
+2006–2007: Deborah Estrin of UCLA
+2007–2008: Karen Spärck Jones of Cambridge University
+2008–2009: Shafi Goldwasser of MIT and the Weitzmann Institute of Science
+2009–2010: Susan J. Eggers of the University of Washington
+2010–2011: Mary Jane Irwin of the Pennsylvania State University
+2011–2012: Judith S. Olson of the University of California, Irvine
+2012–2013: Nancy Lynch of MIT
+2013–2014: Katherine Yelick of LBNL
+2014–2015: Susan Dumais of Microsoft Research
+2015–2016: Jennifer Widom of Stanford University
+2016–2017: Jennifer Rexford of Princeton University
+
+
+ACM's primary partner has been the IEEE Computer Society (IEEE-CS), which is the largest subgroup of the Institute of Electrical and Electronics Engineers (IEEE). The IEEE focuses more on hardware and standardization issues than theoretical computer science, but there is considerable overlap with ACM's agenda. They have many joint activities including conferences, publications and awards. ACM and its SIGs co-sponsor about 20 conferences each year with IEEE-CS and other parts of IEEE. Eckert-Mauchly Award and Ken Kennedy Award, both major awards in computer science, are given jointly by ACM and the IEEE-CS. They occasionally cooperate on projects like developing computing curricula.ACM has also jointly sponsored on events with other professional organizations like the Society for Industrial and Applied Mathematics (SIAM).
+
+
+The ACM Code of Ethics and Professional Conduct lays out codes of behavior for ACM members in their professional and personal conduct. The Code is conveyed under four general categories: General Ethical Principles, Professional Responsibilities, Professional Leadership Principles and Compliance with the Code: 
+
+General Ethical PrinciplesThe Code indicates that computing professionals should acknowledge their work contributes to societal well-being and that all people are impacted by the work of computing professionals. In addition, the Code calls on computing professionals to be obliged to ensure their work, both individually and collectively, benefits all of society, including respecting diversity and environmental sustainability. 
+The Code also calls on computing professionals to avoid harm in their professional and personal lives. Harm can be unintended or not, and can be physical, mental, involve disclosure of information, destruction of property, reputation or the environment. Actions should be taken to mitigate harm and to remedy any unintended harm that occurs do to computing professional work. Risk of computing systems causing harm should also be reported and actively mitigated upon discovery. 
+The Code calls on computing professionals to be honest and trustworthy. This include being forthright when a job or task calls on skills not readily known to the computing professional, and respecting organizational agency. 
+The Code calls on computing professionals to not discriminate. Discrimination is broadly defined, including "discrimination on the basis of age, color, disability, ethnicity, family status, gender identity, labor union membership, military status, nationality, race, religion or belief, sex, sexual orientation, or any other inappropriate factor is an explicit violation of the Code." Efforts to mitigate the consequences of discrimination should be made when discrimination occurs. 
+The Code calls on computing professionals to respect privacy, and should use de-identification and anonymization methods on data when appropriate. Measures to prevent unauthorized data access should also be used. Furthermore, only the minimum amount of data needed to complete the task should be collected, and individuals should retain agency for how their data is used at all times. In a similar vein computing professionals should respect confidentiality when applicable.
+
+Professional ResponsibilitiesComputing professionals should strive for high work quality, both in terms of work process and work result. In that vein, computing professionals should strive to expand their capabilities and competencies both for themselves and the teams in which they operate. As rules for professional work differ from industry to industry, it is important that computing professionals know and respect these rules while maintaining a grounding in ethical conduct. 
+Computing professionals are often occasioned to review the work of others and have their work reviewed. This is a normal part of establishing a high level of work product, and computing professionals should seek such review. It is incumbent on computing professionals to provide comprehensive review of the work of others, both for the actual work and for anything missing (such as ignored risks or impacts) from the work. Computing professionals should also only perform work in which they have an area of competence, and only review the work of others in which they have said competence. 
+Computing professionals also have an affirmative duty to foster public awareness and understanding of the risks and advantages of their work. Such efforts should consider the public's existing understanding, and seek to generate an environment conducive to public engagement. 
+Computing professionals should only access computing and communication resources when authorized or compelled by the public interest. Many data resources reside in unsecured systems, yet their presence in an accessible format is not justification in itself to access them. Similarly computing professionals should design and implement systems that are sufficiently secure, and consider the risks of data being made public when determining what systems to implement to ensure data security. 
+
+Professional Leadership PrinciplesComputing professionals in a positions of leadership has elevated responsibilities, both to society and to the people and organizations that they lead. The public good is a primary concern, and should seek to make public good considerations explicitly considered in their projects and work. As a leader, computing professionals should evaluate progress toward the social good in their projects and work, and seek to engage other computing professionals toward the same. 
+Computing professional leaders should also seek to improve the quality of life for themselves and the people and organizations they lead. This includes physical, mental and emotional well-being, but also seeking out educational and developmental opportunities. This should be done for technical skills, but also for ethical conduct. 
+Computing professional leaders should seek to integrate ethical considerations into automated systems and processes, and take especial care when retiring old systems or dealing with systems with the potential to become integrated with the infrastructure of society. Planning for transition of such systems, and allowing time for society to adapt to the new systems, should be undertaken. 
+
+Compliance With the CodeEstablishing a positive future for computing depends on both technical and ethical elevation of the field. Computing professionals should adhere to these principles and should take reasonable actions to ensure the code is operationalized in practice. This includes expressing concern to colleagues and people possibly violating the Code. 
+Violations of the Code should be reviewed by other computing professionals, not necessarily members of the ACM. Appropriate remedial action as determined by those professionals and as proscribed in the ACM's Code of Ethics and Professional Conduct Enforcement Policy should implemented as necessary.
+

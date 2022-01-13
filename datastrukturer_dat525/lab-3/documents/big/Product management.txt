@@ -1,0 +1,39 @@
+Product management is an organisational lifecycle function within a company dealing with the planning, forecasting, and production, or marketing of a product or products at all stages of the product lifecycle. Similarly, product lifecycle management (PLM) integrates people, data, processes and business systems. It provides product information for companies and their extended supply chain enterprise.
+The role may consist of product development and product marketing, which are different (yet complementary) efforts, with the objective of maximizing sales revenues, market share, and profit margins. Product management also involves elimination decisions. Product elimination begins with the identification of elimination candidates, proceeds with the consideration of remedial actions, continues with a projection of the impact on the business as a whole if a candidate product is eventually eliminated, and concludes with the implementation stage, where management determines the elimination strategy for an item. The product manager is often responsible for analyzing market conditions and defining features or functions of a product and for overseeing the production of the product. The role of product management spans many activities from strategic to tactical and varies based on the organizational structure of the company. To maximize the impact and benefits to an organization, Product management must be an independent function separate on its own.
+While involved with the entire product lifecycle, the product management's main focus is on driving new product development.  According to the Product Development and Management Association (PDMA), superior and differentiated new products—ones that deliver unique benefits and superior value to the customer—are the number one driver of success and product profitability.Depending on the company size and history, product management has a variety of functions and roles. Sometimes there is a product manager, and sometimes the role of product manager is shared by other roles.  Frequently there is Profit and Loss (P&L) responsibility as a key metric for evaluating product manager performance. In some companies, the product management function is the hub of many other activities around the product. In others, it is one of many things that need to happen to bring a product to market and actively monitor and manage it in-market.  In very large companies, the product manager may have effective control over shipment decisions to customers, when system specifications are not being met.
+Product management often serves an inter-disciplinary role, bridging gaps within the company between teams of different expertise, most notably between engineering-oriented teams and commercially oriented teams.  For example, product managers often translate business objectives set for a product by Marketing or Sales into engineering requirements (sometimes called a Technical Specification). Conversely, they may work to explain the capabilities and limitations of the finished product back to Marketing and Sales (sometimes called a Commercial Specification). Product managers may also have one or more direct reports who manage operational tasks and/or a change manager who can oversee new initiatives.  Manufacturing is separate from the research function, the product manager has the responsibility to bridge the gaps if any exist.
+In most technology companies, most product managers possess knowledge in the following areas: computer science, business, and user experience.
+
+
+Product marketing is a component of product management that is under the jurisdiction of a company's product manager or product marketing manager. Responsibilities within product marketing include:
+
+Product Life Cycle considerations
+Product differentiation
+Product naming and branding
+Product positioning and outbound messaging
+Promoting the product externally with press, customers, and partners
+Conducting customer feedback and enabling (pre-production, beta software)
+Launching new products to market
+Monitoring the competition
+
+
+Product development is the process of building products that will be consumed or used by others. Product managers often work collaboritvely with engineers, designers, and other stakeholders to accomplish tasks, such as:
+
+Testing products
+Identifying new product candidates
+Considering new candidates
+Gathering the voice of customers
+Defining product requirements
+Determining business-case and feasibility
+Scoping and defining new products at high level
+Evangelizing new products within the company
+Building product roadmaps, particularly technology roadmaps
+Developing all products on schedule, working to a critical path
+Ensuring products are within optimal price margins and up to specifications
+Ensuring products are manufacturable and optimizing cost of components and procedures.
+
+
+Many refer to inbound (product development) and outbound (product marketing) functions.Inbound product management (aka inbound marketing) is the "radar" of the organization and involves absorbing information like customer research, competitive intelligence, industry analysis, trends, economic signals and competitive activity as well as documenting requirements and setting product strategy.In comparison, outbound activities are focused on distributing or pushing messages, training sales people, go to market strategies and communicating messages through channels like advertising, PR and events.In many organizations the inbound and outbound functions are performed by the same person.As these terms are under discussion, another way of looking at these activities is upstream and downstream product management, where 'upstream' is referring to any activity that helps to define, create, or improve the product, while 'downstream' refers to any activity that promotes the product. This avoids the confusion with the term "inbound marketing" which nowadays clearly refers to a way of doing downstream product management, referring to 'making the product accessible', i.e. it can be found by suspects and prospects (compared to 'outbound marketing', where the product is 'pushed' in front of the suspect or prospect). 
+The confusion stems mainly from the mix up between the term "Marketing" as a discipline, comprising Product Management, MarCom (Marketing Communications), etc. and using the same term 'Marketing' as a synonym for 'Promotion' or 'advertising', i.e. taking a product to the market (i.e. 'downstream').
+It comes as a surprise that this confusion and ambiguity is hard to understand- because if you name the main (value creating) departments in today's organizations, you can clearly assign to Sales, R&D, Operations, and Marketing their respective core functions and areas of responsibility. The core function of Marketing, that differentiates it from Sales, Operations, and R&D is the ownership of the marketing mix (= 4 P: Product, Place, Price, Promotion). Still, many organizations put under 'Marketing' only Market Communications (MarCom), which is just the operational end of marketing and only a subset of what 'Promotion' comprises. From a Product Management perspective, MarCom is a supporting function (like IT, HR, Controlling etc.). In organizations, where the Product Management is weak or not existent, its tasks are taken over by the other departments (i.e. sales defines the distribution ('Place'), operations defines the prices, R&D defines the product, MarCom decides on the promotion.
+

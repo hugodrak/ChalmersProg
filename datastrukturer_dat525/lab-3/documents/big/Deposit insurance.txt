@@ -1,0 +1,148 @@
+Deposit insurance is a measure implemented in many countries to protect bank depositors, in full or in part, from losses caused by a bank's inability to pay its debts when due. Deposit insurance systems are one component of a financial system safety net that promotes financial stability.
+
+
+Banks are allowed (and usually encouraged) to lend or invest most of the money deposited with them instead of safe-keeping the full amounts (see fractional-reserve banking). If many of a bank's borrowers fail to repay their loans when due, the bank's creditors, including its depositors, risk loss. Because they rely on customer deposits that can be withdrawn on little or no notice, banks in financial trouble are prone to bank runs, where depositors seek to withdraw funds quickly ahead of a possible bank insolvency. Because banking institution failures have the potential to trigger a broad spectrum of harmful events, including economic recessions, policy makers maintain deposit insurance schemes to protect depositors and to give them comfort that their funds are not at risk.
+Deposit insurance was formed to protect small unit banks in the United States when branching regulations existed. Banks were restricted by location thus did not reap the benefits coming from economies of scale, namely pooling and netting. To protect local banks in poorer states, the federal government created deposit insurance.
+
+
+Deposit insurance institutions are for the most part government run or established, and may or may not be a part of a country's central bank, while some are private entities with government backing or completely private entities.
+There are a number of countries with more than one deposit insurance system in operation including Austria, Canada (Ontario & Quebec), Germany, Italy, and the United States.
+
+
+According to the IADI, as of 31 January 2014, 113 countries have instituted some form of explicit deposit insurance up from 12 in 1974. Another 41 countries are considering the implementation of an explicit deposit insurance system.
+
+
+
+
+Banks in the Economic Community of Central African States are eligible for an international system called the Deposit Guarantee Fund in Central Africa (FOGADAC). Although the system is well-capitalized, details of its failure response process remain to be determined.
+
+
+South Africa's (DIS) covers depositors up to  R100,000.
+
+
+
+
+In Brazil, the creation of deposit insurance was authorized by Resolution 2197 of 1995, the National Monetary Council. This standard mandated the creation of a protection mechanism for credit holders against financial institutions, called "Credit Guarantee Fund" (FGC). Currently, the FGC is regulated by Resolution 4222 of 2013. The Fiscal Responsibility Act prohibits the use of public funds to finance the losses, so it is formed exclusively by compulsory contributions from the participating institutions. The warranty is limited to R$250,000 per depositor. More recently, the Guarantor Credit Union Fund (FGCoop) was created, in order to protect depositors of credit unions and cooperative banks. As the FGC, the FGCoop guarantees up to R$250,000 and consists of compulsory contributions of cooperatives and cooperative banks.
+
+
+Canada created the Canada Deposit Insurance Corporation (CDIC) in 1967. It is similar to the Federal Deposit Insurance Corporation in the United States. Since 1967, 43 financial institutions have failed in Canada and all were members of CDIC. There have been no failures since 1996. Information on the Canadian system is found at http://www.cdic.ca. Insurance is restricted to registered member institutions, and covers only the first C$100,000 in very specific categories of accounts. Credit unions and Quebec's caisse populaire system are not insured Federally, because they are created under Provincial charters and backed by Provincial insurance plans, which generally follow the Federal model. Funds in a foreign currency, not Canadian dollars, are not insured, such as a US dollar accounts even when held in a registered CDIC financial institutions. Guaranteed Investment Contracts with a longer term than 5 years are also not insured. Funds in foreign banks operating in Canada may or may not be covered depending on whether they are members of CDIC. Some funds in the Registered Retirement Savings Plan or Registered Retirement Income Fund at their bank may not be covered if they are invested in mutual funds or held in specific instruments like debentures issued by government or corporations. The general principle is to cover reasonable deposits and savings, but not deposits deliberately positioned to take risks for gain, such as mutual funds or stocks.
+The roots of this reform can be traced back to the 19th century, such as the Upper Canada's financial problems of 1866, the North American panic of 1872 and the 1923 failure of Toronto's Home Bank, symbolized today by Casa Loma. Historically, in Canada, regional risk has always been spread nationally within each large bank, unlike the uneven geography of US unit banking, layered with savings & loans of regional or national size, which in turn disperse their risk through investors. Generally speaking, the Canadian banking system is well regulated, in part by the Office of the Superintendent of Financial Institutions (Canada), which can in an extreme case close a financial institution. That and Canada's tight mortgage rules mean the risk of bank failures similar to the US are much less likely.
+
+
+In Mexico, the Instituto para la Protección al Ahorro Bancario (IPAB) is the deposit insurance set up by the country for account holders in Mexico. It insures up to 400,000 UDIs (Unidad de Inversión), the equivalent of $2,406,702.40 pesos for each account. In 1981, the General Law of Credit Institutions and Auxiliary Organizations provided for the creation of a fund to protect credit obligations assumed by banks.
+
+
+
+The Federal Deposit Insurance Corporation (FDIC) is the deposit insurer for the United States. In the antebellum period and the 1920s, there were various deposit insurance schemes. Those based on self-regulation via mutual liability were successful; compulsory state-based insurance schemes were not. A look at Texas in the years 1919–26 shows that the deposit insurance for state-chartered banks increased the likelihood of bank failure during the period. The United States was the second country (after Czechoslovakia) to institute national deposit insurance when it established the FDIC in the wake of the 1933 banking crisis that accompanied the Great Depression.
+Most credit unions in the United States are insured by the National Credit Union Administration (NCUA), a separate federally-chartered agency, while others rely on private insurance arrangements. The FDIC and NCUA each insure up to $250,000 for each owner at institution. Separately from these, the Securities Investor Protection Corporation provides limited asset protection, but not insurance, for the cash and securities of the customers of failed investment brokerages.
+In Massachusetts, the Depositors Insurance Fund (DIF) insures deposits in excess of the FDIC limits at state-chartered savings banks.
+
+
+Directive 94/19/EC of the European Parliament and of the Council of 30 May 1994 on deposit-guarantee schemes requires all member states to have a deposit guarantee scheme for at least 90% of the deposited amount, up to at least 20,000 euro per person. On October 7, 2008, the Ecofin meeting of EU's ministers of finance agreed to increase the minimum amount to 50,000. Timelines and details on procedures for the implementation, which is likely to be a national matter for the member states, was not immediately available. The increased amount followed on Ireland's move, in September 2008, to increase its deposit insurance to an unlimited amount. Many other EU countries, starting with the United Kingdom, reacted by increasing its limit to avoid that people transfer savings to Irish banks.
+In November 2007 a comprehensive report was published by EU, with a description and comparison of each Insurance Guarantee Scheme in place for all EU member states. The report concluded that many of the schemes had restricted the appliance of guarantees to retail consumers, usually private individuals although small or medium (SME) businesses sometimes also were placed into the retail category. All schemes are do not apply for big wholesale customers under the argument the latter are often in a better position than retail customers to assess the financial risks of particular firms with whom they engage or are able themselves to reduce their risk by using several financial banks/institutes. The report recommend this practice to continue, as limiting of the scheme's to "retail customers (excl./incl. SME businesses)" helps to reduce the cost of the scheme but also helps to increase its available funds towards those who actually need the guarantee when it is activated for the protection of claimants.
+
+
+From October 2008, many EU countries increased the amount covered by their deposit insurance schemes. Since these amounts are typically encoded in legislation, there was a certain delay before the new amounts were formally valid.
+[6]
+
+Footnote: (*) According to Art. 7 (1a) of Directive 94/19/EC all EU Member States were expected to increase the amount to EUR 100,000 as of 31 December 2010. This is the case in all EU countries. For countries with non-EURO currency the limits are near to EUR 100,000 e.g. in Denmark DKK 750,000 which is near to that limit, depending on EUR-DKK rate.
+
+
+
+
+Deposit insurance in Albania is handled by the Albanian Deposit Insurance Agency (Agjencia e Sigurimit të Depozitave) and covers deposits up to a maximum of ALL2,500,000 (around US$23,000).
+
+
+Deposit insurance in Andorra is handled by the Institut Nacional Andorrà de Finances and covers deposits up to a maximum limit of EUR100,000 made by natural persons and legal entities, irrespective of their nationality or domicile.
+
+
+Deposit insurance in Belarus is handled by the Agency of Deposit Compensation (Агенцтва гарантаванага пакрыцця банкаўскіх укладаў) and covers 100% of deposits, but only those belonging to individuals, not organizations.
+
+
+Deposit insurance in Iceland is handled by Depositors' and Investors' Guarantee Fund (Tryggingarsjóður) and covers a minimum of 20 887 euros. However, the fund was drastically insufficient to cover the bank failures of the 2008–2012 Icelandic financial crisis, particularly Icesave. This case shows the limits of deposit insurance in protecting against systemic failure (as opposed to the collapse of a single bank or other institution), especially when a small country offers banking to international customers.
+
+
+Deposit insurance in Liechtenstein is handled by the Liechtenstein Bankers Association and covers deposits up to CHF100,000.
+
+
+Banks operating in Monaco participate in the French deposit guarantee scheme, i.e. the Fonds de Garantie des Depôts (FGD), on the same conditions as French banks.
+
+
+Deposit insurance in Norway is handled by the Norwegian Banks' Guarantee Fund (Bankenes sikringsfond) and covers deposits up to 2 million NOK.
+
+
+Russia enacted deposit insurance law in December 2003 and established the national deposit insurance agency (DIA) in 2004. Until 2004, Russian banking system was divided: obligations of state-owned Sberbank were guaranteed by law, while other banks were not insured in any way, creating an unfair advantage for Sberbank. The law addresses only individuals' deposits. Maximum compensation is limited to 1,400,000 roubles (equivalent to approximately 21,800 US dollars or 19,500 Euro at September 2016 exchange rate). As at January 2008, DIA funds exceeded 68 billion roubles (2.8 billion US dollars). There were 15 "insured events" (bankruptcy cases involving DIA intervention) in 2007 with resulting payout reaching 350 million roubles.The agency is set up as a state-owned corporation, managed jointly by Central Bank and the government of Russia. DIA membership is mandatory requirement for any bank operating with private investors' money. Central Bank of Russia used admission of banks into DIA system to weed out unsound banks and money launderers. The murder of Andrey Kozlov, the Central Bank executive in charge of DIA admission, was directly linked to his non-compromising attitude to money launderers.
+
+
+Deposit insurance in San Marino is handled by the Central Bank of San Marino and covers deposits up to EUR50,000.
+
+
+Switzerland has a privately operated deposit insurance system called Deposit Protection of Swiss Banks and Securities Dealers. It guarantees up to CHF 100 000 per bank customer per bank. Membership is compulsory for all banks and securities dealers that are regulated by the Swiss Financial Market Supervisory Authority (FINMA).It had covered depositors in 1993 in the case of the failure of Spar- und Leihkasse Thun SLT, Thun. The next cases happened in 2007 with the liquidation of AB FIN SA (a securities dealer) in Lugano and with Kauphting (Luxembourg) SA, Geneva branch which was closed on October 9, 2008. Clients of this bank received the payments (at the time up to CHF 30 000 per customer) within three weeks.
+
+
+Deposit insurance in Turkey is handled by Savings Deposit Insurance Fund (Tasarruf Mevduatı Sigorta Fonu) and covers a maximum of 100,000 TL.(approx. $30,000) 
+
+
+The system of deposit guarantee in Ukraine operates according to the Law of Ukraine «On Households Deposit Guarantee System» of February 23, 2012, Ref. number 4452-VI. and covers deposits up to 200,000 UAH (about 7,550 US dollars or 6,660 Euro at September 2016 rates).
+
+
+In response to the financial crisis in 2008, both Guernsey and Jersey introduced deposit compensation schemes. The Guernsey scheme was enacted in November 2008 and offers compensation of up to £50,000 per depositor, subject to an overall cap of £100 million in any five-year period. The scheme does not cover company or, with minor exceptions, trust accounts. The Jersey scheme was enacted in November 2009 and offers a similar level of protection.
+The Isle of Man bank depositors' insurance scheme was introduced in 1991, to cover 75 percent of the first £15,000 per depositor per bank, but it was the October 2008 crisis-stricken Icelandic government's seizure of Kaupthing Bank hf in Iceland after the United Kingdom suspended the trading licence of Kaupthing's British subsidiary that compelled a radical revision of deposit insurance in the Isle of Man. Unable to secure reserves held by Kaupthing hf in Iceland or Kaupthing's British subsidiary to facilitate customer withdrawals, Kaupthing Singer and Friedlander (Isle of Man) Ltd. saw its Isle of Man banking licence suspended after operating less than a year, compelling the firm to request to be wound up. The Isle of Man government called an emergency session of the Tynwald parliament which voted unanimously to bring the Isle of Man depositors' compensation scheme into line with the newly enlarged scheme in the United Kingdom, guaranteeing with immediate effect 100 percent of the first £50,000 per depositor per bank, and studying amendments for the subsequent inclusion within the scheme of corporate and charitable accounts. The Isle of Man government also pressed the Icelandic government to honour Kaupthing hf's irrevocable and binding guarantee of all depositors' funds held by Kaupthing, Singer and Friedlander (Isle of Man) Ltd.
+
+
+The last bank failure in which Australian depositors lost money (and then only a minimal amount) was that of a trading bank, the Primary Producers Bank of Australia, in 1931 (Fitz-Gibbon and Gizycki 2001). Since the early 1930s, banking sector problems have been resolved without losses to depositors.The Australian Prime Minister announced on October 12, 2008 that, in response to the Economic crisis of 2008, 100% of all deposits would be protected over the subsequent three-year period. This was subsequently reduced to a maximum of $1 million per customer per institution. This measure comes on top of existing mandates of APRA and ASIC to monitor Australian banks and deposit taking authorities to ensure that their risks do not compromise the safety of depositors funds. On 11 September 2011, it was announced that the guarantee would fall to $250,000, effective 1 February 2012.The Australian Government Guarantee Scheme for Large Deposits and Wholesale Funding ended in 2015.
+New Zealand announced the Crown Retail Deposit Guarantee Scheme, an opt-in scheme for retail deposits on October 12, 2008. An extension to the scheme was announced on 25 August 2009 and the scheme ran until 31 December 2011. From 1 January 2012 bank deposits in New Zealand are not protected by the Government.
+
+
+
+
+In Bangladesh deposit insurance scheme was first introduced in 1984 by dint of "The Deposit Insurance Ordinance 1984". In July 2007 the Ordinance was repealed by an Act passed by the parliament called "The Bank Deposit Insurance Act 2000". At present, Deposit Insurance system in Bangladesh is administered by the said Act. In accordance to the Act Bangladesh Bank is authorized to carry out a Fund is called the "Deposit Insurance Trust Fund(DITF)". The DITF is administered and managed by a Trustee Board. In case of winding up of an insured bank, every depositor of the bank will be paid an amount not exceeding to BDT 100,000 as per "The Bank Deposit Insurance Act 2000". 
+
+
+China recently introduced preliminary proposals for a bank deposit insurance system, which will eventually cover all individual bank accounts for up to $81,000. With the vast majority of Chinese savers holding far less than the maximum, and the central bank has calculated that 99.6% of depositors will be protected in full. The plan is expected to take effect in January, 2015, and is intended by Chinese officials to increase certainty and help customers better assess risks and protect the nation's financial stability in the event of a crisis.  China has one of the world's biggest deposit bases and as of October, bank deposits totaled about $18.2 trillion.
+
+
+India introduced Deposit Insurance in 1962. The Deposit Insurance Corporation commenced functioning on January 1, 1962 under the aegis of the Reserve Bank of India (RBI). 1971 witnessed the establishment of another institution, the Credit Guarantee Corporation of India Ltd. (CGCI). In 1978, the DIC and the CGCI were merged to form the Deposit Insurance and Credit Guarantee Corporation (DICGC).
+
+
+Hong Kong Deposit Protection Board is an independent and statutory institution formed to manage and supervise the operation of Deposit Protection Scheme. The maximum protection amount of deposit was HK$100,000 in 2006 (when the Hong Kong Deposit Protection Board was set up), it is now with a limit up to HK$500,000 (or equivalent in RMB or other foreign currency).
+
+
+Deposit Insurance Corporation of Japan, founded in 1971 and based in Tokyo, oversees this function for institutes other than agricultural and fishery co-operative .
+For agricultural and fishery co-operative and Norinchukin, Agricultural and Fishery Co-operative Savings Insurance Corporation oversees this.
+
+
+Malaysia introduced its Deposit Insurance System in September 2005. Malaysia Deposit Insurance Corporation (MDIC) (Malay: Perbadanan Insurans Deposit Malaysia (PIDM)) is a statutory body formed under the Malaysia Deposit Insurance Corporation Act (Akta Perbadanan Insurans Deposit Malaysia). All commercial and Islamic banks, including foreign banks operating in Malaysia, are compulsory member institutions of PIDM. The maximum coverage limit is RM250,000 per depositor per member institution. Islamic accounts, joint accounts, trust accounts and accounts of sole proprietorships, partnerships or persons carrying on professional practices are separately insured up to the RM250,000 limit.
+PIDM is also mandated to provide incentives for sound risk management in the financial system, as well as promote and contribute to the stability of the financial system.
+For more information about MDIC, visit MDIC's website at http://www.pidm.gov.my
+
+
+During the 2007 global financial crises, Mongolia extended blanket guarantee to protect all bank deposits. At the time the guarantee coverage was 1.7 times higher than the state budget of the country.On 10 January 2013, the Parliament of Mongolia adopted the Law on Insurance for Bank Deposits that establishes a mandatory insurance scheme for the protection of bank monetary deposits.
+
+
+Deposits in the Philippines up to PHP500,000 is covered by the Philippine Deposit Insurance Corporation [PDIC]. It was raised from the previous insurance coverage of PHP250,000.
+
+
+Deposits in Singapore is covered by the Singapore Deposit Insurance Corporation [SDIC] up to a maximum of $75,000 per bank or finance company for each individual depositor. 
+
+
+South Korea covers bank deposits by Korea Deposit Insurance Corporation (KDIC) to maximum of 50 million wons per bank per each individual. KDIC, founded in 1996 just before the East Asian financial crisis of 1997, proved its effectiveness through the crisis and gradually upgraded its capacity over the years.
+Deposits made to credit unions of South Korea are not covered by KDIC, but the Korean Federation of Credit Cooperatives (KFCC) and the National Credit Union Federation of Korea (NCUFK) regulates their respective members and covers deposits to the same amount covered by KDIC.
+
+
+Deposits in the Taiwan up to NT$3,000,000 is covered by the Central Deposit Insurance Corporation. It was raised from the previous insurance coverage of NT$1,500,000. (or equivalent in dollar or other foreign currency).
+
+
+The complete deposit protection system was introduced in Thailand by the establishment of the Deposit Protection Agency (DPA) on 11 August 2008, in accordance with the Deposit Protection Agency Act B.E. 2551. The objectives of the Agency as specified by law are providing protection to deposits in financial institutions system; administration of institutions subject to control under the Financial Institutions Businesses Act and liquidation of financial institutions whose licenses have been revoked. Deposit in Thailand was fully guaranteed until 10 August 2011. From 11 August 2011 until 10 August 2012, the coverage dropped to 50 million baht per depositor per bank. Since then coverage has been limited to THB one million per depositor per bank.
+
+
+When a nation state has a deposit insurance scheme, foreign investors (aka non-resident bank depositors) are more likely to passively deposit larger amounts of money in the banks of said nation state (that has a bank deposit insurance scheme).
+Having a bank deposit insurance scheme (for all practical purposes) guarantees that a nation state will more likely have a higher rate of passive foreign investment (within the margin of insurable amount).
+Passive foreign investment in a nation state's finance system allows for more lending to be made when global finance system conditions constrict the amount of lendable money. There has been substantial research done over the years on the impact on foreign investment of bank deposit insurance schemes.
+Deposit insurance enables banks to increase the money supply, without it underfunded banks might suffer a bank run which is prevented by the insurance. This encourages inflation.
+
+
+Detractors of deposit insurance claim the schemes introduce a moral hazard issue, encouraging both depositors and banks to take on excessive risks. Without deposit insurance, banks would compete prudently for deposits because depositors would prefer safe banks over risky banks to guard their money. With deposit insurance, banks can take excessive risks because depositors do not fear for their deposits' safety and thus do not move their money to safer banks. The risks are shared by all banks, safe or risky. 
+If deposit insurance is provided by another business or corporation, like other insurance agreements, there is a presumption that the insurance corporation would either charge higher rates or refuse to cover banks that engaged in extremely risky behavior, which not only solves the problem of moral hazard but also reduces the risk of a bank run.
+The Bibby plan, whichavoids the problem of moral hazard but still prevents bank runs, would have the state provide deposit insurance, but the banks would pay regular premiums to the state reflecting the extent of the deposit insurance, which could be at the choice of the banks, and the inherent risk in that particular bank. The paln would allow some element of differentiation between banks in level of riskiness and in the level of insurance offered.
+

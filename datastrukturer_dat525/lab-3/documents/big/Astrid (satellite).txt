@@ -1,0 +1,12 @@
+Astrid-1 and Astrid-2 were two microsatellites designed and developed by Swedish Space Corporation on behalf of the Swedish National Space Board. They were piggyback launched on a Cosmos-3M launch vehicle from Plesetsk, Russia. Astrid 1 on January 24, 1995 and Astrid 2 on December 10, 1998.
+
+
+Sweden's first microsatellite was piggybacked with the launch of Tsikada, a Russian navigation satellite and FAISAT, a United States communications satellite.
+It carried an Energetic Neutral Atom imager called PIPPI (Prelude in Planetary Particle Imaging), an Electron Spectrometer called EMIL (Electron Measurements - In-situ and Lightweight) and two UV imagers called MIO (Miniature Imaging Optics), one for imaging the Earth's aurora and one for observing Lyman alpha-emission from the Earth's geocorona. This payload, named after characters in Astrid Lindgren's books (the idea came from a Russian scientist ), was developed by the Swedish Institute of Space Physics in Kiruna.
+On March 1, a DC to DC converter for the scientific instruments failed, possibly due to a short circuit, ending its scientific mission. However, the satellite was operated until September 27, serving as a testbed for various software algorithms and store-and-forward communications.
+The entire satellite was built in a year and the cost, including launch, was 1.4 million U.S. dollars.
+
+
+Astrid-2 was Sweden's second microsatellite and it was piggybacked with Nadezhda 5, a Russian navigation satellite on December 10, 1998 on a Kosmos-3M rocket from Plesetsk in Russia.Its payload, built by the Swedish Institute of Space Physics in Kiruna and Uppsala and the Royal Institute of Technology (Alfven Laboratory) in Stockholm, was EMMA (Electrical and Magnetic field Monitoring of the Aurora), LINDA (Langmuir INterferometer and Density experiment for Astrid-2), MEDUSA (Miniaturized Electrostatic DUal-tophat Spherical Analyzer) and PIA (Photometers for Imaging the Aurora). It was used to explore the electric and magnetic fields in the upper ionosphere and to measure neutral and charged particles and electron density.
+On July 24, 1999, the contact with the satellite was lost. During its 7 and a half months in space, Astrid-2 delivered a large amount of information to researchers.
+

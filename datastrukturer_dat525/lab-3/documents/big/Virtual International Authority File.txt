@@ -1,0 +1,14 @@
+The Virtual International Authority File (VIAF) is an international authority file. It is a joint project of several national libraries and operated by the Online Computer Library Center (OCLC).
+
+
+Discussion about having a common international authority started in the late 1990s. After a series of failed attempts to come up with a unique common authority file, the new idea was to link existing national authorities. This would present all the benefits of a common file without requiring a large investment of time and expense in the process.The project was initiated by the US Library of Congress (LC), the German National Library (DNB) and the OCLC on August 6, 2003. The Bibliothèque nationale de France (BnF) joined the project on October 5, 2007.
+The project transitioned to being a service of the OCLC on April 4, 2012.The aim is to link the national authority files (such as the German Name Authority File) to a single virtual authority file. In this file, identical records from the different data sets are linked together. A VIAF record receives a standard data number, contains the primary "see" and "see also" records from the original records, and refers to the original authority records. The data are made available online and are available for research and data exchange and sharing. Reciprocal updating uses the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) protocol.
+The file numbers are also being added to Wikipedia biographical articles and are incorporated into Wikidata.
+
+
+VIAF's clustering algorithm is run every month.  As more data are added from participating libraries, clusters of authority records may coalesce or split, leading to some fluctuation in the VIAF identifier of certain authority records.
+
+
+
+
+

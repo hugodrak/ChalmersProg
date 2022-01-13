@@ -1,0 +1,126 @@
+A phase-gate process (also referred to as a stage-gate process or waterfall process), is a project management technique in which an initiative or project (e.g., new product development, software development, process improvement, business change) is divided into distinct stages or phases, separated by decision points (known as gates).
+At each gate, continuation is decided by (typically) a manager, steering committee, or governance board. The decision is made on forecasts and information available at the time, including the business case, risk analysis, and availability of necessary resources (e.g., money, people with correct competencies).
+
+
+A phased approach to investment decisions for development arose in large-scale projects for mechanical and chemical engineering, particularly since the 1940s. One source described eight phases. In 1958, the American Association of Cost Engineers created four standard cost estimate type classifications to match these development and approval phases. Other industries with complex products and projects picked up on the process. For example, NASA practiced the concept of phased development in the 1960s with its phased project planning or what is often called phased review process. The phased review process was intended to break up the development of any project into a series of phases that could be individually reviewed in sequence. Review points at the end of each phase required that a number of criteria be met before the project could progress to the next phase. The phased review process consisted of five phases with periodic development reviews between phases. NASA's phased review process is considered a first generation process because it did not take into consideration the analysis of external markets in new product development.A variation of the phase-gate process, known as the stage-gate process, arose from the work of Robert G. Cooper.The waterfall process variant arose through publication of Winston Royce's paper on large developments, as it illustrated work cascading down from each phase as a series of waterfalls from which work could not return to an earlier phase.Phase-gate processes are often called front-end loading or big design up front.
+
+
+The traditional phase-gate process has five phases with four gates. The phases are:
+Scoping
+Build business case
+Development
+Testing and validation
+LaunchAhead of this process there is often a preliminary phase called ideation or discovery, and after the fifth phase the process typically ends with the post-launch review. Major new products go through the full five-phase process. Moderate risk projects (such as extensions and enhancements) often use a reduced 3-phase version, which combines the scoping with the business case phase, and developing with the testing phase. Very simple changes (such as a marketing request) may be executed using a light two-phase process, where the launch is rolled into development and testing too.
+
+
+Gates provide a point during the process where an assessment of the quality of an idea is undertaken. It includes three main issues:
+
+Quality of execution: Checks whether the previous step is executed in a quality fashion.
+Business rationale: Does the project continue to look like an attractive idea from an economic and business perspective.
+Action plan: The proposed action plan and the requested resources reasonable and sound.A gate can lead to one of five possible results: go, kill, hold, recycle, or conditional go.Gates have a common structure and consist of three main elements:
+
+Inputs: What the project manager and team deliver to the decision point. These deliverables are decided at the output of the previous gate, and are based on a standard menu of deliverables for each gate.
+Criteria: Questions or metrics on which the project is judged in order to determine a result (go/kill/hold/recycle) and make a prioritization decision.
+Outputs: Results of the gate review—a decision (go/kill/hold/recycle), along with an approved action plan for the next gate, and a list of deliverables and date for the next gate.
+
+
+This section on the phases or stages of this phase-gate or Stage-Gate process is taken from: R.G. Cooper, Winning at New Products: Creating Value Through Innovation, 5th edition, New York, NY: Basic Books, Perseus Books Group, 2017; and also from earlier editions.
+
+
+Deciding what projects the company desires and is capable to pursue. During this phase it is common for companies to take part in idea generation activities such as brainstorming or other group thinking exercises. Once the idea generation team has selected a project that they would like to go forward with, it must be passed on to the first gate and therefore screened by the organization's decision makers.
+When searching for new product ideas it is beneficial for an organization to look to the outside world to suggest business opportunities. Using methods such as those found in empathic design can be quite helpful. Communicating with customers to understand how and why they use products can produce great strides in idea generation. Specifically, communicating with lead users can provide great feedback to the developers, as these customers are most likely to feel most passionately about the product. In addition to communication with lead users, it may be helpful for developers to communicate with suppliers. By understanding all of the types of business that their materials are being used for, developers may be able to act upon previously untapped possibilities.
+
+
+The first phase of the product development process is scoping. During this step the main goal is to evaluate the product and its corresponding market. The researchers must recognize the strengths and weaknesses of the product and what it is going to offer to the potential consumer. The competition must also be evaluated during this phase. It is important for the researchers to understand who and what is already in the market as well as what can potentially be developed. By determining the relative level of threat from competitors, the management team will be able to recognize whether or not they should go forward with the production of the product.
+
+
+Once the new product passes through the gate at the end of the scoping phase, the next phase in the phase-gate process is building the business case and plan. This is the last phase of concept development where it is crucial for companies to perform a solid analysis before they begin developing the product. This phase is generally difficult, complex, and resource-intensive. However, companies must put forth a strong effort in this phase for it is directly related to the success and development of a new product. There are four main steps that comprise this phase: product definition and analysis, building the business case, building the project plan, and feasibility review.
+
+
+The first step, product definition and analysis, is composed of a series of activities that will provide the information to define and justify the development of a new product. One of the first of these activities is the user needs and wants study where customer value is determined. This addresses questions about the product such as what benefits does the product provide and what features should the product have. During this time the company should conduct surveys and interviews with existing and potential customers, along with staff members. Next, the company must conduct a market analysis. They must determine the market size and segmentation, rate of growth, customer trends and behavior, and what channels reach these customers. Once the market analysis is complete the company must then conduct a competitive analysis. It is important to know how your competitors operate in addition to their strengths and weaknesses. This will not only help you build a great product, but will also help in determining how and where to launch your new product. Together these activities will help define the product and provide a foundation for the marketing strategy. Next, the company must build a technically feasible product concept, which includes the substance and methods needed to produce the new product. Once this is completed the company can then produce a production and operations cost analysis along with a market and launch costs analysis. Next, the company can begin to test the concept they have developed. This is when early prototypes are developed and presented to staff and consumers to gain feedback and gauge customer reaction. From this the company can make the necessary changes and see the sales potential of the product. This feedback will also help the company build a solid product definition. Lastly, the company will then conduct the business analysis, risk analysis, and financial analysis of the new product.
+
+
+The business case is a document that defines the product and provides the rationale for developing it. This document will vary in format amongst companies, but the primary components are the following: results of the activities of product definition and analysis; legal and regulatory requirements; safety, health, and environmental considerations; assumptions needed to draw the conclusions made, and why it is believed they are valid and reasonable; and out-of-bounds criteria that indicate certain changes/events which will mandate an emergency business case review. This document will be referred to throughout the development process and edited when necessary.
+
+
+The project plan includes: a scheduled list of tasks and events along with timelines for milestones throughout the development process; the personnel, time, and financial resources needed to complete the project; and an expected launch date for the release of the new product.
+
+
+The last step of building the business case and plan is the feasibility review. This is when management, along with other departments of the company, reviews the rationale for pursuing the product. They analyze the information provided by the previous steps in this process to decide whether or not the product should move forward. If it is decided to be pursued then it passes through gate two and moves on to the product development phase.
+
+
+During the development phase, plans from previous steps are actually executed. The product's design and development is carried out, including some early, simple tests of the product and perhaps some early customer testing. The product's marketing and production plans are also developed. It is important that the company adheres to their overall goal of the project, which is reflected in these production and marketing plans. Doing this will allow them to definitively decide who they will market their product to and how they will get the product to that target audience. The development team maps out a realistic timeline with specific milestones that are described as SMART: specific, measurable, actionable, realistic, and time-bound. The timeline is frequently reviewed and updated, helping the team stay on task and giving management information about the product's progress. In the development phase, the product builds momentum as the company commits more resources to the project and makes full use of cross-functional teamwork as the marketing, technical, manufacturing, and sales departments all come together to offer their expert opinions. Having a diversified and parallel development phase ensures that the product continues to meet the company's technical and financial goals. A diverse team allows specific roles and leadership positions to develop as team members make contributions using their strongest attributes. With members having clearly defined roles, tasks can be performed concurrently ensuring a much more efficient development process. The ultimate deliverable of the development phase is the prototype, which will undergo extensive testing and evaluation in the next phase of the process.
+
+
+This phase provides validation for the entire project. Areas that will be evaluated include: the product itself, the production/manufacturing process, customer acceptance, and the financial merit of the project. This phase includes three types of testing: near testing, field testing, and market testing.
+
+
+The main objective of near testing is to find any bugs or issues with a product. A key point to remember here, highlighted by Stephan Lowry (Author of 'The Stoner Bible'), is that the product is no longer a prototype and that it has almost all the features of the commercial product. Testing will be done initially by in-house staff, and customers and partners who are close to the firm. It is important to ensure that those testing have an understanding of how the product should perform, so they know what it should or shouldn't be doing. Members of the research and development team are usually present to observe the participants using the product and take any notes or data that may be useful.
+
+
+Field testing, or beta testing, is done by those who can provide valuable feedback on the product. This usually lasts a long period of time and the participants can include customers, partners, or anyone who is not familiar with the producing company. At this juncture the product fully resembles its planned launch version in all aspects; therefore the participants' interaction rate will be higher because they know all the features and benefits. During this phase there are three primary objectives to be achieved. The first objective is to see how much the participant is interested. It is also worthwhile to note which individual attribute they prefer and if they would buy the product. Next, determine how the customer uses the product and evaluate its durability. Confirm the environment in which the customers will be using the product. Recording and analyzing customer feedback is the final step in the field testing phase. This feedback may be used to help inform any minor design improvements that need to be made. The sales and marketing team will also be a beneficiary of field testing feedback; they can use this information to help focus their sales presentation.
+
+
+Unlike the other two test activities, market testing is considered optional. A solid marketing and launch plan along with confidence in the product's ability to sell helps to inform the key decision makers at the test and validation gate. If there is any uncertainty in the marketing or launch plans there are two options to consider. First, a simulated market test may be run, in which customers will be exposed to new products in an advertising and purchasing situation. The goal of this test is to obtain an early forecast of sales and make any necessary adjustments to the marketing plan. The second test involves trial sales, and is done through specific channels, regions, or consumer demographics.
+
+
+The product launch is the culmination of the product having passed all previous gates. The producer must come up with a marketing strategy to generate customer demand for the product. The producer must also decide how large they anticipate the market for a new product to be and thus determine the size of their starting volume production. Part of the launch phase is training sales and support personnel to be familiar with the product so that they can assist in sales of this product. Setting a product price is an aspect of the product launch that the producer must consider. They should avoid either undershooting or overpricing the potential market. Finally, distribution is a major decision making part of the launch process. Selecting a distributor or value-added reseller for a product must be done with careful thought and potential sales in mind.
+Having a smooth launch process that includes effective marketing and a knowledgeable and prepared sales force may result in faster time to profit due to early customer acceptance.
+
+
+Most firms suffer from having far too many projects in their product development pipelines, for the limited resources available. "Gates with teeth" help to prune the development portfolio of weak projects and deal with a gridlocked pipeline. Also, a robust innovation strategy, coupled with strategic buckets, refocuses resources on high value development initiatives.
+Note that gates are not merely project review points, status reports or information updates. Rather, they are tough decision meetings, where the critical go/kill and prioritization decisions are made on projects. Thus the gates become the quality control check points in the process ensuring that you do the right projects and also do the projects right.
+Gates must have clear and visible criteria so that senior managers can make go/kill and prioritization decisions objectively. Most importantly, these criteria must be effective—that is, they must be operational (easy to use), realistic (make use of available information) and discriminating (differentiate the good projects from the mediocre ones). These criteria can be:
+
+Must meet: Knock-out questions in a check list, designed to kill poor projects outright
+Should meet: Highly desirable characteristics which are rated and added in a point-count schemeA sample list of criteria is shown below, from which a scorecard can be developed that can then be used to score projects at a gate meeting.
+
+Must meet (checklist - yes/no)
+Strategic alignment (fits business unit strategy)
+Reasonable likelihood of technical feasibility
+Meet EH&S policies
+Positive return versus risk
+Should meet (scored on 0-10 scale)
+Strategic
+Degree to which projects aligns with business unit strategy
+Strategic importance
+Product advantage
+Unique benefits
+Meets customer needs better than existing or competing product
+Value for money
+Market attractiveness
+Market size
+Market growth
+Competitive situation
+Synergies (leverages core competencies)
+Marketing synergies
+Technological synergies
+Manufacturing / processing synergies
+Technical feasibility
+Technical gap
+Complexity
+Technical uncertainty
+Operational viability
+Go to market
+Sales, marketing, and billing
+Support and operation
+Risk versus return
+Expected profitability (e.g., net present value)
+Return (e.g., internal rate of return)
+Payback period
+Certainty of returnIf the answers are "no" or "low" to many of these questions, the decision should be to send the project back for reconsideration, (such as, to adjust the scope, timelines, funding, or solution) or to kill it off altogether.
+
+
+There are a number of advantages to using the phase-gate process for product development, which typically result from its ability to identify problems and assess progress before the project's conclusion. Poor projects can be quickly rejected by disciplined use of the process. When using the phase-gate process on a large project, the process can help reduce complexity of what could be a large and limiting innovation process into a straightforward rule-based approach. When a phase-gate process incorporates cost and fiscal analysis tools such as net present value, the organization can potentially be provided with quantitative information regarding the feasibility of developing potential product ideas. Finally, the process is an opportunity to validate the updated business case by a project's executive sponsors.One problem with the phase-gate process is the potential for structural organization to interfere with creativity and innovation, as overly structured processes may cause creativity to be reduced in importance and to hinder the largely iterative process of innovation.
+
+
+The opportunity management funnel is a visual representation of phase-gate decision making. Opportunity management has been defined as "a process to identify business and community development opportunities that could be implemented to sustain or improve a local economy." The components of opportunity management are:
+
+Identifying opportunities.
+Evaluating and prioritizing these opportunities - This may involve developing criteria, deliberating, and ranking the alternatives.
+Driving opportunities - Involves assigning leads, accountability, action plans, and project management
+Constant monitoring - May require one of the following actions:
+Advance - Commit additional resources to move the idea forward
+Rework - More investigation/ rethinking
+Kill - Stop working on the idea and move onThe goal of the opportunity management funnel is to eliminate weak or bad ideas before money or resources are contributed to realize these opportunities. The benefit of the opportunity management funnel when utilizing phase-gate decision making is that the funnel generates efficiencies where weak ideas are efficiently eliminated leaving a strong set of viable alternatives. To fulfill its mandate, the opportunity management funnel filters the broadest range of opportunities and ensures that all priority sectors are represented. When selecting which opportunities to filter through the process, economic developers should be aware that initially, there are no bad ideas or limits. The unviable alternatives will be filtered out throughout the process using phase-gate decision making process
+

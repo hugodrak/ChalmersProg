@@ -1,0 +1,5544 @@
+In quantum computing and specifically the quantum circuit model of computation, a quantum logic gate (or simply quantum gate) is a basic quantum circuit operating on a small number of qubits. They are the building blocks of quantum circuits, like classical logic gates are for conventional digital circuits.
+Unlike many classical logic gates, quantum logic gates are reversible. However, it is possible to perform classical computing using only reversible gates. For example, the reversible Toffoli gate can implement all Boolean functions, often at the cost of having to use ancilla bits. The Toffoli gate has a direct quantum equivalent, showing that quantum circuits can perform all operations performed by classical circuits.
+
+
+Quantum logic gates are represented by unitary matrices. The number of qubits in the input and output of the gate must be equal; a gate which acts on 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+   qubits is represented by a 
+  
+    
+      
+        
+          2
+          
+            n
+          
+        
+        ×
+        
+          2
+          
+            n
+          
+        
+      
+    
+    {\displaystyle 2^{n}\times 2^{n}}
+   unitary matrix. The quantum states that the gates act upon are vectors in 
+  
+    
+      
+        
+          2
+          
+            n
+          
+        
+      
+    
+    {\displaystyle 2^{n}}
+   complex dimensions. The base vectors are the possible outcomes if measured, and a quantum state is a linear combination of these outcomes. The most common quantum gates operate on spaces of one or two qubits, just like the common classical logic gates operate on one or two bits.
+The vector representation of a single qubit is:
+
+  
+    
+      
+        
+          |
+        
+        a
+        ⟩
+        =
+        
+          v
+          
+            0
+          
+        
+        
+          |
+        
+        0
+        ⟩
+        +
+        
+          v
+          
+            1
+          
+        
+        
+          |
+        
+        1
+        ⟩
+        →
+        
+          
+            [
+            
+              
+                
+                  
+                    v
+                    
+                      0
+                    
+                  
+                
+              
+              
+                
+                  
+                    v
+                    
+                      1
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle |a\rangle =v_{0}|0\rangle +v_{1}|1\rangle \rightarrow {\begin{bmatrix}v_{0}\\v_{1}\end{bmatrix}}}
+  ,The vector representation of two qubits is:
+
+  
+    
+      
+        
+          |
+        
+        a
+        b
+        ⟩
+        =
+        
+          |
+        
+        a
+        ⟩
+        ⊗
+        
+          |
+        
+        b
+        ⟩
+        =
+        
+          v
+          
+            00
+          
+        
+        
+          |
+        
+        00
+        ⟩
+        +
+        
+          v
+          
+            01
+          
+        
+        
+          |
+        
+        01
+        ⟩
+        +
+        
+          v
+          
+            10
+          
+        
+        
+          |
+        
+        10
+        ⟩
+        +
+        
+          v
+          
+            11
+          
+        
+        
+          |
+        
+        11
+        ⟩
+        →
+        
+          
+            [
+            
+              
+                
+                  
+                    v
+                    
+                      00
+                    
+                  
+                
+              
+              
+                
+                  
+                    v
+                    
+                      01
+                    
+                  
+                
+              
+              
+                
+                  
+                    v
+                    
+                      10
+                    
+                  
+                
+              
+              
+                
+                  
+                    v
+                    
+                      11
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle |ab\rangle =|a\rangle \otimes |b\rangle =v_{00}|00\rangle +v_{01}|01\rangle +v_{10}|10\rangle +v_{11}|11\rangle \rightarrow {\begin{bmatrix}v_{00}\\v_{01}\\v_{10}\\v_{11}\end{bmatrix}}}
+  ,The action of the gate on a specific quantum state is found by multiplying the vector 
+  
+    
+      
+        
+          |
+        
+        a
+        b
+        ⟩
+      
+    
+    {\displaystyle |ab\rangle }
+   which represents the state by the matrix 
+  
+    
+      
+        U
+      
+    
+    {\displaystyle U}
+   representing the gate.
+
+  
+    
+      
+        U
+        
+          |
+        
+        a
+        b
+        ⟩
+      
+    
+    {\displaystyle U|ab\rangle }
+  
+
+
+
+
+
+The Hadamard gate acts on a single qubit. It maps the basis state 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+   to 
+  
+    
+      
+        
+          
+            
+              
+                |
+              
+              0
+              ⟩
+              +
+              
+                |
+              
+              1
+              ⟩
+            
+            
+              2
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {|0\rangle +|1\rangle }{\sqrt {2}}}}
+   and  
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+   to 
+  
+    
+      
+        
+          
+            
+              
+                |
+              
+              0
+              ⟩
+              −
+              
+                |
+              
+              1
+              ⟩
+            
+            
+              2
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {|0\rangle -|1\rangle }{\sqrt {2}}}}
+  , which means that a measurement will have equal probabilities to become 1 or 0 (i.e. creates a superposition). It represents a rotation of 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+   about the axis 
+  
+    
+      
+        (
+        
+          
+            
+              x
+              ^
+            
+          
+        
+        +
+        
+          
+            
+              z
+              ^
+            
+          
+        
+        )
+        
+          /
+        
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle ({\hat {x}}+{\hat {z}})/{\sqrt {2}}}
+   at the Bloch sphere. Equivalently, it is the combination of two rotations, 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+   about the Z-axis followed by 
+  
+    
+      
+        π
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle \pi /2}
+   about the Y-axis. It is represented by the Hadamard matrix: 
+
+  
+    
+      
+        H
+        =
+        
+          
+            1
+            
+              2
+            
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  −
+                  1
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle H={\frac {1}{\sqrt {2}}}{\begin{bmatrix}1&1\\1&-1\end{bmatrix}}}
+  .The Hadamard gate is the one-qubit version of the quantum Fourier transform.
+Since 
+  
+    
+      
+        H
+        
+          H
+          
+            †
+          
+        
+        =
+        I
+      
+    
+    {\displaystyle HH^{\dagger }=I}
+   where I is the identity matrix, H is a unitary matrix (like all other quantum logical gates). Also, 
+  
+    
+      
+        H
+        =
+        
+          H
+          
+            †
+          
+        
+      
+    
+    {\displaystyle H=H^{\dagger }}
+  .
+
+
+
+The Pauli-X gate acts on a single qubit. It is the quantum equivalent of the NOT gate for classical computers (with respect to the standard basis 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+  ,  
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+  , which distinguishes the Z-direction; in the sense that a measurement of the eigenvalue +1 corresponds to classical 1/true and -1 to 0/false). It equates to a rotation around the X-axis of the Bloch sphere by 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+   radians. It maps 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+   to 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+   and 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+   to 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+  . Due to this nature, it is sometimes called bit-flip. It is represented by the Pauli X matrix:
+
+  
+    
+      
+        X
+        =
+        
+          
+            [
+            
+              
+                
+                  0
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  0
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle X={\begin{bmatrix}0&1\\1&0\end{bmatrix}}}
+  .
+
+
+The Pauli-Y gate acts on a single qubit. It equates to a rotation around the Y-axis of the Bloch sphere by 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+   radians. It maps 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+   to 
+  
+    
+      
+        −
+        i
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle -i|1\rangle }
+   and 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+   to 
+  
+    
+      
+        i
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle i|0\rangle }
+  . It is represented by the Pauli Y matrix:
+
+  
+    
+      
+        Y
+        =
+        
+          
+            [
+            
+              
+                
+                  0
+                
+                
+                  −
+                  i
+                
+              
+              
+                
+                  i
+                
+                
+                  0
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle Y={\begin{bmatrix}0&-i\\i&0\end{bmatrix}}}
+  .
+
+
+  
+    
+      
+        
+          R
+          
+            π
+          
+        
+      
+    
+    {\displaystyle R_{\pi }}
+  ) gate
+The Pauli-Z gate acts on a single qubit. It equates to a rotation around the Z-axis of the Bloch sphere by 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+   radians. Thus, it is a special case of a phase shift gate (which are described in a next subsection) with 
+  
+    
+      
+        ϕ
+        =
+        π
+      
+    
+    {\displaystyle \phi =\pi }
+  . It leaves the basis state 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+   unchanged and maps 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+   to 
+  
+    
+      
+        −
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle -|1\rangle }
+  . Due to this nature, it is sometimes called phase-flip. It is represented by the Pauli Z matrix:
+
+  
+    
+      
+        Z
+        =
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  −
+                  1
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle Z={\begin{bmatrix}1&0\\0&-1\end{bmatrix}}}
+  .
+
+
+The square of a Pauli matrix is the identity matrix.
+
+  
+    
+      
+        
+          I
+          
+            2
+          
+        
+        =
+        
+          X
+          
+            2
+          
+        
+        =
+        
+          Y
+          
+            2
+          
+        
+        =
+        
+          Z
+          
+            2
+          
+        
+        =
+        −
+        i
+        X
+        Y
+        Z
+        =
+        I
+      
+    
+    {\displaystyle I^{2}=X^{2}=Y^{2}=Z^{2}=-iXYZ=I}
+  
+
+
+
+The square root of NOT gate (or square root of Pauli-X, 
+  
+    
+      
+        
+          
+            X
+          
+        
+      
+    
+    {\displaystyle {\sqrt {X}}}
+  ) acts on a single qubit. It maps the basis state 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+   to 
+  
+    
+      
+        
+          
+            
+              (
+              1
+              +
+              i
+              )
+              
+                |
+              
+              0
+              ⟩
+              +
+              (
+              1
+              −
+              i
+              )
+              
+                |
+              
+              1
+              ⟩
+            
+            2
+          
+        
+      
+    
+    {\displaystyle {\frac {(1+i)|0\rangle +(1-i)|1\rangle }{2}}}
+   and  
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+   to 
+  
+    
+      
+        
+          
+            
+              (
+              1
+              −
+              i
+              )
+              
+                |
+              
+              0
+              ⟩
+              +
+              (
+              1
+              +
+              i
+              )
+              
+                |
+              
+              1
+              ⟩
+            
+            2
+          
+        
+      
+    
+    {\displaystyle {\frac {(1-i)|0\rangle +(1+i)|1\rangle }{2}}}
+  .
+
+  
+    
+      
+        
+          
+            X
+          
+        
+        =
+        
+          
+            N
+            O
+            T
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                  +
+                  i
+                
+                
+                  1
+                  −
+                  i
+                
+              
+              
+                
+                  1
+                  −
+                  i
+                
+                
+                  1
+                  +
+                  i
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\sqrt {X}}={\sqrt {NOT}}={\frac {1}{2}}{\begin{bmatrix}1+i&1-i\\1-i&1+i\end{bmatrix}}}
+  .
+
+  
+    
+      
+        X
+        =
+        (
+        
+          
+            N
+            O
+            T
+          
+        
+        
+          )
+          
+            2
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                  +
+                  i
+                
+                
+                  1
+                  −
+                  i
+                
+              
+              
+                
+                  1
+                  −
+                  i
+                
+                
+                  1
+                  +
+                  i
+                
+              
+            
+            ]
+          
+        
+        
+          
+            1
+            2
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                  +
+                  i
+                
+                
+                  1
+                  −
+                  i
+                
+              
+              
+                
+                  1
+                  −
+                  i
+                
+                
+                  1
+                  +
+                  i
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            1
+            4
+          
+        
+        
+          
+            [
+            
+              
+                
+                  0
+                
+                
+                  4
+                
+              
+              
+                
+                  4
+                
+                
+                  0
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  0
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  0
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle X=({\sqrt {NOT}})^{2}={\frac {1}{2}}{\begin{bmatrix}1+i&1-i\\1-i&1+i\end{bmatrix}}{\frac {1}{2}}{\begin{bmatrix}1+i&1-i\\1-i&1+i\end{bmatrix}}={\frac {1}{4}}{\begin{bmatrix}0&4\\4&0\end{bmatrix}}={\begin{bmatrix}0&1\\1&0\end{bmatrix}}}
+  .Therefore, 
+  
+    
+      
+        
+          
+            N
+            O
+            T
+          
+        
+        
+        
+          
+            N
+            O
+            T
+          
+        
+        =
+        N
+        O
+        T
+      
+    
+    {\displaystyle {\sqrt {NOT}}\,{\sqrt {NOT}}=NOT}
+  , so this gate is a square root of the NOT gate.
+Squared root-gates can be constructed for all other gates by finding a unitary matrix that, multiplied by itself, yields the gate one wishes to construct the squared root gate of. All rational exponents of all gates can be found similarly.
+
+
+  
+    
+      
+        
+          R
+          
+            ϕ
+          
+        
+      
+    
+    {\displaystyle R_{\phi }}
+  ) gates
+
+This is a family of single-qubit gates that leave the basis state 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+   unchanged and map 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+   to 
+  
+    
+      
+        
+          e
+          
+            i
+            ϕ
+          
+        
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle e^{i\phi }|1\rangle }
+  . The probability of measuring a 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+   or 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+   is unchanged after applying this gate, however it modifies the phase of the quantum state. This is equivalent to tracing a horizontal circle (a line of latitude) on the Bloch sphere by 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+   radians.
+
+  
+    
+      
+        
+          R
+          
+            ϕ
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  
+                    e
+                    
+                      i
+                      ϕ
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle R_{\phi }={\begin{bmatrix}1&0\\0&e^{i\phi }\end{bmatrix}}}
+  where 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+   is the phase shift. Some common examples are the 
+  
+    
+      
+        
+          
+            π
+            4
+          
+        
+      
+    
+    {\displaystyle {\frac {\pi }{4}}}
+   gate (commonly written as T) where 
+  
+    
+      
+        ϕ
+        =
+        
+          
+            π
+            4
+          
+        
+      
+    
+    {\displaystyle \phi ={\frac {\pi }{4}}}
+  , the phase gate (written S, though S is sometimes used for SWAP gates) where 
+  
+    
+      
+        ϕ
+        =
+        
+          
+            π
+            2
+          
+        
+      
+    
+    {\displaystyle \phi ={\frac {\pi }{2}}}
+   and the Pauli-Z gate where 
+  
+    
+      
+        ϕ
+        =
+        π
+      
+    
+    {\displaystyle \phi =\pi }
+  .
+
+
+
+The swap gate swaps two qubits. With respect to the basis 
+  
+    
+      
+        
+          |
+        
+        00
+        ⟩
+      
+    
+    {\displaystyle |00\rangle }
+  , 
+  
+    
+      
+        
+          |
+        
+        01
+        ⟩
+      
+    
+    {\displaystyle |01\rangle }
+  , 
+  
+    
+      
+        
+          |
+        
+        10
+        ⟩
+      
+    
+    {\displaystyle |10\rangle }
+  , 
+  
+    
+      
+        
+          |
+        
+        11
+        ⟩
+      
+    
+    {\displaystyle |11\rangle }
+  , it is represented by the matrix:
+
+  
+    
+      
+        
+          
+            SWAP
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\mbox{SWAP}}={\begin{bmatrix}1&0&0&0\\0&0&1&0\\0&1&0&0\\0&0&0&1\end{bmatrix}}}
+  .
+
+
+
+The 
+  
+    
+      
+        
+          
+            
+              SWAP
+            
+          
+        
+      
+    
+    {\displaystyle {\sqrt {\mbox{SWAP}}}}
+   gate performs half-way of a two-qubit swap. It is universal such that any many-qubit gate can be constructed from only 
+  
+    
+      
+        
+          
+            
+              SWAP
+            
+          
+        
+      
+    
+    {\displaystyle {\sqrt {\mbox{SWAP}}}}
+   and single qubit gates. The 
+  
+    
+      
+        
+          
+            
+              SWAP
+            
+          
+        
+      
+    
+    {\displaystyle {\sqrt {\mbox{SWAP}}}}
+   gate is not, however maximally entangling; more than one application of it is required to produce a Bell state from product states. With respect to the basis 
+  
+    
+      
+        
+          |
+        
+        00
+        ⟩
+      
+    
+    {\displaystyle |00\rangle }
+  , 
+  
+    
+      
+        
+          |
+        
+        01
+        ⟩
+      
+    
+    {\displaystyle |01\rangle }
+  , 
+  
+    
+      
+        
+          |
+        
+        10
+        ⟩
+      
+    
+    {\displaystyle |10\rangle }
+  , 
+  
+    
+      
+        
+          |
+        
+        11
+        ⟩
+      
+    
+    {\displaystyle |11\rangle }
+  , it is represented by the matrix:
+
+  
+    
+      
+        
+          
+            
+              SWAP
+            
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                  (
+                  1
+                  +
+                  i
+                  )
+                
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                  (
+                  1
+                  −
+                  i
+                  )
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                  (
+                  1
+                  −
+                  i
+                  )
+                
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                  (
+                  1
+                  +
+                  i
+                  )
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\sqrt {\mbox{SWAP}}}={\begin{bmatrix}1&0&0&0\\0&{\frac {1}{2}}(1+i)&{\frac {1}{2}}(1-i)&0\\0&{\frac {1}{2}}(1-i)&{\frac {1}{2}}(1+i)&0\\0&0&0&1\\\end{bmatrix}}}
+  .
+
+
+
+Controlled gates act on 2 or more qubits, where one or more qubits act as a control for some operation. For example, the controlled NOT gate (or CNOT or cX) acts on 2 qubits, and performs the NOT operation on the second qubit only when the first qubit is 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+  , and otherwise leaves it unchanged. With respect to the basis 
+  
+    
+      
+        
+          |
+        
+        00
+        ⟩
+      
+    
+    {\displaystyle |00\rangle }
+  , 
+  
+    
+      
+        
+          |
+        
+        01
+        ⟩
+      
+    
+    {\displaystyle |01\rangle }
+  , 
+  
+    
+      
+        
+          |
+        
+        10
+        ⟩
+      
+    
+    {\displaystyle |10\rangle }
+  , 
+  
+    
+      
+        
+          |
+        
+        11
+        ⟩
+      
+    
+    {\displaystyle |11\rangle }
+  , it is represented by the matrix:
+
+  
+    
+      
+        
+          
+            CNOT
+          
+        
+        =
+        c
+        X
+        =
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+              
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\mbox{CNOT}}=cX={\begin{bmatrix}1&0&0&0\\0&1&0&0\\0&0&0&1\\0&0&1&0\end{bmatrix}}}
+  .The CNOT (or controlled-X) gate can be described as the gate that maps 
+  
+    
+      
+        
+          |
+        
+        a
+        ,
+        b
+        ⟩
+      
+    
+    {\displaystyle |a,b\rangle }
+   to 
+  
+    
+      
+        
+          |
+        
+        a
+        ,
+        a
+        ⊕
+        b
+        ⟩
+      
+    
+    {\displaystyle |a,a\oplus b\rangle }
+  .
+More generally if U is a gate that operates on single qubits with matrix representation
+
+  
+    
+      
+        U
+        =
+        
+          
+            [
+            
+              
+                
+                  
+                    u
+                    
+                      00
+                    
+                  
+                
+                
+                  
+                    u
+                    
+                      01
+                    
+                  
+                
+              
+              
+                
+                  
+                    u
+                    
+                      10
+                    
+                  
+                
+                
+                  
+                    u
+                    
+                      11
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle U={\begin{bmatrix}u_{00}&u_{01}\\u_{10}&u_{11}\end{bmatrix}}}
+  ,then the controlled-U gate is a gate that operates on two qubits in such a way that the first qubit serves as a control. It maps the basis states as follows.
+
+  
+    
+      
+        
+          |
+        
+        00
+        ⟩
+        ↦
+        
+          |
+        
+        00
+        ⟩
+      
+    
+    {\displaystyle |00\rangle \mapsto |00\rangle }
+  
+
+  
+    
+      
+        
+          |
+        
+        01
+        ⟩
+        ↦
+        
+          |
+        
+        01
+        ⟩
+      
+    
+    {\displaystyle |01\rangle \mapsto |01\rangle }
+  
+
+  
+    
+      
+        
+          |
+        
+        10
+        ⟩
+        ↦
+        
+          |
+        
+        1
+        ⟩
+        ⊗
+        U
+        
+          |
+        
+        0
+        ⟩
+        =
+        
+          |
+        
+        1
+        ⟩
+        ⊗
+        
+          (
+          
+            
+              u
+              
+                00
+              
+            
+            
+              |
+            
+            0
+            ⟩
+            +
+            
+              u
+              
+                10
+              
+            
+            
+              |
+            
+            1
+            ⟩
+          
+          )
+        
+      
+    
+    {\displaystyle |10\rangle \mapsto |1\rangle \otimes U|0\rangle =|1\rangle \otimes \left(u_{00}|0\rangle +u_{10}|1\rangle \right)}
+  
+
+  
+    
+      
+        
+          |
+        
+        11
+        ⟩
+        ↦
+        
+          |
+        
+        1
+        ⟩
+        ⊗
+        U
+        
+          |
+        
+        1
+        ⟩
+        =
+        
+          |
+        
+        1
+        ⟩
+        ⊗
+        
+          (
+          
+            
+              u
+              
+                01
+              
+            
+            
+              |
+            
+            0
+            ⟩
+            +
+            
+              u
+              
+                11
+              
+            
+            
+              |
+            
+            1
+            ⟩
+          
+          )
+        
+      
+    
+    {\displaystyle |11\rangle \mapsto |1\rangle \otimes U|1\rangle =|1\rangle \otimes \left(u_{01}|0\rangle +u_{11}|1\rangle \right)}
+  The matrix representing the controlled U is
+
+  
+    
+      
+        
+          
+            C
+          
+        
+        (
+        U
+        )
+        =
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  
+                    u
+                    
+                      00
+                    
+                  
+                
+                
+                  
+                    u
+                    
+                      01
+                    
+                  
+                
+              
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  
+                    u
+                    
+                      10
+                    
+                  
+                
+                
+                  
+                    u
+                    
+                      11
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\mbox{C}}(U)={\begin{bmatrix}1&0&0&0\\0&1&0&0\\0&0&u_{00}&u_{01}\\0&0&u_{10}&u_{11}\end{bmatrix}}}
+  .
+When U is one of the Pauli matrices, σx, σy, or σz, the respective terms "controlled-X", "controlled-Y", or "controlled-Z" are sometimes used. Sometimes this is shortened to just cX, cY and cZ.
+
+
+
+The Toffoli gate, named after Tommaso Toffoli; also called CCNOT gate or Deutsch 
+  
+    
+      
+        D
+        (
+        π
+        
+          /
+        
+        2
+        )
+      
+    
+    {\displaystyle D(\pi /2)}
+   gate; is a 3-bit gate, which is universal for classical computation but not for quantum computation. The quantum Toffoli gate is the same gate, defined for 3 qubits. If we limit ourselves to only accepting input qubits that are 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+   and 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+  , then if the first two bits are in the state 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+   it applies a Pauli-X (or NOT) on the third bit, else it does nothing. It is an example of a controlled gate. Since it is the quantum analog of a classical gate, it is completely specified by its truth table. The Toffoli gate is universal when combined with the single qubit Hadamard gate.
+It can be also described as the gate which maps 
+  
+    
+      
+        
+          |
+        
+        a
+        ,
+        b
+        ,
+        c
+        ⟩
+      
+    
+    {\displaystyle |a,b,c\rangle }
+   to 
+  
+    
+      
+        
+          |
+        
+        a
+        ,
+        b
+        ,
+        c
+        ⊕
+        a
+        b
+        ⟩
+      
+    
+    {\displaystyle |a,b,c\oplus ab\rangle }
+  .
+
+
+
+The Fredkin gate (also CSWAP or cS gate), named after Edward Fredkin, is a 3-bit gate that performs a controlled swap. It is universal for classical computation. It has the useful property that the numbers of 0s and 1s are conserved throughout, which in the billiard ball model means the same number of balls are output as input.
+
+
+The Ising gate (or XX gate) is a 2-qubit gate that is implemented natively in some trapped-ion quantum computers.  It is defined as
+
+  
+    
+      
+        X
+        
+          X
+          
+            ϕ
+          
+        
+        =
+        
+          
+            1
+            
+              2
+            
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  −
+                  i
+                  
+                    e
+                    
+                      i
+                      ϕ
+                    
+                  
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+                
+                  −
+                  i
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  −
+                  i
+                
+                
+                  1
+                
+                
+                  0
+                
+              
+              
+                
+                  −
+                  i
+                  
+                    e
+                    
+                      −
+                      i
+                      ϕ
+                    
+                  
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            1
+            
+              2
+            
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  
+                    e
+                    
+                      i
+                      (
+                      ϕ
+                      −
+                      π
+                      
+                        /
+                      
+                      2
+                      )
+                    
+                  
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+                
+                  −
+                  i
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  −
+                  i
+                
+                
+                  1
+                
+                
+                  0
+                
+              
+              
+                
+                  
+                    e
+                    
+                      i
+                      (
+                      −
+                      ϕ
+                      −
+                      π
+                      
+                        /
+                      
+                      2
+                      )
+                    
+                  
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle XX_{\phi }={\frac {1}{\sqrt {2}}}{\begin{bmatrix}1&0&0&-ie^{i\phi }\\0&1&-i&0\\0&-i&1&0\\-ie^{-i\phi }&0&0&1\\\end{bmatrix}}={\frac {1}{\sqrt {2}}}{\begin{bmatrix}1&0&0&e^{i(\phi -\pi /2)}\\0&1&-i&0\\0&-i&1&0\\e^{i(-\phi -\pi /2)}&0&0&1\\\end{bmatrix}}}
+  ,
+
+
+
+  
+    
+      
+        Y
+        
+          Y
+          
+            ϕ
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  cos
+                  ⁡
+                  (
+                  ϕ
+                  )
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  i
+                  sin
+                  ⁡
+                  (
+                  ϕ
+                  )
+                
+              
+              
+                
+                  0
+                
+                
+                  cos
+                  ⁡
+                  (
+                  ϕ
+                  )
+                
+                
+                  −
+                  i
+                  sin
+                  ⁡
+                  (
+                  ϕ
+                  )
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  −
+                  i
+                  sin
+                  ⁡
+                  (
+                  ϕ
+                  )
+                
+                
+                  cos
+                  ⁡
+                  (
+                  ϕ
+                  )
+                
+                
+                  0
+                
+              
+              
+                
+                  i
+                  sin
+                  ⁡
+                  (
+                  ϕ
+                  )
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  cos
+                  ⁡
+                  (
+                  ϕ
+                  )
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle YY_{\phi }={\begin{bmatrix}\cos(\phi )&0&0&i\sin(\phi )\\0&\cos(\phi )&-i\sin(\phi )&0\\0&-i\sin(\phi )&\cos(\phi )&0\\i\sin(\phi )&0&0&\cos(\phi )\\\end{bmatrix}}}
+  ,
+
+
+
+  
+    
+      
+        Z
+        
+          Z
+          
+            ϕ
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  
+                    e
+                    
+                      i
+                      ϕ
+                      
+                        /
+                      
+                      2
+                    
+                  
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  
+                    e
+                    
+                      −
+                      i
+                      ϕ
+                      
+                        /
+                      
+                      2
+                    
+                  
+                
+                
+                  0
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  
+                    e
+                    
+                      −
+                      i
+                      ϕ
+                      
+                        /
+                      
+                      2
+                    
+                  
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  
+                    e
+                    
+                      i
+                      ϕ
+                      
+                        /
+                      
+                      2
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle ZZ_{\phi }={\begin{bmatrix}e^{i\phi /2}&0&0&0\\0&e^{-i\phi /2}&0&0\\0&0&e^{-i\phi /2}&0\\0&0&0&e^{i\phi /2}\\\end{bmatrix}}}
+  ,
+
+
+  
+    
+      
+        
+          D
+          
+            θ
+          
+        
+      
+    
+    {\displaystyle D_{\theta }}
+  ) gate
+The Deutsch (or 
+  
+    
+      
+        
+          D
+          
+            θ
+          
+        
+      
+    
+    {\displaystyle D_{\theta }}
+  ) gate, named after physicist David Deutsch is a three-qubit gate. It is defined as
+
+  
+    
+      
+        
+          |
+        
+        a
+        ,
+        b
+        ,
+        c
+        ⟩
+        ↦
+        
+          
+            {
+            
+              
+                
+                  i
+                  cos
+                  ⁡
+                  (
+                  θ
+                  )
+                  
+                    |
+                  
+                  a
+                  ,
+                  b
+                  ,
+                  c
+                  ⟩
+                  +
+                  sin
+                  ⁡
+                  (
+                  θ
+                  )
+                  
+                    |
+                  
+                  a
+                  ,
+                  b
+                  ,
+                  1
+                  −
+                  c
+                  ⟩
+                
+                
+                  
+                    
+                      for 
+                    
+                  
+                  a
+                  =
+                  b
+                  =
+                  1
+                
+              
+              
+                
+                  
+                    |
+                  
+                  a
+                  ,
+                  b
+                  ,
+                  c
+                  ⟩
+                
+                
+                  
+                    
+                      otherwise.
+                    
+                  
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle |a,b,c\rangle \mapsto {\begin{cases}i\cos(\theta )|a,b,c\rangle +\sin(\theta )|a,b,1-c\rangle &{\mbox{for }}a=b=1\\|a,b,c\rangle &{\mbox{otherwise.}}\end{cases}}}
+  Unfortunately, a working Deutsch gate has remained out of reach, due to lack of a protocol. However, a method was proposed to realize such a Deutsch gate with dipole-dipole interaction in neutral atoms.
+
+
+
+Informally, a set of universal quantum gates is any set of gates to which any operation possible on a quantum computer can be reduced, that is, any other unitary operation can be expressed as a finite sequence of gates from the set. Technically, this is impossible with anything less than an uncountable set of gates since the number of possible quantum gates is uncountable, whereas the number of finite sequences from a finite set is countable. To solve this problem, we only require that any quantum operation can be approximated by a sequence of gates from this finite set. Moreover, for unitaries on a constant number of qubits, the Solovay–Kitaev theorem guarantees that this can be done efficiently.
+One simple set of two-qubit universal quantum gates is the Hadamard gate 
+  
+    
+      
+        H
+      
+    
+    {\displaystyle H}
+  , the 
+  
+    
+      
+        π
+        
+          /
+        
+        8
+      
+    
+    {\displaystyle \pi /8}
+   gate 
+  
+    
+      
+        
+          R
+          
+            Z
+          
+        
+        (
+        π
+        
+          /
+        
+        4
+        )
+        =
+        d
+        i
+        a
+        g
+        (
+        1
+        ,
+        
+          e
+          
+            
+              
+                i
+                π
+              
+              4
+            
+          
+        
+        )
+      
+    
+    {\displaystyle R_{Z}(\pi /4)=diag(1,e^{\frac {i\pi }{4}})}
+  , and the controlled-NOT gate 
+  
+    
+      
+        c
+        X
+      
+    
+    {\displaystyle cX}
+  .A single-gate set of universal quantum gates can also be formulated using the three-qubit Deutsch gate 
+  
+    
+      
+        D
+        (
+        θ
+        )
+      
+    
+    {\displaystyle D(\theta )}
+  , which performs the transformation
+
+  
+    
+      
+        
+          |
+        
+        a
+        ,
+        b
+        ,
+        c
+        ⟩
+        ↦
+        
+          
+            {
+            
+              
+                
+                  i
+                  cos
+                  ⁡
+                  (
+                  θ
+                  )
+                  
+                    |
+                  
+                  a
+                  ,
+                  b
+                  ,
+                  c
+                  ⟩
+                  +
+                  sin
+                  ⁡
+                  (
+                  θ
+                  )
+                  
+                    |
+                  
+                  a
+                  ,
+                  b
+                  ,
+                  1
+                  −
+                  c
+                  ⟩
+                
+                
+                  
+                    
+                      for 
+                    
+                  
+                  a
+                  =
+                  b
+                  =
+                  1
+                
+              
+              
+                
+                  
+                    |
+                  
+                  a
+                  ,
+                  b
+                  ,
+                  c
+                  ⟩
+                
+                
+                  
+                    
+                      otherwise.
+                    
+                  
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle |a,b,c\rangle \mapsto {\begin{cases}i\cos(\theta )|a,b,c\rangle +\sin(\theta )|a,b,1-c\rangle &{\mbox{for }}a=b=1\\|a,b,c\rangle &{\mbox{otherwise.}}\end{cases}}}
+  The universal classical logic gate, the Toffoli gate, is reducible to the Deutsch gate, 
+  
+    
+      
+        D
+        (
+        
+          
+            
+              
+                
+                  
+                    π
+                    2
+                  
+                
+              
+            
+          
+        
+        )
+      
+    
+    {\displaystyle D({\begin{matrix}{\frac {\pi }{2}}\end{matrix}})}
+  , thus showing that all classical logic operations can be performed on a universal quantum computer.
+There also exists a single two-qubit gate sufficient for universality, given it can be applied to any pairs of qubits 
+  
+    
+      
+        (
+        k
+        ,
+        k
+        +
+        1
+        )
+        
+        mod
+        
+        
+        n
+      
+    
+    {\displaystyle (k,k+1)\mod n}
+   on a circuit of width 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  .Another set of universal quantum gates consists of the Ising gate and the phase-shift gate.  These are the set of gates natively available in some trapped-ion quantum computers.
+
+
+
+Measurement (sometimes called observation) is irreversible and therefore not a quantum gate, because it assigns the observed variable to a single value. Measurement takes a quantum state and projects it to one of the base vectors, with a likelihood equal to the square of the vectors depth along that base vector. This is a stochastic non-reversible operation as it sets the quantum state equal to the base vector that represents the measured state (the state "collapses" to a definite single value). Why and how, or even if this is so, is called the measurement problem.
+The probability of measuring a value with amplitude 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+   is 
+  
+    
+      
+        
+          |
+        
+        
+          ϕ
+          
+            2
+          
+        
+        
+          |
+        
+        =
+        
+          |
+        
+        ϕ
+        ∗
+        ϕ
+        
+          |
+        
+        ≥
+        0
+      
+    
+    {\displaystyle |\phi ^{2}|=|\phi *\phi |\geq 0}
+  .
+Measuring a single qubit, whose quantum state is represented by the vector 
+  
+    
+      
+        a
+        
+          |
+        
+        0
+        ⟩
+        +
+        b
+        
+          |
+        
+        1
+        ⟩
+        =
+        
+          
+            [
+            
+              
+                
+                  a
+                
+              
+              
+                
+                  b
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle a|0\rangle +b|1\rangle ={\begin{bmatrix}a\\b\end{bmatrix}}}
+  , will result in 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+   with probability 
+  
+    
+      
+        
+          |
+        
+        
+          a
+          
+            2
+          
+        
+        
+          |
+        
+      
+    
+    {\displaystyle |a^{2}|}
+  , and in 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+   with 
+  
+    
+      
+        
+          |
+        
+        
+          b
+          
+            2
+          
+        
+        
+          |
+        
+      
+    
+    {\displaystyle |b^{2}|}
+   probability.
+For example, measuring a qubit with the quantum state 
+  
+    
+      
+        
+          
+            
+              
+                |
+              
+              0
+              ⟩
+              −
+              i
+              
+                |
+              
+              1
+              ⟩
+            
+            
+              2
+            
+          
+        
+        =
+        
+          
+            1
+            
+              2
+            
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                
+              
+              
+                
+                  −
+                  i
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\frac {|0\rangle -i|1\rangle }{\sqrt {2}}}={\frac {1}{\sqrt {2}}}{\begin{bmatrix}1\\-i\end{bmatrix}}}
+   will yeild with equal probability either 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+   or 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+  .
+A quantum state 
+  
+    
+      
+        
+          |
+        
+        Ψ
+        ⟩
+      
+    
+    {\displaystyle |\Psi \rangle }
+   that span 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+   qubits can be written as a vector in 
+  
+    
+      
+        
+          2
+          
+            n
+          
+        
+      
+    
+    {\displaystyle 2^{n}}
+   complex dimensions. This way, a register of 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+   qubits can represent 
+  
+    
+      
+        
+          2
+          
+            n
+          
+        
+      
+    
+    {\displaystyle 2^{n}}
+   different states, just like a register of 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+   classical bits would. Unlike classical computers, quantum states can have a probability amplitude in multiple measurable values simultaneously. This is called superposition.
+
+
+
+If two different quantum registers are entangled (their combined state cannot be expressed as a tensor product), measurement of one register affects or reveals the state of the other register by partially or entirely collapsing its state too. This effect can be used for computation, and is used in many algorithms.
+The first of the Bell states is 
+  
+    
+      
+        
+          
+            
+              
+                |
+              
+              00
+              ⟩
+              +
+              
+                |
+              
+              11
+              ⟩
+            
+            
+              2
+            
+          
+        
+        =
+        
+          
+            1
+            
+              2
+            
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                
+              
+              
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+              
+              
+                
+                  1
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\frac {|00\rangle +|11\rangle }{\sqrt {2}}}={\frac {1}{\sqrt {2}}}{\begin{bmatrix}1\\0\\0\\1\end{bmatrix}}}
+  . It can not be described as a tensor product of two qubits. There is no solution for
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  a
+                
+              
+              
+                
+                  b
+                
+              
+            
+            ]
+          
+        
+        ⊗
+        
+          
+            [
+            
+              
+                
+                  c
+                
+              
+              
+                
+                  d
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            1
+            
+              2
+            
+          
+        
+        
+          
+            [
+            
+              
+                
+                  a
+                  c
+                
+              
+              
+                
+                  a
+                  d
+                
+              
+              
+                
+                  b
+                  c
+                
+              
+              
+                
+                  b
+                  d
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            1
+            
+              2
+            
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                
+              
+              
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+              
+              
+                
+                  1
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\begin{bmatrix}a\\b\end{bmatrix}}\otimes {\begin{bmatrix}c\\d\end{bmatrix}}={\frac {1}{\sqrt {2}}}{\begin{bmatrix}ac\\ad\\bc\\bd\end{bmatrix}}={\frac {1}{\sqrt {2}}}{\begin{bmatrix}1\\0\\0\\1\end{bmatrix}}}
+  
+because for example 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+   needs to be both non-zero and zero in the case of 
+  
+    
+      
+        a
+        c
+      
+    
+    {\displaystyle ac}
+   and 
+  
+    
+      
+        a
+        d
+      
+    
+    {\displaystyle ad}
+  .
+The quantum state span the two qubits. This is called entanglement. The GHZ state is a similiar entangled quantum state that span three qubits. Measuring one of the two qubits that make up this Bell state will result in that the other qubit logically must have the same value, both must be the same. 
+This type of value-assignment in theory occurs instantaneously over any distance and this has as of 2018 been experimentally verified for distances of up to 1200 kilometers. That the phenomena appears to violate the speed of light is called the EPR paradox and it is an open question in physics how to resolve this. Originally it was solved by giving up the assumption of local realism, but other interpretations have also emerged. For more information see the Bell test experiments. This can not be used for faster-than-light communication of classical information, because of the no-communication theorem.
+
+
+A register is a sequence of qubits, similiar in analogy to a classic CPU register.
+Take a register A with 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+   qubits all initialized to 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+  , and feed it through a parallel Hadamard gate 
+  
+    
+      
+        
+          ⨂
+          
+            1
+          
+          
+            n
+          
+        
+        H
+      
+    
+    {\displaystyle \bigotimes _{1}^{n}H}
+  . Register A will have equal probability of when measured to be in any of its 
+  
+    
+      
+        
+          2
+          
+            n
+          
+        
+      
+    
+    {\displaystyle 2^{n}}
+   states. Take a second register B, also with 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+   qubits initalized to 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+  , and pairwise CNOT its qubits with the qubits in register A, such that for each 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+   the qubits 
+  
+    
+      
+        
+          A
+          
+            i
+          
+        
+      
+    
+    {\displaystyle A_{i}}
+   and 
+  
+    
+      
+        
+          B
+          
+            i
+          
+        
+      
+    
+    {\displaystyle B_{i}}
+   forms the state 
+  
+    
+      
+        
+          |
+        
+        
+          A
+          
+            i
+          
+        
+        
+          B
+          
+            i
+          
+        
+        ⟩
+        =
+        
+          
+            
+              
+                |
+              
+              00
+              ⟩
+              +
+              
+                |
+              
+              11
+              ⟩
+            
+            
+              2
+            
+          
+        
+      
+    
+    {\displaystyle |A_{i}B_{i}\rangle ={\frac {|00\rangle +|11\rangle }{\sqrt {2}}}}
+  . If we now measure the qubits in register A, then register B will be found to contain the same value as A. If we however instead apply a quantum logic gate that implements a function 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+   on A and then measure it, then register B will contain a value such that 
+  
+    
+      
+        
+          F
+          
+            †
+          
+        
+        B
+        =
+        A
+      
+    
+    {\displaystyle F^{\dagger }B=A}
+  . (
+  
+    
+      
+        
+          F
+          
+            †
+          
+        
+      
+    
+    {\displaystyle F^{\dagger }}
+   is the unitary inverse of 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  .)
+Because of how unitary inverses of gates act, 
+  
+    
+      
+        
+          F
+          
+            †
+          
+        
+        B
+        =
+        
+          F
+          
+            −
+            1
+          
+        
+        (
+        B
+        )
+        =
+        A
+      
+    
+    {\displaystyle F^{\dagger }B=F^{-1}(B)=A}
+  . For example, say 
+  
+    
+      
+        F
+        (
+        x
+        )
+        =
+        x
+        +
+        3
+        
+          
+          (
+          mod
+          
+          
+            2
+            
+              n
+            
+          
+          −
+          1
+          )
+        
+      
+    
+    {\displaystyle F(x)=x+3{\pmod {2^{n}-1}}}
+  , then 
+  
+    
+      
+        B
+        =
+        A
+        −
+        3
+        
+          
+          (
+          mod
+          
+          
+            2
+            
+              n
+            
+          
+          −
+          1
+          )
+        
+      
+    
+    {\displaystyle B=A-3{\pmod {2^{n}-1}}}
+  . 
+The order in which measurement is performed (on the registers A or B) can be reversed, or even concurrently interleaved qubit by qubit, without affecting the result, since the measurements assignment of one register will limit the possible value-space from the other entangled register.
+This effect of value-assignment via entanglement is used in Shor's algorithm.
+
+
+
+
+Assume that we have two gates A and B, that both act on 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+   qubits. When B is put after A (a series circuit), then the effect of the two gates can be described as a single gate C.
+
+  
+    
+      
+        C
+        =
+        B
+        ⋅
+        A
+      
+    
+    {\displaystyle C=B\cdot A}
+  
+Where 
+  
+    
+      
+        ⋅
+      
+    
+    {\displaystyle \cdot }
+   is the usual matrix multiplication. The resulting gate C will have the same dimensions as A and B. The order in which the gates would appear in a circuit diagram is reversed when multiplying them together.
+For example, putting the Pauli X gate after the Pauli Y gate, both of which act on a single qubit, can be described as a single combined gate C:
+
+  
+    
+      
+        C
+        =
+        X
+        ⋅
+        Y
+        =
+        
+          
+            [
+            
+              
+                
+                  0
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  0
+                
+              
+            
+            ]
+          
+        
+        ⋅
+        
+          
+            [
+            
+              
+                
+                  0
+                
+                
+                  −
+                  i
+                
+              
+              
+                
+                  i
+                
+                
+                  0
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  i
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  −
+                  i
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle C=X\cdot Y={\begin{bmatrix}0&1\\1&0\end{bmatrix}}\cdot {\begin{bmatrix}0&-i\\i&0\end{bmatrix}}={\begin{bmatrix}i&0\\0&-i\end{bmatrix}}}
+  
+The product symbol (
+  
+    
+      
+        ⋅
+      
+    
+    {\displaystyle \cdot }
+  ) is often omitted.
+
+
+The tensor product (or Kronecker product) of two 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  -qubit quantum gates generates the gate that is equal to the two gates in parallel. This gate will act on 
+  
+    
+      
+        2
+        n
+      
+    
+    {\displaystyle 2n}
+   qubits. For example, the gate 
+  
+    
+      
+        
+          H
+          
+            2
+          
+        
+        =
+        H
+        ⊗
+        H
+      
+    
+    {\displaystyle H_{2}=H\otimes H}
+   is the Hadamard gate (
+  
+    
+      
+        H
+      
+    
+    {\displaystyle H}
+  ) applied in parallel on 2 qubits. It can be written as
+
+  
+    
+      
+        
+          H
+          
+            2
+          
+        
+        =
+        H
+        ⊗
+        H
+        =
+        
+          
+            1
+            
+              2
+            
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  −
+                  1
+                
+              
+            
+            ]
+          
+        
+        ⊗
+        
+          
+            1
+            
+              2
+            
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  −
+                  1
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  −
+                  1
+                
+                
+                  1
+                
+                
+                  −
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  1
+                
+                
+                  −
+                  1
+                
+                
+                  −
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  −
+                  1
+                
+                
+                  −
+                  1
+                
+                
+                  1
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle H_{2}=H\otimes H={\frac {1}{\sqrt {2}}}{\begin{bmatrix}1&1\\1&-1\end{bmatrix}}\otimes {\frac {1}{\sqrt {2}}}{\begin{bmatrix}1&1\\1&-1\end{bmatrix}}={\frac {1}{2}}{\begin{bmatrix}1&1&1&1\\1&-1&1&-1\\1&1&-1&-1\\1&-1&-1&1\end{bmatrix}}}
+  
+This "two-qubit parallel Hadamard gate" will when applied to, for example, the two-qubit zero-vector (
+  
+    
+      
+        
+          |
+        
+        00
+        ⟩
+      
+    
+    {\displaystyle |00\rangle }
+  ), create a quantum state that have equal probability of being observed in any of its four possible outcomes; 00, 01, 10 and 11. We can write this operation as:
+
+  
+    
+      
+        
+          H
+          
+            2
+          
+        
+        
+          |
+        
+        00
+        ⟩
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  −
+                  1
+                
+                
+                  1
+                
+                
+                  −
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  1
+                
+                
+                  −
+                  1
+                
+                
+                  −
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  −
+                  1
+                
+                
+                  −
+                  1
+                
+                
+                  1
+                
+              
+            
+            ]
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                
+              
+              
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          |
+        
+        00
+        ⟩
+        +
+        
+          
+            1
+            2
+          
+        
+        
+          |
+        
+        01
+        ⟩
+        +
+        
+          
+            1
+            2
+          
+        
+        
+          |
+        
+        10
+        ⟩
+        +
+        
+          
+            1
+            2
+          
+        
+        
+          |
+        
+        11
+        ⟩
+        =
+        
+          
+            
+              
+                |
+              
+              00
+              ⟩
+              +
+              
+                |
+              
+              01
+              ⟩
+              +
+              
+                |
+              
+              10
+              ⟩
+              +
+              
+                |
+              
+              11
+              ⟩
+            
+            2
+          
+        
+      
+    
+    {\displaystyle H_{2}|00\rangle ={\frac {1}{2}}{\begin{bmatrix}1&1&1&1\\1&-1&1&-1\\1&1&-1&-1\\1&-1&-1&1\end{bmatrix}}{\begin{bmatrix}1\\0\\0\\0\end{bmatrix}}={\frac {1}{2}}{\begin{bmatrix}1\\1\\1\\1\end{bmatrix}}={\frac {1}{2}}|00\rangle +{\frac {1}{2}}|01\rangle +{\frac {1}{2}}|10\rangle +{\frac {1}{2}}|11\rangle ={\frac {|00\rangle +|01\rangle +|10\rangle +|11\rangle }{2}}}
+  
+Here the amplitude for each measurable state is 
+  
+    
+      
+        
+          
+            1
+            2
+          
+        
+      
+    
+    {\displaystyle {\frac {1}{2}}}
+  . The probability to observe any state is the absolute value of the measurable states amplitude squared, which in the above example means that there is one in four that we observe any one of the individual four cases. (Strictly speaking, the probability is equal to the amplitude modulus squared, and therefore must be real and non-negative. For amplitude 
+  
+    
+      
+        ψ
+      
+    
+    {\displaystyle \psi }
+  , the probability is its modulus squared 
+  
+    
+      
+        
+          |
+        
+        ψ
+        
+          
+            |
+          
+          
+            2
+          
+        
+        =
+        
+          ψ
+          
+            ∗
+          
+        
+        ψ
+        ≥
+        0
+      
+    
+    {\displaystyle |\psi |^{2}=\psi ^{*}\psi \geq 0}
+  .)
+
+  
+    
+      
+        
+          H
+          
+            2
+          
+        
+      
+    
+    {\displaystyle H_{2}}
+   performs the Hadamard transform on two qubits. Similary the gate 
+  
+    
+      
+        
+          
+            
+              
+                H
+                ⊗
+                H
+                ⊗
+                .
+                .
+                .
+                ⊗
+                H
+              
+              ⏟
+            
+          
+          
+            n
+            
+               times
+            
+          
+        
+        =
+        
+          ⨂
+          
+            1
+          
+          
+            n
+          
+        
+        H
+        =
+        
+          H
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \underbrace {H\otimes H\otimes ...\otimes H} _{n{\text{ times}}}=\bigotimes _{1}^{n}H=H_{n}}
+   performs a Hadamard transform on a register of 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+   qubits.
+
+
+If two or more qubits are viewed as a single quantum state, this combined state is equal to the tensor product of the constituent qubits. Any state that can be written as a tensor product from the constituent subsystems are called separable states. On the other hand, an entangled state is any state that cannot be tensor-factorized, or in other words: An entangled state can not be written as a tensor product of its constituent qubits states. Special care must be taken when applying gates to constituent qubits that make up entangled states.
+If we have a set of N qubits that are entangled and wish to apply a quantum gate on M < N qubits in the set, we will have to extend the gate to take N qubits. This can be done by combining the gate with an identity matrix such that their tensor product becomes a gate that act on N qubits. The identity matrix (
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+  ) is a representation of the gate that maps every state to itself (i.e., does nothing at all). In a circuit diagram the identity gate or matrix will appear as just a wire.
+For example, the Hadamard gate (
+  
+    
+      
+        H
+      
+    
+    {\displaystyle H}
+  ) acts on a single qubit, but if we for example feed it the first of the two qubits that constitute the entangled Bell state 
+  
+    
+      
+        
+          
+            
+              
+                |
+              
+              00
+              ⟩
+              +
+              
+                |
+              
+              11
+              ⟩
+            
+            
+              2
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {|00\rangle +|11\rangle }{\sqrt {2}}}}
+  , we cannot write that operation easily. We need to extend the Hadamard gate 
+  
+    
+      
+        H
+      
+    
+    {\displaystyle H}
+   with the identity gate 
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+   so that we can act on quantum states that span two qubits:
+
+  
+    
+      
+        K
+        =
+        H
+        ⊗
+        I
+        =
+        
+          
+            1
+            
+              2
+            
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  −
+                  1
+                
+              
+            
+            ]
+          
+        
+        ⊗
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            1
+            
+              2
+            
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  0
+                
+                
+                  −
+                  1
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  −
+                  1
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle K=H\otimes I={\frac {1}{\sqrt {2}}}{\begin{bmatrix}1&1\\1&-1\end{bmatrix}}\otimes {\begin{bmatrix}1&0\\0&1\end{bmatrix}}={\frac {1}{\sqrt {2}}}{\begin{bmatrix}1&0&1&0\\0&1&0&1\\1&0&-1&0\\0&1&0&-1\end{bmatrix}}}
+  
+The gate 
+  
+    
+      
+        K
+      
+    
+    {\displaystyle K}
+   can now be applied to any two-qubit state, entangled or otherwise. The gate 
+  
+    
+      
+        K
+      
+    
+    {\displaystyle K}
+   will leave the second qubit untouched and apply the Hadamard transform to the first qubit. If applied to the Bell state in our example, we may write that as:
+
+  
+    
+      
+        K
+        
+          
+            
+              
+                |
+              
+              00
+              ⟩
+              +
+              
+                |
+              
+              11
+              ⟩
+            
+            
+              2
+            
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  0
+                
+                
+                  −
+                  1
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  −
+                  1
+                
+              
+            
+            ]
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                
+              
+              
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+              
+              
+                
+                  1
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          
+            [
+            
+              
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+              
+              
+                
+                  −
+                  1
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            
+              
+                |
+              
+              00
+              ⟩
+              +
+              
+                |
+              
+              01
+              ⟩
+              +
+              
+                |
+              
+              10
+              ⟩
+              −
+              
+                |
+              
+              11
+              ⟩
+            
+            2
+          
+        
+      
+    
+    {\displaystyle K{\frac {|00\rangle +|11\rangle }{\sqrt {2}}}={\frac {1}{2}}{\begin{bmatrix}1&0&1&0\\0&1&0&1\\1&0&-1&0\\0&1&0&-1\end{bmatrix}}{\begin{bmatrix}1\\0\\0\\1\end{bmatrix}}={\frac {1}{2}}{\begin{bmatrix}1\\1\\1\\-1\end{bmatrix}}={\frac {|00\rangle +|01\rangle +|10\rangle -|11\rangle }{2}}}
+  
+Because the number of elements in the matrices is 
+  
+    
+      
+        
+          2
+          
+            2
+            n
+          
+        
+      
+    
+    {\displaystyle 2^{2n}}
+  , where 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+   is the number of qubits the gates act on, it is believed to be intractable to simulate large quantum systems using classical computers.
+
+
+Because all quantum logical gates are reversible, any composition of multiple gates is also reversible. All products and tensor products of unitary matrices are also unitary matrices. This means that it is possible to construct an inverse of all algorithms and functions, as long as they do not contain any initialization or measurement. (Initialization, measurement and uncontrolled decoherence are the only phenomena that result in side effects in quantum computers. Gates are purely functional and bijective.)
+If a function 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+   is a product of 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+   gates (
+  
+    
+      
+        F
+        =
+        
+          A
+          
+            1
+          
+        
+        ⋅
+        
+          A
+          
+            2
+          
+        
+        ⋅
+        .
+        .
+        .
+        ⋅
+        
+          A
+          
+            m
+          
+        
+      
+    
+    {\displaystyle F=A_{1}\cdot A_{2}\cdot ...\cdot A_{m}}
+  ), the unitary inverse of the function, 
+  
+    
+      
+        
+          F
+          
+            †
+          
+        
+      
+    
+    {\displaystyle F^{\dagger }}
+  , can be constructed:
+Because 
+  
+    
+      
+        (
+        U
+        V
+        
+          )
+          
+            †
+          
+        
+        =
+        
+          V
+          
+            †
+          
+        
+        
+          U
+          
+            †
+          
+        
+      
+    
+    {\displaystyle (UV)^{\dagger }=V^{\dagger }U^{\dagger }}
+   we have, after recursive application on itself
+
+  
+    
+      
+        
+          F
+          
+            †
+          
+        
+        =
+        
+          
+            (
+            
+              
+                ∏
+                
+                  0
+                  <
+                  i
+                  ≤
+                  m
+                
+              
+              
+                A
+                
+                  i
+                
+              
+            
+            )
+          
+          
+            †
+          
+        
+        =
+        
+          ∏
+          
+            0
+            ≤
+            i
+            <
+            m
+          
+        
+        
+          A
+          
+            m
+            −
+            i
+          
+          
+            †
+          
+        
+        =
+        
+          A
+          
+            m
+          
+          
+            †
+          
+        
+        ⋅
+        .
+        .
+        .
+        ⋅
+        
+          A
+          
+            2
+          
+          
+            †
+          
+        
+        ⋅
+        
+          A
+          
+            1
+          
+          
+            †
+          
+        
+      
+    
+    {\displaystyle F^{\dagger }=\left(\prod _{0<i\leq m}A_{i}\right)^{\dagger }=\prod _{0\leq i<m}A_{m-i}^{\dagger }=A_{m}^{\dagger }\cdot ...\cdot A_{2}^{\dagger }\cdot A_{1}^{\dagger }}
+  
+And since 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+   is a unitary matrix, 
+  
+    
+      
+        
+          F
+          
+            †
+          
+        
+        F
+        =
+        F
+        
+          F
+          
+            †
+          
+        
+        =
+        I
+      
+    
+    {\displaystyle F^{\dagger }F=FF^{\dagger }=I}
+   and 
+  
+    
+      
+        
+          F
+          
+            †
+          
+        
+        =
+        
+          F
+          
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle F^{\dagger }=F^{-1}}
+  .
+The dagger operator (
+  
+    
+      
+        †
+      
+    
+    {\displaystyle \dagger }
+  ) is the complex conjugate of the transpose. It is also called the hermitian adjoint.
+Similary if a function 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+   consists of two gates 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+   and 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+   in parallel, then 
+  
+    
+      
+        
+          G
+          
+            †
+          
+        
+        =
+        (
+        A
+        ⊗
+        B
+        
+          )
+          
+            †
+          
+        
+        =
+        
+          A
+          
+            †
+          
+        
+        ⊗
+        
+          B
+          
+            †
+          
+        
+      
+    
+    {\displaystyle G^{\dagger }=(A\otimes B)^{\dagger }=A^{\dagger }\otimes B^{\dagger }}
+  . 
+Example: The common Hadamard-CNOT gate can be written as 
+  
+    
+      
+        C
+        N
+        O
+        T
+        (
+        H
+        ⊗
+        I
+        )
+      
+    
+    {\displaystyle CNOT(H\otimes I)}
+  , and its inverse is 
+  
+    
+      
+        (
+        C
+        N
+        O
+        T
+        (
+        H
+        ⊗
+        I
+        )
+        
+          )
+          
+            †
+          
+        
+        =
+        (
+        
+          H
+          
+            †
+          
+        
+        ⊗
+        
+          I
+          
+            †
+          
+        
+        )
+        C
+        N
+        O
+        
+          T
+          
+            †
+          
+        
+        =
+        (
+        H
+        ⊗
+        I
+        )
+        C
+        N
+        O
+        T
+      
+    
+    {\displaystyle (CNOT(H\otimes I))^{\dagger }=(H^{\dagger }\otimes I^{\dagger })CNOT^{\dagger }=(H\otimes I)CNOT}
+  . All three of 
+  
+    
+      
+        H
+      
+    
+    {\displaystyle H}
+  , 
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+   and 
+  
+    
+      
+        C
+        N
+        O
+        T
+      
+    
+    {\displaystyle CNOT}
+   are their own inverses.
+For example, an algorithm for addition can in some situations be used for substraction, if it is being "run in reverse". The inverse quantum fourier transform is the unitary inverse. Unitary inverses can also be used for uncomputation. Programming languages for quantum computers, such as Microsofts Q# and Bernhard Ömer's QCL, contain circuit inversion as programming concepts.
+
+
+The current notation for quantum gates was developed by Barenco et al., building on notation introduced by Feynman.
+

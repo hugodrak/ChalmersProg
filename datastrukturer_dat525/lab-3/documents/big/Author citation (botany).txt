@@ -1,0 +1,72 @@
+In botanical nomenclature, author citation refers to citing the person or group of people who validly published a botanical name, i.e. who first published the name while fulfilling the formal requirements as specified by the International Code of Nomenclature for algae, fungi, and plants (ICN). In cases where a species is no longer in its original generic placement (i.e. a new combination of genus and specific epithet), both the author(s) of the original genus placement and those of the new combination are given (the former in parentheses).
+In botany, it is customary (though not obligatory) to abbreviate author names according to a recognised list of standard abbreviations.
+There are differences between the botanical code and the normal practice in zoology. In zoology, the publication year is given following the author name(s) and the authorship of a new combination is normally omitted. A small number of more specialized practices also vary between the recommendations of the botanical and zoological codes.
+
+
+In biological works, particularly those dealing with taxonomy and nomenclature but also in ecological surveys, it has long been the custom that full citations to the place where a scientific name was published are omitted, but a short-hand is used to cite the author of the name, at least the first time this is mentioned. The author name is frequently not sufficient information, but can help to resolve some difficulties. Problems include:
+
+The name of a taxon being referred to is ambiguous, as in the case of homonyms such as Ficus L., the fig tree genus, vs. Ficus Röding, 1798, a genus of molluscs.
+The publication of the name may be in a little-known journal or book. The author name may sometimes help to resolve this.
+The name may not have been validly published, but the supposed author name may be helpful to locate the publication or manuscript in which it was listed.Rules and recommendations for author citations in botany are covered by Articles 46–50 of the International Code of Nomenclature (ICN). As stated in Article 46 of the botanical Code, in botany it is normal to cite only the author of the taxon name as indicated in the published work, even though this may differ from the stated authorship of the publication itself.
+
+
+The simplest form of author citation in botany applies when the name is cited in its original rank and its original genus placement (for binomial names and below), where the original author (or authors) are the only name/s cited, and no parentheses are included.
+The Latin term "et" or the ampersand symbol "&" can be used when two authors jointly publish a name.Recommendation 46C.1In many cases the author citation will consist of two parts, the first in parentheses, e.g.:
+
+Helianthemum coridifolium (Vill.) Cout.This form of author citation indicates that the epithet was originally published in another genus (in this case as Cistus coridifolius) by the first author, Dominique Villars (indicated by the enclosing parentheses), but moved to the present genus Helianthemum by the second (revising) author (António Xavier Pereira Coutinho). Alternatively, the revising author changed the rank of the taxon, for example raising it from subspecies to species (or vice versa), from subgenus to Section, etc.Article 49 (Again, the latter is in contrast to the situation in zoology, where no authorship change is recognized within family-group, genus-group, and species-group names, thus a change from subspecies to species, or subgenus to genus, is not associated with any change in cited authorship).
+
+
+When citing a botanical name including its author, the author's name is often abbreviated. To encourage consistency, the International Code of Nomenclature for algae, fungi, and plants ICN recommendsRecommendation 46A, Note 1 the use of Brummitt & Powell's Authors of Plant Names (1992), where each author of a botanical name has been assigned a unique abbreviation. These standard abbreviations can be found at the International Plant Names Index.For example, in:
+
+Rubus L.the abbreviation "L." refers to the famous botanist Carl Linnaeus who described this genus on p. 492 of his Species Plantarum in 1753.
+
+Rubus ursinus Cham. & Schldl.the abbreviation "Cham." refers to the botanist Adelbert von Chamisso and "Schldl." to the botanist Diederich Franz Leonhard von Schlechtendal; these authors jointly described this species (and placed it in the genus Rubus) in 1827.
+
+
+When "ex" is a component of the author citation, it denotes the fact that an initial description did not satisfy the rules for valid publication, but that the same name was subsequently validly published by a second author or authors (or by the same author in a subsequent publication).Article 46.4 However, if the subsequent author makes clear that the description was due to the earlier author (and that the earlier author accepted the name), then no "ex" is used, and the earlier author is listed alone. For example:
+
+Andropogon aromaticus Sieber ex Schult.indicates that Josef Schultes validly published this name (in 1824 in this instance), but his description was based on an earlier description by Franz Sieber. (Note that in botany, the author of the earlier name precedes the later, valid one; in zoology, this sequence (where present) is reversed).
+
+
+The following forms of citation are all equally correct:
+
+Rubus ursinus Cham. & Schldl.
+Rubus ursinus Cham. et Schldl.
+Rubus ursinus von Chamisso & von Schlechtendal
+Rubus ursinus von Chamisso et von SchlechtendalAs indicated above, either the original or the revising author may involve multiple words, as per the following examples from the same genus:
+
+Helianthemum sect. Atlanthemum (Raynaud) G.López, Ortega Oliv. & Romero García
+Helianthemum apenninum Mill. subsp. rothmaleri (Villar ex Rothm.) M.Mayor & Fern.Benito
+Helianthemum conquense (Borja & Rivas Goday ex G.López) Mateo & V.J.Arán Resó
+
+
+The ancillary term "in" is sometimes employed to indicate that the authorship of the published work is different from that of the name itself, for example:
+
+Verrucaria aethiobola Wahlenb. in Acharius, Methodus, Suppl.: 17. 1803Article 46.2 Note 1 of the Botanical Code indicates that in such cases, the portion commencing "in" is in fact a bibliographic citation and should not be used without the place of publication being included, thus the preferred form of the name+author alone in this example would be Verrucaria aethiobola Wahlenb., not Verrucaria aethiobola Wahlenb. in Acharius. (This is in contrast to the situation in zoology, where either form is permissible, and in addition a date would normally be appended.)
+
+
+According to the botanical Code it is only necessary to cite the author for the lowest rank of the taxon in question, i.e. for the example subspecies given above (Helianthemum apenninum subsp. rothmaleri) it is not necessary (or even recommended) to cite the authority of the species ("Mill.") as well as that of the subspecies, though this is found in some sources. The only exception to this rule is where the nominate variety or subspecies of a species is cited, which automatically will inherit the same authorship of its parent taxon,Article 26.1 thus:
+
+Rosa gallica L. var. gallica, not "Rosa gallica var. gallica L."
+
+
+As described in Article 47 of the botanical code, on occasion either the diagnostic characters or the circumscription of a taxon may be altered ("emended") sufficiently that the attribution of the name to the original taxonomic concept as named is insufficient. The original authorship attribution is not altered in these cases, but a taxonomic statement can be appended to the original authorship using the abbreviation "emend." (for emendavit), as per these examples given in the Code:
+
+Phyllanthus L. emend. Müll. Arg
+Globularia cordifolia L. excl. var. (emend. Lam.).(In the second example, "excl. var.", abbr. for exclusis varietatibus, indicates that this taxonomic concept excludes varieties which other workers have subsequently included).
+
+
+Other indications which may be encountered appended to scientific name authorship include indications of nomenclatural or taxonomic status (e.g. "nom. illeg.", "sensu Smith", etc.), prior taxonomic status for taxa transferred between hybrid and non-hybrid status ("(pro sp.)" and "(pro hybr.)", see Article 50 of the botanical Code), and more. Technically these do not form part of the author citation but represent supplementary text, however they are sometimes included in "authority" fields in less well constructed taxonomic databases. Some specific examples given in Recommendations 50A–F of the botanical Code include:
+
+Carex bebbii Olney, nomen nudum (alternatively: nom. nud.)for a taxon name published without an acceptable description or diagnosis
+
+Lindera Thunb., Nov. Gen. Pl.: 64. 1783, non Adans. 1763for a homonym—indicating in this instance that Carl Peter Thunberg's "Lindera" is not the same taxon as that named previously by Michel Adanson, the correspondence of the two names being coincidental
+
+Bartlingia Brongn. in Ann. Sci. Nat. (Paris) 10: 373. 1827, non Rchb. 1824 nec F.Muell. 1882as above, but two prior (and quite possibly unrelated) homonyms noted, the first by Ludwig Reichenbach, the second by Ferdinand von Mueller
+
+Betula alba L. 1753, nom. rej.for a taxon name rejected (normally in favour of a later usage) and placed on the list of rejected names forming an appendix to the botanical Code (the alternative name conserved over the rejected name would be cited as "nom. cons.")
+
+Ficus exasperata auct. non Vahlthis is the preferred syntax for a name that has been misapplied by a subsequent author or authors ("auct." or "auctt.") such that it actually represents a different taxon from the one to which Vahl's name correctly applies
+
+Spathiphyllum solomonense Nicolson in Am. J. Bot. 54: 496. 1967, "solomonensis"indicating that the epithet as originally published was spelled solomonensis, but the spelling here is in an altered form, presumably for Code compliance or some other legitimate reason.
+

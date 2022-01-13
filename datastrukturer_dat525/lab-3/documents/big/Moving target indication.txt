@@ -1,0 +1,265 @@
+Moving target indication (MTI) is a mode of operation of a radar to discriminate a target against the clutter. It describes a variety of techniques used to find moving objects, like an aircraft, and filter out unmoving ones, like hills or trees. It contrasts with the modern stationary target indication (STI) technique, which uses details of the signal to directly determine the mechanical properties of the reflecting objects and thereby find targets whether they are moving or not.
+Early MTI systems generally used an acoustic delay line to store a single pulse of the received signal for exactly the time between broadcasts (the pulse repetition frequency). This stored pulse will be sent to the display along with the next received pulse. The result was that the signal from any objects that did not move mixed with the stored signal and became muted out. Only signals that changed, because they moved, remained on the display. These were subject to a wide variety of noise effects that made them useful only for strong signals, generally for aircraft or ship detection.
+The introduction of phase-coherent klystron transmitters, as opposed to the incoherent cavity magnetron used on earlier radars, led to the introduction of a new MTI technique. In these systems, the signal was not fed directly to the display, but first fed into a phase detector. Stationary objects did not change the phase from pulse to pulse, but moving objects did. By storing the phase signal, instead of the original analog signal, or video, and comparing the stored and current signal for changes in phase, the moving targets are revealed. This technique is far more resistant to noise, and can easily be tuned to select different velocity thresholds to filter out different types of motion.Phase coherent signals also allowed for the direct measurement of velocity via the Doppler shift of a single received signal. This can be fed into a bandpass filter to filter out any part of the return signal that does not show a frequency shift, thereby directly extracting the moving targets. This became common in the 1970s and especially the 1980s. Modern radars generally perform all of these MTI techniques as part of a wider suite of signal processing being carried out by digital signal processors. MTI may be specialized in terms of the type of clutter and environment: airborne MTI (AMTI), ground MTI (GMTI), etc., or may be combined mode: stationary and moving target indication (SMTI).
+
+
+
+The MTI radar uses low pulse repetition frequency (PRF) to avoid range ambiguities.
+Moving target indicator (MTI) begins with sampling two successive pulses.  Sampling begins immediately after the radar transmit pulse ends.  The sampling continues until the next transmit pulse begins.
+Sampling is repeated in the same location for the next transmit pulse, and the sample taken (at the same distance) with the first pulse is rotated 180 degrees and added to the second sample. This is called destructive interference.
+If an object is moving in the location corresponding to both samples, then the signal reflected from the object will survive this process because of constructive interference. If all objects are stationary, the two samples will cancel out and very little signal will remain.
+High-power microwave devices, like crossed-field amplifier, are not phase-stable. The phase of each transmit pulse is different from the previous and future transmit pulses. This phenomenon is called phase jitter.
+In order for MTI to work, the initial phase of both transmit pulses must be sampled and the 180 degree phase rotation must be adjusted to achieve signal cancellation on stationary objects.
+A secondary influence is that phase rotation is induced by Doppler, and that creates blind velocities. For example, an object moving at 75 m/s (170 mile/hour) will produce 180 degree phase shift each 1 millisecond at L band.
+
+  
+    
+      
+        
+          Doppler
+        
+        =
+        180
+        ,
+        
+          000
+          
+            ∘
+          
+        
+        
+          /
+        
+        
+          s
+        
+        =
+        720
+        
+          (
+          
+            
+              
+                75
+                ×
+                
+                  10
+                  
+                    9
+                  
+                
+              
+              
+                3
+                ×
+                
+                  10
+                  
+                    8
+                  
+                
+              
+            
+          
+          )
+        
+        =
+        720
+        
+          (
+          
+            
+              
+                
+                  Velocity
+                
+                ×
+                
+                  Transmit Frequency
+                
+              
+              C
+            
+          
+          )
+        
+      
+    
+    {\displaystyle {\text{Doppler}}=180,000^{\circ }/{\text{s}}=720\left({\frac {75\times 10^{9}}{3\times 10^{8}}}\right)=720\left({\frac {{\text{Velocity}}\times {\text{Transmit Frequency}}}{C}}\right)}
+  If the pulse repetition interval is 0.002 s between transmit pulses, then the MTI process will produce 
+  
+    
+      
+        
+          360
+          
+            ∘
+          
+        
+      
+    
+    {\displaystyle 360^{\circ }}
+   phase rotation. That is the same as a stationary object, which renders the system blind to objects traveling at this radial velocity.
+MTI requires 3 or 4 pulses to reduce the effect of blind velocities. Multi-pulse strategies use staggered pulses with irregular pulse repetition intervals to prevent signal cancellation on moving objects. The summation process is slightly different so as to accommodate the additional samples.
+Phase jitter, Doppler effects, and environmental influences limit MTI sub-clutter visibility Measure of Performance to about 25 dB improvement. This allows moving objects about 300 times smaller to be detected in close proximity to larger stationary objects.
+Pulse-Doppler signal processing is required to achieve greater sub-clutter visibility.
+
+
+A target is traveling at velocity 
+  
+    
+      
+        
+          v
+          
+            p
+          
+        
+      
+    
+    {\displaystyle v_{p}}
+   at a maximum range 
+  
+    
+      
+        
+          R
+          
+            max
+          
+        
+      
+    
+    {\displaystyle R_{\text{max}}}
+   with elevation angle 
+  
+    
+      
+        E
+        L
+      
+    
+    {\displaystyle EL}
+   and azimuth 
+  
+    
+      
+        A
+        Z
+      
+    
+    {\displaystyle AZ}
+   in respect to a bistatic MTI radar.
+
+
+The probability of detecting a given target at a given range any time the radar beam scans across it, Pd is determined by factors that include the size of the antenna and the amount of power it radiates. A large antenna radiating at high power provides the best performance. For high quality information on moving targets the Pd must be very high.
+
+
+Location accuracy is a dependent on the certainty of the position of the radar, the radar-pointing accuracy, azimuth resolution, and range resolution. A long antenna or very short wavelength can provide fine azimuth resolution. Short antennas tend to have a larger azimuth error, an error that increases with range to the target because signal-to-noise ratio varies inversely with range. Location accuracy is vital to tracking performance because it prevents track corruption when there are multiple targets and
+makes it possible to determine which road a vehicle is on if it is moving in an area with many roads.
+The target location accuracy is proportional to the slant range, frequency and aperture length.
+
+
+Target range resolution determines whether two or more targets moving in close proximity will be detected as individual targets. With higher performance radars, target range resolution—known as high range resolution (HRR)—can be so precise that it may be possible to recognize a specific target (i.e., one that has been seen before) and to place it in a specific class (e.g., a T-80 tank). This would allow more reliable tracking of specific vehicles or groups of vehicles, even when they are moving in dense traffic or disappear for a period due to screening.
+
+
+The MDV comes from the frequency spread of the mainlobe clutter.  MDV determines whether traffic will be detected. A GMTI radar must distinguish a moving target from ground clutter by using the target's Doppler signature to detect the radial component of the target's velocity vector (i.e., by measuring the component of the target's movement directly along the radar-target line). To capture most of this traffic, even when it is moving almost tangentially to the radar (i.e., perpendicular to the radar-target line), a system must have the ability to detect very slow radial velocities. As the radial component of a target's velocity approaches zero, the target will fall into the clutter or blind zone. This is calculated as:
+
+  
+    
+      
+        
+          MDV
+        
+        =
+        
+          
+            λ
+            2
+          
+        
+        
+          
+            
+              4
+              
+                v
+                
+                  p
+                
+              
+            
+            B
+          
+        
+        
+          
+            
+              sin
+              
+                2
+              
+            
+            ⁡
+            (
+            A
+            Z
+            )
+            
+              sin
+              
+                2
+              
+            
+            ⁡
+            (
+            E
+            L
+            
+              )
+              
+                2
+              
+            
+            +
+            
+              cos
+              
+                2
+              
+            
+            ⁡
+            (
+            A
+            Z
+            )
+            
+              cos
+              
+                2
+              
+            
+            ⁡
+            (
+            E
+            L
+            )
+          
+        
+      
+    
+    {\displaystyle {\text{MDV}}={\frac {\lambda }{2}}{\frac {4v_{p}}{B}}{\sqrt {\sin ^{2}(AZ)\sin ^{2}(EL)^{2}+\cos ^{2}(AZ)\cos ^{2}(EL)}}}
+  Any target with a velocity less than this minimum (MDV) cannot be detected because there is not sufficient Doppler shift in its echo to separate it from the mainlobe clutter return.
+
+
+The area coverage rate (measured in area per unit time) is proportional to system power and aperture size. Other factors which may be relevant include grid spacing, size of the power amplifier, module quantization, the number of beams processed and system losses.
+
+
+Stand-off distance is the distance separating a radar system from the area it is covering.
+
+
+Coverage area size is the area that the system can keep under continuous surveillance from a specific orbit. Well known design principles cause a radar's maximum detection range to depend on the size of its antenna (radar aperture), the amount of power radiated from the antenna, and the effectiveness of its clutter cancellation mechanism. The earth's curvature and screening from terrain, foliage, and buildings cause system altitude to be another key factor determining depth of coverage. The ability to cover an area the size of an army corps commander's area of interest from a safe stand-off distance is the hallmark of an effective, advanced GMTI system.
+
+
+This equates to the frequency with which the radar beam passes over a given area. Frequent revisits are very important to the radar's ability to achieve track continuity and contribute to an increased probability of target detection by lessening the chance of obscuration from screening by trees, buildings, or other objects. A fast revisit rate becomes critical to providing an uncorrupted track when a target moves in dense traffic or is temporarily obscured, if only by trees along a road.
+

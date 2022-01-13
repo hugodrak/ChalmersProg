@@ -1,0 +1,62 @@
+Design for manufacturability (also sometimes known as design for manufacturing or DFM) is the general engineering practice of designing products in such a way that they are easy to manufacture. The concept exists in almost all engineering disciplines, but the implementation differs widely depending on the manufacturing technology. DFM describes the process of designing or engineering a product in order to facilitate the manufacturing process in order to reduce its manufacturing costs.  DFM will allow potential problems to be fixed in the design phase which is the least expensive place to address them. Other factors may affect the manufacturability such as the type of raw material, the form of the raw material, dimensional tolerances, and secondary processing such as finishing.
+Depending on various types of manufacturing processes there are set guidelines for DFM practices. These DFM guidelines help to precisely define various tolerances, rules and common manufacturing checks related to DFM.
+While DFM is applicable to the design process, a similar concept called DFSS (Design for Six Sigma) is also practiced in many organizations.
+
+
+In the PCB design process, DFM leads to a set of design guidelines that attempt to ensure manufacturability. By doing so, probable production problems may be addressed during the design stage.
+Ideally, DFM guidelines take into account the processes and capabilities of the manufacturing industry. Therefore, DFM is constantly evolving.
+As manufacturing companies evolve and automate more and more stages of the processes, these processes tend to become cheaper. DFM is usually used to reduce these costs. For example, if a process may be done automatically by machines (i.e. SMT component placement and soldering), such process is likely to be cheaper than doing so by hand.
+
+
+Achieving high-yielding designs, in the state of the art VLSI technology has become an extremely challenging task due to the miniaturization as well as the complexity of leading-edge products. Here, the DFM methodology includes a set of techniques to modify the design of integrated circuits (IC) in order to make them more manufacturable, i.e., to improve their functional yield, parametric yield, or their reliability.
+
+
+Traditionally, in the pre-nanometer era, DFM consisted of a set of different methodologies trying to enforce some soft (recommended) design rules regarding the shapes and polygons of the physical layout of an integrated circuit. These DFM methodologies worked primarily at the full chip level.  Additionally, worst-case simulations at different levels of abstraction were applied to minimize the impact of process variations on performance and other types of parametric yield loss. All these different types of worst-case simulations were essentially based on a base set of worst-case (or corner) SPICE device parameter files that were intended to represent the variability of transistor performance over the full range of variation in a fabrication process.
+
+
+The most important yield loss models (YLMs) for VLSI ICs can be classified into several categories based on their nature.
+
+Functional yield loss is still the dominant factor and is caused by mechanisms such as misprocessing (e.g., equipment-related problems), systematic effects such as printability or planarization problems, and purely random defects.
+High-performance products may exhibit parametric design marginalities caused by either process fluctuations or environmental factors (such as supply voltage or temperature).
+The test-related yield losses, which are caused by incorrect testing, can also play a significant role.
+
+
+After understanding the causes of yield loss, the next step is to make the design as resistant as possible.  Techniques used for this include:
+
+Substituting higher yield cells where permitted by timing, power, and routability.
+Changing the spacing and width of the interconnect wires, where possible
+Optimizing the amount of redundancy in internal memories.
+Substituting fault tolerant (redundant) vias in a design where possibleAll of these require a detailed understanding of yield loss mechanisms, since these changes trade off against one another.  For example, introducing redundant vias will reduce the chance of via problems, but increase the chance of unwanted shorts.  Whether this is good idea, therefore, depends on the details of the yield loss models and the characteristics of the particular design.
+
+
+
+
+The objective is to design for lower cost. The cost is driven by time, so the design must minimize the time required to not just machine (remove the material), but also the set-up time of the CNC machine, NC programming, fixturing  and many other activities that are dependent on the complexity and size of the part.
+
+
+Unless a 4th- &/or 5th-Axis is used, a CNC can only approach the part from a single direction.  One side must be machined at a time (called an operation or Op). Then the part must be flipped from side to side to machine all of the features.  The geometry of the features dictates whether the part must be flipped over or not. The more Ops (flip of the part), the more expensive the part because it incurs substantial "Set-up" and "Load/Unload" time.
+Each operation (flip of the part) has set-up time, machine time, time to load/unload tools, time to load/unload parts, and time to create the NC program for each operation. If a part has only 1 operation, then parts only have to be loaded/unloaded once.  If it has 5 operations, then load/unload time is significant.
+The low hanging fruit is minimizing the number of operations (flip of the part) to create significant savings.  For example, it may take only 2 minutes to machine the face of a small part, but it will take an hour to set the machine up to do it. Or, if there are 5 operations at 1.5 hours each, but only 30 minutes total machine time, then 7.5 hours is charged for just 30 minutes of machining.Lastly, the volume (number of parts to machine) plays a critical role in amortizing the set-up time, programming time and other activities into the cost of the part. In the example above, the part in quantities of 10 could cost 7–10X the cost in quantities of 100.
+Typically, the law of diminishing returns presents itself at volumes of 100–300 because set-up times, custom tooling and fixturing can be amortized into the noise.
+
+
+The most easily machined types of metals include aluminum, brass, and softer metals.  As materials get harder, denser and stronger, such as steel, stainless steel, titanium, and exotic alloys, they become much harder to machine and take much longer, thus being less manufacturable.  Most types of plastic are easy to machine, although additions of fiberglass or carbon fiber can reduce the machinability.  Plastics that are particularly soft and gummy may have machinability problems of their own.
+
+
+Metals come in all forms. In the case of aluminum as an example, bar stock and plate are the two most common forms from which machined parts are made. The size and shape of the component may determine which form of material must be used. It is common for engineering drawings to specify one form over the other.  Bar stock is generally close to 1/2 of the cost of plate on a per pound basis. So although the material form isn't directly related to the geometry of the component, cost can be removed at the design stage by specifying the least expensive form of the material.
+
+
+A significant contributing factor to the cost of a machined component is the geometric tolerance to which the features must be made.  The tighter the tolerance required, the more expensive the component will be to machine.  When designing, specify the loosest tolerance that will serve the function of the component.  Tolerances must be specified on a feature by feature basis.  There are creative ways to engineer components with lower tolerances that still perform as well as ones with higher tolerances.
+
+
+As machining is a subtractive process, the time to remove the material is a major factor in determining the machining cost.  The volume and shape of the material to be removed as well as how fast the tools can be fed will determine the machining time.  When using milling cutters, the strength and stiffness of the tool which is determined in part by the length to diameter ratio of the tool will play the largest role in determining that speed.  The shorter the tool is relative to its diameter the faster it can be fed through the material.  A ratio of 3:1 (L:D) or under is optimum.  If that ratio cannot be achieved, a solution like this depicted here can be used.  For holes, the length to diameter ratio of the tools are less critical, but should still be kept under 10:1.
+There are many other types of features which are more or less expensive to machine.  Generally chamfers cost less to machine than radii on outer horizontal edges. 3D interpolation is used to create radii on edges that are not on the same plane which incur 10X the cost.  Undercuts are more expensive to machine.  Features that require smaller tools, regardless of L:D ratio, are more expensive.
+
+
+The concept of Design for Inspection (DFI) should complement and work in collaboration with Design for Manufacturability (DFM) and Design for Assembly (DFA) to reduce product manufacturing cost and increase manufacturing practicality. There are instances when this method could cause calendar delays since it consumes many hours of additional work such as the case of the need to prepare for design review presentations and documents. To address this, it is proposed that instead of periodic inspections, organizations could adopt the framework of empowerment, particularly at the stage of product development, wherein the senior management empowers the project leader to evaluate manufacturing processes and outcomes against expectations on product performance, cost, quality and development time. Experts, however, cite the necessity for the DFI because it is crucial in performance and quality control, determining key factors such as product reliability, safety, and life cycles. For an aerospace components company, where inspection is mandatory, there is the requirement for the suitability of the manufacturing process for inspection. Here, a mechanism is adopted such as an inspectability index, which evaluates design proposals. Another example of DFI is the concept of cumulative count of conforming chart (CCC chart), which is applied in inspection and maintenance planning for systems where different types of inspection and maintenance are available.
+
+
+
+Additive manufacturing broadens the ability of a designer to optimize the design of a product or part (to save materials for example). Designs tailored for additive manufacturing are sometimes very different from designs tailored for machining or forming manufacturing operations.
+In addition, due to some size constraints of additive manufacturing machines, sometimes the related bigger designs are split into smaller sections with self-assembly features or fasteners locators.
+

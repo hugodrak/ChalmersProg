@@ -1,0 +1,136 @@
+Online analytical processing, or OLAP (), is an approach to answer multi-dimensional analytical (MDA) queries swiftly in computing. OLAP is part of the broader category of business intelligence, which also encompasses relational databases, report writing and data mining.  Typical applications of OLAP include business reporting for sales, marketing, management reporting, business process management (BPM), budgeting and forecasting, financial reporting and similar areas, with new applications emerging, such as agriculture.The term OLAP was created as a slight modification of the traditional database term online transaction processing (OLTP).OLAP tools enable users to analyze multidimensional data interactively from multiple perspectives. OLAP consists of three basic analytical operations: consolidation (roll-up), drill-down, and slicing and dicing. Consolidation involves the aggregation of data that can be accumulated and computed in one or more dimensions. For example, all sales offices are rolled up to the sales department or sales division to anticipate sales trends. By contrast, the drill-down is a technique that allows users to navigate through the details. For instance, users can view the sales by individual products that make up a region's sales. Slicing and dicing is a feature whereby users can take out (slicing) a specific set of data of the OLAP cube and view (dicing) the slices from different viewpoints.  These viewpoints are sometimes called dimensions (such as looking at the same sales by salesperson, or by date, or by customer, or by product, or by region, etc.)
+Databases configured for OLAP use a multidimensional data model, allowing for complex analytical and ad hoc queries with a rapid execution time.  They borrow aspects of navigational databases, hierarchical databases and relational databases.
+OLAP is typically contrasted to OLTP (online transaction processing), which is generally characterized by much less complex queries, in a larger volume, to process transactions rather than for the purpose of business intelligence or reporting. Whereas OLAP systems are mostly optimized for read, OLTP has to process all kinds of queries (read, insert, update and delete).
+
+
+At the core of any OLAP system is an OLAP cube (also called a 'multidimensional cube' or a hypercube). It consists of numeric facts called measures that are categorized by dimensions. The measures are placed at the intersections of the hypercube, which is spanned by the dimensions as a vector space. The usual interface to manipulate an OLAP cube is a matrix interface, like Pivot tables in a spreadsheet program, which performs projection operations along the dimensions, such as aggregation or averaging.
+The cube metadata is typically created from a star schema or snowflake schema or fact constellation of tables in a relational database. Measures are derived from the records in the fact table and dimensions are derived from the dimension tables.
+Each measure can be thought of as having a set of labels, or meta-data associated with it. A dimension is what describes these labels; it provides information about the measure.
+A simple example would be a cube that contains a store's sales as a measure, and Date/Time as a dimension. Each Sale has a Date/Time label that describes more about that sale.
+For example:
+
+ Sales Fact Table
++-------------+----------+
+| sale_amount | time_id  |
++-------------+----------+            Time Dimension
+|      2008.10|     1234 |----+     +---------+-------------------+
++-------------+----------+    |     | time_id | timestamp         |
+                              |     +---------+-------------------+
+                              +---->|   1234  | 20080902 12:35:43 |
+                                    +---------+-------------------+
+
+
+Multidimensional structure is defined as "a variation of the relational model that uses multidimensional structures to organize data and express the relationships between data".  The structure is broken into cubes and the cubes are able to store and access data within the confines of each cube. "Each cell within a multidimensional structure contains aggregated data related to elements along each of its dimensions".  Even when data is manipulated it remains easy to access and continues to constitute a compact database format.  The data still remains interrelated.
+Multidimensional structure is quite popular for analytical databases that use online analytical processing (OLAP) applications.  Analytical databases use these databases because of their ability to deliver answers to complex business queries swiftly.  Data can be viewed from different angles, which gives a broader perspective of a problem unlike other models.
+
+
+It has been claimed that for complex queries OLAP cubes can produce an answer in around 0.1% of the time required for the same query on OLTP relational data.  The most important mechanism in OLAP which allows it to achieve such performance is the use of aggregations. Aggregations are built from the fact table by changing the granularity on specific dimensions and aggregating up data along these dimensions, using an aggregate function (or aggregation function). The number of possible aggregations is determined by every possible combination of dimension granularities.
+The combination of all possible aggregations and the base data contains the answers to every query which can be answered from the data.Because usually there are many aggregations that can be calculated, often only a predetermined number are fully calculated; the remainder are solved on demand.  The problem of deciding which aggregations (views) to calculate is known as the view selection problem.  View selection can be constrained by the total size of the selected set of aggregations, the time to update them from changes in the base data, or both.  The objective of view selection is typically to minimize the average time to answer OLAP queries, although some studies also minimize the update time.  View selection is NP-Complete. Many approaches to the problem have been explored, including greedy algorithms, randomized search, genetic algorithms and A* search algorithm.
+Some aggregation functions can be computed for the entire OLAP cube by precomputing values for each cell, and then computing the aggregation for a roll-up of cells by aggregating these aggregates, applying a divide and conquer algorithm to the multidimensional problem to compute them efficiently. For example, the overall sum of a roll-up is just the sum of the sub-sums in each cell. Functions that can be decomposed in this way are called decomposable aggregation functions, and include COUNT, MAX, MIN, and SUM, which can be computed for each cell and then directly aggregated; these are known as self-decomposable aggregation functions. In other cases the aggregate function can be computed by computing auxiliary numbers for cells, aggregating these auxiliary numbers, and finally computing the overall number at the end; examples include AVERAGE (tracking sum and count, dividing at the end) and RANGE (tracking max and min, subtracting at the end). In other cases the aggregate function cannot be computed without analyzing the entire set at once, though in some cases approximations can be computed; examples include DISTINCT COUNT, MEDIAN, and MODE; for example, the median of a set is not the median of medians of subsets. These latter are difficult to implement efficiently in OLAP, as they require computing the aggregate function on the base data, either computing them online (slow) or precomputing them for possible rollouts (large space).
+
+
+OLAP systems have been traditionally categorized using the following taxonomy.
+
+
+MOLAP (multi-dimensional online analytical processing) is the classic form of OLAP and is sometimes referred to as just OLAP. MOLAP stores this data in an optimized multi-dimensional array storage, rather than in a relational database.
+Some MOLAP tools require the pre-computation and storage of derived data, such as consolidations – the operation known as processing. Such MOLAP tools generally utilize a pre-calculated data set referred to as a data cube. The data cube contains all the possible answers to a given range of questions. As a result, they  have a very fast response to queries. On the other hand, updating can take a long time depending on the degree of pre-computation. Pre-computation can also lead to what is known as data explosion.
+Other MOLAP tools, particularly those that implement the functional database model do not pre-compute derived data but make all calculations on demand other than those that were previously requested and stored in a cache.
+Advantages of MOLAP
+
+Fast query performance due to optimized storage, multidimensional indexing and caching.
+Smaller on-disk size of data compared to data stored in relational database due to compression techniques.
+Automated computation of higher level aggregates of the data.
+It is very compact for low dimension data sets.
+Array models provide natural indexing.
+Effective data extraction achieved through the pre-structuring of aggregated data.Disadvantages of MOLAP
+
+Within some MOLAP systems the processing step (data load) can be quite lengthy, especially on large data volumes. This is usually remedied by doing only incremental processing, i.e., processing only the data which have changed (usually new data) instead of reprocessing the entire data set.
+Some MOLAP methodologies introduce data redundancy.
+
+
+Examples of commercial products that use MOLAP are Cognos Powerplay, Oracle Database OLAP Option, MicroStrategy, Microsoft Analysis Services, Essbase, TM1, Jedox, and icCube.
+
+
+ROLAP works directly with relational databases and does not require pre-computation. The base data and the dimension tables are stored as relational tables and new tables are created to hold the aggregated information. It depends on a specialized schema design. This methodology relies on manipulating the data stored in the relational database to give the appearance of traditional OLAP's slicing and dicing functionality. In essence, each action of slicing and dicing is equivalent to adding a "WHERE" clause in the SQL statement. ROLAP tools do not use pre-calculated data cubes but instead pose the query to the standard relational database and its tables in order to bring back the data required to answer the question. ROLAP tools feature the ability to ask any question because the methodology is not limited to the contents of a cube.  ROLAP also has the ability to drill down to the lowest level of detail in the database.
+While ROLAP uses a relational database source, generally the database must be carefully designed for ROLAP use.  A database which was designed for OLTP will not function well as a ROLAP database.  Therefore, ROLAP still involves creating an additional copy of the data.  However, since it is a database, a variety of technologies can be used to populate the database.
+
+
+ROLAP is considered to be more scalable in handling large data volumes, especially models with dimensions with very high cardinality (i.e., millions of members).
+With a variety of data loading tools available, and the ability to fine-tune the extract, transform, load (ETL) code to the particular data model, load times are generally much shorter than with the automated MOLAP loads.
+The data are stored in a standard relational database and can be accessed by any SQL reporting tool (the tool does not have to be an OLAP tool).
+ROLAP tools are better at handling non-aggregatable facts (e.g., textual descriptions).  MOLAP tools tend to suffer from slow performance when querying these elements.
+By decoupling the data storage from the multi-dimensional model, it is possible to successfully model data that would not otherwise fit into a strict dimensional model.
+The ROLAP approach can leverage database authorization controls such as row-level security, whereby the query results are filtered depending on preset criteria applied, for example, to a given user or group of users (SQL WHERE clause).
+
+
+There is a consensus in the industry that ROLAP tools have slower performance than MOLAP tools. However, see the discussion below about ROLAP performance.
+The loading of aggregate tables must be managed by custom ETL code.  The ROLAP tools do not help with this task.  This means additional development time and more code to support.
+When the step of creating aggregate tables is skipped, the query performance then suffers because the larger detailed tables must be queried. This can be partially remedied by adding additional aggregate tables, however it is still not practical to create aggregate tables for all combinations of dimensions/attributes.
+ROLAP relies on the general purpose database for querying and caching, and therefore several special techniques employed by MOLAP tools are not available (such as special hierarchical indexing).  However, modern ROLAP tools take advantage of latest improvements in SQL language such as CUBE and ROLLUP operators, DB2 Cube Views, as well as other SQL OLAP extensions.  These SQL improvements can mitigate the benefits of the MOLAP tools.
+Since ROLAP tools rely on SQL for all of the computations, they are not suitable when the model is heavy on calculations which don't translate well into SQL. Examples of such models include budgeting, allocations, financial reporting and other scenarios.
+
+
+In the OLAP industry ROLAP is usually perceived as being able to scale for large data volumes, but suffering from slower query performance as opposed to MOLAP. The OLAP Survey, the largest independent survey across all major OLAP products, being conducted for 6 years (2001 to 2006) have consistently found that companies using ROLAP report slower performance than those using MOLAP even when data volumes were taken into consideration.
+However, as with any survey there are a number of subtle issues that must be taken into account when interpreting the results.
+
+The survey shows that ROLAP tools have 7 times more users than MOLAP tools within each company.  Systems with more users will tend to suffer more performance problems at peak usage times.
+There is also a question about complexity of the model, measured both in number of dimensions and richness of calculations. The survey does not offer a good way to control for these variations in the data being analyzed.
+
+
+Some companies select ROLAP because they intend to re-use existing relational database tables—these tables will frequently not be optimally designed for OLAP use.  The superior flexibility of ROLAP tools allows this less than optimal design to work, but performance suffers.  MOLAP tools in contrast would force the data to be re-loaded into an optimal OLAP design.
+
+
+The undesirable trade-off between additional ETL cost and slow query performance has ensured that most commercial OLAP tools now use a "Hybrid OLAP" (HOLAP) approach, which allows the model designer to decide which portion of the data will be stored in MOLAP and which portion in ROLAP.
+There is no clear agreement across the industry as to what constitutes "Hybrid OLAP", except that a database will divide data between relational and specialized storage. For example, for some vendors, a HOLAP database will use relational tables to hold the larger quantities of detailed data, and use specialized storage for at least some aspects of the smaller quantities of more-aggregate or less-detailed data. HOLAP addresses the shortcomings of MOLAP and ROLAP by combining the capabilities of both approaches. HOLAP tools can utilize both pre-calculated cubes and relational data sources.
+
+
+In this mode HOLAP stores aggregations in MOLAP for fast query performance, and detailed data in ROLAP to optimize time of cube processing.
+
+
+In this mode HOLAP stores some slice of data, usually the more recent one (i.e. sliced by Time dimension) in MOLAP for fast query performance, and older data in ROLAP. Moreover, we can store some dices in MOLAP and others in ROLAP, leveraging the fact that in a large cuboid, there will be dense and sparse subregions.
+
+
+The first product to provide HOLAP storage was Holos, but the technology also became available in other commercial products such as Microsoft Analysis Services, Oracle Database OLAP Option, MicroStrategy and SAP AG BI Accelerator. The hybrid OLAP approach combines ROLAP and MOLAP technology, benefiting from the greater scalability of ROLAP and the faster computation of MOLAP. For example, a HOLAP server may store large volumes of detailed data in a relational database, while aggregations are kept in a separate MOLAP store. The Microsoft SQL Server 7.0 OLAP Services supports a hybrid OLAP server
+
+
+Each type has certain benefits, although there is disagreement about the specifics of the benefits between providers.
+
+Some MOLAP implementations are prone to database explosion, a phenomenon causing vast amounts of storage space to be used by MOLAP databases when certain common conditions are met: high number of dimensions, pre-calculated results and sparse multidimensional data.
+MOLAP generally delivers better performance due to specialized indexing and storage optimizations. MOLAP also needs less storage space compared to ROLAP because the specialized storage typically includes compression techniques.
+ROLAP is generally more scalable. However, large volume pre-processing is difficult to implement efficiently so it is frequently skipped.  ROLAP query performance can therefore suffer tremendously.
+Since ROLAP relies more on the database to perform calculations, it has more limitations in the specialized functions it can use.
+HOLAP attempts to mix the best of ROLAP and MOLAP.  It can generally pre-process swiftly, scale well, and offer good function support.
+
+
+The following acronyms are also sometimes used, although they are not as widespread as the ones above:
+
+WOLAP – Web-based OLAP
+DOLAP – Desktop OLAP
+RTOLAP – Real-Time OLAP
+GOLAP  – Graph OLAP
+CaseOLAP – Context-aware Semantic OLAP, developed for biomedical applications. The CaseOLAP platform includes data preprocessing (e.g., downloading, extraction, and parsing text documents), indexing and searching with Elasticsearch, creating a functional document structure called Text-Cube, and quantifying user-defined phrase-category relationships using the core CaseOLAP algorithm.
+
+
+Unlike relational databases, which had SQL as the standard query language, and widespread APIs such as ODBC, JDBC and OLEDB, there was no such unification in the OLAP world for a long time. The first real standard API was OLE DB for OLAP specification from Microsoft which appeared in 1997 and introduced the MDX query language. Several OLAP vendors – both server and client – adopted it. In 2001 Microsoft and Hyperion announced the XML for Analysis specification, which was endorsed by most of the OLAP vendors. Since this also used MDX as a query language, MDX became the de facto standard.
+Since September-2011 LINQ can be used to query SSAS OLAP cubes from Microsoft .NET.
+
+
+
+
+The first product that performed OLAP queries was Express, which was released in 1970 (and acquired by Oracle in 1995 from Information Resources). However, the term did not appear until 1993 when it was coined by Edgar F. Codd, who has been described as "the father of the relational database". Codd's paper resulted from a short consulting assignment which Codd undertook for former Arbor Software (later Hyperion Solutions, and in 2007 acquired by Oracle), as a sort of marketing coup.  The company had released its own OLAP product, Essbase, a year earlier. As a result, Codd's "twelve laws of online analytical processing" were explicit in their reference to Essbase. There was some ensuing controversy and when Computerworld learned that Codd was paid by Arbor, it retracted the article. OLAP market experienced strong growth in late 1990s with dozens of commercial products going into market. In 1998, Microsoft released its first OLAP Server –  Microsoft Analysis Services, which drove wide adoption of OLAP technology and moved it into mainstream.
+
+
+
+
+OLAP clients include many spreadsheet programs like Excel, web application, SQL,dashboard tools, etc. Many clients support interactive data exploration where users select dimensions and measures of interest. Some dimensions are used as filters (for slicing and dicing the data) while others are selected as the axes of a pivot table or pivot chart. Users can also vary aggregation level (for drilling-down or rolling-up) the displayed view. Clients can also offer a variety of graphical widgets such as sliders, geographic maps, heatmaps and more which can be grouped and coordinated as dashboards. An extensive list of clients appears in the visualization column of the comparison of OLAP servers table.
+
+
+Below is a list of top OLAP vendors in 2006, with figures in millions of US Dollars.
+
+
+Mondrian OLAP server is an open-source OLAP server written in Java. It supports the MDX query language, the XML for Analysis and the olap4j interface specifications.
+Druid (open-source data store) is a popular open-source distributed data store for OLAP queries that is used at scale in production by various organizations.
+Apache Kylin is a distributed data store for OLAP queries originally developed by eBay.
+Cubes (OLAP server) is another light-weight open-source toolkit implementation of OLAP functionality in the Python programming language with built-in ROLAP.
+Apache Pinot (incubating) is used at LinkedIn, Uber, Slack and Microsoft to deliver scalable real time analytics with low latency. It can ingest data from offline data sources (such as Hadoop and flat files) as well as online sources (such as Kafka). Pinot is designed to scale horizontally.
+

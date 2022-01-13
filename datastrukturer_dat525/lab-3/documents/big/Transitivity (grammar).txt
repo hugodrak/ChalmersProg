@@ -1,0 +1,47 @@
+In linguistics, transitivity is a property of verbs that relates to whether a verb can take direct objects and how many such objects a verb can take.  It is closely related to valency, which considers other verb arguments in addition to direct objects. The obligatory noun phrases and prepositional phrases determine how many arguments a predicate has. Obligatory elements are considered arguments while optional ones are never counted in the list of arguments.Traditional grammar makes a binary distinction between intransitive verbs that cannot take a direct object (such as fall or sit in English) and transitive verbs that take one direct object  (such as throw, injure, kiss  in English).  In practice, many languages (including English) interpret the category more flexibly, allowing: ditransitive verbs, verbs that have two objects; or even ambitransitive verbs, verbs that can be used as both a transitive verb and an intransitive verb.  Further, some verbs may be idiomatically transitive, while, technically, intransitive. This may be observed in the verb walk in the idiomatic expression To walk the dog.
+In functional grammar, transitivity is considered to be a continuum rather than a binary category as in traditional grammar. The "continuum" view takes a more semantic approach.  One way it does this is by taking into account the degree to which an action affects its object (so that the verb see is described as having "lower transitivity" than the verb kill).
+
+
+The notion of transitivity, as well as other notions that today are the basics of linguistics, was first introduced by the Stoics and the Peripatetic school, but they probably referred to the whole sentence containing transitive or intransitive verbs, not just to the verb. The discovery of the Stoics was later used and developed by the philologists of the Alexandrian school and later grammarians.
+
+
+Many languages, such as Hungarian, mark transitivity through  morphology; transitive verbs and intransitive verbs behave in distinctive ways.  In languages with polypersonal agreement, an intransitive verb will agree with its subject only, while a transitive verb will agree with both subject and direct object.
+In other languages the distinction is based on syntax.  It is possible to identify an intransitive verb in English, for example, by attempting to supply it with an appropriate direct object:
+
+He kissed her hand—transitive verb.
+She injured him—transitive verb.
+What did you throw?—transitive verb.By contrast, an intransitive verb coupled with a direct object will result in an ungrammatical utterance:
+
+What did you fall?
+I sat a chair.Conversely (at least in a traditional analysis), using a transitive verb in English without a direct object will result in an incomplete sentence:
+
+I kissed (...)
+You injured (...)
+Where is she now?  *She's injuring.English is unusually lax by Indo-European standards in its rules on transitivity; what may appear to be a transitive verb can be used as an intransitive verb, and vice versa.  Eat and read and many other verbs can be used either transitively or intransitively.  Often there is a semantic difference between the intransitive and transitive forms of a verb: the water is boiling versus I boiled the water; the grapes grew versus I grew the grapes.  In these examples, known as ergative verbs, the role of the subject differs between intransitive and transitive verbs.
+Even though an intransitive verb may not take a direct object, it often may take an appropriate indirect object:
+
+I laughed at him.What are considered to be intransitive verbs can also take cognate objects, where the object is considered integral to the action, for example I slept an hour.
+
+
+The following languages of the below language families (or hypothetical language families) have this feature:In the Uralic language family:
+
+Mordvinic languages
+The three Ugric languages
+Northern Samoyedic languagesIn the Paleosiberian hypothetical language family:
+
+Languages of both branches of the Eskimo–Aleut family; for details from the Eskimo branch, see e.g. Sireniki, Kalaallisut
+Chukotko-Kamchatkan languages
+Yukaghir
+The Ket language has a very sophisticated verbal inclination system, referring to the object in many ways (see also polypersonal agreement).All varieties of Melanesian Pidgin use -im or -em as a transitivity marker: laik means 'want', while laikim means 'like (him/her/it)' in Tok Pisin.
+All varieties of Salish.
+
+
+Formal transitivity is associated with a variety of semantic functions across languages.  Crosslinguistically, Hopper and Thompson (1980) have proposed to decompose the notion of transitivity into ten formal and semantic features (some binary, some scalar); the features argued to be associated with the degree of transitivity are summarized in the following well-known table:
+
+Næss (2007) has argued at length for the following two points:
+
+Though formally a broad category of phenomena, transitivity boils down to a way to maximally distinguish the two participants involved (pp. 22–25);
+Major participants are describable in terms of the semantic features [±Volitional] [±Instigating] [±Affected] which makes them distinctive from each other. Different combinations of these binary values will yield different types of participants (pg. 89), which are then compatible or incompatible with different verbs. Individual languages may, of course, make more fine-grained distinctions (chapter 5).Types of participants discussed include:
+
+Volitional Undergoers (some Experiencer, Recipients, Beneficiaries): [+Vol], [-Inst], [+Aff]ex. me in Spanish Me gusta. ['I like it.']Force: [-Vol], [+Inst], [-Aff]ex. the tornado in The tornado broke my windows.Instrument: [-Vol], [+Inst], [+Aff]ex. the hammer in The hammer broke the cup.
+

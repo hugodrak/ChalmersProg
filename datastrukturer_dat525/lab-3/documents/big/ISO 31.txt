@@ -1,0 +1,27 @@
+ISO 31 (Quantities and units, International Organization for Standardization, 1992) is a deprecated international standard for the use of physical quantities and units of measurement, and formulas involving them, in scientific and educational documents. It is superseded by ISO/IEC 80000.
+
+
+The standard comes in 14 parts:
+
+ISO 31-0:  General principles
+ISO 31-1:  Space and time (replaced by ISO/IEC 80000-3:2007)
+ISO 31-2:  Periodic and related phenomena (replaced by ISO/IEC 80000-3:2007)
+ISO 31-3:  Mechanics (replaced by ISO/IEC 80000-4:2006)
+ISO 31-4:  Heat (replaced by ISO/IEC 80000-5)
+ISO 31-5:  Electricity and magnetism (replaced by ISO/IEC 80000-6)
+ISO 31-6:  Light and related electromagnetic radiations (replaced by ISO/IEC 80000-7)
+ISO 31-7:  Acoustics (replaced by ISO/IEC 80000-8:2007)
+ISO 31-8:  Physical chemistry and molecular physics (replaced by ISO/IEC 80000-9)
+ISO 31-9:  Atomic and nuclear physics (replaced by ISO/IEC 80000-10)
+ISO 31-10: Nuclear reactions and ionizing radiations
+ISO 31-11: Mathematical signs and symbols for use in the physical sciences and technology (replaced by ISO 80000-2:2009)
+ISO 31-12: Characteristic numbers (replaced by ISO/IEC 80000-11)
+ISO 31-13: Solid state physics (replaced by ISO/IEC 80000-12)A second international standard on quantities and units was IEC 60027. The ISO 31 and IEC 60027 Standards were revised by the two standardization organizations in collaboration ([1], [2]) to integrate both standards into a joint standard ISO/IEC 80000 - Quantities and Units in which the quantities and equations used with SI are to be referred as the International System of Quantities (ISQ). ISO/IEC 80000 supersedes both ISO 31 and part of IEC 60027.
+
+
+ISO 31-0 introduced several new words into the English language that are direct spelling-calques from the French. The intention was that these words be used in scientific papers for the sake of convenience and clarity. 
+
+
+Canada: CAN/CSA-Z234-1-89 Canadian Metric Practice Guide (covers some aspects of ISO 31-0, but is not a comprehensive list of physical quantities comparable to ISO 31)
+United States: There are several national SI guidance documents, such as NIST SP 811, NIST SP 330, NIST SP 814, IEEE/ASTM SI 10, SAE J916. These cover many aspects of the ISO 31-0 standard, but lack the comprehensive list of quantities and units defined in the remaining parts of ISO 31.
+

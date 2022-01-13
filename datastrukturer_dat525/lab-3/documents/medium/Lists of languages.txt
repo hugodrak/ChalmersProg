@@ -1,0 +1,69 @@
+This page lists published lists of languages.
+
+
+SIL International's Ethnologue: Languages of the World lists over 7,100 spoken and signed languages.
+The International Organization for Standardization (ISO) assigns codes for most languages; see ISO 639
+List of ISO 639-1 codes – two-letter codes (184 major languages)
+List of ISO 639-2 codes – three-letter codes
+ISO 639 macrolanguage – ISO 639-2 codes used as ISO 639-3 codes
+List of ISO 639-3 codes – three-letter codes, intended to "cover all known natural languages"
+List of ISO 639-5 codes – three-letter codes for language families and groups
+IETF language tag - depends on ISO 639, but provides various expansion mechanisms
+Glottolog
+Linguasphere Observatory (LS-2010, totalling over 32,800 coded entries & over 70,900 linguistic names)
+
+
+
+Index of language articles
+
+
+Lists which are global in scope (all living natural languages would classify for inclusion):
+
+by country: List of official languages by country and territory
+by name: List of language names (native names)
+by phylogenetic relation: List of language families (phylogenetic)
+by primary language family: List of Afro-Asiatic languages, List of Austronesian languages, List of Indo-European languages, List of Mongolic languages, List of Tungusic languages, List of Turkic languages, List of Uralic languages.
+chronologically: List of languages by first written accounts
+by number of speakers:
+List of languages by total number of speakers
+List of languages by number of native speakers
+List of languages by number of words according to authoritative dictionaries
+List of languages by writing system
+
+
+Languages of Africa
+Indigenous languages of the Americas
+List of Native American languages acquired by children
+Languages of North America
+Languages of South America
+Languages of Asia
+East Asian languages
+Languages of South Asia
+Languages of Southeast Asia
+Languages of Europe
+Languages of Oceania
+
+
+Extinct, endangered or revived languages
+
+Lists of extinct languages
+List of languages by time of extinction
+Lists of endangered languages
+List of revived languagesBy status or cultural sphere of influence
+
+List of lingua francas
+List of official languages
+List of official languages by state
+List of official languages by institution
+List of the largest languages without official status (major linguistic minorities, several million speakers)
+Languages used on the Internet (includes a list of the 30 or so languages with the most prevalence online)
+List of mutually intelligible languagesSpecial types of languages
+
+List of creole languages
+List of mixed languages
+List of pidgins, creoles, mixed languages and cants based on Indo-European languages
+List of English-based pidgins
+List of sign languages
+List of sign languages by number of native signers
+List of constructed languages
+

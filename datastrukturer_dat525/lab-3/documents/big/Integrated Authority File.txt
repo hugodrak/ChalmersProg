@@ -1,0 +1,10 @@
+The Integrated Authority File (German: Gemeinsame Normdatei; also known as the Universal Authority File) or GND is an international authority file for the organisation of personal names, subject headings and corporate bodies from catalogues. It is used mainly for documentation in libraries and increasingly also by archives and museums. The GND is managed by the German National Library (German: Deutsche Nationalbibliothek; DNB) in cooperation with various regional library networks in German-speaking Europe and other partners. The GND falls under the Creative Commons Zero (CC0) licence.The GND specification provides a hierarchy of high-level entities and sub-classes, useful in library classification, and an approach to unambiguous identification of single elements. It also comprises an ontology intended for knowledge representation in the semantic web, available in the RDF format.The Integrated Authority File became operational in April 2012 and integrates the content of the following authority files, which have since been discontinued:
+
+Name Authority File (German: Personennamendatei; PND)
+Corporate Bodies Authority File (German: Gemeinsame Körperschaftsdatei; GKD)
+Subject Headings Authority File (German: Schlagwortnormdatei; SWD)
+Uniform Title File of the Deutsches Musikarchiv (German: Einheitssachtitel-Datei des Deutschen Musikarchivs; DMA-EST)At the time of its introduction on 5 April 2012, the GND held 9,493,860 files, including 2,650,000 personalised names.
+
+
+There are seven main types of GND entities:
+

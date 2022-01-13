@@ -1,0 +1,9 @@
+# Request
+
+string pos
+string cube
+
+---
+
+# Reply
+bool result

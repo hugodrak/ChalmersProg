@@ -1,0 +1,921 @@
+In signal processing, white noise is a random signal having equal intensity at different frequencies, giving it a constant power spectral density. The term is used, with this or similar meanings, in many scientific and technical disciplines, including physics, acoustical engineering, telecommunications, and statistical forecasting. White noise refers to a statistical model for signals and signal sources, rather than to any specific signal. White noise draws its name from white light, although light that appears white generally does not have a flat power spectral density over the visible band.
+
+In discrete time, white noise is a discrete signal whose samples are regarded as a sequence of serially uncorrelated random variables with zero mean and finite variance; a single realization of white noise is a random shock. Depending on the context, one may also require that the samples be independent and have identical probability distribution (in other words independent and identically distributed random variables are the simplest representation of white noise). In particular, if each sample has a normal distribution with zero mean, the signal is said to be additive white Gaussian noise.The samples of a white noise signal may be sequential in time, or arranged along one or more spatial dimensions. In digital image processing, the pixels of a white noise image are typically arranged in a rectangular grid, and are assumed to be independent random variables with uniform probability distribution over some interval. The concept can be defined also for signals spread over more complicated domains, such as a sphere or a torus.
+
+An infinite-bandwidth white noise signal is a purely theoretical construction. The bandwidth of white noise is limited in practice by the mechanism of noise generation, by the transmission medium and by finite observation capabilities. Thus, random signals are considered "white noise" if they are observed to have a flat spectrum over the range of frequencies that are relevant to the context. For an audio signal, the relevant range is the band of audible sound frequencies (between 20 and 20,000 Hz). Such a signal is heard by the human ear as a hissing sound, resembling the /h/ sound in a sustained aspiration. On the other hand, the /sh/ sound in "ash" is a colored noise because it has a formant structure. In music and acoustics, the term "white noise" may be used for any signal that has a similar hissing sound.
+The term white noise is sometimes used in the context of phylogenetically based statistical methods to refer to a lack of phylogenetic pattern in comparative data.  It is sometimes used analogously in nontechnical contexts to mean "random talk without meaningful contents".
+
+
+
+Any distribution of values is possible (although it must have zero DC component). Even a binary signal which can only take on the values 1 or –1 will be white if the sequence is statistically uncorrelated. Noise having a continuous distribution, such as a normal distribution, can of course be white.
+It is often incorrectly assumed that Gaussian noise (i.e., noise with a Gaussian amplitude distribution – see normal distribution) necessarily refers to white noise, yet neither property implies the other. Gaussianity refers to the probability distribution with respect to the value, in this context the probability of the signal falling within any particular range of amplitudes, while the term 'white' refers to the way the signal power is distributed (i.e., independently) over time or among frequencies.
+White noise is the generalized mean-square derivative of the Wiener process or Brownian motion.
+A generalization to random elements on infinite dimensional spaces, such as random fields, is the white noise measure.
+
+
+
+
+White noise is commonly used in the production of electronic music, usually either directly or as an input for a filter to create other types of noise signal. It is used extensively in audio synthesis, typically to recreate percussive instruments such as cymbals or snare drums which have high noise content in their frequency domain. A simple example of white noise is a nonexistent radio station (static).
+
+
+White noise is also used to obtain the impulse response of an electrical circuit, in particular of amplifiers and other audio equipment. It is not used for testing loudspeakers as its spectrum contains too great an amount of high frequency content. Pink noise, which differs from white noise in that it has equal energy in each octave, is used for testing transducers such as loudspeakers and microphones.
+
+
+White noise is used as the basis of some random number generators. For example, Random.org uses a system of atmospheric antennae to generate random digit patterns from white noise.
+
+
+White noise is a common synthetic noise source used for sound masking by a tinnitus masker. White noise machines and other white noise sources are sold as privacy enhancers and sleep aids and to mask tinnitus. Alternatively, the use of an FM radio tuned to unused frequencies ("static") is a simpler and more cost-effective source of white noise. However, white noise generated from a common commercial radio receiver tuned to an unused frequency is extremely vulnerable to being contaminated with spurious signals, such as adjacent radio stations, harmonics from non-adjacent radio stations, electrical equipment in the vicinity of the receiving antenna causing interference, or even atmospheric events such as solar flares and especially lightning.
+There is evidence that white noise exposure therapies may induce maladaptive changes in the brain that degrade neurological health and compromise cognition.
+
+
+The effects of white noise upon cognitive function are mixed. Recently, a small study found that white noise background stimulation improves cognitive functioning among secondary students with attention deficit hyperactivity disorder (ADHD), while decreasing performance of non-ADHD students. Other work indicates it is effective in improving the mood and performance of workers by masking background office noise, but decreases cognitive performance in complex card sorting tasks.Similarly, an experiment was carried out on sixty six healthy participants to observe the benefits of using white noise in a learning environment. The experiment involved the participants identifying different images whilst having different sounds in the background. Overall the experiment showed that white noise does in fact have benefits in relation to learning. The experiments showed that white noise improved the participant's learning abilities and their recognition memory slightly.
+
+
+
+
+A random vector (that is, a partially indeterminate process that produces vectors of real numbers) is said to be a white noise vector or white random vector if its components each have a probability distribution with zero mean and finite variance, and are statistically independent: that is, their joint probability distribution must be the product of the distributions of the individual components.A necessary (but, in general, not sufficient) condition for statistical independence of two variables is that they be statistically uncorrelated; that is, their covariance is zero. Therefore, the  covariance matrix R of the components of a white noise vector w with n elements must be an n by n diagonal matrix, where each diagonal element Rᵢᵢ is the variance of component wᵢ; and the correlation matrix must be the n by n identity matrix.
+In particular, if in addition to being independent every variable in w also has a normal distribution with zero mean and the same variance 
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \sigma ^{2}}
+  , w is said to be a Gaussian white noise vector. In that case, the joint distribution of w is a multivariate normal distribution; the independence between the variables then implies that the distribution has spherical symmetry in n-dimensional space. Therefore, any orthogonal transformation of the vector will result in a Gaussian white random vector. In particular, under most types of discrete Fourier transform, such as FFT and Hartley, the transform W of w will be a Gaussian white noise vector, too; that is, the n Fourier coefficients of w will be independent Gaussian variables with zero mean and the same variance 
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \sigma ^{2}}
+  .
+The power spectrum P of a random vector w can be defined as the expected value of the squared modulus of each coefficient of its Fourier transform W, that is, Pᵢ = E(|Wᵢ|²). Under that definition, a Gaussian white noise vector will have a perfectly flat power spectrum, with Pᵢ = σ² for all i.
+If w is a white random vector, but not a Gaussian one, its Fourier coefficients Wᵢ will not be completely independent of each other; although for large n and common probability distributions the dependencies are very subtle, and their pairwise correlations can be assumed to be zero.
+Often the weaker condition "statistically uncorrelated" is used in the definition of white noise, instead of "statistically independent". However some of the commonly expected properties of white noise (such as flat power spectrum) may not hold for this weaker version. Under this assumption, the stricter version can be referred to explicitly as independent white noise vector. Other authors use strongly white and weakly white instead.An example of a random vector that is "Gaussian white noise" in the weak but not in the strong sense is x=[x₁,x₂] where x₁ is a normal random variable with zero mean, and x₂ is equal to +x₁ or to −x₁, with equal probability. These two variables are uncorrelated and individually normally distributed, but they are not jointly normally distributed and are not independent. If x is rotated by 45 degrees, its two components will still be uncorrelated, but their distribution will no longer be normal.
+In some situations one may relax the definition by allowing each component of a white random vector w to have non-zero expected value 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  . In image processing especially, where samples are typically restricted to positive values, one often takes 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+   to be one half of the maximum sample value. In that case, the Fourier coefficient W₀ corresponding to the zero-frequency component (essentially, the average of the w_i) will also have a non-zero expected value 
+  
+    
+      
+        μ
+        
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mu {\sqrt {n}}}
+  ; and the power spectrum P will be flat only over the non-zero frequencies.
+
+
+A discrete-time stochastic process 
+  
+    
+      
+        W
+        [
+        n
+        ]
+      
+    
+    {\displaystyle W[n]}
+   is a generalization of random vectors with a finite number of components to infinitely many components. A discrete-time stochastic process 
+  
+    
+      
+        W
+        [
+        n
+        ]
+      
+    
+    {\displaystyle W[n]}
+   is called white noise if its mean does not depend on the time 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+   and is equal to zero, i.e. 
+  
+    
+      
+        E
+        ⁡
+        [
+        W
+        [
+        n
+        ]
+        ]
+        =
+        0
+      
+    
+    {\displaystyle \operatorname {E} [W[n]]=0}
+   and if the autocorrelation function 
+  
+    
+      
+        
+          R
+          
+            W
+          
+        
+        [
+        n
+        ]
+        =
+        E
+        ⁡
+        [
+        W
+        [
+        k
+        +
+        n
+        ]
+        W
+        [
+        k
+        ]
+        ]
+      
+    
+    {\displaystyle R_{W}[n]=\operatorname {E} [W[k+n]W[k]]}
+   only depends on 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+   but not on 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+   and has a nonzero value only for 
+  
+    
+      
+        n
+        =
+        0
+      
+    
+    {\displaystyle n=0}
+  , i.e. 
+  
+    
+      
+        
+          R
+          
+            W
+          
+        
+        [
+        n
+        ]
+        =
+        
+          σ
+          
+            2
+          
+        
+        δ
+        [
+        n
+        ]
+      
+    
+    {\displaystyle R_{W}[n]=\sigma ^{2}\delta [n]}
+  .
+
+
+In order to define the notion of "white noise" in the theory of continuous-time signals, one must replace the concept of a "random vector" by a continuous-time random signal; that is, a random process that generates a function 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+   of a real-valued parameter 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  .
+Such a process is said to be white noise in the strongest sense if the value 
+  
+    
+      
+        w
+        (
+        t
+        )
+      
+    
+    {\displaystyle w(t)}
+   for any time 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+   is a random variable that is statistically independent of its entire history before 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  . A weaker definition requires independence only between the values 
+  
+    
+      
+        w
+        (
+        
+          t
+          
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle w(t_{1})}
+   and 
+  
+    
+      
+        w
+        (
+        
+          t
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle w(t_{2})}
+   at every pair of distinct times 
+  
+    
+      
+        
+          t
+          
+            1
+          
+        
+      
+    
+    {\displaystyle t_{1}}
+   and 
+  
+    
+      
+        
+          t
+          
+            2
+          
+        
+      
+    
+    {\displaystyle t_{2}}
+  . An even weaker definition requires only that such pairs 
+  
+    
+      
+        w
+        (
+        
+          t
+          
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle w(t_{1})}
+   and 
+  
+    
+      
+        w
+        (
+        
+          t
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle w(t_{2})}
+   be uncorrelated.  As in the discrete case, some authors adopt the weaker definition for "white noise", and use the qualifier independent to refer to either of the stronger definitions. Others use weakly white and strongly white to distinguish between them.
+However, a precise definition of these concepts is not trivial, because some quantities that are  finite sums in the finite discrete case must be replaced by integrals that may not converge. Indeed, the set of all possible instances of a signal 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+   is no longer a finite-dimensional space 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{n}}
+  , but an infinite-dimensional function space. Moreover, by any definition a white noise signal 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+   would have to be essentially discontinuous at every point; therefore even the simplest operations on 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  , like integration over a finite interval, require advanced mathematical machinery.
+Some authors require each value 
+  
+    
+      
+        w
+        (
+        t
+        )
+      
+    
+    {\displaystyle w(t)}
+   to be a real-valued random variable with expectation 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+   and some finite variance 
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \sigma ^{2}}
+  . Then the covariance 
+  
+    
+      
+        
+          E
+        
+        (
+        w
+        (
+        
+          t
+          
+            1
+          
+        
+        )
+        ⋅
+        w
+        (
+        
+          t
+          
+            2
+          
+        
+        )
+        )
+      
+    
+    {\displaystyle \mathrm {E} (w(t_{1})\cdot w(t_{2}))}
+   between the values at two times 
+  
+    
+      
+        
+          t
+          
+            1
+          
+        
+      
+    
+    {\displaystyle t_{1}}
+   and 
+  
+    
+      
+        
+          t
+          
+            2
+          
+        
+      
+    
+    {\displaystyle t_{2}}
+   is well-defined: it is zero if the times are distinct, and 
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \sigma ^{2}}
+   if they are equal. However, by this definition, the integral
+
+  
+    
+      
+        
+          W
+          
+            [
+            a
+            ,
+            a
+            +
+            r
+            ]
+          
+        
+        =
+        
+          ∫
+          
+            a
+          
+          
+            a
+            +
+            r
+          
+        
+        w
+        (
+        t
+        )
+        
+        d
+        t
+      
+    
+    {\displaystyle W_{[a,a+r]}=\int _{a}^{a+r}w(t)\,dt}
+  over any interval with positive width 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+   would be simply the width times the expectation: 
+  
+    
+      
+        r
+        μ
+      
+    
+    {\displaystyle r\mu }
+  . This property would render the concept inadequate as a model of physical "white noise" signals.
+Therefore, most authors define the signal 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+   indirectly by specifying non-zero values for the integrals of 
+  
+    
+      
+        w
+        (
+        t
+        )
+      
+    
+    {\displaystyle w(t)}
+   and 
+  
+    
+      
+        
+          |
+        
+        w
+        (
+        t
+        )
+        
+          
+            |
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle |w(t)|^{2}}
+   over any interval 
+  
+    
+      
+        [
+        a
+        ,
+        a
+        +
+        r
+        ]
+      
+    
+    {\displaystyle [a,a+r]}
+  , as a function of its width 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  . In this approach, however, the value of 
+  
+    
+      
+        w
+        (
+        t
+        )
+      
+    
+    {\displaystyle w(t)}
+   at an isolated time cannot be defined as a real-valued random variable. Also the covariance 
+  
+    
+      
+        
+          E
+        
+        (
+        w
+        (
+        
+          t
+          
+            1
+          
+        
+        )
+        ⋅
+        w
+        (
+        
+          t
+          
+            2
+          
+        
+        )
+        )
+      
+    
+    {\displaystyle \mathrm {E} (w(t_{1})\cdot w(t_{2}))}
+   becomes infinite when 
+  
+    
+      
+        
+          t
+          
+            1
+          
+        
+        =
+        
+          t
+          
+            2
+          
+        
+      
+    
+    {\displaystyle t_{1}=t_{2}}
+  ; and the autocorrelation function 
+  
+    
+      
+        
+          R
+        
+        (
+        
+          t
+          
+            1
+          
+        
+        ,
+        
+          t
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle \mathrm {R} (t_{1},t_{2})}
+   must be defined as 
+  
+    
+      
+        N
+        δ
+        (
+        
+          t
+          
+            1
+          
+        
+        −
+        
+          t
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle N\delta (t_{1}-t_{2})}
+  , where 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+   is some real constant and 
+  
+    
+      
+        δ
+      
+    
+    {\displaystyle \delta }
+   is Dirac's "function".
+In this approach, one usually specifies that the integral 
+  
+    
+      
+        
+          W
+          
+            I
+          
+        
+      
+    
+    {\displaystyle W_{I}}
+   of 
+  
+    
+      
+        w
+        (
+        t
+        )
+      
+    
+    {\displaystyle w(t)}
+   over an interval 
+  
+    
+      
+        I
+        =
+        [
+        a
+        ,
+        b
+        ]
+      
+    
+    {\displaystyle I=[a,b]}
+   is a real random variable with normal distribution, zero mean, and variance 
+  
+    
+      
+        (
+        b
+        −
+        a
+        )
+        
+          σ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle (b-a)\sigma ^{2}}
+  ; and also that the covariance 
+  
+    
+      
+        
+          E
+        
+        (
+        
+          W
+          
+            I
+          
+        
+        ⋅
+        
+          W
+          
+            J
+          
+        
+        )
+      
+    
+    {\displaystyle \mathrm {E} (W_{I}\cdot W_{J})}
+   of the integrals 
+  
+    
+      
+        
+          W
+          
+            I
+          
+        
+      
+    
+    {\displaystyle W_{I}}
+  , 
+  
+    
+      
+        
+          W
+          
+            J
+          
+        
+      
+    
+    {\displaystyle W_{J}}
+   is 
+  
+    
+      
+        r
+        
+          σ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle r\sigma ^{2}}
+  , where 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+   is the width of the intersection 
+  
+    
+      
+        I
+        ∩
+        J
+      
+    
+    {\displaystyle I\cap J}
+   of the two intervals 
+  
+    
+      
+        I
+        ,
+        J
+      
+    
+    {\displaystyle I,J}
+  . This model is called a Gaussian white noise signal (or process).
+
+
+
+
+In statistics and econometrics one often assumes that an observed series of data values is the sum of a series of values generated by a deterministic linear process, depending on certain independent (explanatory) variables, and on a series of random noise values. Then regression analysis is used to infer the parameters of the model process from the observed data, e.g. by ordinary least squares, and to test the null hypothesis that each of the parameters is zero against the alternative hypothesis that it is non-zero. Hypothesis testing typically assumes that the noise values are mutually uncorrelated with zero mean and have the same Gaussian probability distribution – in other words, that the noise is white. If there is non-zero correlation between the noise values underlying different observations then the estimated model parameters are still unbiased, but estimates of their uncertainties (such as confidence intervals) will be biased (not accurate on average). This is also true if the noise is heteroskedastic – that is, if it has different variances for different data points.
+Alternatively, in the subset of regression analysis known as time series analysis there are often no explanatory variables other than the past values of the variable being modeled (the dependent variable). In this case the noise process is often modeled as a moving average process, in which the current value of the dependent variable depends on current and past values of a sequential white noise process.
+
+
+These two ideas are crucial in applications such as channel estimation and channel equalization in communications and audio. These concepts are also used in data compression.
+In particular, by a suitable linear transformation (a coloring transformation), a white random vector can be used to produce a "non-white" random vector (that is, a list of random variables) whose elements have a prescribed covariance matrix. Conversely, a random vector with known covariance matrix can be transformed into a white random vector by a suitable whitening transformation.
+
+
+White noise may be generated digitally with a digital signal processor, microprocessor, or microcontroller. Generating white noise typically entails feeding an appropriate stream of random numbers to a digital-to-analog converter. The quality of the white noise will depend on the quality of the algorithm used.
+

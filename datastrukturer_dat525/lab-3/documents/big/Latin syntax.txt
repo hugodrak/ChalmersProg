@@ -1,0 +1,437 @@
+Latin syntax is the part of Latin grammar that covers such matters as word order, the use of cases, tenses and moods, and the construction of simple and compound sentences.
+The study of Latin syntax in a systematic way was particularly a feature of the late 19th century, especially in Germany. For example, in the 3rd edition of Gildersleeve's Latin Grammar (1895), the reviser, Gonzalez Lodge, mentions 38 scholars whose works have been used in its revision; of these 31 wrote in German, five in English and two in French. (The English scholars include Roby and Lindsay).
+In the twentieth century, the German tradition was continued with the publication of two very comprehensive grammars: the Ausführliche Grammatik der lateinischen Sprache by Raphael Kühner and Karl Stegmann (1912, first edition 1879), and the Lateinische Grammatik by Manu Leumann, J.B. Hofmann, and Anton Szantyr (revised edition Munich 1977, first edition 1926). Among works published in English may be mentioned E.C. Woodcock's A New Latin Syntax (1959). More recently, taking advantage of computerised texts, three major works have been published on Latin word order, one by the American scholars Andrew Devine and Laurence Stephens (2006), and two (adopting a different approach) by the Czech scholar Olga Spevak (2010 and 2014).
+
+
+
+Latin word order is relatively free. The verb may be found at the beginning, in the middle, or at the end of a sentence; an adjective may precede or follow its noun (vir bonus or bonus vir both mean 'a good man'); and a genitive may precede or follow its noun ('the enemies' camp' can be both hostium castra and castra hostium; the latter is more common). There are also stylistic differences between Latin authors; for example, while Caesar always writes castra pōnit 'he sets up camp', Livy more often writes pōnit castra.There are however certain constraints; for example, in prose a monosyllabic preposition such as in 'in' generally precedes its noun (e.g. in Italiā 'in Italy'). Moreover, even though adjectives can both precede and follow the noun, there is a tendency for different kinds of adjectives to take different positions; for example adjectives of size usually come before the noun (magnā vōce 'in a loud voice', rarely vōce magnā), while 'modifiers that are more important than their noun or that specify it' (e.g. Via Appia 'the Appian Way') usually follow it.
+To explain Latin word order there are two main schools of thought. One, represented by Devine and Stephens (2006), argues from the point of view of generative grammar, and maintains that Latin prose has a basic underlying "neutral" word order, from which authors deviate for reasons of emphasis, topicalisation, rhythm, and so on. According to Devine and Stephens, the basic order in broad scope focus sentences is as follows:
+Subject – Direct Object – Indirect Object / Oblique Argument – Adjunct – Goal or Source Argument – Non-Referential Direct Object – VerbThe other approach, represented by Panhuis (1982) and Olga Spevak (2010), examines Latin word order from the point of view of functional grammar. Rejecting the idea that there is a basic word order, this approach seeks to explain word order in terms of pragmatic factors, such as topic and focus, and semantic ones (1st person before 2nd, human before animals or things, agent before patient, etc.).
+
+
+
+The order of words is often chosen according to the emphasis required by the author. One way of emphasising a word is to reverse the usual order. For example, in the opening sentence of Caesar's Gallic War, the usual order of numeral and noun trīs partīs 'three parts' is reversed to emphasise the number 'three':
+
+Gallia est omnis dīvīsa in partīs trīs'Gaul, considered as a whole, is divided into three (parts)'Another technique used by Latin authors is to separate a phrase and put another word or phrase in the middle, for example:
+
+magnam enim sēcum pecūniam portābat 'for he was carrying with him a large sum of money'The technical term for this kind of separation is "hyperbaton" (Greek for 'stepping over'); it is described by Devine and Stephens as 'perhaps the most distinctively alien feature of Latin word order'.Placing the verb at or near the beginning of a clause sometimes indicates that the action is sudden or unexpected:
+statim complūrēs cum tēlīs in hunc faciunt dē locō superiōre impetum'immediately several men, (armed) with weapons, launch an attack on my client from higher ground'Splitting up an adjective-noun phrase and bringing the adjective to the beginning of the sentence can highlight it. In the following example from Cicero, the splitting of cruentum 'blood-stained' and pugiōnem 'dagger' creates a dramatic effect:
+statim cruentum altē tollēns Brūtus pugiōnem Cicerōnem nōminātim exclāmāvit'immediately, raising high the blood-stained dagger, Brutus shouted out "Cicero" by name'Considerations of rhythm and elegance also play a part in Latin word order. For example, Pliny the Younger begins a letter as follows:
+
+magnum prōventum poētārum annus hic attulit'it is a great crop of poets this year has brought'In this sentence, the object (magnum prōventum poētārum 'a great crop of poets') has been brought forward to highlight it. The other striking feature is the order annus hic for the more usual hic annus 'this year'. Two reasons which might be suggested are Pliny's fondness for ending a sentence with the rhythm − u − − u −  and also no doubt because of the elegant assonance of the vowels a-u-i a-u-i in the last three words.
+
+
+
+
+Latin has three genders (masculine, feminine, and neuter) and two numbers (singular and plural). Pronouns, adjectives, participles, and the numbers one to three have to agree in gender and number with the noun they refer to:
+
+Masculine : hic est fīlius meus: 'this is my son'
+Feminine : haec est fīlia mea : 'this is my daughter'
+Neuter : hoc est corpus meum: 'this is my body'The same three genders are also found in the plural:
+
+Masculine : hī sunt fīliī meī : 'these are my sons'
+Feminine : hae sunt fīliae meae : 'these are my daughters'
+Neuter : haec mea sunt: 'these things are mine'In Latin, words referring to males are always masculine, words referring to females are usually feminine. (An exception is scortum (neuter) 'a whore'.) Words referring to things can be any of the three genders, for example mōns 'mountain' (masculine), arbor 'tree' (feminine), nōmen 'name' (neuter). However, there are certain rules; for example, nouns with the suffixes -a (unless referring to men), -tiō, -tās are feminine; the names of trees, islands, and countries, such as pīnus 'pine', Cyprus 'Cyprus', and Aegyptus 'Egypt' are also usually feminine, and so on. Some nouns such as parēns 'parent' can vary between masculine and feminine and are called of "common" gender.When words of different genders are combined, the adjective is usually masculine if referring to people, neuter if referring to things:
+patēr mihī et mātēr mortuī (sunt) (Terence)'my father and mother are dead (masc.)'mūrus et porta dē caelō tācta erant (Livy)'the wall (masc.) and gate (fem.) had been struck (neut. pl.) by lightning' (lit. 'touched from the sky')However, sometimes the adjective may agree with the nearest noun.
+
+
+
+Nouns, pronouns, and adjectives in Latin change their endings according to their function in the sentence. The different endings are called different 'cases'. Case endings of a similar kind are also found in other languages, such as Ancient and Modern Greek, German, Russian, Finnish, Sanskrit, Armenian and Turkish.The six cases most commonly used in Latin and their main meanings are given below. The cases are presented here in the order which has been used in Britain and countries influenced by Britain ever since the publication of Kennedy's Latin Primer in the 19th century, as opposed to the traditional order – Nom, Gen, Dat, Acc, Voc, Abl – still used in the United States and most European countries:
+
+Nominative : is rēx : 'that king' (Subject, or Complement (e.g. 'he is that king'))
+Vocative : ō rēx! : 'o king!'
+Accusative : eum rēgem : 'that king' (Object, or Goal)
+Genitive : eius rēgis : 'of that king'
+Dative : eī rēgī : 'to that king', 'for that king'
+Ablative : eō rēge : 'with that king' (also 'by, from, in')(A small line, called a macron, over a vowel indicates that it is pronounced long.)
+Another case is the Locative, which is used mostly with the names of cities (e.g. Rōmae 'in Rome') and a very limited number of ordinary nouns (e.g. domī 'at home').
+
+
+
+For the most part the use of cases is quite straightforward. The following examples from Caesar show the cases in use in a basic sense:
+
+Cūriō Mārcium Uticam nāvibus praemittit'Curio (Nom.) sends ahead Marcius (Acc.) to Utica (Acc.) with the ships (Abl.)'Here Cūriō as subject of the verb is nominative, Mārcium as direct object is accusative; Uticam is also accusative as it is the goal or object of motion; and nāvibus 'with the ships' has the ablative ending, which means 'with'.
+
+Pompeius ... Lūceriā proficīscitur Canusium'Pompey (Nom) from Luceria (Abl) sets out to Canusium (Acc)'Here Pompeius is subject (Nom.), Lūceriā shows another meaning of the ablative ending, namely 'from', and Canusium is again accusative of goal. Note that with names of cities there is no need to add a preposition such as ad, but the accusative case alone indicates 'to'.
+
+Caesar ... mīlitibus signum dedit'Caesar (Nom) gave a signal (Acc.) to the soldiers (Dat)'Here mīlitibus, although it shares the same ending as the ablative nāvibus in the previous example, is clearly dative, meaning 'to or for the soldiers' (usually when a noun has an ambiguous ending such as -īs, -ibus or -ēbus it will be interpreted as dative if it is a person, ablative if it is a thing).
+
+
+However, the description of the use of cases is not always simple. The classification of the uses of the dative alone takes up nearly twelve pages in Woodcock's A New Latin Syntax and ten pages in Gildersleeve and Lodge. For example, when asking someone's name, a Roman would say:
+
+quid est tibī nōmen? (Plautus)'what's your name?' (lit. 'what is for you name?)This is an example of the Dative of Possession, as in:
+
+illī ... duae fuēre fīliae (Plautus)'he had two daughters' (lit. 'to him there were two daughters')Another surprising idiomatic use is the "Dative of the Person Affected":
+
+nihil equidem tibī abstulī (Plautus)'I haven't stolen anything from you' (lit. 'for you')The dative is also used with verbs of fighting with someone:
+nōlī pugnāre duōbus (Catullus)'don't fight with (lit. 'for') two people at once'Another idiom is the "Predicative Dative" used with the verb 'to be' in phrases such as ūsuī esse 'to be of use', labōrī esse 'to be a trouble (to someone)'.
+nēminī meus adventus labōrī aut sūmptuī ... fuit (Cicero)'my arrival was a trouble or expense for no one'Many verbs also which in English take a direct object are used in Latin intransitively with a dative noun or pronoun, e.g. persuādeō 'I persuade', crēdō 'I believe', resistō 'I resist'.
+nōn persuāsit illī (Seneca)'he did not persuade him (lit. 'for him')'imperāvit eī (Nepos)'he ordered him' ('gave an order to him')
+
+
+Frequently, to make the meaning more precise, a noun in the accusative or ablative is preceded by a preposition such as in  'in, into', ad 'to', cum 'with', or ex 'out of'. This is especially so if the noun refers to a person. For example: 
+
+ad rēgem (Acc) 'to the king' (used with a verb of motion such as 'goes' or 'sends')
+ā rēge (Abl.) 'by the king', 'from the king'
+cum eō (Abl.) 'with him'
+ex urbe (Abl.) 'from/out of the city'However, when the meaning of an accusative or an ablative is clear (for example Canusium (Acc) 'to Canusium', nāvibus (Abl) 'with the ships', posterō diē (Abl) 'on the following day'), the case ending alone is sufficient to give the meaning. Unlike in Greek, prepositions are not used in Latin with the dative or genitive.
+
+
+Four prepositions can be followed by more than one case, depending on their meaning. These are in  'in' (Abl), 'into' (Acc.); sub 'under' (Abl.), 'to the foot of' (Acc.); super 'over, above' (Acc.), 'concerning' (Abl.); and subter 'under' (usually with Acc.)
+in urbem (Acc) 'into the city'
+in urbe (Abl) 'in the city'
+
+
+Prepositions almost always precede their noun or pronoun, except that cum 'with' follows a personal pronoun, e.g. mēcum 'with me' and sometimes a relative pronoun (quīcum, quōcum and cum quō are all possible for 'with whom'). There are occasional exceptions, especially with two-syllable prepositions after pronouns, e.g. haec inter (Virgil) 'in the midst of these'. 
+Sometimes when the noun has an adjective it is placed before the preposition for emphasis, e.g. magnā cum cūrā 'with great care' (Cicero), but this is not an invariable rule. Occasionally also the opposite order (noun-preposition-adjective) may be used in poetry and later prose, e.g. silvā lupus in Sabīnā (Horace) 'a wolf in the Sabine forest', or metū in magnō (Livy) 'in great fear'.
+
+
+
+Latin has six main tenses in the indicative mood, which are illustrated below using the verb facere 'to make' or 'to do':
+
+Present : faciō : 'I do', 'I am doing'
+Future : faciam  (2nd person faciēs): 'I will do', 'I will be doing'
+Imperfect : faciēbam : 'I was doing', 'I used to do', 'I began to do'
+Perfect : fēcī : 'I did', 'I have done'
+Future Perfect : fēcerō : 'I will have done'
+Pluperfect : fēceram : 'I had done'The verb sum 'I am', which is irregular, has the tenses sum, erō, eram, fuī, fuerō, fueram. Some verbs (conjugations 1 and 2) instead of the Future -am, -ēs, -et etc. have a different future ending in -bō, -bis, -bit, e.g. amābō 'I will love'.
+To these six ordinary tenses may be added various "periphrastic" tenses, made from a participle and part of the verb sum 'I am', such as factūrus eram 'I was about to do'.For the most part these tenses are used in a fairly straightforward way; however, there are certain idiomatic uses that may be noted.
+
+
+
+
+In addition to the active voice tenses listed above, Latin has a set of passive voice tenses as follows:
+
+Present : capior : 'I am captured', 'I am being captured' (by someone or something)
+Future : capiar (2nd singular capiēre or capiēris) : 'I will be captured'
+Imperfect : capiēbar : 'I was being captured', 'I used to be captured'
+Perfect : captus sum : 'I was captured', 'I have been captured'
+Future Perfect : captus erō : 'I will have been captured'
+Pluperfect : captus eram : 'I had been captured'The three perfect tenses (Perfect, Future Perfect, and Pluperfect) are formed using the perfect participle together with part of the verb sum 'I am'. The ending of the participle changes according to the gender and number of the subject: captus est 'he was captured'; capta est 'she was captured'; captī sunt 'they were captured', and so on.
+Deponent verbs have exactly the same form as passive verbs except that the meaning is active, not passive:
+
+Present : ingredior : 'I enter', 'I am entering'
+Future : ingrediar (2nd singular ingrediēre or ingrediēris) : 'I will enter'
+Imperfect : ingrediēbar : 'I was entering, 'I used to enter'
+Perfect : ingressus sum : 'I entered', 'I have entered'
+Future Perfect : ingressus erō : 'I will have entered'
+Pluperfect : ingressus eram : 'I had entered'
+
+
+A passive verb is generally used when it is unnecessary to indicate who did the action:
+
+[ille] sē hostibus obtulit atque interfectus est.'he offered himself to the enemy and was killed'When it is desired to show the agent or person(s) by whom the action was done, Latin uses the preposition ab or ā with the ablative case:
+
+arx ab hostibus capta est (Livy)'the citadel has been captured by the enemy!'When the agent is not a person but a thing, no preposition is used, but simply the ablative case:
+
+Trōes tē miserī, ventīs maria omnia vectī, ōrāmus (Virgil)'we, wretched Trojans, carried over all the seas by the winds, beg you'
+
+
+In Latin, unlike English, only the direct object (not the indirect object) of an active verb can be made the subject of a passive verb. It is not correct to say in Latin 'the soldiers were being given their pay' but only 'pay was being given to the soldiers':
+
+mīlitibus stīpendium (dabātur) (Livy)'pay was being given to the soldiers'
+
+
+Another unusual feature of Latin, compared with English, is that intransitive verbs such as eō 'I go', veniō 'I come', pugnō 'I fight' and persuādeō (+ dative) 'I persuade' can be made passive, but only in a 3rd person singular impersonal form:
+ītur in antīquam silvam (Virgil)'they go into an ancient forest' (lit. 'going is done')septimō diē Carthāginem ventum est (Livy)'on the seventh day they reached Carthage'persuāsum erat Cluviō ut mentīrētur (Cicero)'Cluvius had been persuaded to lie' (literally: 'it had been persuaded to Cluvius that he should lie')
+
+
+The infinitive of a passive verb ends in -ī (3rd conjugation) or -rī (other conjugations): capī 'to be captured, audīrī 'to be heard', etc.
+
+in vincula dūcī iubet (Livy)'he ordered him to be put in chains'sī vīs amārī, amā (Seneca)'if you wish to be loved, love'The Perfect passive has an infinitive captus esse 'to have been captured', and there is also a rarely used Future passive infinitive made using the supine (captum) plus the passive infinitive īrī: captum īrī 'to be going to be captured'. It is typically used in indirect statements:
+
+occīsum īrī ab ipsō Milōne videō (Cicero)'I can see that he is going to get killed by Milo himself'
+
+
+Most of the verbs ending in -or are true passives in meaning (i.e. they represent actions which are done by someone or by something). However, there are a few which are ambivalent and can be either active or passive in meaning, such as vertor 'I turn' (intransitive) or 'I am turned', volvor 'I revolve' (intransitive) or 'I am rolled': 
+
+vertitur intereā caelum et ruit Ōceanō nox (Virgil)'meanwhile the sky turns and night falls upon the Ocean'In addition, there are a few verbs such as proficīscor 'I set out', polliceor 'I promise', cōnor 'I try' which despite their passive endings have an active meaning. These verbs (which have no active counterpart) are called deponent verbs:
+ipse in Italiam profectus est (Caesar)'he himself set out for Italy'Although most deponent verbs are intransitive, some of them such as sequor 'I follow' can take a direct object:
+
+hunc sequī sē iubet (Nepos)'he ordered this man to follow him'Deponent verbs are frequently used in their perfect participle form (e.g. profectus 'having set out'):
+
+mediā nocte profectus ad hostium castra māne pervēnit'after setting out at midnight, he reached the enemies' camp in the early morning'
+
+
+As well as the indicative mood illustrated above, which is used for stating and asking facts, and an imperative mood, used for direct commands, Latin has a subjunctive mood, used to express nuances of meaning such as 'would', 'could', 'should', 'may' etc. (The word mood in a grammatical sense comes from the Latin modus, and has no connection with the other meaning of 'mood', in the sense of 'emotional state', which comes from a Germanic root.)
+
+
+There are four tenses of the subjunctive, which in the verb faciō are as follows:
+
+Present : faciam (2nd person faciās) : 'I may do', 'I would do', 'I should do' (also simply 'I do')
+Imperfect : facerem : 'I would be doing', 'I should do' (in a past context) (also simply 'I was doing')
+Perfect : fēcerim : 'I have done', 'I did'
+Pluperfect : fēcissem : 'I would or should have done' (also 'I had done')The present subjunctive of 1st conjugation verbs ends in -em instead of -am: amem 'I may love, I would love'.
+The present subjunctive of the verbs sum 'I am', possum 'I am able', volō 'I want', nōlō 'I don't want' and mālō 'I prefer', ends in -im: sim 'I may be, I would be', possim 'I may be able', velim 'I would like, I may wish', etc.
+The imperfect subjunctive of every verb has the same form as the infinitive + -m: essem, possem, vellem, amārem, vidērem, īrem etc.
+
+
+The subjunctive has numerous uses, ranging from what potentially might be true to what the speaker wishes or commands should happen. It is often translated with 'should', 'could', 'would', 'may' and so on, but in certain contexts, for example indirect questions or after the conjunction cum 'when' or 'since', it is translated as if it were an ordinary indicative verb.
+Often in English the subjunctive can be translated by an infinitive; for example, imperāvit ut īret (literally, 'he ordered that he should go') becomes in more idiomatic English 'he ordered him to go'.
+
+
+The 'potential' subjunctive is used when the speaker imagines what potentially may, might, would, or could happen in the present or future or might have happened in the past. The negative of this kind is nōn:
+dūrum hoc fortasse videātur (Cicero)'this may perhaps seem harsh'quid si hoc fēcissem? (Cicero)'what if I had done this?'nōn facile dīxerim quicquam mē vīdisse pulchrius'I couldn't easily say (= I don't think) that I have ever seen anything more beautiful'
+
+
+Another use is for what the speaker wishes may happen, or wishes had happened (the 'optative' subjunctive). The negative of this kind is nē:
+utinam iam adesset! (Cicero)'if only he were here already!'utinam ille omnīs sēcum suās cōpiās ēduxisset! (Cicero)'if only he had taken out all his forces with him!'
+
+
+It can also represent what the speaker commands or suggests should happen (the 'jussive' subjunctive). The negative is again nē:
+
+vīvāmus, mea Lesbia, atque amēmus (Catullus)'let's live, my Lesbia, and let's love'nē ... mortem timuerītis'you should not fear death'
+
+
+One important use of the subjunctive mood in Latin is to indicate that the words are quoted; this applies for example to subordinate clauses in indirect speech:
+locum ubi esset facile inventūrōs (Nepos)'(he said that) they would easily find the place where he was'It also applies to all indirect questions:
+
+quārē id faciam, fortasse requīris (Catullus)'perhaps you ask why I do this'When used in indirect speech or in an indirect question, the subjunctive is translated as if were the corresponding tense of the indicative.
+
+
+The subjunctive mood is very frequently used in subordinate clauses following conjunctions.
+
+
+Used with the indicative, the conjunction cum means 'at that time when', or 'whenever':
+cum tacent, clāmant (Cicero)'when they are silent, (it is as if) they are shouting'Used with the subjunctive, however, it frequently means 'at a time when'. When cum is used with the Imperfect subjunctive, a common way of translating it is 'while':
+
+cum sedērem domī trīstis, accurrit Venerius (Cicero)'while I was sitting sadly at home, Venerius suddenly came running up'With the Pluperfect subjunctive, it often means 'after X happened':
+
+cum excessisset Aegyptō Antiochus, lēgātī ... Cyprum nāvigant (Livy)'after Antiochus had left Egypt, the ambassadors sailed to Cyprus'It can also mean 'in view of the fact that' or 'since':
+quae cum ita sint'in view of the fact that these things are so' / 'since this is so'Another, less common, meaning is 'though':
+nihil mē adiūvit, cum posset (Cicero)'he did nothing to help me, though (or: at a time when) he could have done'
+
+
+When followed by the indicative, the conjunction ut can mean 'as' (e.g. ut fit 'as generally happens') or 'as soon as' or 'when' (ut vēnī 'as soon as I came'). But with the subjunctive ut has the meaning 'that' or 'so that'.
+It can represent purpose ('so that he could...'):
+Crētam vēnit ut ibī quō sē cōnferret cōnsīderāret (Nepos)'(Hannibal) came to Crete so that there he could consider (in order to consider) where he should go to next'It can also be used to introduce an indirect command ('that he should...'):
+imperāvit eī ut omnēs forēs aedificiī circumīret (Nepos)'he ordered him to go round (lit. 'that he should go round') all the doors of the building'It can also represent result (making what is known as a "consecutive" clause):
+idque sīc aedificāverat ut in omnibus partibus aedificiī exitūs habēret (Nepos)'and he had built it in such a way that in all parts of the building it had exits'Occasionally ut with the subjunctive can mean 'although'.
+
+
+After sī 'if', the subjunctive expresses an imagined or unreal situation:
+
+quod, sī interfectus essem, accidere nōn potuisset (Cicero)'which, if I had been killed, could not have happened'sī revīvīscant et tēcum loquantur, quid respondēres? (Cicero)'if they were to come to life and talk to you, what answer would you be making?'
+
+
+After nē 'that not', the subjunctive can express a negative purpose:
+
+hīnc nē exīre posset, ephorī valvās obstrūxērunt (Nepos)'so that he would not be able to escape from here, the ephors blocked up the doors'It can also introduce a negative indirect command:
+
+nē propius sē castra movēret petiērunt (Caesar)'they requested him not to move his camp any nearer to them'The conjunction nē can also express a fear; in this case, the word 'not' must be omitted from the English translation:
+verēns nē dēderētur (Nepos)'fearing that he might be handed over to the enemy'
+
+
+When used with the indicative, dum means 'while' or 'as long as'. But when followed by the subjunctive, it often means 'until':
+Verginius dum collēgam consuleret morātus (est) (Livy)'Verginius waited until he had a chance to consult his colleague'Another meaning is 'provided that':
+ōderint dum metuant (Accius)'let them hate, provided that they fear'
+
+
+The conjunctions priusquam and antequam both mean 'before (something happened)'. If the event actually happened, the verb is usually in the indicative mood; but when the meaning is 'before there was a chance for it to happen', the verb is subjunctive:
+(collem) celeriter, priusquam ab adversāriīs sentiātur, commūnit (Caesar)'he fortified the hill quickly, before it could be noticed by the enemies'
+
+
+The conjunction quīn (literally, 'how should it not be?') is always used after a negative verb or the equivalent, typically 'there is no doubt that', 'who does not know that...?', and so on. The words following quīn are always positive and usually state what was actually the case:
+nōn dubitō quīn ad tē omnēs tuī scrīpserint (Cicero)'I have no doubt that all your friends will have written to you'quis ignōrat quīn tria Graecōrum genera sint? (Cicero)'who does not know that there are three kinds of Greeks?'Another usage is after a negative verb such as 'I can't help doing' or 'he did not refrain from doing':
+
+facere nōn possum quīn ... tibī grātiās agam (Cicero)'I can't do otherwise than to thank you'Antiochus nōn sē tenuit quīn contrā suum doctōrem librum ēderet (Cicero)'Antiochus did not refrain from publishing a book against his own teacher'Equally it can be used in sentences of the kind 'A didn't happen without B also happening':
+
+nūllum adhūc intermīsī diem quīn aliquid ad tē litterārum darem (Cicero)'up to now I have not let a day go past without dropping you a line'In sentences like the following, there is potential for confusion, since the quīn clause, though positive in Latin, is translated in English with a negative:
+
+nēmo fuit militum quīn vulnerārētur (Caesar)'there was not one of the soldiers who was not wounded'fierī nūllō modō poterat quīn Cleomenī parcerētur (Cicero)'it was quite impossible that Cleomenes would not be spared'In the following context, the words after quīn express not what actually happened but what very nearly happened:
+
+neque multum āfuit quīn castrīs expellerentur (Caesar)'nor were they far from being expelled from the camp'
+
+
+
+
+The pronoun quī 'who' or 'which', when followed by a subjunctive, can mean 'a person such as' (generic):
+quī modestē pārat, vidētur quī aliquandō imperet dignus esse (Cicero)'he who obeys modestly, seems to be the sort of person who one day is worthy to rule'
+
+
+It can also mean 'in order to' (purpose):
+lēgātōs Rōmam quī auxilium peterent mīsēre (Livy)'they sent ambassadors to Rome to ask for help'
+
+
+Another meaning is 'in view of the fact that' (giving an explanation), as in the following example, said jokingly of a consul who was elected on the last day of the year:
+fuit mīrificā vigilantiā, quī suō tōtō cōnsulātū somnum nōn vīderit (Cicero)'(Caninius) was of amazing vigilance, in view of the fact that he didn't see any sleep in the whole of his consulate!'
+
+
+Another reason for using the subjunctive after quī is to show that the words of the quī clause are quoted or part of indirect speech:
+Paetus omnīs librōs quōs frāter suus relīquisset mihī dōnāvit (Cicero)'Paetus made a gift to me of all the books which his brother had left him'Clearly here Paetus had written or stated "I am giving you all the books which my brother left me", and Cicero is quoting his words indirectly to Atticus.
+
+
+
+
+The imperative mood is used for giving direct orders. The active form can be made plural by adding -te:
+
+dā mī bāsia mīlle, deinde centum! (Catullus)'give me a thousand kisses, then a hundred!'date dexterās fidemque! (Livy)'give me your right hands and your oath!'
+
+
+Deponent verbs such as proficīscor 'I set out' or sequor 'I follow' have an imperative ending in -re or -minī (plural):
+
+patent portae: proficīscere! (Cicero)'the gates are open: depart!'sequiminī mē hūc intrō ambae (Terence)'follow me this way inside, both of you'
+
+
+An imperative is usually made negative by using nōlī(te) (literally, 'be unwilling!') plus the infinitive. However, in poetry an imperative can sometimes be made negative with the particle nē:
+
+nōlīte mīrārī (Seneca the Elder)'don't be surprised'nē mē terrēte timentem, obscēnae volucrēs! (Virgil)'do not terrify me, who am already scared, obscene birds!'A negative order can also use the perfect subjunctive:
+dē mē nihil timuerīs (Cicero)'do not be afraid on my account'
+
+
+Latin also has a Future imperative or 2nd imperative, ending in -tō(te), used to request someone to do something at a future time, or if something else happens first:
+
+sī quid acciderit, ... scrībitō (Cicero)'if anything happens, write to me'This imperative is very common in early writers such as Plautus and Cato, but it is also found in later writers such as Martial:
+
+ubi nōs lāverimus, sī volēs, lavātō (Terence)'when we have finished washing, get washed if you wish'.crūdam si edēs, in acētum intinguitō. (Cato)'if you eat it (cabbage) raw, dip it in vinegar.'rīdētō multum quī tē, Sextille, cinaedum dīxerit et digitum porrigitō medium. (Martial)'Laugh loudly at anyone who calls you camp, Sextillus, and stick up your middle finger at him.'Some verbs have only the Second Imperative, for example scītō 'know', mementō 'remember'.
+
+
+A 3rd person imperative also ending in -tō, plural -ntō exists in Latin. It is used in very formal contexts such as laws:
+
+iūsta imperia suntō, īsque cīvēs ... pārentō (Cicero)'orders must be just, and citizens must obey them'
+
+
+Other requests are made with expressions such as cūrā ut 'take care to...', fac ut 'see to it that...' or cavē nē 'be careful that you don't...'
+cūrā ut valeās (Cicero)'make sure you keep well'The future indicative can be used for polite commands:
+Pīliae salūtem dīcēs et Atticae (Cicero)'will you please give my regards to Pilia and Attica?'
+
+
+
+Although often referred to as a 'mood', the Latin infinitive is usually considered to be a verbal noun rather than a mood.Latin has three infinitives in the active voice, and three passive. Since faciō is irregular in the passive ('to be done' is fierī, taken from the verb fīō 'I become'), they are here shown using the verb capiō 'I capture':
+Active:
+
+Present : capere : 'to capture, to be capturing'
+Perfect : cēpisse : 'to have captured'
+Future : captūrus esse : 'to be going to capture'Passive:
+
+Present : capī : 'to be captured'
+Perfect : captus esse : 'to have been captured'
+Future : captum īrī : 'to be going to be captured'The infinitives of sum 'I am' are esse, fuisse, and futūrus esse (often shortened to fore). Possum 'I am able' has infinitives posse and potuisse, and volō 'I want' has velle and voluisse. Neither of these verbs has a Future infinitive, and the Present infinitive is used instead.The Future infinitive is used only for indirect statements (see below).The passive Future infinitive is rare, and is frequently replaced with a phrase using fore ut.Rarer tenses of the infinitive, for example captus fore or captūrus fuisse,  are sometimes found in indirect speech. 
+
+
+The infinitive can be used as the subject, complement, or the object of a verb:
+vīvere est cōgitāre (Cicero)'to live is to think'errāre, nescīre, dēcipī ... turpe dūcimus (Cicero)'we consider to be in error, to be ignorant, to be deceived as something shameful'
+
+
+It can also be used, as in English, dependent on an adjective, or with verbs such as possum 'I am able' or volō 'I want':
+
+dulce et decōrum est prō patriā morī (Horace)'it is a sweet and glorious thing to die for one's country'nōn possum haec ferre (Cicero)'I can't bear it'It is likewise used, as in English, with verbs such as iubeō 'I order', vetō 'I forbid', patior 'I allow', volō 'I want' and so on, where the main verb takes an object in the accusative case: 
+
+volō tē hoc scīre (Cicero)'I want you to know this'However, other verbs of similar meaning, such as imperō 'I order', persuādeō 'I persuade', and hortor 'I urge', are not used with an infinitive, but with ut and the subjunctive mood:
+
+hortātur mē ut senātūi scrībam (Cicero)'he is urging me to write to the senate' (lit. 'that I should write')
+
+
+An infinitive is sometimes used to represent a series of repeated actions:
+clāmāre omnēs (Cicero)'everyone began shouting at once'equitātus interim eōrum circum mūnītiōnēs Caesaris vagārī (Bellum Africanum)'meanwhile the enemy cavalry kept on patrolling round Caesar's defences'
+
+
+
+A very common use of the infinitive in Latin, in which it differs from English, is its use for indirect statements, that is for sentences where a subordinate clause is dependent on a main verb meaning 'he says', 'he knows', 'he pretends', 'he believes', 'he thinks', 'he finds out' and so on. In Latin, instead of 'they pretend that they want', the idiom is to say 'they pretend themselves to want':
+
+sē pācem velle simulant (Cicero)'they pretend that they want peace'Similarly 'I'm glad you've arrived safely' becomes 'I am glad you to have arrived safe':
+
+salvom tē advēnisse gaudeō (Terence)'I am glad you have arrived safely'In this construction, the subject of the infinitive (sē, tē in the above examples) is in the accusative case.
+So common is this construction in Latin, that often the verb 'he said' is simply omitted if it is clear from the context, the accusative and infinitive alone making it clear that the statement is reported:
+
+rem atrōcem incidisse (Livy)'a terrible thing had happened (she said)'The rule of tense in an accusative and infinitive construction is that the present infinitive is generally used for actions contemporary with the main verb, the perfect for actions which preceded it, and the future for actions which followed it. An example of the future infinitive using the future participle is the following:
+
+Valerium hodiē audiēbam esse ventūrum (Cicero)'I hear [epistolary imperfect] that Valerius is going to come today'Often the esse part of a future active or perfect passive infinitive is omitted:
+
+frātrem interfectum audīvit (Seneca)'he heard that his brother had been killed'Less common is the periphrastic perfect infinitive, used when a potential pluperfect subjunctive is converted into an indirect statement:
+Clōdium negant eō diē Rōmam, nisī dē Cȳrō audīsset, fuisse reditūrum (Cicero)'they say that Clodius would not have returned to Rome that day, if he had not heard about Cyrus'The above example also illustrates another feature of indirect statement, that a negative indirect statement ('they say that ... not') is usually represented by the use of the main verb negō 'I deny'.
+
+
+Not every subordinate clause which starts with the conjunction 'that' in English is translated with an accusative and infinitive. In some contexts ut with the subjunctive is required, for example after a verb of happening:
+accidit cāsū ut lēgātī Prūsiae Rōmae ... cēnārent (Nepos)'it happened by chance that some ambassadors of King Prusias were dining in Rome'In other circumstances a clause with quod 'the fact that' is used with the indicative:
+praetereō quod eam sibī domum dēlēgit (Cicero)'I omit the fact that he chose that house for himself'In less educated authors quod could even substitute for the accusative an infinitive, though this did not become common until the second century:
+lēgātī renūntiāvērunt quod Pompeium in potestāte habērent ([Caesar])'the ambassadors reported that they had Pompey in their power'This type of clause with quod (which became que in modern French, Portuguese and Spanish and che in Italian) gradually took over from the Accusative and infinitive construction and became the usual way of expressing indirect speech in modern Romance languages which are descended from Latin.
+
+
+Unlike Greek, Latin is deficient in participles, having only three, as follows:
+Present : faciēns (pl. facientēs) : 'doing' or 'while doing'
+Perfect : factus : 'done' or 'having been done'
+Future : factūrus : 'going to do'Thus, there is no passive present or future participle, and no active past participle. In deponent verbs, however, the Perfect participle is active in meaning, e.g. profectus, 'having set out', cōnātus 'having tried'.
+The verb sum 'I am' has no Present or Perfect participle, but only the Future participle futūrus 'going to be'.
+The Romans themselves considered the gerundive (see below) also to be a participle, but most modern grammars treat it as a separate part of speech.
+
+
+
+
+Participles have endings like those of adjectives, and occasionally they are used as though they were adjectives. If so, they refer to the state or condition that a thing or person is in:
+aquā ferventī ... perfunditur (Cicero)'he was doused with boiling water'occīsōs sepelīvit (Eutropius)'he buried the dead (those who had been killed)'
+
+
+More frequently, however, a participle is more like a verb, and if one action follows another, it can often replace the first of two verbs in a sentence:
+
+Caesar Cascae bracchium arreptum graphiō trāiēcit (Suetonius)'Caesar grabbed Casca's arm and stabbed it with his writing instrument'Literally, 'Caesar with his writing instrument (graphiō) stabbed the arm (bracchium), which had been grabbed, for Casca' (Cascae here is probably Dative of the Person Affected.)
+Participles can frequently be translated into English using a clause with 'when':
+
+quaerentique viro 'satin salve?' 'minime!' inquit.'and when her husband asked "Are you all right?", she said "No!"cōnātusque prōsilīre aliō vulnere tardātus est (Suetonius)'and when he tried to leap forward he was slowed down (tardātus) by another wound''-ing' and 'who' are other possible translations:
+
+currēns Lepta vēnit (Cicero)'Lepta came running'strīctō gladiō, ad dormientem Lucrētiam vēnit (Livy)'drawing his sword, he came to Lucretia, when she was sleeping / who was sleeping'Apart from 'when' and 'who', other translations are possible, such as 'if', 'since', or 'although':
+oculus sē nōn vidēns, alia cernit (Cicero)'although it can't see itself, the eye discerns other things'A participle phrase can also stand for a noun clause, as in the following example:
+captī oppidī signum ex mūrō tollunt (Livy)'they raised a sign from the wall that the town had been captured' (lit. 'of the town having been captured')Normally a Present participle represents an action which is simultaneous with the main event ('he came running'), and a Perfect participle represents one which has already happened ('after drawing his sword'). In the following example, however, the Perfect participle represents the result following the main action:
+
+crīnīs scindit ... solūtōs (Virgil)'she tore her hair, making it loose'Participles are much commoner in Latin than in English. Sometimes multiple participles can be used in a single sentence:
+
+noctū lūmine appositō experrēcta nūtrīx animadvertit puerum dormientem circumplicātum serpentis amplexū. quō aspectū exterrita clāmōrem sustulit. (Cicero)'in the night, in the light of a lamp placed nearby, the nurse, who had woken up, noticed that the boy, while he was sleeping, had been wrapped around with the coils of a snake; terrified by this sight, she raised a cry'
+
+
+The phrase strīctō gladiō (lit. 'with drawn sword') above is an example of a common idiom in which a noun and participle are put in the Ablative case to represent the circumstances of the main event. This idiom is referred to as an "ablative absolute" and is comparable to the Greek genitive absolute or the English nominative absolute. Other examples are:
+
+in hostēs signō datō impetum fēcērunt (Caesar)'when the signal was given (lit. 'with signal given'), they made an attack on the enemy'at pater Aenēas, audītō nōmine Turnī, dēserit mūrōs (Virgil)'but Father Aeneas, on hearing Turnus's name, immediately deserted the walls'The present participle can also be used in an ablative absolute:
+
+at illa audientibus nōbīs 'ego ipsa sum' inquit 'hīc hospita' (Cicero)'but she, while we were listening, said "I am just a guest here myself!"'nec imperante nec sciente nec praesente dominō (Cicero)'without their master ordering it, or knowing, or even present'The verb sum ('I am') has no participle, except in the compound forms absēns 'absent' and praesēns 'present'. To make an ablative absolute with 'to be', the words are put in the ablative, and the verb is simply omitted:
+
+puerulō mē (Nepos)'when I was a little boy'hīs cōnsulibus Fīdēnae obsessae, Crustumeria capta (Livy)'when these men were consuls, Fidenae was besieged and Crustumeria captured'
+
+
+
+The gerundive is a verbal adjective ending in -ndus (-nda etc. if feminine). It is usually passive in meaning (although a few deponent verbs can form an active gerund, such as secundus 'following' from sequor 'I follow'). The usual meaning of the gerundive is that it is necessary for something to be done. Often the word 'must' is a suitable translation:
+
+nunc est bibendum (Horace)'now it is necessary to drink' (i.e. 'now we must celebrate')Catō inexpiābilī odiō dēlendam esse Carthāginem ... prōnūntiābat (Florus)'Cato with implacable hatred used to declare that Carthage must be destroyed'If a word is added to show by whom the action must be done, this word is put in the dative case (e.g. nōbīs 'for us').Because it is passive in meaning, the gerundive is usually formed from transitive verbs. However, intransitive verbs such as eō 'I go' and persuādeō 'I persuade', which can be used passively in an impersonal construction, can also have an impersonal gerundive, ending in -um:
+mihī Arpīnum eundum est (Cicero)'It is necessary for me to go to Arpinum' / 'I have to go to Arpinum'persuādendum iūdicī est (Quintilian)'the judge has to be persuaded'The gerundive after ad can also be used to express purpose (a use which it shares with the gerund, see below):
+L. Septimium tribūnum militum ad interficiendum Pompeium mīsērunt (Caesar)'they sent the military tribune Lucius Septimius to kill Pompey'hunc Dātamēs vīnctum ad rēgem dūcendum trādit Mithridātī (Nepos)'Datames handed this man over in chains to Mithridates for him to be led to the King'
+
+
+The gerund is a verbal noun ending in -ndum (accusative), -ndī (genitive), or -ndō (dative or ablative). Although identical in form to a neuter gerundive, and overlapping the gerundive in some of its uses, it is possible that it has a different origin.Gerunds are usually formed from intransitive verbs, and are mainly used in sentences such as the following where the meaning is 'by doing something', 'of doing something', or 'for the purpose of doing something'. A gerund is never used as the subject or direct object of a verb (the infinitive is used instead).
+
+veniendō hūc exercitum servāstis (Livy)'by coming here, you have saved the army'aqua nitrōsa ūtilis est bibendō (Pliny the Elder)'alkaline water is good for drinking'idōneam ad nāvigandum tempestātem (Caesar)'weather suitable (idōneam) for sailing'sacrificandī causā, Delphōs ēscendī (Livy)'for the sake of sacrificing, I climbed up to Delphi'Occasionally a gerund can be made from a transitive verb and can take a direct object:
+subabsurda dīcendō rīsūs moventur (Cicero)'by saying incongruous things laughs (rīsūs) are raised'They can also be formed from deponent verbs such as ingredior 'I enter':
+
+aliīs timor hostium audāciam flūmen ingrediendī dedit (Livy)'for others fear of the enemy gave them the boldness (audāciam) to enter (lit. of entering) the river'However, if the verb is transitive, a phrase made of noun + gerundive is often substituted for the gerund:
+lignum āridum māteria est idōnea ēliciendīs ignibus (Seneca)'dry wood (lignum) is a suitable material for striking fire'
+
+
+The supine is a rarely used part of the verb ending in -tum or (in some verbs) -sum. Although it is identical with the accusative case of verbal nouns such as adventus 'arrival', mōtus 'movement', etc., it differs from them in that it is a verb as well as a noun, and can sometimes take a direct object.
+
+
+The supine is normally used to express purpose, when combined with a verb of movement such as eō 'I go' or mittō 'I send':
+
+lūsum it Maecenās, dormītum ego Vergiliusque (Horace)'Maecenas goes to play a game, Virgil and I to sleep'spectātum veniunt, veniunt spectentur ut ipsae (Ovid)'(the girls) come to watch, but they also come so that they can be looked at themselves'In the following example it takes a direct object:
+
+lēgātōs ad Caesarem mittunt rogātum auxilium (Caesar)'they send ambassadors to Caesar in order to ask for help'The accusative of the supine is also used to make the rare future passive infinitive captum īrī 'to be going to be captured', which can be used in indirect statements referring to the future (see above):
+ante reditum eius negōtium confectum īrī putō (Cicero)'I think the business will be completed before his return'
+
+
+There is another form of the supine, an Ablative in -ū, found with certain verbs only. But this cannot take an object. It is used in phrases such as mīrābile dictū 'amazing to say', facile factū 'easy to do':
+dictū quam rē facilius est (Livy)'it is easier in the saying than in reality'
+
+
+Devine, Andrew M. & Laurence D. Stephens (2006), Latin Word Order. Structured Meaning and Information. Oxford: Oxford University Press. Pp. xii, 639.  ISBN 0-19-518168-9. Google books sample. See also reviews by M. Esperanza Torrego and Anne Mahoney.
+Gildersleeve, B.L. & Gonzalez Lodge (1895). Gildersleeve's Latin Grammar. 3rd Edition. (Macmillan)
+Greenough, J.B. et al. (1903). Allen and Greenough's New Latin Grammar for Schools and Colleges. Boston and London.
+Hopper, Paul J. (1985). Review of Panhuis The Communicative Perspective in the Sentence: a study of Latin word order. Language 61-2, 1985, 466-470.
+Kennedy, Benjamin Hall (1871). The Revised Latin Primer. Edited and further revised by Sir James Mountford, Longman 1930; reprinted 1962.
+Kühner, Raphael; & Karl Stegmann (1912) [1879]. Ausführliche Grammatik der lateinischen Sprache
+Leumann, Manu; J.B. Hofmann, & Anton Szantyr (1977) [1926]. Lateinische Grammatik. Munich.
+Nutting, Herbert C. (1920). "Notes on the Cum-Construction". The Classical Journal, Vol. 16, No. 1.
+Panhuis, D.G.J. (1982) The Communicative Perspective in the Sentence: a study of Latin word order, Amsterdam–Philadelphia: John Benjamins.
+Pinkster, Harm (1990), Latin Syntax and Semantics.
+Rose, H.J. (1924). Review of J. Marouzeaux (1922), "L'Ordre des Mots dans la Phrase latine: I. Les Groupes nominaux". The Classical Review, vol. 38, issue 1-2.
+Spevak, Olga (2010). Constituent Order in Classical Latin Prose. Studies in Language Companion Series (SLCS) 117. Amsterdam/Philadelphia: John Benjamins Publishing Company, 2010.  Pp. xv, 318.  ISBN 9789027205841. Reviewed by J.G.F. Powell in the Bryn Mawr Classical Review [1]
+Spevak, Olga (2014). The Noun Phrase in Classical Latin Prose. Amsterdam studies in classical philology, 21.   Leiden; Boston:  Brill, 2014.  Pp. xiii, 377.  ISBN 9789004264427. Review by Patrick McFadden.
+Walker, Arthur T. (1918) "Some Facts of Latin Word Order". The Classical Journal, Vol. 13, No. 9, pp. 644–657.
+Woodcock, E.C. (1959), A New Latin Syntax.
+

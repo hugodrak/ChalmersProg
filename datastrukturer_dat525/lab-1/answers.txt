@@ -1,0 +1,110 @@
+/******************************************************************************
+** Lab 1: Sorting, Complexity
+******************************************************************************/
+
+Group members:
+- Gustav Sandrén
+- William Almqvist
+- Hugo Drakeskär
+
+/******************************************************************************
+** Task: Figuring out the complexity
+**
+** 1. What is the complexity of running each of the following algorithms
+**    on each of the following kinds of inputs?
+******************************************************************************/
+
+insertion_sort on:
+
+- random inputs:      Quadratic
+- 95% sorted inputs:  Quadratic
+- sorted inputs:      Linear
+
+quick_sort on:
+
+- random inputs:      Linearithmic
+- 95% sorted inputs:  Linearithmic
+- sorted inputs:      Quadratic
+
+merge_sort on:
+
+- random inputs:      Linearithmic
+- 95% sorted inputs:  Linearithmic
+- sorted inputs:      Linearithmic
+
+/******************************************************************************
+** Task: Improving quicksort
+**
+** 2. Do the following changes affect the complexity
+**    of quicksort on any of the three degrees of sortedness of the input?
+**    If so, what is it that changes?
+******************************************************************************/
+
+Shuffling the array first:
+yes + all three becomes between nlog(n) and n
+
+Median-of-three pivot selection:
+yes + 95% goes from pure Linearithmic to somewhere between nlog(n) and n
+
+Insertion sort for small subarrays:
+yes + all three cases gets better time to sort
+
+/******************************************************************************
+** 3. What is a good cutoff to use for insertion sort?
+**    Explain briefly how you came to this answer.
+**    Remember that you should try to find the answer in a systematic way.
+******************************************************************************/
+
+We tested different cutoff values and around 30 is a good value. This is because
+if you have too large value, the sorting will be limited by insertion sort's
+quadratic properties. and with a too small value there will be small effects
+
+/******************************************************************************
+** 4. Which combination of improvements gives the best performance?
+******************************************************************************/
+
+The best is to combine median, insertion for small and shuffling.
+This will give us a Linearithmic complexity for all types of lists
+
+
+/******************************************************************************
+** Appendix: General information
+**
+** A. Approximately how many hours did you spend on the assignment?
+******************************************************************************/
+
+Hugo:       2
+Gustav:     2
+William:    2
+
+
+/******************************************************************************
+** B. Are there any known bugs / limitations?
+******************************************************************************/
+
+None
+
+
+/******************************************************************************
+** C. Did you collaborate with any other students on this lab?
+**    If so, please write in what way you collaborated and with whom.
+**    Also include any resources (including the web) that you may
+**    may have used in creating your design.
+******************************************************************************/
+
+No other students except for group members.
+We used: https://en.wikipedia.org/wiki/Quicksort
+
+/******************************************************************************
+** D. Describe any serious problems you encountered.
+******************************************************************************/
+
+None
+
+/******************************************************************************
+** E. List any other comments here.
+**    Feel free to provide any feedback on how much you learned
+**    from doing the assignment, and whether you enjoyed it.
+******************************************************************************/
+
+None

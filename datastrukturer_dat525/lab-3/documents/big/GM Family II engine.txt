@@ -1,0 +1,110 @@
+The Family II is a straight-4 piston engine that was originally developed by Opel in the 1970s, debuting in 1979. Available in a wide range of cubic capacities ranging from 1598 to 2405cc, it simultaneously replaced the Opel OHV, Opel CIH and Vauxhall Slant-4 engines, and was GM Europe's core powerplant design for much of the 1980s.
+The engine features a cast iron block, an aluminium head, and a timing belt driven valvetrain. The timing belt also drives the water pump. It was first used in the Opel Kadett D, Ascona B, Corsa, and their corresponding Vauxhall sister models, the Astra, Cavalier, and Nova. Many General Motors subsidiaries, including Daewoo, GM do Brasil, GM Powertrain, and Holden have used this design.
+By 1986, the Family II unit had completely supplanted the CIH engine as Opel's core 4-cylinder powerplant. although the 6-cylinder versions of the CIH continued in the larger Omega and Senator models until 1995.
+In 2004, a 2.0 L MultiPower engine was made available for the taxi market which could use gasoline, alcohol, and natural gas.
+The Family II also spawned two diesel variants, the 1.6 L and 1.7 L. These engines are sometimes referred to as "Big-block" engines by enthusiasts; in contrast to the smaller Family 1 engines which are sometimes referred to as the "Small-block" engines.
+The development track of these engines split in 1987, with the introduction of the 20XE; which featured a 16-valve DOHC head. Although SOHC versions are still in production in Brazil, most DOHC engines were replaced by the all-aluminium GM Ecotec engine family.
+Holden made various Family II engines for Opel, GM Daewoo, GM India, GM Uzbekistan and Isuzu Thailand at its Port Melbourne plant. Variations include displacements from 1.8 L to 2.4 L.
+
+
+These engines formed the basis of the modern Family II lineup. Configuration was limited to a single over head cam, and two valves per cylinder in a cross flow layout (8 valves total). The 20NE served as the base, where later Family II engines evolved.
+
+
+The 1.6-liter iteration (1,598 cc or 97.5 cu in) has a 80.0 mm (3.15 in) bore and a 79.5 mm (3.13 in) stroke. Opel began production of the 1.6 L in 1980. A diesel fueled version was also available. The diesel produced 54 PS (40 kW) at 4600 rpm and 70.8 lb⋅ft (96.0 N⋅m) of torque at 2400 rpm. It also had a 23:1 compression ratio and a Bosch injection pump. The diesel featured valves that rotate, increasing durability.
+
+
+The 1.7-liter iteration (1,679 cc or 102.5 cu in) has a 82.0 mm (3.23 in) bore and a 79.5 mm (3.13 in) stroke. The 1.7 L version uses diesel fuel.
+
+
+The 1.8-liter iteration (1,796 cc or 109.6 cu in) has a 84.8 mm (3.34 in) bore and a 79.5 mm (3.13 in) stroke. It was first available in the facelifted Opel Manta B in May 1982, and quickly made its way into a number of other Opel and GM cars. It was originally available as the 18N and the 18S, for low and high octane petrol respectively. The C18NV was first installed in the Opel Rekord E2 from May 1985 and was one of the first catalysed mass market automobiles sold in Germany (and Europe). In 1983, the 1.8 L engine was added to certain North American market J-cars; the engines were imported from Brazil. The LA5 (RPO code) is a turbocharged version that was optional in the North American market from 1984.
+
+
+The single overhead camshaft 1,998 cc (121.9 cu in) inline four cylinder engines feature a square 86 mm (3.4 in) bore and stroke. They also feature fuel injection, an aluminum crossflow cylinder head with a belt-driven overhead camshaft, electronic ignition, a six-bolt flywheel, and a 6,400 rpm redline. Originally, developed by Opel, these engines have been used in Brazilian market vehicles, Korean market vehicles and North American market vehicles; with the first versions appearing in 1981. The North American versions were used primarily in the J-body compact cars from 1983 through 1994 although the turbocharged version did make a brief appearance in the N-body Pontiac Grand Am. The SOHC version also appeared in the Opel Kadett E-based, Daewoo produced, Pontiac LeMans for the US market. In the Brazilian market these engines are still built under the FlexPower name. Differences between the engines are usually emissions related. However, the 20SEH version was more powerful version produced for Opel's sportier models; it featured a more aggressive camshaft, and high compression pistons.
+The LT3 (RPO code) or C20GET is a turbocharged version produced in Brazil for the North American market. It featured brilliant red powder coating on the camshaft cover, intake manifold and boost pipe. The engine was equipped with a water-cooled Garrett T-25 turbocharger; however it did not utilize an intercooler. Maximum boost at WOT was 9 psi (62 kPa).
+
+
+The 2.2 L or 2,198 cc (134.1 cu in) version has an 86mm (3.38 in) bore and a 94.6mm (3.7 in) stroke. It is codenamed C22NE and 22LE.
+It was mainly used in the Brazilian market, in the Opel Omega A (Chevrolet Omega in Brazil) with 116 hp and the Opel Vectra B (Chevrolet Vectra in Brazil) with 123 hp. This engine replaced the 2.0 8v C20NE (116 hp) version that was considered weak when fitted to cars like Omega and Vectra, by the Brazilian market.
+Applications:
+
+Isuzu Faster
+FS Lublin, modified C22NED engine
+
+
+The 2,405 cc (146.8 cu in) version has a 87.5 mm (3.44 in) bore and a 100 mm (3.9 in) stroke.
+
+C24SE – 2.4 L SOHC – Isuzu Rodeo (C24SE built by Holden)
+X24XF— 2.4 L MPFI SOHC 8V FlexPower
+
+
+The naturally aspirated 16-valve version of the 2.0 L— 1,998 cc (121.9 cu in)—cast-iron-block engine is the successor to the OHC-engines and a predecessor to the 16-valve Ecotec-line of engines. The 20XE (or C20XE with catalyst) evolved into the X20XEV(1994) with 136 hp (101 kW) and taking on the GM Ecotec name and finally it evolved into the X20XER(1999).
+
+
+This lineup features the same block as the OHC based engines with an 86 mm (3.4 in) bore & stroke and a Coscast-developed timing belt-driven double overhead camshaft (DOHC) y16 valve cylinder head (Coscast Project KB). The cylinder heads were manufactured by either Coscast or, at a later date, Kolbenschmidt. In general, the heads from this lineup are supposed to flow appreciablу better than their Lotus successors.
+The 20XE came into production in 1987. The engine was designed by Cosworth, UK. The engine was originally intended for race application, hence Cosworth's involvement. Commonly refer to this engine as the 'Red Top' (or just 'XE') because of the appearance of the red L-shaped spark plug cover (black colours were available too; the rocker cover was available in silver only). At the time of its launch, this engine was something of a milestone unit in Europe and was widely used in motorsport in many specialist race versions.
+The engine had a low optimum specific fuel consumption of 232 g/kWh which is equivalent to a maximum efficiency of 37%; a better efficiency than some of the diesel engines that were available at the time of its release. The valves are set at 46° and are accompanied by pistons with shallow valve pockets – thereby eliminating the need for a shorter connecting rod hence, allowing a suitable compression ratio to be achieved. Long spark plugs are used and positioned concentric to the cylinder. Power output was rated at 157 bhp. The later engine were suffixed C20XELN to indicate 'Low Noise' revisions (smaller cylinder head port, cast pistons, and different crank bearing size) in line with EU regulations
+In 1988 the C20XE was introduced, and was fitted with a catalyst and oxygen sensor in the exhaust. This was due to new emission standards, which forced manufacturers to equip their cars with a catalytic converter and a lambda or oxygen sensor – this requirement permitted the fitment of the Bosch Motronic 2.5 engine management system. Engine power output dropped to 150 bhp. Vauxhall complied with the new emission controls in 1988, although the legislation wasn't law until 1991. Vehicles fitted with the C20XE engine produced before 1991 can have their catalytic converter legally removed, and the vehicle will still comply with MOT regulations.
+
+The C20LET engine was introduced in 1992, and was fitted to the Opel/Vauxhall Vectra Turbo/Cavalier Turbo, Calibra Turbo, and the South African made Opel Astra 200t S. It is similar to the C20XE, apart from the primary addition of a KKK-16 turbocharger, forged Mahle pistons, Bosch Motronic M2.7 electronic engine control unit, and black plastic plenum/'top hat' shroud with a 'turbo' script. It produces a DIN rated output of 150 kW (201 hp), and generates 280 newton metres (207 lbf⋅ft) of torque. Boost pressure is 0.6 bars (8.7 psi) continuous with a 0.8 bars (12 psi) overboost.
+Some versions of the engine implemented switchable Traction Control (commonly included in the early Astra GSi models). The inlet had a secondary throttle valve sandwiched underneath the primary throttle body. This is closed by a motor/arm assembly when the traction control ECU senses loss of grip/spin at the wheels. The engine was also equipped with a different throttle position sensor (six pin, as opposed to three), and a different coolant temperature sensor (which was black, as opposed to the normal light blue colour).
+The engines that appeared in the early 1990s also swapped the cast metal spark plug cover for a cheaper (and less regarded) plastic version. Those used round tooth cambelts while the later used square (with a plastic pre-tensioner). There are also subtle differences between the crankshaft, and visible difference in the pattern of the SFi airbox.
+In its last version before production ended, the C20XE came with a new engine management system which included a distributorless ignition system, namely Bosch Motronic 2.8. The last version was called C20LN (Low Noise) and has a stronger engine block.
+
+
+In 1991, the Coscast cylinder head was replaced with the GM cylinder head which was manufactured by Kolben-Schmidt. One of the most prominently recognized qualities of the Coscast head is its inherent lack of porosity; this was achieved by pumping the liquid metal into the mold rather than pouring it, hence, minimizing the presence of tiny air bubbles that usually form during the standard casting process. The Coscast head can be identified by a Coscast logo which is stamped under the 3rd exhaust port and a ridge on the head under the distributor.
+The GM head was and featured a slightly different oil/water gallery design. These design changes required that a pair of Welch plugs be pressed in at either end of the head. In situations where a complete C20XE is still fitted to a vehicle, the presence of Welch plugs (or lack of) has proven to be the sole means of differentiating between GM and Coscast heads. A reinforced version of the GM head became available in the later years of the C20XE; however, these reinforcements meant that it had smaller inlet/exhaust channels than the other two.Since an engine's oil circulates at much higher pressures than its coolant, oil in a porous head has a tendency to gradually seep into the coolant galleries. A typical symptom of a porous head is usually a 'mayonnaise'-like substance forming somewhere inside the cooling system (usually, this can be found residing on the coolant reservoir cap). However, depending on the degree of porosity, symptoms of a porous head have a tendency to vary. Many C20XE operators have described the symptom as a curry-like residue or in more severe cases, a thick brown sludge which may overcome the entire cooling system. In such instances, engine oil will readily react with the sulfur in rubber components, hence quickly degrading coolant pipes and hoses to the point of failure. During the porous head debacle, GM faced bankruptcy – therefore dealers failed to recall affected models. Due in part, to the engine's immense prominence and demand, many businesses now specialize in the repair of porous GM C20XE/LET heads – by either sleeving the affected gallery or by injecting a polymer based substance into the porous region. Reportedly, a small number of total GM C20XE cylinder heads ever exhibited significant symptoms of porosity.
+
+
+The C20XE has seen extensive use in motorsport. Typical uses for the engine have ranged from hillclimb events, to open wheel racing categories. Despite its age, it remains the powerplant of choice for many Formula 3 teams and has most recently found acclaim in the Australian F3 scene where Tim Macrow, the 2007 Australian F3 champion, drove an Opel-Spiess powered car to claim victory. Tuned by Spiess, an F3 grade C20XE is easily capable of producing 250 bhp (190 kW) in its naturally aspirated form. Many aftermarket tuners have further developed the C20XE for racing purposes. The C20XE was used by the Chevrolet WTCC (World Touring Car Championship) team and the Lada WTCC team. The engine was also an option in Westfield kitcars. The engine is a favourite for both N/A and turbo motoring enthusiasts for its robust design, materials and construction
+
+
+
+
+The X18XE was branded as Ecotec. All these engines feature a 81.6 mm (3.21 in) bore and a 86.0 mm (3.39 in) stroke.
+
+
+The X20XEV is the first Family II engine branded as Ecotec, a mass-market successor to the C20XE with a Lotus-developed cylinder head. The new cylinder head had a smaller valve angle compared to the older C20XE, to give more torque in the lower revs. It is a 1,998 cc (121.9 cu in) naturally aspirated engine with 16 valves and belt driven double overhead camshafts (DOHC). 86 mm (3.4 in) bore and stroke in cast-iron OHC-derived cylinder block and aluminium cylinder head. The X20XEV was equipped with exhaust gas recirculation (EGR) to reduce nitrogen dioxide emissions and air injection reactor (AIR) to speed up the warming up of the catalytic converter and to reduce unburnt hydrocarbons and carbon monoxide. The engine is capable of producing 100 kW (136 PS; 134 bhp). A higher output version called the X20XER' produced 118 kW (158 hp) @ 6500 rpm and 188 N⋅m (139 lb⋅ft) @ 4300 rpm.
+The Z20LET is a turbocharged version of the X20XEV for the Opel Astra G and features an 8.8:1 compression, 200 PS; 197 hp (147 kW) and 195 lb⋅ft (264 N⋅m) of torque. From 2005, the Z20LET engine was revised for the Astra H and Zafira B, to three different model designations, Z20LEL, Z20LER and Z20LEH. The differing designations denote the engine power output, 170 hp (127 kW), 200 hp (149 kW) and 240 hp (179 kW). Further revisions to the original design include under-piston oil cooling, a revised turbocharger unit and the deletion of the contra-rotating balancer shafts in the 240 hp (179 kW) Z20LEH engine (as used in the Astra VXR), to reduce mechanical losses. The Z20LEH also features high quality Mahle forged pistons, which are much stronger than the cast pistons fitted to the Z20LET, Z20LEL and Z20LER.
+The 2.0-litre X20SED D-TEC 16 Valve DOHC MPFi was built by Holden and used in the Daewoo Nubira.
+The L34 also known as the U20SED is a 2.0 L (1,998 cc (121.9 cu in)) engine that was built until 2009 by Holden in Australia, dubbed D-TEC by GMDAT (the new Daewoo after the buyout from GM) or E-TEC II by Chevrolet (GM). It has an 86.0 mm (3.39 in) bore and stroke. Power is rated at 119 hp (89 kW) in South America and Europe, 126 hp in Canada, and 132 hp in the United States; all are at 5400 rpm and torque is rated at 126 lb⋅ft (171 N⋅m). The engine has been used on the Daewoo Lacetti and its various rebadged models, such as the Chevrolet Optra, Suzuki Reno, and Suzuki Forenza.
+This engine was discontinued in 2010 and new generation open deck engines replaced starts with a prefix of the letter A e.g. A20NHT A20NHH A20NFT....
+
+
+The 2.2 L engine was a derivative of the GM Family II engine introduced in 1995 built by Holden in Australia that saw usage first in Australian and European versions of Isuzu-derived trucks and SUVs, and was later used in the Isuzu Rodeo and Daewoo Leganza. The X22XE was also used in the Opel/Vauxhall Sintra (1996–1999). The 2.2-liter shares lots of details together all listed below:
+
+Bore: 86.0 mm
+Stroke: 94.6 mm
+Volume: 2198 ccX22XE
+
+Power: 100 kW (130 hp) @ 5200 rpm, 104 kW (139 hp) @ 5400 rpm (Sintra)
+Torque: 202 N⋅m (149 lb⋅ft) @ 2600 rpm
+Compression ratio: 10.5:1
+Engine management: Bosch Motronic M 1.5.4
+Octane requirement: 91/95/98, with knock control
+Control: timing belt
+Exhaust system: AGR, regulated catalytic
+Properties: balance shaftsY22xe (used on Omega, 1999–2003)
+
+Power: 106 kW (142 hp) @ 5400 rpm
+Torque: 205 N⋅m (151 lb⋅ft) @ 4000 rpm
+Compression ratio: 10.5:1
+Engine management: Siemens Simtec 71
+Octane requirement: 91/95/98, with knock control
+Control: timing belt
+Exhaust system: AGR, regulated catalytic
+Properties: balance shafts, electronic throttle, cruise controlZ22xe (used on Omega, 1999–2003)
+
+Specifications as Y22xe, but at the power: 106 kW @ 5800 rpm.Further applications:
+
+Isuzu Faster
+Isuzu MU/Isuzu Amigo (1995–2004)
+Opel/Vauxhall Frontera (1998–2004)
+Honda Passport (1998–2002)
+Opel Omega
+Opel Blazer (Indonesian market)
+
+
+X24SFD—2.4 L (2405 cc) SFI DOHC 16V - Chevrolet Astra, Chevrolet Vectra150 hp at 5200 rpm
+228 Nm at 4000 rpmZ24XE—2.4 L (2405 cc) DOHC – Chevrolet Captiva, Opel Antara (2006–2010), this engine was built by Holden until 2009. The 2006 Chevrolet Vectra also received a 2.4 L 16V FlexPower engine.100–103 kW (134–138 hp) at 5200 rpm
+220 N⋅m (160 lb⋅ft) at 2200 rpm
+

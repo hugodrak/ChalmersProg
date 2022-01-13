@@ -1,0 +1,75 @@
+The International Standard Name Identifier (ISNI) is an identifier for uniquely identifying the public identities of contributors to media content such as books, television programmes, and newspaper articles. Such an identifier consists of 16 digits. It can optionally be displayed as divided into four blocks.
+ISNI can be used to disambiguate names that might otherwise be confused, and links the data about names that are collected and used in all sectors of the media industries.
+It was developed under the auspices of the International Organization for Standardization (ISO) as Draft International Standard 27729; the valid standard was published on 15 March 2012. The ISO technical committee 46, subcommittee 9 (TC 46/SC 9) is responsible for the development of the standard.
+
+
+The FAQ of the isni.org websites states "An ISNI is made up of 16 digits, the last character being a check character."
+
+
+MARC: it was proposed to store the ISNI without spaces, e.g. $0(isni)1234567899999799
+isni.org URL: no spaces, e.g. http://www.isni.org/isni/000000012281955X
+viaf.org:
+URL https://viaf.org/viaf/sourceID/ISNI%7C000000012281955X
+URL https://viaf.org/processed/ISNI%7C000000012281955X
+the data dumps contain it in form ISNI|000000012281955X
+
+
+In display it is frequently shown with spaces.
+
+isni.org
+viaf.org
+
+
+The ISNI allows a single identity (such as an author's pseudonym or the imprint used by a publisher) to be identified using a unique number. This unique number can then be linked to any of the numerous other identifiers that are used across the media industries to identify names and other forms of identity.
+An example of the use of such a number is the identification of a musical performer who is also a writer both of music and of poems. Where he or she might currently be identified in many different databases using numerous private and public identification systems, under the ISNI system, he or she would have a single linking ISNI record. The many different databases could then exchange data about that particular identity without resorting to messy methods such as comparing text strings. An often quoted example in the English language world is the difficulty faced when identifying 'John Smith' in a database. While there may be many records for 'John Smith', it is not always clear which record refers to the specific 'John Smith' that is required.
+If an author has published under several different names or pseudonyms, each such name will receive its own ISNI.
+ISNI can be used by libraries and archives when sharing catalogue information; for more precise searching for information online and in databases, and it can aid the management of rights across national borders and in the digital environment.
+
+
+ORCID (Open Researcher and Contributor ID) identifiers consist of a reserved block of ISNI identifiers for scholarly researchers and administered by a separate organisation. Individual researchers can create and claim their own ORCID identifier. The two organisations coordinate their efforts.
+
+
+
+
+According to ISO the Registration Authority for ISO 27729:2012 is the "ISNI International Agency".  It is located in London (c/o EDItEUR)It is incorporated under the Companies Act 2006 as a private company limited by guarantee.The 'International Agency' is commonly known as the ISNI-IA.This UK registered, not-for-profit company has been founded by a consortium of organisations consisting of the Confédération Internationale des Sociétés d'Auteurs et Compositeurs (CISAC), the Conference of European National Librarians (CENL), the International Federation of Reproduction Rights Organisations (IFRRO), the International Performers Database Association (IPDA), the Online Computer Library Center (OCLC) and ProQuest. It is managed by directors nominated from these organisations and, in the case of CENL, by representatives of the Bibliothèque nationale de France and the British Library.
+
+
+A registration agency provides the interface between ISNI applicants and the ISNI Assignment Agency.
+
+
+ISNI members (ISNI-IA Members) as of 2018-07-11:
+ABES (French Bibliographic Agency for Higher Education)
+Brill Publishers
+CEDRO (Centro Español de Derechos Reprográficos)
+CDR (Centrale Discotheek Rotterdam)
+Copyrus
+FCCN
+French National Archives (Archives nationales de France)
+Harvard University
+Iconoclaste
+Irish Copyright Licensing Agency (ICLA)
+ISSN International Centre
+La Trobe University
+Library of Congress
+MacOdrum Library, Carleton University
+National Library of Finland
+National Library of New Zealand
+National Library of Norway
+National Library of Sweden (Kungliga Biblioteket)
+Publishers' Licensing Services
+UNSW Library
+
+
+ISNI-IA uses an assignment system comprising a user interface, data-schema, disambiguation algorithms, and database that meets the requirements of the ISO standard, while also using existing technology where possible. The system is based primarily on the Virtual International Authority File (VIAF) service, which has been developed by OCLC for use in the aggregation of library catalogues.
+Access to the assignment system and database, and to the numbers that are generated as the output of the process, are controlled by independent bodies known as 'registration agencies'. These registration agencies deal directly with customers, ensuring that data is provided in appropriate formats and recompensing the ISNI-IA for the cost of maintaining the assignment system. Registration agencies are appointed by ISNI-IA but will be managed and funded independently.
+
+
+As of 5 August 2017 ISNI holds public records of over 9.41 million identities, including 8.757 million individuals (of which 2.606 million are researchers) and 654,074 organisations.
+As of 19 April 2018 9.86 million identities, including 9.15 million individuals (of which 2.86 million are researchers) and 714,401 organisations.
+As of 11 July 2018 10 million identities, including: 9.28 million individuals (of which 2.87 million are researchers) 717,204 organisations.
+As of 13 August 2018 10 million identities, including: 9.32 million individuals (of which 2.87 million are researchers) 717,795 organisations.
+As of 17 October 2018 10 million identities, including: 9.39 million individuals (of which 2.87 million are researchers) 719,010 organisations.
+As of 5 December 2018 10 million identities, including: 9.4 million individuals (of which 2.88 million are researchers) 826,810 organisations.
+As of 11 March 2019 over 10 million identities, including: 9.59 million individuals (of which 2.88 million are researchers) 864,999 organisations.
+As of 21 June 2019 over 10.5 million identities, including: 9.6 million individuals (of which 2.88 million are researchers) 876,017 organisations.In 2018, YouTube became an ISNI registry, and announced its intention to begin creating ISNI IDs for the musicians whose videos it features. ISNI anticipates the number of ISNI IDs "going up by perhaps 3-5 million over the next couple of years" as a result.
+

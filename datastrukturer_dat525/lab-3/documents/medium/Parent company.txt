@@ -1,0 +1,32 @@
+A parent company is a company that owns enough voting stock in another firm to control management and operation by influencing or electing its board of directors. Companies that operate under this management are deemed subsidiaries of the parent company.
+
+
+
+
+The parent company-subsidiary company relationship is defined by Part 1.2, Division 6, Section 46 of the Corporations Act 2001 (Cth), which states:
+
+A body corporate (in this section called the first body ) is a subsidiary of another body corporate if, and only if:
+
+(a) the other body:
+(i) controls the composition of the first body's board; or
+(ii) is in a position to cast, or control the casting of, more than one-half of the maximum number of votes that might be cast at a general meeting of the first body; or
+(iii) holds more than one-half of the issued share capital of the first body (excluding any part of that issued share capital that carries no right to participate beyond a specified amount in a distribution of either profits or capital); or
+(b) the first body is a subsidiary of a subsidiary of the other body.
+
+
+Lawyer Michael Finley has stated that “the emerging trend that has seen international plaintiffs permitted to proceed with claims against Canadian parent companies for the allegedly wrongful activity of their foreign subsidiaries."
+
+
+The parent subsidiary company relationship is defined by Part 1, Section 5, Subsection 1 of the Companies Act, which states:
+
+5. —(1) For the purposes of this Act, a corporation shall, subject to subsection (3), be deemed to be a subsidiary of another corporation, if —
+
+(a) that other corporation —
+(i) controls the composition of the board of directors of the first-mentioned corporation;
+(ii) controls more than half of the voting power of the first-mentioned corporation; or
+(iii) [Deleted by Act 36 of 2014 wef 01/07/2015]
+(b) the first-mentioned corporation is a subsidiary of any corporation which is that other corporation's subsidiary.
+
+
+In the United Kingdom, it is generally held that an organisation holding a 'controlling stake' in a company (a holding of over 51% of the stock) is in effect the de facto parent company of the firm, having overriding material influence over the held company's operations, even if no formal full takeover has been enacted. Once a full takeover or purchase is enacted, the held company is seen to have ceased to operate as an independent entity but to have become a tending subsidiary of the purchasing company, which, in turn, becomes the parent company of the subsidiary. (A holding below 50% could be sufficient to give a parent company material influence if they are the largest individual shareholder or if they are placed in control of the running of the operation by non-operational shareholders.)
+

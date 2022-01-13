@@ -1,0 +1,144 @@
+/******************************************************************************
+** Lab 3: Plagiarism detection
+******************************************************************************/
+
+Group members:
+- Hugo Drakeskär
+- Gustav Sandrén
+- William Almqvist
+
+/******************************************************************************
+** Task 1: Complexity analysis
+**
+** 1. What is the asymptotic complexity of find_similarity?
+**    Answer in terms of N, the total number of 5-grams in the input files.
+**    Assume that the number of duplicate occurrences of 5-grams is
+**    a small constant - that is, there is not much plagiarised text.
+**    Explain briefly.
+******************************************************************************/
+#Old answer
+#O(N^2), Due to the two forloops that for each Ngram sequence in a file loops through all the Ngrams in the file to check.
+#So the two for loops together contributes a complexity of O(N^2).
+
+#Updated answer
+O(N^2). The quadratic complexity is due to the comparison of each 5gram in the set to all other. So we need to compare N(N-1) times which translates to a complexity of O(N^2).
+
+
+/******************************************************************************
+** 2. How long did the program take on the 'tiny' and 'small' directories?
+**    Is the ratio between the times what you would expect, given the complexity?
+**    Explain very briefly why.
+******************************************************************************/
+
+Tiny: 8.52 s, N = 6000
+Small: 90.14 s, N = 20 000
+ratio 1:10.57
+due to the complexity of find_similarity. We get: (20000^2)/(6000^2) which is approximately 11.
+
+
+/******************************************************************************
+** 3. How long do you predict the program would take to run on
+**    the 'big' directory? Show your calculations.
+******************************************************************************/
+
+By using the time spent for the small set. We get (90 s) * ( (2*10^6)^2 )/( 20000^2 ) 
+= 90 * 1e4 = 9*1e5 s = 10.5 days
+
+/******************************************************************************
+** Task 2: Make use of an index
+**
+** 4. Now what is the total asymptotic complexities of running and build_index
+**    and find_similarity? Include brief justification. Again, assume a total
+**    of N 5-grams, and a constant number of duplicate occurrences of 5-grams.
+******************************************************************************/
+
+Complexity for build_index is O(N) due to the iteration of all 5grams. Checking all of them makes the complexity linear.
+
+Complexity for find_similarity is also O(N). If we assume we have a relatively small number of duplicates; 
+the majority of computing will go towards looking at all the 5grams with a single path. This contributes to linear time.
+
+So total will be O(N+N) = O(N)
+
+/******************************************************************************
+** 5 (optional). What if the total similarity score is an arbitrary number S,
+**               rather than a small constant?
+******************************************************************************/
+
+[...]
+
+/******************************************************************************
+** Task 3: Implement hash tables with linear probing
+**
+** 6. Run lab3.py on the big document set and, with the help of the statistics
+**    it prints out, answer this question:
+**
+**    Assume that we call `index.get` on a random key which is present in
+**    the hash table. How many array accesses are needed on average to
+**    find the key? And how many in the worst case? Explain how you got
+**    your answer.
+**
+**    Include the hash table statistics from running `lab3.py documents/big`
+**    in your answer. Answer with a number calculated for that document set.
+******************************************************************************/
+
+Hash table statistics:
+  files: Hash table, size 953, capacity 3072, load factor 0.31, average distance 0.20, max distance 7
+  index: Hash table, size 2061519, capacity 6291456, load factor 0.33, average distance 0.24, max distance 20
+  similarity: Hash table, size 54168, capacity 196608, load factor 0.28, average distance 0.19, max distance 10
+
+Average accesses are, if we look at average distance which tells how long (in mean) we need to travel from the calculated index. Where 0 is no travel and 1 is one index every time.
+So from this we can draw the conclution that the complexity is O(N)
+
+/******************************************************************************
+** Task 4: Improve a hash function
+**
+** 7. How did you improve the hash function?
+**    Briefly explain why your design gives a better distribution of hash
+**    codes than the bad hash function.
+******************************************************************************/
+The bad hash function hashes the ngrams in a way that makes similar grams be very far from eachother.
+so for pythons built in hash function we got an average distance of 0.46. 
+With the bad version we got: 1640.
+And with the version suggested in the lectures/improved we get same as built in: 0.46.
+One note on this is that that when switching from pythons built in hash function to the one we created. The time it takes increases alot.
+We think that this is due to the two for loops in the new hashing algorithm. And maybe that pythons built in hash is implmented in C.
+So with built in the medium dataset takes 2.6 sec and ours take 7.8 sec. But the avg distance is the same.
+
+/******************************************************************************
+** Appendix: General information
+**
+** A. Approximately how many hours did you spend on the assignment?
+******************************************************************************/
+
+- Hugo Drakeskär: 14
+- Gustav Sandrén: 14
+- William Almqvist: 14
+
+/******************************************************************************
+** B. Are there any known bugs / limitations?
+******************************************************************************/
+
+No
+
+/******************************************************************************
+** C. Did you collaborate with any other students on this lab?
+**    If so, please write in what way you collaborated and with whom.
+**    Also include any resources (including the web) that you may
+**    may have used in creating your design.
+******************************************************************************/
+
+No
+
+/******************************************************************************
+** D. Describe any serious problems you encountered.                    
+******************************************************************************/
+
+None so far
+
+/******************************************************************************
+** E. List any other comments here.
+**    Feel free to provide any feedback on how much you learned 
+**    from doing the assignment, and whether you enjoyed it.                                             
+******************************************************************************/
+
+N/A
