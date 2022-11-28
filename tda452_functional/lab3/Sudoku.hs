@@ -198,7 +198,12 @@ type Pos = (Int,Int)
 -- * E1
 
 blanks :: Sudoku -> [Pos]
-blanks = undefined
+blanks sudoku = [
+            (row,col) | row <- [0..8], col<-[0..8] , isBlank row col
+            ]
+    where isBlank r c = case (((rows sudoku) !! r) !! c) of
+                                Nothing -> True
+                                otherwise -> False
 
 --prop_blanks_allBlanks :: ...
 --prop_blanks_allBlanks =
@@ -207,24 +212,43 @@ blanks = undefined
 -- * E2
 
 (!!=) :: [a] -> (Int,a) -> [a]
-xs !!= (i,y) = undefined
+xs !!= (whereToInsert,new) = [if i==whereToInsert then new else existing| (existing, i)<-zip xs [0..]]
 
---prop_bangBangEquals_correct :: ...
---prop_bangBangEquals_correct =
+prop_bangBangEquals_correct :: [Int] -> [Int] -> Int -> Bool 
+prop_bangBangEquals_correct x y randomnumber = expected == (newList !!= ((length x), 0))
+    -- Test so that it correctly replaces a number in the middle of some random lists
+    where newList = x ++ [randomnumber] ++ y
+          expected = x ++ [0] ++ y
 
 
 -- * E3
 
 update :: Sudoku -> Pos -> Cell -> Sudoku
-update = undefined
+update sudoku (row,col) new = Sudoku $ allRows !!= (row, newRow)
+            where allRows = rows sudoku
+                  newRow = ((rows sudoku) !! row) !!= (col, new)
 
---prop_update_updated :: ...
---prop_update_updated =
+prop_update_updated :: Int -> Int -> Bool
+prop_update_updated row col | or [row<0,col<0,row>8,col>8] = True
+                            | otherwise = actual == expected
+    where actual = update allBlankSudoku (row,col) (Just 9)
+          
+          expected = Sudoku $ (replicate 9 blankRow) !!= (row, blankRow !!= (col, Just 9))
+          blankRow = replicate 9 Nothing
 
 
 ------------------------------------------------------------------------------
 
 -- * F1
+
+solve :: Sudoku -> Sudoku
+solve sudoku = head $ solve' sudoku (blanks sudoku)
+
+solve' :: Sudoku -> [(Int, Int)] -> [Sudoku]
+solve' sudoku [] = if isOkay sudoku then [sudoku] else []
+
+solve' sudoku (pos:rest) | not $ isOkay sudoku = []
+                       | otherwise = concat $ [solve' (update sudoku pos (Just i)) rest | i<- [1..9]]
 
 
 -- * F2
