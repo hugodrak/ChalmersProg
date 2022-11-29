@@ -197,6 +197,7 @@ type Pos = (Int,Int)
 
 -- * E1
 
+-- Loops through all y and x in (0,0)..(8,8) and if there is a blank there then return that coordinate
 blanks :: Sudoku -> [Pos]
 blanks sudoku = [
             (row,col) | row <- [0..8], col<-[0..8] , isBlank row col
@@ -205,8 +206,10 @@ blanks sudoku = [
                                 Nothing -> True
                                 otherwise -> False
 
---prop_blanks_allBlanks :: ...
---prop_blanks_allBlanks =
+prop_blanks_allBlanks :: Bool
+prop_blanks_allBlanks = length expected == 81 &&  expected == actual
+    where expected = [(x,y) | x<-[0..8],y<-[0..8]]
+          actual = blanks allBlankSudoku
 
 
 -- * E2
