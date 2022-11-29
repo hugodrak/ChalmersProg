@@ -58,9 +58,8 @@ example2 =
 
 -- | allBlankSudoku is a sudoku with just blanks
 allBlankSudoku :: Sudoku
-allBlankSudoku = Sudoku allRows   
+allBlankSudoku = Sudoku (row (row Nothing))   
             where 
-              allRows   = [row x | x <- row Nothing]
               row = replicate 9
 
 
@@ -98,7 +97,7 @@ printSudoku :: Sudoku -> IO ()
 printSudoku sudo | isSudoku sudo = putStr $ unlines $ map printRow (rows sudo) 
                  | otherwise     = putStr "Program error: Not a Sudoku!\n"
             where
-              printRow row        = foldl (++) "" $ map printCell row
+              printRow row        = concat $ map printCell row
               printCell Nothing   = "." 
               printCell (Just n)  = show n
 
@@ -113,8 +112,7 @@ readSudoku path = do
                 let sudoWords = words sudoLines
                 return (intoSudoku sudoWords)
       where 
-        intoSudoku []     = Sudoku []
-        intoSudoku xs     = Sudoku [map intoCell x | x <- xs]  
+        intoSudoku xs     = Sudoku (map (map intoCell) xs)
         intoCell '.'      = Nothing
         intoCell n        = Just $ digitToInt n
 
@@ -136,15 +134,9 @@ cell = do
 -- | an instance for generating Arbitrary Sudokus
 instance Arbitrary Sudoku where
   arbitrary = do 
-            rs <- vectorOf 81 cell
-            let sudo = makeSudo rs
+            sudo <- vectorOf 9 (vectorOf 9 cell)
             return $ Sudoku sudo
-        where
-          makeSudo [] = []
-          makeSudo cs = take 9 cs:makeSudo (drop 9 cs) 
 
-
- -- hint: get to know the QuickCheck function vectorOf
  
 -- * C3
 
@@ -164,7 +156,7 @@ type Block = [Cell] -- a Row is also a Cell
 isOkayBlock :: Block -> Bool
 isOkayBlock block = arr == nub arr    
         where 
-          arr = [c | c <- block, c /= Nothing] 
+          arr = filter isJust block
 
 
 -- * D2
