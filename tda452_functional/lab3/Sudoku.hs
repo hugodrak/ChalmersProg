@@ -3,6 +3,7 @@ module Sudoku where
 import Test.QuickCheck
 import Data.Char
 import Data.List
+import Data.Maybe
 
 ------------------------------------------------------------------------------
 
@@ -235,7 +236,7 @@ prop_update_updated :: Int -> Int -> Bool
 prop_update_updated row col | or [row<0,col<0,row>8,col>8] = True
                             | otherwise = actual == expected
     where actual = update allBlankSudoku (row,col) (Just 9)
-          
+          -- Create a sudoku with a single Nine at the pos (row,col). Every other position blank
           expected = Sudoku $ (replicate 9 blankRow) !!= (row, blankRow !!= (col, Just 9))
           blankRow = replicate 9 Nothing
 
@@ -243,21 +244,41 @@ prop_update_updated row col | or [row<0,col<0,row>8,col>8] = True
 ------------------------------------------------------------------------------
 
 -- * F1
-
-solve :: Sudoku -> Sudoku
-solve sudoku = head $ solve' sudoku (blanks sudoku)
+solve :: Sudoku -> Maybe Sudoku
+solve sudoku | (l > 0)             = Just $ head sol
+             | otherwise           = Nothing
+    where l   = length sol
+          sol = take 1 $ solve' sudoku (blanks sudoku)
 
 solve' :: Sudoku -> [(Int, Int)] -> [Sudoku]
 solve' sudoku [] = if isOkay sudoku then [sudoku] else []
-
 solve' sudoku (pos:rest) | not $ isOkay sudoku = []
-                       | otherwise = concat $ [solve' (update sudoku pos (Just i)) rest | i<- [1..9]]
-
-
+                         | otherwise = concat $ [solve' (update sudoku pos (Just i)) rest | i<- [1..9]]
+                         
 -- * F2
-
-
+readAndSolve :: FilePath -> IO ()
+readAndSolve path = do
+             read <- readSudoku path
+             let justSolution = solve read
+             let solution = catMaybes [justSolution]
+             let l = length solution
+             if (l > 0) then (printSudoku $ head solution) else (putStrLn "(no solution)")
+             
 -- * F3
-
-
+isSolutionOf :: Sudoku -> Sudoku -> Bool
+isSolutionOf solved base = ok && base == solvedWithBlanks
+            where
+              --- check so that the propposed solution is ok and has no blanks
+              ok = isOkay solved && isFilled solved              
+              -- the base and solved should be equal if we copy all blanks from the base to the solved
+              blank_pos = blanks base
+              solvedWithBlanks = foldr (\pos s -> update s pos Nothing) solved blank_pos
+              
 -- * F4
+-- This property take REALLY long time
+prop_SolveSound :: Sudoku -> Property
+prop_SolveSound sudoku = isOkay sudoku ==> and [isSolutionOf x sudoku | x <- solutions]
+          where
+            --- In order to finish in a reasnable amount of time, only check the first N generated solutions.
+            --- If they are all correct then the rest is probably also correct :-)
+            solutions = take 5 $ solve' sudoku (blanks sudoku)
