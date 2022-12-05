@@ -3,35 +3,28 @@ import Data.Char
 data Color = White | Black
     deriving (Show, Eq)
 
-data PieceOwner = Me | Opponent
-    deriving (Show, Eq)
-
 data PieceType = Pawn | King
     deriving (Show,Eq)
 
-data Piece = Piece PieceType PieceOwner Int Int
+data Piece = Piece PieceType Color  Int Int
     deriving (Show, Eq)
     
 
-type Board = [Piece]
-
+data Board = Board [Piece] Color
+    deriving (Show, Eq)
 
 
 
 exampleFEN = "rnbqkbnr/pppppppp/8/8/8/3P4/PPP1PPPP/RNBQKBNR b KQkq - 0 1"
 
---               Piece    current player    result
-colorsToOwner :: Color -> Color ->       PieceOwner
-colorsToOwner piece iPlay  = if (piece == iPlay) then Me else Opponent
-
 
 parseFEN :: String -> Board
-parseFEN fen = parseBoard ((words fen) !! 0) -- Only the first part is of interest, the rest is an-passant
+parseFEN fen = Board (parseBoard ((words fen) !! 0)) toPlay -- Only the first part is of interest, the rest is an-passant
     
     where parseBoard str = parseBoard' [] str 0 0
           
                        -- Current parsed board   rest of the fen    row    col    result
-          parseBoard' :: Board                -> String          -> Int -> Int -> Board
+          parseBoard' :: [Piece]              -> String          -> Int -> Int -> [Piece]
           parseBoard' board "" _ _ = board -- Stop parseBoard
           parseBoard' board ('/':f) row _ = parseBoard' board f (row+1) 0  -- Continue to next row
           parseBoard' board (digit:f) row col | isDigit digit = parseBoard' board f row (col+ (digitToInt digit)) -- digit means we should skip N positions
@@ -40,14 +33,14 @@ parseFEN fen = parseBoard ((words fen) !! 0) -- Only the first part is of intere
     
           letterToPiece :: Char -> (Int,Int) -> [Piece]
           letterToPiece d _ | (toLower d) /= 'p' = []
-          letterToPiece d (row, col)= [Piece (piecetype d) (colorsToOwner (color d) turn) col row]
+          letterToPiece d (row, col)= [Piece (piecetype d) (color d) col row]
           
           color d = case (toLower d) == d of
-                            True -> Black  --lowercase
-                            False -> White -- uppercase
+                            True -> White  --lowercase
+                            False -> Black -- uppercase
           piecetype d = case (toLower d) of
                             'p' -> Pawn
-          turn = color $ head ((words fen) !! 1)
+          toPlay = color $ head ((words fen) !! 1)
           
 
 whoStarts :: String -> Color
@@ -55,9 +48,9 @@ whoStarts "b" = Black
 whoStarts "w" = White
 
 movePieceTo :: Board -> Piece -> Int -> Int -> Board
-movePieceTo board piece x y = newPiece:boardWithPieceRemoved
+movePieceTo (Board pieces turn) piece x y = Board (newPiece:boardWithPieceRemoved) turn
     
-    where boardWithPieceRemoved = filter (/=piece) board
+    where boardWithPieceRemoved = filter (/=piece) pieces
           
           newPiece = Piece typ color x y
           
@@ -67,10 +60,10 @@ movePieceTo board piece x y = newPiece:boardWithPieceRemoved
 
 
 
---                        current board            which way is forward (for moving pawns)
-findValidMovesForPiece :: Board        -> Piece -> Int                                      -> [Board]
+--                        current board
+findValidMovesForPiece :: Board -> Piece -> [Board]
 
-findValidMovesForPiece board piece forward = (subfunction piece) board piece forward
+findValidMovesForPiece board piece = (subfunction piece) board piece
     
     
     
@@ -80,30 +73,30 @@ findValidMovesForPiece board piece forward = (subfunction piece) board piece for
                         
 
 
-isSpaceOccupied board x y = any (isThisPieceAt x y)  board
-getPieceAt board x y = case maybePiece of
+isSpaceOccupied (Board pieces _) x y = any (isThisPieceAt x y) pieces
+getPieceAt (Board pieces _) x y = case maybePiece of
                             (piece:_) -> Just piece
                             otherwise -> Nothing
-            where maybePiece = filter (isThisPieceAt x y) board
+            where maybePiece = filter (isThisPieceAt x y) pieces
 
 isThisPieceAt x y (Piece _ _ x1 y1) = (x1,y1)==(x,y)
-          
+
+pickPiece (Board pieces _) n = pieces !! n
 
                         
-findValidMovesForPawn :: Board -> Piece -> Int -> [Board]
-findValidMovesForPawn board piece f = if isSpaceOccupied board newx newy then [] else [movePieceTo board piece newx newy]
+findValidMovesForPawn :: Board -> Piece -> [Board]
+findValidMovesForPawn board piece = if isSpaceOccupied board newx newy then [] else [movePieceTo board piece newx newy]
     
-    where (curx, cury) = case piece of (Piece _ _ x y) -> (x,y)
-          newy = cury + f
+    where (curx, cury,color) = case piece of (Piece _ col x y) -> (x,y,col)
+          newy = cury + moveDir
           newx = curx
+          moveDir = if color == White then 1 else (-1)
     
 
     
 formatBoard :: Board -> String
 formatBoard board  = unlines $ map formatRow [0..7]
-
-
-    where formatRow y = concat [formatCell x y| x<-[0..7]]
+    where formatRow y = concat [formatCell x y| x <- [0..7]]
           
           formatCell x y = case (getPieceAt board x y) of
                                 Nothing -> "."
@@ -114,9 +107,3 @@ printBoard board = do
                     let s = formatBoard board
                     putStr s
                     
-
-
-
-
-
-
