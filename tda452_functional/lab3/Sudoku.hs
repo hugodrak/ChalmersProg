@@ -210,11 +210,13 @@ prop_blanks_allBlanks = length expected == 81 &&  expected == actual
 (!!=) :: [a] -> (Int,a) -> [a]
 xs !!= (whereToInsert,new) = [if i==whereToInsert then new else existing| (existing, i)<-zip xs [0..]]
 
-prop_bangBangEquals_correct :: [Int] -> [Int] -> Int -> Bool 
-prop_bangBangEquals_correct x y randomnumber = expected == (newList !!= ((length x), 0))
+
+prop_bangBangEquals_correct :: [Int] -> [Int] -> Int -> Int -> Bool 
+prop_bangBangEquals_correct x y randNum1 randNum2 = expected == (newList !!= ((length x), randNum2))
     -- Test so that it correctly replaces a number in the middle of some random lists
-    where newList = x ++ [randomnumber] ++ y
-          expected = x ++ [0] ++ y
+    where newList = x ++ [randNum1] ++ y
+          expected = x ++ [randNum2] ++ y
+
 
 
 -- * E3
@@ -224,13 +226,14 @@ update sudoku (row,col) new = Sudoku $ allRows !!= (row, newRow)
             where allRows = rows sudoku
                   newRow = ((rows sudoku) !! row) !!= (col, new)
 
-prop_update_updated :: Int -> Int -> Bool
-prop_update_updated row col | or [row<0,col<0,row>8,col>8] = True
-                            | otherwise = actual == expected
-    where actual = update allBlankSudoku (row,col) (Just 9)
-          -- Create a sudoku with a single Nine at the pos (row,col). Every other position blank
-          expected = Sudoku $ (replicate 9 blankRow) !!= (row, blankRow !!= (col, Just 9))
-          blankRow = replicate 9 Nothing
+
+prop_update_updated :: Int -> Int -> Sudoku -> Bool
+prop_update_updated row col sudo | or [row<0,col<0,row>8,col>8] = True
+                                 | otherwise = changedPosValue == (Just 9)
+    -- Updating the arbitrary Sudoku in position of (row,col) with a predefined number 9
+    where updatedSudo = update sudo (row,col) (Just 9)
+          -- Extracting now the value of that same position but from the updated version of the arbitrary Sudoku
+          changedPosValue = ((rows updatedSudo) !! row) !! col 
 
 
 ------------------------------------------------------------------------------
@@ -242,11 +245,13 @@ solve sudoku | (l > 0)             = Just $ head sol
     where l   = length sol
           sol = take 1 $ solve' sudoku (blanks sudoku)
 
+
 solve' :: Sudoku -> [(Int, Int)] -> [Sudoku]
 solve' sudoku [] = if isOkay sudoku then [sudoku] else []
 solve' sudoku (pos:rest) | not $ isOkay sudoku = []
                          | otherwise = concat $ [solve' (update sudoku pos (Just i)) rest | i<- [1..9]]
-                         
+
+
 -- * F2
 readAndSolve :: FilePath -> IO ()
 readAndSolve path = do
@@ -256,6 +261,7 @@ readAndSolve path = do
              let l = length solution
              if (l > 0) then (printSudoku $ head solution) else (putStrLn "(no solution)")
              
+
 -- * F3
 isSolutionOf :: Sudoku -> Sudoku -> Bool
 isSolutionOf solved base = ok && base == solvedWithBlanks
@@ -266,11 +272,14 @@ isSolutionOf solved base = ok && base == solvedWithBlanks
               blank_pos = blanks base
               solvedWithBlanks = foldr (\pos s -> update s pos Nothing) solved blank_pos
               
--- * F4
--- This property take REALLY long time
+
+-- * F4 
+-- Can take quite some time to check the prop
+-- There will be very few passed tests and many discarded as the predicate "isOkay sudoku" will be hard to satisfy  
+-- Since we already check that the arbitrary sudoku has a solution (through isOkay) then "fromJust" is safe to use since we won't get "Nothing" as a solution
 prop_SolveSound :: Sudoku -> Property
-prop_SolveSound sudoku = isOkay sudoku ==> and [isSolutionOf x sudoku | x <- solutions]
+prop_SolveSound sudoku = isOkay sudoku ==> isSolutionOf (fromJust solution) sudoku
           where
-            --- In order to finish in a reasnable amount of time, only check the first N generated solutions.
-            --- If they are all correct then the rest is probably also correct :-)
-            solutions = take 5 $ solve' sudoku (blanks sudoku)
+            --- Only checks the first generated solution
+            solution = solve sudoku
+
