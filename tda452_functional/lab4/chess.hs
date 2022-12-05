@@ -1,4 +1,6 @@
 import Data.Char
+import System.Random (randomRIO)
+
 
 data Color = White | Black
     deriving (Show, Eq)
@@ -13,6 +15,11 @@ data Piece = Piece PieceType Color  Int Int
 data Board = Board [Piece] Color
     deriving (Show, Eq)
 
+isPieceOfColor :: Color -> Piece -> Bool
+isPieceOfColor c (Piece _ col _ _) = c==col
+    
+myPieces :: Board -> [Piece]
+myPieces (Board pieces turn) = filter (isPieceOfColor turn) pieces
 
 
 exampleFEN = "rnbqkbnr/pppppppp/8/8/8/3P4/PPP1PPPP/RNBQKBNR b KQkq - 0 1"
@@ -42,10 +49,6 @@ parseFEN fen = Board (parseBoard ((words fen) !! 0)) toPlay -- Only the first pa
                             'p' -> Pawn
           toPlay = color $ head ((words fen) !! 1)
           
-
-whoStarts :: String -> Color
-whoStarts "b" = Black
-whoStarts "w" = White
 
 movePieceTo :: Board -> Piece -> Int -> Int -> Board
 movePieceTo (Board pieces turn) piece x y = Board (newPiece:boardWithPieceRemoved) turn
@@ -102,8 +105,19 @@ formatBoard board  = unlines $ map formatRow [0..7]
                                 Nothing -> "."
                                 Just (Piece Pawn _ _ _) -> "p"
 
+selectRandomMove :: Board -> IO (Board)
+selectRandomMove board = do
+                            let availableMoves = concat $ map (findValidMovesForPiece board) (myPieces board)
+                            indextoPick <- randomRIO (0, length availableMoves - 1)
+                            let selected = availableMoves !! indextoPick
+                            return selected
+                                            
 printBoard :: Board -> IO ()
 printBoard board = do
                     let s = formatBoard board
                     putStr s
                     
+printRandomContinuation :: Board -> IO ()
+printRandomContinuation board = do
+                                    continuation <- selectRandomMove board
+                                    printBoard continuation
