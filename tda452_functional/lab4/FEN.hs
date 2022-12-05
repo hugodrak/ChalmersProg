@@ -1,3 +1,4 @@
+module FEN where
 import ChessBase
 import Data.Char
 
@@ -27,3 +28,15 @@ parseFEN fen = Board (parseBoard ((words fen) !! 0)) toPlay -- Only the first pa
           piecetype d = case (toLower d) of
                             'p' -> Pawn
           toPlay = color $ head ((words fen) !! 1)
+          
+          
+get
+          
+          
+formatBoard :: Board -> String
+formatBoard board  = unlines $ map formatRow [0..7]
+    where formatRow y = concat [formatCell x y| x <- [0..7]]
+          
+          formatCell x y = case (getPieceAt board x y) of
+                                Nothing -> "."
+                                Just (Piece Pawn _ _ _) -> "p"

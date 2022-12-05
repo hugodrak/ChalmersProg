@@ -1,5 +1,4 @@
 module ChessBase where 
-import System.Random (randomRIO)
 
 
 data Color = White | Black
@@ -15,12 +14,20 @@ data Piece = Piece PieceType Color  Int Int
 data Board = Board [Piece] Color
     deriving (Show, Eq)
 
+toPlay :: Board -> Color
+toPlay (Board _ color) = color
+    
 isPieceOfColor :: Color -> Piece -> Bool
 isPieceOfColor c (Piece _ col _ _) = c==col
-    
-myPieces :: Board -> [Piece]
-myPieces (Board pieces turn) = filter (isPieceOfColor turn) pieces
 
+pieces :: Board -> [Piece]
+pieces (Board p _) = p
+
+piecesOfColor :: Board -> Color -> [Piece]
+piecesOfColor (Board pieces _) color = filter (isPieceOfColor color) pieces 
+
+myPieces :: Board -> [Piece]
+myPieces board = piecesOfColor board (toPlay board)
 
 
           
@@ -72,27 +79,7 @@ findValidMovesForPawn board piece = if isSpaceOccupied board newx newy then [] e
     
 
     
-formatBoard :: Board -> String
-formatBoard board  = unlines $ map formatRow [0..7]
-    where formatRow y = concat [formatCell x y| x <- [0..7]]
-          
-          formatCell x y = case (getPieceAt board x y) of
-                                Nothing -> "."
-                                Just (Piece Pawn _ _ _) -> "p"
 
-selectRandomMove :: Board -> IO (Board)
-selectRandomMove board = do
-                            let availableMoves = concat $ map (findValidMovesForPiece board) (myPieces board)
-                            indextoPick <- randomRIO (0, length availableMoves - 1)
-                            let selected = availableMoves !! indextoPick
-                            return selected
-                                            
-printBoard :: Board -> IO ()
-printBoard board = do
-                    let s = formatBoard board
-                    putStr s
-                    
-printRandomContinuation :: Board -> IO ()
-printRandomContinuation board = do
-                                    continuation <- selectRandomMove board
-                                    printBoard continuation
+
+
+      
