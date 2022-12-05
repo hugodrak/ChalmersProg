@@ -14,9 +14,12 @@ data Piece = Piece PieceType Color  Int Int
 data Board = Board [Piece] Color
     deriving (Show, Eq)
 
-toPlay :: Board -> Color
-toPlay (Board _ color) = color
-    
+toMove :: Board -> Color
+toMove (Board _ color) = color
+
+otherColor :: Color -> Color
+otherColor c | c == Black = White
+             | c == White = Black
 isPieceOfColor :: Color -> Piece -> Bool
 isPieceOfColor c (Piece _ col _ _) = c==col
 
@@ -27,9 +30,13 @@ piecesOfColor :: Board -> Color -> [Piece]
 piecesOfColor (Board pieces _) color = filter (isPieceOfColor color) pieces 
 
 myPieces :: Board -> [Piece]
-myPieces board = piecesOfColor board (toPlay board)
+myPieces board = piecesOfColor board (toMove board)
 
+piecesContains :: [Piece] -> Piece -> Bool
+piecesContains pieces piece = any (==piece) pieces
 
+boardContains :: Board -> Piece -> Bool
+boardContains board piece = piecesContains (pieces board) piece
           
 
 movePieceTo :: Board -> Piece -> Int -> Int -> Board
