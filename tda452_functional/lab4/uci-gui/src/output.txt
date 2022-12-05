@@ -1,0 +1,18 @@
+sciript startedstart receving
+receved: 'uci'
+responding: 'id name derpengine'
+responding: 'id author gustav'
+responding: 'uciok'
+start receving
+receved: 'ucinewgame'
+unknown
+start receving
+receved: 'isready'
+responding: 'readyok'
+start receving
+receved: 'position startpos moves g2g4'
+start receving
+receved: 'go movetime 100'
+responding: 'bestmove g7g5'
+start receving
+receved: 'quit'

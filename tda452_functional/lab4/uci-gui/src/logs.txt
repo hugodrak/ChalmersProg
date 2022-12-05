@@ -1,0 +1,876 @@
+2022-12-01 22:25:53,955 YoBot Bronze started
+2022-12-01 22:25:53,955 > uci
+2022-12-01 22:25:53,955 < id name YoBot Bronze
+2022-12-01 22:25:53,955 < id author Yohaan Seth Nathan
+2022-12-01 22:25:53,955 < option name Debug Log File type string default
+2022-12-01 22:25:53,955 < option name Contempt type spin default 24 min -100 max 100
+2022-12-01 22:25:53,955 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-01 22:25:53,955 < option name Threads type spin default 1 min 1 max 512
+2022-12-01 22:25:53,955 < option name Hash type spin default 16 min 1 max 131072
+2022-12-01 22:25:53,955 < option name Clear Hash type button
+2022-12-01 22:25:53,955 < option name Ponder type check default false
+2022-12-01 22:25:53,955 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-01 22:25:53,955 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-01 22:25:53,955 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-01 22:25:53,955 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-01 22:25:53,955 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-01 22:25:53,955 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-01 22:25:53,955 < option name UCI_Chess960 type check default false
+2022-12-01 22:25:53,955 < option name UCI_AnalyseMode type check default false
+2022-12-01 22:25:53,955 < option name SyzygyPath type string default <empty>
+2022-12-01 22:25:53,955 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-01 22:25:53,955 < option name Syzygy50MoveRule type check default true
+2022-12-01 22:25:53,955 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-01 22:25:53,955 < uciok
+2022-12-01 22:25:53,956 > setoption name UCI_AnalyseMode value true
+2022-12-01 22:25:53,956 > ucinewgame
+2022-12-01 22:25:53,956 > isready
+2022-12-01 22:25:53,956 < readyok
+2022-12-01 22:25:53,957 > position startpos moves f2f4
+2022-12-01 22:25:53,957 > go movetime 100
+2022-12-01 22:25:53,957 < bestmove g7g5
+2022-12-01 22:25:53,958 > quit
+2022-12-01 22:26:15,155 YoBot Bronze started
+2022-12-01 22:26:15,156 > uci
+2022-12-01 22:26:15,156 < id name YoBot Bronze
+2022-12-01 22:26:15,156 < id author Yohaan Seth Nathan
+2022-12-01 22:26:15,156 < option name Debug Log File type string default
+2022-12-01 22:26:15,156 < option name Contempt type spin default 24 min -100 max 100
+2022-12-01 22:26:15,156 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-01 22:26:15,156 < option name Threads type spin default 1 min 1 max 512
+2022-12-01 22:26:15,156 < option name Hash type spin default 16 min 1 max 131072
+2022-12-01 22:26:15,156 < option name Clear Hash type button
+2022-12-01 22:26:15,156 < option name Ponder type check default false
+2022-12-01 22:26:15,156 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-01 22:26:15,156 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-01 22:26:15,156 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-01 22:26:15,156 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-01 22:26:15,156 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-01 22:26:15,156 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-01 22:26:15,156 < option name UCI_Chess960 type check default false
+2022-12-01 22:26:15,156 < option name UCI_AnalyseMode type check default false
+2022-12-01 22:26:15,156 < option name SyzygyPath type string default <empty>
+2022-12-01 22:26:15,156 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-01 22:26:15,156 < option name Syzygy50MoveRule type check default true
+2022-12-01 22:26:15,156 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-01 22:26:15,156 < uciok
+2022-12-01 22:26:15,157 > setoption name UCI_AnalyseMode value true
+2022-12-01 22:26:15,157 > ucinewgame
+2022-12-01 22:26:15,157 > isready
+2022-12-01 22:26:15,157 < readyok
+2022-12-01 22:26:15,158 > position startpos moves g2g3
+2022-12-01 22:26:15,158 > go movetime 100
+2022-12-01 22:26:15,158 < bestmove g7g5
+2022-12-01 22:26:15,158 > quit
+2022-12-01 22:26:49,375 YoBot Bronze started
+2022-12-01 22:26:49,375 > uci
+2022-12-01 22:26:49,375 < id name YoBot Bronze
+2022-12-01 22:26:49,375 < id author Yohaan Seth Nathan
+2022-12-01 22:26:49,375 < option name Debug Log File type string default
+2022-12-01 22:26:49,375 < option name Contempt type spin default 24 min -100 max 100
+2022-12-01 22:26:49,375 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-01 22:26:49,375 < option name Threads type spin default 1 min 1 max 512
+2022-12-01 22:26:49,375 < option name Hash type spin default 16 min 1 max 131072
+2022-12-01 22:26:49,375 < option name Clear Hash type button
+2022-12-01 22:26:49,375 < option name Ponder type check default false
+2022-12-01 22:26:49,375 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-01 22:26:49,375 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-01 22:26:49,375 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-01 22:26:49,375 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-01 22:26:49,375 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-01 22:26:49,376 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-01 22:26:49,376 < option name UCI_Chess960 type check default false
+2022-12-01 22:26:49,376 < option name UCI_AnalyseMode type check default false
+2022-12-01 22:26:49,376 < option name SyzygyPath type string default <empty>
+2022-12-01 22:26:49,376 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-01 22:26:49,376 < option name Syzygy50MoveRule type check default true
+2022-12-01 22:26:49,376 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-01 22:26:49,376 < uciok
+2022-12-01 22:26:49,376 > quit
+2022-12-01 22:27:10,851 YoBot Bronze started
+2022-12-01 22:27:10,851 > uci
+2022-12-01 22:27:10,851 < id name YoBot Bronze
+2022-12-01 22:27:10,851 < id author Yohaan Seth Nathan
+2022-12-01 22:27:10,851 < option name Debug Log File type string default
+2022-12-01 22:27:10,851 < option name Contempt type spin default 24 min -100 max 100
+2022-12-01 22:27:10,851 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-01 22:27:10,851 < option name Threads type spin default 1 min 1 max 512
+2022-12-01 22:27:10,851 < option name Hash type spin default 16 min 1 max 131072
+2022-12-01 22:27:10,851 < option name Clear Hash type button
+2022-12-01 22:27:10,851 < option name Ponder type check default false
+2022-12-01 22:27:10,851 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-01 22:27:10,851 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-01 22:27:10,851 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-01 22:27:10,851 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-01 22:27:10,851 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-01 22:27:10,851 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-01 22:27:10,851 < option name UCI_Chess960 type check default false
+2022-12-01 22:27:10,851 < option name UCI_AnalyseMode type check default false
+2022-12-01 22:27:10,851 < option name SyzygyPath type string default <empty>
+2022-12-01 22:27:10,851 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-01 22:27:10,851 < option name Syzygy50MoveRule type check default true
+2022-12-01 22:27:10,851 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-01 22:27:10,851 < uciok
+2022-12-01 22:27:16,891 > setoption name UCI_AnalyseMode value true
+2022-12-01 22:27:16,893 > ucinewgame
+2022-12-01 22:27:16,893 > isready
+2022-12-01 22:27:16,893 < readyok
+2022-12-01 22:27:16,896 > position startpos moves e2e3
+2022-12-01 22:27:16,897 > go movetime 6000
+2022-12-01 22:27:16,897 < bestmove g7g5
+2022-12-01 22:27:20,745 > quit
+2022-12-01 22:30:39,983 YoBot Bronze started
+2022-12-01 22:30:39,983 > uci
+2022-12-01 22:30:39,983 < id name YoBot Bronze
+2022-12-01 22:30:39,983 < id author Yohaan Seth Nathan
+2022-12-01 22:30:39,983 < option name Debug Log File type string default
+2022-12-01 22:30:39,983 < option name Contempt type spin default 24 min -100 max 100
+2022-12-01 22:30:39,983 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-01 22:30:39,983 < option name Threads type spin default 1 min 1 max 512
+2022-12-01 22:30:39,983 < option name Hash type spin default 16 min 1 max 131072
+2022-12-01 22:30:39,983 < option name Clear Hash type button
+2022-12-01 22:30:39,983 < option name Ponder type check default false
+2022-12-01 22:30:39,983 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-01 22:30:39,983 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-01 22:30:39,983 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-01 22:30:39,983 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-01 22:30:39,983 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-01 22:30:39,984 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-01 22:30:39,984 < option name UCI_Chess960 type check default false
+2022-12-01 22:30:39,984 < option name UCI_AnalyseMode type check default false
+2022-12-01 22:30:39,984 < option name SyzygyPath type string default <empty>
+2022-12-01 22:30:39,984 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-01 22:30:39,984 < option name Syzygy50MoveRule type check default true
+2022-12-01 22:30:39,984 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-01 22:30:39,984 < uciok
+2022-12-01 22:30:39,984 > setoption name UCI_AnalyseMode value true
+2022-12-01 22:30:39,984 > ucinewgame
+2022-12-01 22:30:39,984 > isready
+2022-12-01 22:30:39,985 < readyok
+2022-12-01 22:30:39,985 > position startpos moves g2g4
+2022-12-01 22:30:39,985 > go movetime 6000
+2022-12-01 22:30:39,985 Fatal error in main loop
+Traceback (most recent call last):
+  File "/home/gustavld/chalmers/func/chess/uci-gui/src/./engine2.py", line 120, in main
+    command_received(msg)
+  File "/home/gustavld/chalmers/func/chess/uci-gui/src/./engine2.py", line 100, in command_received
+    _move = main.get_best_move(board)
+AttributeError: 'function' object has no attribute 'get_best_move'
+2022-12-01 22:31:30,604 YoBot Bronze started
+2022-12-01 22:31:30,604 > uci
+2022-12-01 22:31:30,604 < id name YoBot Bronze
+2022-12-01 22:31:30,604 < id author Yohaan Seth Nathan
+2022-12-01 22:31:30,604 < option name Debug Log File type string default
+2022-12-01 22:31:30,604 < option name Contempt type spin default 24 min -100 max 100
+2022-12-01 22:31:30,604 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-01 22:31:30,604 < option name Threads type spin default 1 min 1 max 512
+2022-12-01 22:31:30,604 < option name Hash type spin default 16 min 1 max 131072
+2022-12-01 22:31:30,604 < option name Clear Hash type button
+2022-12-01 22:31:30,604 < option name Ponder type check default false
+2022-12-01 22:31:30,604 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-01 22:31:30,604 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-01 22:31:30,604 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-01 22:31:30,604 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-01 22:31:30,604 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-01 22:31:30,604 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-01 22:31:30,604 < option name UCI_Chess960 type check default false
+2022-12-01 22:31:30,604 < option name UCI_AnalyseMode type check default false
+2022-12-01 22:31:30,604 < option name SyzygyPath type string default <empty>
+2022-12-01 22:31:30,604 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-01 22:31:30,604 < option name Syzygy50MoveRule type check default true
+2022-12-01 22:31:30,604 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-01 22:31:30,604 < uciok
+2022-12-01 22:31:30,605 > setoption name UCI_AnalyseMode value true
+2022-12-01 22:31:30,605 > ucinewgame
+2022-12-01 22:31:30,605 > isready
+2022-12-01 22:31:30,605 < readyok
+2022-12-01 22:31:30,606 > position startpos moves f2f3
+2022-12-01 22:31:30,606 > go movetime 6000
+2022-12-01 22:31:30,625 < bestmove f7f5
+2022-12-01 22:31:30,625 > quit
+2022-12-01 22:31:44,497 YoBot Bronze started
+2022-12-01 22:31:44,497 > uci
+2022-12-01 22:31:44,497 < id name YoBot Bronze
+2022-12-01 22:31:44,497 < id author Yohaan Seth Nathan
+2022-12-01 22:31:44,497 < option name Debug Log File type string default
+2022-12-01 22:31:44,498 < option name Contempt type spin default 24 min -100 max 100
+2022-12-01 22:31:44,498 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-01 22:31:44,498 < option name Threads type spin default 1 min 1 max 512
+2022-12-01 22:31:44,498 < option name Hash type spin default 16 min 1 max 131072
+2022-12-01 22:31:44,498 < option name Clear Hash type button
+2022-12-01 22:31:44,498 < option name Ponder type check default false
+2022-12-01 22:31:44,498 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-01 22:31:44,498 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-01 22:31:44,498 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-01 22:31:44,498 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-01 22:31:44,498 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-01 22:31:44,498 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-01 22:31:44,498 < option name UCI_Chess960 type check default false
+2022-12-01 22:31:44,498 < option name UCI_AnalyseMode type check default false
+2022-12-01 22:31:44,498 < option name SyzygyPath type string default <empty>
+2022-12-01 22:31:44,498 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-01 22:31:44,498 < option name Syzygy50MoveRule type check default true
+2022-12-01 22:31:44,498 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-01 22:31:44,498 < uciok
+2022-12-01 22:31:44,499 > setoption name UCI_AnalyseMode value true
+2022-12-01 22:31:44,499 > ucinewgame
+2022-12-01 22:31:44,499 > isready
+2022-12-01 22:31:44,499 < readyok
+2022-12-01 22:31:44,499 > position startpos moves f2f3 e7e5
+2022-12-01 22:31:44,499 > go movetime 6000
+2022-12-01 22:31:44,530 < bestmove c2c4
+2022-12-01 22:31:44,531 > quit
+2022-12-01 22:31:46,919 YoBot Bronze started
+2022-12-01 22:31:46,919 > uci
+2022-12-01 22:31:46,919 < id name YoBot Bronze
+2022-12-01 22:31:46,919 < id author Yohaan Seth Nathan
+2022-12-01 22:31:46,919 < option name Debug Log File type string default
+2022-12-01 22:31:46,919 < option name Contempt type spin default 24 min -100 max 100
+2022-12-01 22:31:46,919 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-01 22:31:46,919 < option name Threads type spin default 1 min 1 max 512
+2022-12-01 22:31:46,919 < option name Hash type spin default 16 min 1 max 131072
+2022-12-01 22:31:46,919 < option name Clear Hash type button
+2022-12-01 22:31:46,919 < option name Ponder type check default false
+2022-12-01 22:31:46,919 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-01 22:31:46,919 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-01 22:31:46,919 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-01 22:31:46,920 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-01 22:31:46,920 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-01 22:31:46,920 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-01 22:31:46,920 < option name UCI_Chess960 type check default false
+2022-12-01 22:31:46,920 < option name UCI_AnalyseMode type check default false
+2022-12-01 22:31:46,920 < option name SyzygyPath type string default <empty>
+2022-12-01 22:31:46,920 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-01 22:31:46,920 < option name Syzygy50MoveRule type check default true
+2022-12-01 22:31:46,920 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-01 22:31:46,920 < uciok
+2022-12-01 22:31:46,920 > setoption name UCI_AnalyseMode value true
+2022-12-01 22:31:46,921 > ucinewgame
+2022-12-01 22:31:46,921 > isready
+2022-12-01 22:31:46,921 < readyok
+2022-12-01 22:31:46,921 > position startpos moves f2f3 e7e5
+2022-12-01 22:31:46,921 > go movetime 6000
+2022-12-01 22:31:46,951 < bestmove b1c3
+2022-12-01 22:31:46,952 > quit
+2022-12-01 22:32:19,285 YoBot Bronze started
+2022-12-01 22:32:19,285 > uci
+2022-12-01 22:32:19,285 < id name YoBot Bronze
+2022-12-01 22:32:19,285 < id author Yohaan Seth Nathan
+2022-12-01 22:32:19,285 < option name Debug Log File type string default
+2022-12-01 22:32:19,285 < option name Contempt type spin default 24 min -100 max 100
+2022-12-01 22:32:19,285 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-01 22:32:19,285 < option name Threads type spin default 1 min 1 max 512
+2022-12-01 22:32:19,285 < option name Hash type spin default 16 min 1 max 131072
+2022-12-01 22:32:19,285 < option name Clear Hash type button
+2022-12-01 22:32:19,285 < option name Ponder type check default false
+2022-12-01 22:32:19,285 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-01 22:32:19,285 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-01 22:32:19,285 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-01 22:32:19,285 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-01 22:32:19,285 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-01 22:32:19,285 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-01 22:32:19,285 < option name UCI_Chess960 type check default false
+2022-12-01 22:32:19,285 < option name UCI_AnalyseMode type check default false
+2022-12-01 22:32:19,285 < option name SyzygyPath type string default <empty>
+2022-12-01 22:32:19,285 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-01 22:32:19,285 < option name Syzygy50MoveRule type check default true
+2022-12-01 22:32:19,285 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-01 22:32:19,286 < uciok
+2022-12-01 22:32:24,781 > setoption name UCI_AnalyseMode value true
+2022-12-01 22:32:24,784 > ucinewgame
+2022-12-01 22:32:24,784 > isready
+2022-12-01 22:32:24,784 < readyok
+2022-12-01 22:32:24,790 > position startpos moves f2f3
+2022-12-01 22:32:24,792 > go movetime 6000
+2022-12-01 22:32:24,841 < bestmove b8a6
+2022-12-01 22:34:04,673 YoBot Bronze started
+2022-12-01 22:34:04,673 > uci
+2022-12-01 22:34:04,673 < id name YoBot Bronze
+2022-12-01 22:34:04,673 < id author Yohaan Seth Nathan
+2022-12-01 22:34:04,673 < option name Debug Log File type string default
+2022-12-01 22:34:04,673 < option name Contempt type spin default 24 min -100 max 100
+2022-12-01 22:34:04,673 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-01 22:34:04,673 < option name Threads type spin default 1 min 1 max 512
+2022-12-01 22:34:04,673 < option name Hash type spin default 16 min 1 max 131072
+2022-12-01 22:34:04,673 < option name Clear Hash type button
+2022-12-01 22:34:04,673 < option name Ponder type check default false
+2022-12-01 22:34:04,673 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-01 22:34:04,673 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-01 22:34:04,673 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-01 22:34:04,673 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-01 22:34:04,673 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-01 22:34:04,673 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-01 22:34:04,673 < option name UCI_Chess960 type check default false
+2022-12-01 22:34:04,673 < option name UCI_AnalyseMode type check default false
+2022-12-01 22:34:04,673 < option name SyzygyPath type string default <empty>
+2022-12-01 22:34:04,673 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-01 22:34:04,673 < option name Syzygy50MoveRule type check default true
+2022-12-01 22:34:04,673 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-01 22:34:04,673 < uciok
+2022-12-01 22:34:07,498 > setoption name UCI_AnalyseMode value true
+2022-12-01 22:34:07,500 > ucinewgame
+2022-12-01 22:34:07,500 > isready
+2022-12-01 22:34:07,500 < readyok
+2022-12-01 22:34:07,502 > position startpos moves c2c3
+2022-12-01 22:34:07,502 > go movetime 6000
+2022-12-01 22:34:07,548 < bestmove g8h6
+2022-12-01 22:34:11,103 > quit
+2022-12-01 22:34:39,625 YoBot Bronze started
+2022-12-01 22:34:39,626 > uci
+2022-12-01 22:34:39,626 < id name YoBot Bronze
+2022-12-01 22:34:39,626 < id author Yohaan Seth Nathan
+2022-12-01 22:34:39,626 < option name Debug Log File type string default
+2022-12-01 22:34:39,626 < option name Contempt type spin default 24 min -100 max 100
+2022-12-01 22:34:39,626 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-01 22:34:39,626 < option name Threads type spin default 1 min 1 max 512
+2022-12-01 22:34:39,626 < option name Hash type spin default 16 min 1 max 131072
+2022-12-01 22:34:39,626 < option name Clear Hash type button
+2022-12-01 22:34:39,626 < option name Ponder type check default false
+2022-12-01 22:34:39,626 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-01 22:34:39,626 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-01 22:34:39,626 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-01 22:34:39,626 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-01 22:34:39,626 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-01 22:34:39,626 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-01 22:34:39,626 < option name UCI_Chess960 type check default false
+2022-12-01 22:34:39,626 < option name UCI_AnalyseMode type check default false
+2022-12-01 22:34:39,626 < option name SyzygyPath type string default <empty>
+2022-12-01 22:34:39,626 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-01 22:34:39,626 < option name Syzygy50MoveRule type check default true
+2022-12-01 22:34:39,626 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-01 22:34:39,626 < uciok
+2022-12-01 22:34:42,272 > setoption name UCI_AnalyseMode value true
+2022-12-01 22:34:42,274 > ucinewgame
+2022-12-01 22:34:42,274 > isready
+2022-12-01 22:34:42,274 < readyok
+2022-12-01 22:34:42,280 > position startpos moves c2c3
+2022-12-01 22:34:42,281 > go movetime 6000
+2022-12-01 22:34:42,336 < bestmove g7g6
+2022-12-01 22:34:47,950 > quit
+2022-12-01 22:39:14,060 YoBot Bronze started
+2022-12-01 22:39:14,060 > uci
+2022-12-01 22:39:14,060 < id name YoBot Bronze
+2022-12-01 22:39:14,060 < id author Yohaan Seth Nathan
+2022-12-01 22:39:14,060 < option name Debug Log File type string default
+2022-12-01 22:39:14,060 < option name Contempt type spin default 24 min -100 max 100
+2022-12-01 22:39:14,060 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-01 22:39:14,060 < option name Threads type spin default 1 min 1 max 512
+2022-12-01 22:39:14,060 < option name Hash type spin default 16 min 1 max 131072
+2022-12-01 22:39:14,060 < option name Clear Hash type button
+2022-12-01 22:39:14,060 < option name Ponder type check default false
+2022-12-01 22:39:14,060 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-01 22:39:14,060 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-01 22:39:14,060 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-01 22:39:14,060 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-01 22:39:14,060 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-01 22:39:14,060 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-01 22:39:14,060 < option name UCI_Chess960 type check default false
+2022-12-01 22:39:14,060 < option name UCI_AnalyseMode type check default false
+2022-12-01 22:39:14,060 < option name SyzygyPath type string default <empty>
+2022-12-01 22:39:14,060 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-01 22:39:14,060 < option name Syzygy50MoveRule type check default true
+2022-12-01 22:39:14,060 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-01 22:39:14,060 < uciok
+2022-12-01 22:39:14,061 > setoption name UCI_AnalyseMode value true
+2022-12-01 22:39:14,061 > ucinewgame
+2022-12-01 22:39:14,061 > isready
+2022-12-01 22:39:14,061 < readyok
+2022-12-01 22:39:14,062 > position startpos moves f2f4
+2022-12-01 22:39:14,062 > go movetime 6000
+2022-12-01 22:39:14,085 < bestmove f7f5
+2022-12-01 22:39:14,085 > quit
+2022-12-01 22:39:32,187 YoBot Bronze started
+2022-12-01 22:39:32,187 > uci
+2022-12-01 22:39:32,187 < id name YoBot Bronze
+2022-12-01 22:39:32,187 < id author Yohaan Seth Nathan
+2022-12-01 22:39:32,187 < option name Debug Log File type string default
+2022-12-01 22:39:32,187 < option name Contempt type spin default 24 min -100 max 100
+2022-12-01 22:39:32,187 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-01 22:39:32,187 < option name Threads type spin default 1 min 1 max 512
+2022-12-01 22:39:32,187 < option name Hash type spin default 16 min 1 max 131072
+2022-12-01 22:39:32,187 < option name Clear Hash type button
+2022-12-01 22:39:32,187 < option name Ponder type check default false
+2022-12-01 22:39:32,187 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-01 22:39:32,187 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-01 22:39:32,187 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-01 22:39:32,188 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-01 22:39:32,188 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-01 22:39:32,188 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-01 22:39:32,188 < option name UCI_Chess960 type check default false
+2022-12-01 22:39:32,188 < option name UCI_AnalyseMode type check default false
+2022-12-01 22:39:32,188 < option name SyzygyPath type string default <empty>
+2022-12-01 22:39:32,188 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-01 22:39:32,188 < option name Syzygy50MoveRule type check default true
+2022-12-01 22:39:32,188 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-01 22:39:32,188 < uciok
+2022-12-01 22:39:37,391 > setoption name UCI_AnalyseMode value true
+2022-12-01 22:39:37,392 > ucinewgame
+2022-12-01 22:39:37,392 > isready
+2022-12-01 22:39:37,392 < readyok
+2022-12-01 22:39:37,393 > position startpos moves g2g4
+2022-12-01 22:39:37,394 > go movetime 6000
+2022-12-01 22:39:37,425 < bestmove c7c6
+2022-12-01 22:42:43,773 YoBot Bronze started
+2022-12-01 22:42:43,773 > uci
+2022-12-01 22:42:43,773 < id name YoBot Bronze
+2022-12-01 22:42:43,773 < id author Yohaan Seth Nathan
+2022-12-01 22:42:43,773 < option name Debug Log File type string default
+2022-12-01 22:42:43,773 < option name Contempt type spin default 24 min -100 max 100
+2022-12-01 22:42:43,773 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-01 22:42:43,773 < option name Threads type spin default 1 min 1 max 512
+2022-12-01 22:42:43,773 < option name Hash type spin default 16 min 1 max 131072
+2022-12-01 22:42:43,773 < option name Clear Hash type button
+2022-12-01 22:42:43,773 < option name Ponder type check default false
+2022-12-01 22:42:43,773 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-01 22:42:43,773 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-01 22:42:43,773 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-01 22:42:43,773 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-01 22:42:43,773 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-01 22:42:43,773 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-01 22:42:43,773 < option name UCI_Chess960 type check default false
+2022-12-01 22:42:43,773 < option name UCI_AnalyseMode type check default false
+2022-12-01 22:42:43,773 < option name SyzygyPath type string default <empty>
+2022-12-01 22:42:43,773 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-01 22:42:43,773 < option name Syzygy50MoveRule type check default true
+2022-12-01 22:42:43,773 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-01 22:42:43,773 < uciok
+2022-12-01 22:42:43,774 > setoption name UCI_AnalyseMode value true
+2022-12-01 22:42:43,774 > ucinewgame
+2022-12-01 22:42:43,774 > isready
+2022-12-01 22:42:43,774 < readyok
+2022-12-01 22:42:43,775 > position startpos moves d2d3
+2022-12-01 22:42:43,775 > go movetime 100
+2022-12-01 22:42:43,800 < bestmove d7d5
+2022-12-01 22:42:43,800 > quit
+2022-12-05 14:18:56,256 YoBot Bronze started
+2022-12-05 14:18:56,257 > uci
+2022-12-05 14:18:56,257 < id name YoBot Bronze
+2022-12-05 14:18:56,257 < id author Yohaan Seth Nathan
+2022-12-05 14:18:56,257 < option name Debug Log File type string default
+2022-12-05 14:18:56,257 < option name Contempt type spin default 24 min -100 max 100
+2022-12-05 14:18:56,257 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-05 14:18:56,257 < option name Threads type spin default 1 min 1 max 512
+2022-12-05 14:18:56,257 < option name Hash type spin default 16 min 1 max 131072
+2022-12-05 14:18:56,257 < option name Clear Hash type button
+2022-12-05 14:18:56,257 < option name Ponder type check default false
+2022-12-05 14:18:56,257 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-05 14:18:56,257 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-05 14:18:56,257 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-05 14:18:56,257 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-05 14:18:56,257 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-05 14:18:56,257 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-05 14:18:56,257 < option name UCI_Chess960 type check default false
+2022-12-05 14:18:56,257 < option name UCI_AnalyseMode type check default false
+2022-12-05 14:18:56,258 < option name SyzygyPath type string default <empty>
+2022-12-05 14:18:56,258 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-05 14:18:56,258 < option name Syzygy50MoveRule type check default true
+2022-12-05 14:18:56,258 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-05 14:18:56,258 < uciok
+2022-12-05 14:18:56,259 > setoption name UCI_AnalyseMode value true
+2022-12-05 14:18:56,259 > ucinewgame
+2022-12-05 14:18:56,259 > isready
+2022-12-05 14:18:56,259 < readyok
+2022-12-05 14:18:56,260 > position startpos moves f2f4
+2022-12-05 14:18:56,260 > go movetime 100
+2022-12-05 14:18:56,279 < bestmove f7f5
+2022-12-05 14:18:56,280 > quit
+2022-12-05 19:34:40,596 YoBot Bronze started
+2022-12-05 19:34:40,596 > uci
+2022-12-05 19:34:40,596 < id name YoBot Bronze
+2022-12-05 19:34:40,596 < id author Yohaan Seth Nathan
+2022-12-05 19:34:40,596 < option name Debug Log File type string default
+2022-12-05 19:34:40,596 < option name Contempt type spin default 24 min -100 max 100
+2022-12-05 19:34:40,596 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-05 19:34:40,596 < option name Threads type spin default 1 min 1 max 512
+2022-12-05 19:34:40,596 < option name Hash type spin default 16 min 1 max 131072
+2022-12-05 19:34:40,596 < option name Clear Hash type button
+2022-12-05 19:34:40,596 < option name Ponder type check default false
+2022-12-05 19:34:40,596 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-05 19:34:40,596 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-05 19:34:40,596 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-05 19:34:40,596 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-05 19:34:40,596 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-05 19:34:40,596 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-05 19:34:40,596 < option name UCI_Chess960 type check default false
+2022-12-05 19:34:40,596 < option name UCI_AnalyseMode type check default false
+2022-12-05 19:34:40,597 < option name SyzygyPath type string default <empty>
+2022-12-05 19:34:40,597 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-05 19:34:40,597 < option name Syzygy50MoveRule type check default true
+2022-12-05 19:34:40,597 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-05 19:34:40,597 < uciok
+2022-12-05 19:34:40,598 > quit
+2022-12-05 19:34:42,446 YoBot Bronze started
+2022-12-05 19:34:42,446 > uci
+2022-12-05 19:34:42,446 < id name YoBot Bronze
+2022-12-05 19:34:42,446 < id author Yohaan Seth Nathan
+2022-12-05 19:34:42,446 < option name Debug Log File type string default
+2022-12-05 19:34:42,446 < option name Contempt type spin default 24 min -100 max 100
+2022-12-05 19:34:42,446 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-05 19:34:42,446 < option name Threads type spin default 1 min 1 max 512
+2022-12-05 19:34:42,446 < option name Hash type spin default 16 min 1 max 131072
+2022-12-05 19:34:42,446 < option name Clear Hash type button
+2022-12-05 19:34:42,446 < option name Ponder type check default false
+2022-12-05 19:34:42,446 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-05 19:34:42,446 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-05 19:34:42,446 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-05 19:34:42,446 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-05 19:34:42,446 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-05 19:34:42,446 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-05 19:34:42,446 < option name UCI_Chess960 type check default false
+2022-12-05 19:34:42,446 < option name UCI_AnalyseMode type check default false
+2022-12-05 19:34:42,446 < option name SyzygyPath type string default <empty>
+2022-12-05 19:34:42,446 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-05 19:34:42,446 < option name Syzygy50MoveRule type check default true
+2022-12-05 19:34:42,446 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-05 19:34:42,446 < uciok
+2022-12-05 19:34:42,447 > quit
+2022-12-05 19:34:44,492 YoBot Bronze started
+2022-12-05 19:34:44,493 > uci
+2022-12-05 19:34:44,493 < id name YoBot Bronze
+2022-12-05 19:34:44,493 < id author Yohaan Seth Nathan
+2022-12-05 19:34:44,493 < option name Debug Log File type string default
+2022-12-05 19:34:44,493 < option name Contempt type spin default 24 min -100 max 100
+2022-12-05 19:34:44,493 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-05 19:34:44,493 < option name Threads type spin default 1 min 1 max 512
+2022-12-05 19:34:44,493 < option name Hash type spin default 16 min 1 max 131072
+2022-12-05 19:34:44,493 < option name Clear Hash type button
+2022-12-05 19:34:44,493 < option name Ponder type check default false
+2022-12-05 19:34:44,493 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-05 19:34:44,493 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-05 19:34:44,493 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-05 19:34:44,493 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-05 19:34:44,493 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-05 19:34:44,493 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-05 19:34:44,493 < option name UCI_Chess960 type check default false
+2022-12-05 19:34:44,493 < option name UCI_AnalyseMode type check default false
+2022-12-05 19:34:44,493 < option name SyzygyPath type string default <empty>
+2022-12-05 19:34:44,493 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-05 19:34:44,493 < option name Syzygy50MoveRule type check default true
+2022-12-05 19:34:44,493 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-05 19:34:44,493 < uciok
+2022-12-05 19:34:44,494 > quit
+2022-12-05 19:34:47,345 YoBot Bronze started
+2022-12-05 19:34:47,345 > uci
+2022-12-05 19:34:47,345 < id name YoBot Bronze
+2022-12-05 19:34:47,345 < id author Yohaan Seth Nathan
+2022-12-05 19:34:47,345 < option name Debug Log File type string default
+2022-12-05 19:34:47,345 < option name Contempt type spin default 24 min -100 max 100
+2022-12-05 19:34:47,345 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-05 19:34:47,345 < option name Threads type spin default 1 min 1 max 512
+2022-12-05 19:34:47,345 < option name Hash type spin default 16 min 1 max 131072
+2022-12-05 19:34:47,345 < option name Clear Hash type button
+2022-12-05 19:34:47,345 < option name Ponder type check default false
+2022-12-05 19:34:47,345 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-05 19:34:47,345 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-05 19:34:47,345 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-05 19:34:47,345 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-05 19:34:47,345 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-05 19:34:47,345 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-05 19:34:47,345 < option name UCI_Chess960 type check default false
+2022-12-05 19:34:47,345 < option name UCI_AnalyseMode type check default false
+2022-12-05 19:34:47,345 < option name SyzygyPath type string default <empty>
+2022-12-05 19:34:47,345 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-05 19:34:47,345 < option name Syzygy50MoveRule type check default true
+2022-12-05 19:34:47,345 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-05 19:34:47,345 < uciok
+2022-12-05 19:34:47,347 > quit
+2022-12-05 19:34:49,284 YoBot Bronze started
+2022-12-05 19:34:49,284 > uci
+2022-12-05 19:34:49,284 < id name YoBot Bronze
+2022-12-05 19:34:49,284 < id author Yohaan Seth Nathan
+2022-12-05 19:34:49,284 < option name Debug Log File type string default
+2022-12-05 19:34:49,284 < option name Contempt type spin default 24 min -100 max 100
+2022-12-05 19:34:49,284 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-05 19:34:49,284 < option name Threads type spin default 1 min 1 max 512
+2022-12-05 19:34:49,284 < option name Hash type spin default 16 min 1 max 131072
+2022-12-05 19:34:49,284 < option name Clear Hash type button
+2022-12-05 19:34:49,284 < option name Ponder type check default false
+2022-12-05 19:34:49,284 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-05 19:34:49,284 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-05 19:34:49,284 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-05 19:34:49,284 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-05 19:34:49,284 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-05 19:34:49,284 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-05 19:34:49,284 < option name UCI_Chess960 type check default false
+2022-12-05 19:34:49,284 < option name UCI_AnalyseMode type check default false
+2022-12-05 19:34:49,284 < option name SyzygyPath type string default <empty>
+2022-12-05 19:34:49,284 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-05 19:34:49,284 < option name Syzygy50MoveRule type check default true
+2022-12-05 19:34:49,284 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-05 19:34:49,284 < uciok
+2022-12-05 19:34:49,285 > quit
+2022-12-05 19:34:51,082 YoBot Bronze started
+2022-12-05 19:34:51,082 > uci
+2022-12-05 19:34:51,082 < id name YoBot Bronze
+2022-12-05 19:34:51,082 < id author Yohaan Seth Nathan
+2022-12-05 19:34:51,082 < option name Debug Log File type string default
+2022-12-05 19:34:51,082 < option name Contempt type spin default 24 min -100 max 100
+2022-12-05 19:34:51,082 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-05 19:34:51,082 < option name Threads type spin default 1 min 1 max 512
+2022-12-05 19:34:51,082 < option name Hash type spin default 16 min 1 max 131072
+2022-12-05 19:34:51,082 < option name Clear Hash type button
+2022-12-05 19:34:51,082 < option name Ponder type check default false
+2022-12-05 19:34:51,082 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-05 19:34:51,082 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-05 19:34:51,082 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-05 19:34:51,082 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-05 19:34:51,082 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-05 19:34:51,082 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-05 19:34:51,082 < option name UCI_Chess960 type check default false
+2022-12-05 19:34:51,082 < option name UCI_AnalyseMode type check default false
+2022-12-05 19:34:51,083 < option name SyzygyPath type string default <empty>
+2022-12-05 19:34:51,083 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-05 19:34:51,083 < option name Syzygy50MoveRule type check default true
+2022-12-05 19:34:51,083 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-05 19:34:51,083 < uciok
+2022-12-05 19:34:51,083 > quit
+2022-12-05 19:34:52,788 YoBot Bronze started
+2022-12-05 19:34:52,788 > uci
+2022-12-05 19:34:52,788 < id name YoBot Bronze
+2022-12-05 19:34:52,788 < id author Yohaan Seth Nathan
+2022-12-05 19:34:52,788 < option name Debug Log File type string default
+2022-12-05 19:34:52,788 < option name Contempt type spin default 24 min -100 max 100
+2022-12-05 19:34:52,788 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-05 19:34:52,788 < option name Threads type spin default 1 min 1 max 512
+2022-12-05 19:34:52,788 < option name Hash type spin default 16 min 1 max 131072
+2022-12-05 19:34:52,788 < option name Clear Hash type button
+2022-12-05 19:34:52,788 < option name Ponder type check default false
+2022-12-05 19:34:52,788 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-05 19:34:52,788 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-05 19:34:52,788 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-05 19:34:52,788 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-05 19:34:52,788 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-05 19:34:52,788 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-05 19:34:52,788 < option name UCI_Chess960 type check default false
+2022-12-05 19:34:52,788 < option name UCI_AnalyseMode type check default false
+2022-12-05 19:34:52,788 < option name SyzygyPath type string default <empty>
+2022-12-05 19:34:52,789 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-05 19:34:52,789 < option name Syzygy50MoveRule type check default true
+2022-12-05 19:34:52,789 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-05 19:34:52,789 < uciok
+2022-12-05 19:34:52,789 > quit
+2022-12-05 19:34:54,188 YoBot Bronze started
+2022-12-05 19:34:54,188 > uci
+2022-12-05 19:34:54,188 < id name YoBot Bronze
+2022-12-05 19:34:54,188 < id author Yohaan Seth Nathan
+2022-12-05 19:34:54,188 < option name Debug Log File type string default
+2022-12-05 19:34:54,188 < option name Contempt type spin default 24 min -100 max 100
+2022-12-05 19:34:54,188 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-05 19:34:54,188 < option name Threads type spin default 1 min 1 max 512
+2022-12-05 19:34:54,188 < option name Hash type spin default 16 min 1 max 131072
+2022-12-05 19:34:54,188 < option name Clear Hash type button
+2022-12-05 19:34:54,188 < option name Ponder type check default false
+2022-12-05 19:34:54,188 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-05 19:34:54,188 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-05 19:34:54,188 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-05 19:34:54,188 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-05 19:34:54,188 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-05 19:34:54,188 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-05 19:34:54,188 < option name UCI_Chess960 type check default false
+2022-12-05 19:34:54,188 < option name UCI_AnalyseMode type check default false
+2022-12-05 19:34:54,188 < option name SyzygyPath type string default <empty>
+2022-12-05 19:34:54,188 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-05 19:34:54,188 < option name Syzygy50MoveRule type check default true
+2022-12-05 19:34:54,188 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-05 19:34:54,188 < uciok
+2022-12-05 19:34:54,189 > quit
+2022-12-05 19:34:55,954 YoBot Bronze started
+2022-12-05 19:34:55,954 > uci
+2022-12-05 19:34:55,954 < id name YoBot Bronze
+2022-12-05 19:34:55,954 < id author Yohaan Seth Nathan
+2022-12-05 19:34:55,954 < option name Debug Log File type string default
+2022-12-05 19:34:55,954 < option name Contempt type spin default 24 min -100 max 100
+2022-12-05 19:34:55,954 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-05 19:34:55,954 < option name Threads type spin default 1 min 1 max 512
+2022-12-05 19:34:55,954 < option name Hash type spin default 16 min 1 max 131072
+2022-12-05 19:34:55,954 < option name Clear Hash type button
+2022-12-05 19:34:55,954 < option name Ponder type check default false
+2022-12-05 19:34:55,954 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-05 19:34:55,954 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-05 19:34:55,954 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-05 19:34:55,954 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-05 19:34:55,954 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-05 19:34:55,954 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-05 19:34:55,955 < option name UCI_Chess960 type check default false
+2022-12-05 19:34:55,955 < option name UCI_AnalyseMode type check default false
+2022-12-05 19:34:55,955 < option name SyzygyPath type string default <empty>
+2022-12-05 19:34:55,955 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-05 19:34:55,955 < option name Syzygy50MoveRule type check default true
+2022-12-05 19:34:55,955 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-05 19:34:55,955 < uciok
+2022-12-05 19:34:55,956 > quit
+2022-12-05 19:34:57,804 YoBot Bronze started
+2022-12-05 19:34:57,805 > uci
+2022-12-05 19:34:57,805 < id name YoBot Bronze
+2022-12-05 19:34:57,805 < id author Yohaan Seth Nathan
+2022-12-05 19:34:57,805 < option name Debug Log File type string default
+2022-12-05 19:34:57,805 < option name Contempt type spin default 24 min -100 max 100
+2022-12-05 19:34:57,805 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-05 19:34:57,805 < option name Threads type spin default 1 min 1 max 512
+2022-12-05 19:34:57,805 < option name Hash type spin default 16 min 1 max 131072
+2022-12-05 19:34:57,805 < option name Clear Hash type button
+2022-12-05 19:34:57,805 < option name Ponder type check default false
+2022-12-05 19:34:57,805 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-05 19:34:57,805 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-05 19:34:57,805 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-05 19:34:57,805 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-05 19:34:57,805 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-05 19:34:57,805 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-05 19:34:57,805 < option name UCI_Chess960 type check default false
+2022-12-05 19:34:57,805 < option name UCI_AnalyseMode type check default false
+2022-12-05 19:34:57,805 < option name SyzygyPath type string default <empty>
+2022-12-05 19:34:57,805 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-05 19:34:57,805 < option name Syzygy50MoveRule type check default true
+2022-12-05 19:34:57,805 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-05 19:34:57,805 < uciok
+2022-12-05 19:34:57,806 > quit
+2022-12-05 19:34:59,814 YoBot Bronze started
+2022-12-05 19:34:59,814 > uci
+2022-12-05 19:34:59,814 < id name YoBot Bronze
+2022-12-05 19:34:59,814 < id author Yohaan Seth Nathan
+2022-12-05 19:34:59,814 < option name Debug Log File type string default
+2022-12-05 19:34:59,814 < option name Contempt type spin default 24 min -100 max 100
+2022-12-05 19:34:59,814 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-05 19:34:59,814 < option name Threads type spin default 1 min 1 max 512
+2022-12-05 19:34:59,814 < option name Hash type spin default 16 min 1 max 131072
+2022-12-05 19:34:59,814 < option name Clear Hash type button
+2022-12-05 19:34:59,814 < option name Ponder type check default false
+2022-12-05 19:34:59,815 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-05 19:34:59,815 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-05 19:34:59,815 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-05 19:34:59,815 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-05 19:34:59,815 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-05 19:34:59,815 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-05 19:34:59,815 < option name UCI_Chess960 type check default false
+2022-12-05 19:34:59,815 < option name UCI_AnalyseMode type check default false
+2022-12-05 19:34:59,815 < option name SyzygyPath type string default <empty>
+2022-12-05 19:34:59,815 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-05 19:34:59,815 < option name Syzygy50MoveRule type check default true
+2022-12-05 19:34:59,815 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-05 19:34:59,815 < uciok
+2022-12-05 19:34:59,816 > quit
+2022-12-05 19:35:01,864 YoBot Bronze started
+2022-12-05 19:35:01,865 > uci
+2022-12-05 19:35:01,865 < id name YoBot Bronze
+2022-12-05 19:35:01,865 < id author Yohaan Seth Nathan
+2022-12-05 19:35:01,865 < option name Debug Log File type string default
+2022-12-05 19:35:01,865 < option name Contempt type spin default 24 min -100 max 100
+2022-12-05 19:35:01,865 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-05 19:35:01,865 < option name Threads type spin default 1 min 1 max 512
+2022-12-05 19:35:01,865 < option name Hash type spin default 16 min 1 max 131072
+2022-12-05 19:35:01,865 < option name Clear Hash type button
+2022-12-05 19:35:01,865 < option name Ponder type check default false
+2022-12-05 19:35:01,865 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-05 19:35:01,865 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-05 19:35:01,865 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-05 19:35:01,865 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-05 19:35:01,865 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-05 19:35:01,865 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-05 19:35:01,865 < option name UCI_Chess960 type check default false
+2022-12-05 19:35:01,865 < option name UCI_AnalyseMode type check default false
+2022-12-05 19:35:01,865 < option name SyzygyPath type string default <empty>
+2022-12-05 19:35:01,865 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-05 19:35:01,865 < option name Syzygy50MoveRule type check default true
+2022-12-05 19:35:01,865 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-05 19:35:01,865 < uciok
+2022-12-05 19:35:01,866 > quit
+2022-12-05 19:35:03,755 YoBot Bronze started
+2022-12-05 19:35:03,755 > uci
+2022-12-05 19:35:03,755 < id name YoBot Bronze
+2022-12-05 19:35:03,755 < id author Yohaan Seth Nathan
+2022-12-05 19:35:03,755 < option name Debug Log File type string default
+2022-12-05 19:35:03,755 < option name Contempt type spin default 24 min -100 max 100
+2022-12-05 19:35:03,755 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-05 19:35:03,755 < option name Threads type spin default 1 min 1 max 512
+2022-12-05 19:35:03,755 < option name Hash type spin default 16 min 1 max 131072
+2022-12-05 19:35:03,755 < option name Clear Hash type button
+2022-12-05 19:35:03,755 < option name Ponder type check default false
+2022-12-05 19:35:03,755 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-05 19:35:03,755 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-05 19:35:03,755 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-05 19:35:03,755 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-05 19:35:03,755 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-05 19:35:03,755 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-05 19:35:03,755 < option name UCI_Chess960 type check default false
+2022-12-05 19:35:03,755 < option name UCI_AnalyseMode type check default false
+2022-12-05 19:35:03,755 < option name SyzygyPath type string default <empty>
+2022-12-05 19:35:03,755 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-05 19:35:03,755 < option name Syzygy50MoveRule type check default true
+2022-12-05 19:35:03,755 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-05 19:35:03,756 < uciok
+2022-12-05 19:35:03,756 > quit
+2022-12-05 19:35:05,445 YoBot Bronze started
+2022-12-05 19:35:05,445 > uci
+2022-12-05 19:35:05,445 < id name YoBot Bronze
+2022-12-05 19:35:05,445 < id author Yohaan Seth Nathan
+2022-12-05 19:35:05,445 < option name Debug Log File type string default
+2022-12-05 19:35:05,445 < option name Contempt type spin default 24 min -100 max 100
+2022-12-05 19:35:05,445 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-05 19:35:05,445 < option name Threads type spin default 1 min 1 max 512
+2022-12-05 19:35:05,445 < option name Hash type spin default 16 min 1 max 131072
+2022-12-05 19:35:05,445 < option name Clear Hash type button
+2022-12-05 19:35:05,445 < option name Ponder type check default false
+2022-12-05 19:35:05,445 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-05 19:35:05,445 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-05 19:35:05,445 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-05 19:35:05,445 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-05 19:35:05,445 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-05 19:35:05,445 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-05 19:35:05,445 < option name UCI_Chess960 type check default false
+2022-12-05 19:35:05,445 < option name UCI_AnalyseMode type check default false
+2022-12-05 19:35:05,445 < option name SyzygyPath type string default <empty>
+2022-12-05 19:35:05,445 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-05 19:35:05,445 < option name Syzygy50MoveRule type check default true
+2022-12-05 19:35:05,445 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-05 19:35:05,445 < uciok
+2022-12-05 19:35:05,446 > quit
+2022-12-05 19:35:07,089 YoBot Bronze started
+2022-12-05 19:35:07,089 > uci
+2022-12-05 19:35:07,089 < id name YoBot Bronze
+2022-12-05 19:35:07,089 < id author Yohaan Seth Nathan
+2022-12-05 19:35:07,089 < option name Debug Log File type string default
+2022-12-05 19:35:07,089 < option name Contempt type spin default 24 min -100 max 100
+2022-12-05 19:35:07,089 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-05 19:35:07,089 < option name Threads type spin default 1 min 1 max 512
+2022-12-05 19:35:07,089 < option name Hash type spin default 16 min 1 max 131072
+2022-12-05 19:35:07,089 < option name Clear Hash type button
+2022-12-05 19:35:07,089 < option name Ponder type check default false
+2022-12-05 19:35:07,089 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-05 19:35:07,089 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-05 19:35:07,089 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-05 19:35:07,089 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-05 19:35:07,089 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-05 19:35:07,089 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-05 19:35:07,089 < option name UCI_Chess960 type check default false
+2022-12-05 19:35:07,089 < option name UCI_AnalyseMode type check default false
+2022-12-05 19:35:07,089 < option name SyzygyPath type string default <empty>
+2022-12-05 19:35:07,089 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-05 19:35:07,089 < option name Syzygy50MoveRule type check default true
+2022-12-05 19:35:07,089 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-05 19:35:07,089 < uciok
+2022-12-05 19:35:07,090 > quit
+2022-12-05 19:35:10,077 YoBot Bronze started
+2022-12-05 19:35:10,077 > uci
+2022-12-05 19:35:10,077 < id name YoBot Bronze
+2022-12-05 19:35:10,077 < id author Yohaan Seth Nathan
+2022-12-05 19:35:10,077 < option name Debug Log File type string default
+2022-12-05 19:35:10,077 < option name Contempt type spin default 24 min -100 max 100
+2022-12-05 19:35:10,077 < option name Analysis Contempt type combo default Both var Off var White var Black var Both
+2022-12-05 19:35:10,077 < option name Threads type spin default 1 min 1 max 512
+2022-12-05 19:35:10,077 < option name Hash type spin default 16 min 1 max 131072
+2022-12-05 19:35:10,077 < option name Clear Hash type button
+2022-12-05 19:35:10,077 < option name Ponder type check default false
+2022-12-05 19:35:10,077 < option name MultiPV type spin default 1 min 1 max 500
+2022-12-05 19:35:10,077 < option name Skill Level type spin default 20 min 0 max 20
+2022-12-05 19:35:10,077 < option name Move Overhead type spin default 30 min 0 max 5000
+2022-12-05 19:35:10,077 < option name Minimum Thinking Time type spin default 20 min 0 max 5000
+2022-12-05 19:35:10,077 < option name Slow Mover type spin default 84 min 10 max 1000
+2022-12-05 19:35:10,077 < option name nodestime type spin default 0 min 0 max 10000
+2022-12-05 19:35:10,077 < option name UCI_Chess960 type check default false
+2022-12-05 19:35:10,077 < option name UCI_AnalyseMode type check default false
+2022-12-05 19:35:10,077 < option name SyzygyPath type string default <empty>
+2022-12-05 19:35:10,077 < option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2022-12-05 19:35:10,077 < option name Syzygy50MoveRule type check default true
+2022-12-05 19:35:10,077 < option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2022-12-05 19:35:10,077 < uciok
+2022-12-05 19:35:10,078 > quit
