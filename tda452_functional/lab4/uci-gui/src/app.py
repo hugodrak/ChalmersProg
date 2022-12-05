@@ -3,6 +3,8 @@
 #
 
 # packages
+from pathlib import Path
+
 from flask import Flask
 from flask import render_template
 from flask import request
@@ -13,65 +15,11 @@ import io
 import random
 from flask import jsonify
 from flask import Response
-from flask_pymongo import PyMongo
-from datetime import datetime
 import json
 import subprocess
 
 # create web app instance
 app = Flask(__name__)
-
-
-# probe book move
-def probe_book(pgn):
-    # open book file
-    with open('./engine/book.txt') as f:
-        # read book games
-        book = f.read()
-
-        # init board        
-        board = chess.Board()
-
-        # define response moves
-        response_moves = []
-
-        # loop over book lines
-        for line in book.split('\n')[0:-1]:
-            # define variation
-            variation = []
-
-            # loop over line moves
-            for move in line.split():
-                variation.append(chess.Move.from_uci(move))
-
-            # parse variation to SAN
-            san = board.variation_san(variation)
-
-            # match book line line
-            if pgn in san:
-                try:
-                    # black move
-                    if san.split(pgn)[-1].split()[0][0].isdigit():
-                        response_moves.append(san.split(pgn)[-1].split()[1])
-
-                    # white move
-                    else:
-                        response_moves.append(san.split(pgn)[-1].split()[0])
-
-                except:
-                    pass
-
-            # engine makes first move
-            if pgn == '':
-                response_moves.append(san.split('1. ')[-1].split()[0])
-
-        # return random response move
-        if len(response_moves):
-            print('BOOK MOVE:', random.choice(response_moves))
-            return random.choice(response_moves)
-
-        else:
-            return 0
 
 
 # root(index) route
@@ -85,13 +33,6 @@ def root():
 def make_move():
     # extract FEN string from HTTP POST request body
     pgn = request.form.get('pgn')
-
-    # probe opening book
-    if False or probe_book(pgn):
-        return {
-            'score': 'book move',
-            'best_move': probe_book(pgn)
-        }
 
     # read game moves from PGN
     game = chess.pgn.read_game(io.StringIO(pgn))
@@ -107,7 +48,7 @@ def make_move():
     print(board.fen())
 
     completedProcess = subprocess.run(
-        ["/home/gustavld/chalmers/func/ChalmersProg/tda452_functional/lab4/Main", board.fen()], capture_output=True)
+        [Path(__file__).parent / "HaskellChessEngine", board.fen()], capture_output=True)
 
     move = completedProcess.stdout.decode("ascii").strip()
 
@@ -125,17 +66,15 @@ def make_move():
 
     # get best score
 
-
     return {
         'fen': board.fen(),
         'best_move': str(best_move),
         'score': 100,
-        'depth':42,
-        'pv': 'disabled',# '.join([str(move) for move in info['pv']]),
-        'nodes': "no nodes",#info['nodes'],
-        'time': 1337#info['time']
+        'depth': 42,
+        'pv': 'disabled',  # '.join([str(move) for move in info['pv']]),
+        'nodes': "no nodes",  # info['nodes'],
+        'time': 1337  # info['time']
     }
-
 
 
 @app.route('/analytics')
