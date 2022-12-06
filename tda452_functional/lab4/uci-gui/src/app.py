@@ -50,6 +50,10 @@ def make_move():
     completedProcess = subprocess.run(
         [Path(__file__).parent / "HaskellChessEngine", board.fen()], capture_output=True)
 
+    print("engine responded:")
+    print("stdout:", completedProcess.stdout)
+    print("stderr:", completedProcess.stderr)
+
     move = completedProcess.stdout.decode("ascii").strip()
 
     # create chess engine instance

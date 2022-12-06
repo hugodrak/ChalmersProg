@@ -1,4 +1,4 @@
-
+#! /usr/bin/env fish
 
 
 set outputPath uci-gui/src/HaskellChessEngine || echo no engine exists, cannot remove

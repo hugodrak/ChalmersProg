@@ -1,5 +1,5 @@
 module ChessBase where 
-
+import Data.Maybe
 
 data Color = White | Black
     deriving (Show, Eq)
@@ -20,8 +20,12 @@ toMove (Board _ color) = color
 otherColor :: Color -> Color
 otherColor c | c == Black = White
              | c == White = Black
+             
 isPieceOfColor :: Color -> Piece -> Bool
 isPieceOfColor c (Piece _ col _ _) = c==col
+
+piecePosition :: Piece -> (Int,Int)
+piecePosition (Piece _ _ x y) = (x,y)
 
 pieces :: Board -> [Piece]
 pieces (Board p _) = p
@@ -50,12 +54,14 @@ movePieceTo (Board pieces turn) piece x y = Board (newPiece:boardWithPieceRemove
                               (Piece t col _ _) -> (col,t)
 
 
+                              
+                              
 
 
 --                        current board
 findValidMovesForPiece :: Board -> Piece -> [Board]
 
-findValidMovesForPiece board piece = (subfunction piece) board piece
+findValidMovesForPiece board piece = catMaybes $ (subfunction piece) board piece
     
     
     
@@ -75,14 +81,15 @@ isThisPieceAt x y (Piece _ _ x1 y1) = (x1,y1)==(x,y)
 
 pickPiece (Board pieces _) n = pieces !! n
 
+tryMoveTo :: Board -> Piece -> Int -> Int -> Maybe Board
+tryMoveTo board piece x y | isSpaceOccupied board x y = Nothing
+                          | otherwise = Just $ movePieceTo board piece x y
+
                         
-findValidMovesForPawn :: Board -> Piece -> [Board]
-findValidMovesForPawn board piece = if isSpaceOccupied board newx newy then [] else [movePieceTo board piece newx newy]
-    
-    where (curx, cury,color) = case piece of (Piece _ col x y) -> (x,y,col)
-          newy = cury + moveDir
-          newx = curx
-          moveDir = if color == White then 1 else (-1)
+findValidMovesForPawn :: Board -> Piece -> [Maybe Board]
+findValidMovesForPawn board piece = [tryMoveTo board piece x (y+forwardDir)]
+    where forwardDir = if isPieceOfColor White piece then 1 else (-1)
+          (x,y) = piecePosition piece
     
 
     
