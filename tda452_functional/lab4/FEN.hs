@@ -16,18 +16,22 @@ parseFEN fen = Board (parseBoard ((words fen) !! 0)) toPlay -- Only the first pa
           parseBoard' board "" _ _ = board -- Stop parseBoard
           parseBoard' board ('/':f) row _ = parseBoard' board f (row-1) 0  -- Continue to next row
           parseBoard' board (digit:f) row col | isDigit digit = parseBoard' board f row (col+ (digitToInt digit)) -- digit means we should skip N positions
-          parseBoard' board (letter:f) row col = let updatedBoard = (letterToPiece letter (row,col)) ++ board in
+          parseBoard' board (letter:f) row col = let updatedBoard = (letterToPiece letter (row,col)) : board in
                                                   parseBoard' updatedBoard f row (col+1)
     
-          letterToPiece :: Char -> (Int,Int) -> [Piece]
-          letterToPiece d _ | (toLower d) /= 'p' = []
-          letterToPiece d (row, col)= [Piece (piecetype d) (color d) col row]
+          letterToPiece :: Char -> (Int,Int) -> Piece
+          letterToPiece d (row, col)= Piece (piecetype d) (color d) col row
           
           color d = case (toLower d) == d of
                             True -> Black  --lowercase
                             False -> White -- uppercase
           piecetype d = case (toLower d) of
                             'p' -> Pawn
+                            'q' -> Queen
+                            'r' -> Rook
+                            'b' -> Bishop
+                            'n' -> Knight
+                            'k' -> King
           toPlay = color $ head ((words fen) !! 1)
           
           

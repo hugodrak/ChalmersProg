@@ -4,7 +4,7 @@ import Data.Maybe
 data Color = White | Black
     deriving (Show, Eq)
 
-data PieceType = Pawn | King
+data PieceType = Pawn | King | Queen | Knight | Bishop | Rook
     deriving (Show,Eq)
 
 data Piece = Piece PieceType Color  Int Int
@@ -68,11 +68,10 @@ findValidMovesForPiece :: Board -> Piece -> [Board]
 
 findValidMovesForPiece board piece =  (subfunction piece) board piece
     
-    
-    
     where subfunction (Piece t _ _ _) = case (t) of
                                 Pawn -> findValidMovesForPawn
-                                _ -> error "herp derp"
+                                _ -> findNoMoves
+          findNoMoves _ _= [] 
                         
 
 
@@ -102,7 +101,7 @@ findValidMovesForPawn board piece = catMaybes $
           (x,y) = piecePosition piece
           
           tryMoveSingleForward = tryMoveTo board piece x (y+forwardDir)
-          tryMoveDoubleForward = if y == startRow 
+          tryMoveDoubleForward = if y == startRow && (not $ isSpaceOccupied board x (y+forwardDir)) 
                                     then tryMoveTo board piece x (y+2*forwardDir)
                                     else Nothing
           
