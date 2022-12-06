@@ -46,7 +46,7 @@ boardContains board piece = piecesContains (pieces board) piece
 movePieceTo :: Board -> Piece -> Int -> Int -> Board
 movePieceTo (Board pieces turn) piece x y = Board (newPiece:boardWithPieceRemoved) turn
     
-    where boardWithPieceRemoved = filter (/=piece) pieces
+    where boardWithPieceRemoved = filter (not . isThisPieceAt x y) $ filter (/=piece) pieces
           
           newPiece = Piece typ color x y
           
@@ -54,14 +54,19 @@ movePieceTo (Board pieces turn) piece x y = Board (newPiece:boardWithPieceRemove
                               (Piece t col _ _) -> (col,t)
 
 
+tryMoveTo :: Board -> Piece -> Int -> Int -> Maybe Board
+tryMoveTo board piece x y | isSpaceOccupied board x y = Nothing
+                          | otherwise = Just $ movePieceTo board piece x y
                               
                               
 
+findAllValidMoves :: Board -> [Board]
+findAllValidMoves board = concat $ map (findValidMovesForPiece board) (myPieces board)
 
 --                        current board
 findValidMovesForPiece :: Board -> Piece -> [Board]
 
-findValidMovesForPiece board piece = catMaybes $ (subfunction piece) board piece
+findValidMovesForPiece board piece =  (subfunction piece) board piece
     
     
     
@@ -71,7 +76,8 @@ findValidMovesForPiece board piece = catMaybes $ (subfunction piece) board piece
                         
 
 
-isSpaceOccupied (Board pieces _) x y = any (isThisPieceAt x y) pieces
+isSpaceOccupied board x y = any (isThisPieceAt x y) (pieces board)
+isSpaceOccupiedByColor board color x y = any (isThisPieceAt x y) (piecesOfColor board color)
 getPieceAt (Board pieces _) x y = case maybePiece of
                             (piece:_) -> Just piece
                             otherwise -> Nothing
@@ -81,13 +87,15 @@ isThisPieceAt x y (Piece _ _ x1 y1) = (x1,y1)==(x,y)
 
 pickPiece (Board pieces _) n = pieces !! n
 
-tryMoveTo :: Board -> Piece -> Int -> Int -> Maybe Board
-tryMoveTo board piece x y | isSpaceOccupied board x y = Nothing
-                          | otherwise = Just $ movePieceTo board piece x y
 
+tryCaptureAt :: Board -> Piece -> Int -> Int -> Maybe Board
+tryCaptureAt board piece x y | isSpaceOccupiedByColor board (otherColor $ toMove board) x y 
+                                    = Just $ movePieceTo board piece x y
+                             | otherwise = Nothing
                         
-findValidMovesForPawn :: Board -> Piece -> [Maybe Board]
-findValidMovesForPawn board piece = tryMoveSingleForward:tryMoveDoubleForward:[]
+findValidMovesForPawn :: Board -> Piece -> [Board]
+findValidMovesForPawn board piece = catMaybes $
+                            tryMoveSingleForward:tryMoveDoubleForward:tryCaptureLeft:tryCaptureRight:[]
 
     where forwardDir = if isPieceOfColor White piece then 1 else (-1)
           startRow = if isPieceOfColor White piece then 1 else 6
@@ -97,8 +105,11 @@ findValidMovesForPawn board piece = tryMoveSingleForward:tryMoveDoubleForward:[]
           tryMoveDoubleForward = if y == startRow 
                                     then tryMoveTo board piece x (y+2*forwardDir)
                                     else Nothing
+          
+          tryCaptureLeft = tryCaptureAt board piece (x-1) (y+forwardDir)
+          tryCaptureRight = tryCaptureAt board piece (x+1) (y+forwardDir)
+          
 
-    
 
 
 
