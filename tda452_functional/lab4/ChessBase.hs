@@ -87,10 +87,16 @@ tryMoveTo board piece x y | isSpaceOccupied board x y = Nothing
 
                         
 findValidMovesForPawn :: Board -> Piece -> [Maybe Board]
-findValidMovesForPawn board piece = [tryMoveTo board piece x (y+forwardDir)]
+findValidMovesForPawn board piece = tryMoveSingleForward:tryMoveDoubleForward:[]
+
     where forwardDir = if isPieceOfColor White piece then 1 else (-1)
+          startRow = if isPieceOfColor White piece then 1 else 6
           (x,y) = piecePosition piece
-    
+          
+          tryMoveSingleForward = tryMoveTo board piece x (y+forwardDir)
+          tryMoveDoubleForward = if y == startRow 
+                                    then tryMoveTo board piece x (y+2*forwardDir)
+                                    else Nothing
 
     
 
