@@ -104,18 +104,25 @@ tryMoveOrCaptureInDirection :: Board -> Piece -> Int -> (Int,Int) -> [Board]
 tryMoveOrCaptureInDirection board piece maxMoves dPos= tryMoveOrCaptureInDirection' board piece dPos 1 maxMoves
 
 
+-- 
 tryMoveOrCaptureInDirection' :: Board -> Piece -> (Int,Int) -> Int -> Int -> [Board]          
 tryMoveOrCaptureInDirection' _ _ _ currentMoves maxMoves | currentMoves > maxMoves = []
 tryMoveOrCaptureInDirection' board piece (dx,dy) currentMoves maxMoves
-    | not $ isPosValid newX newY = []
-    | occupiedByMe = []
-    | otherwise = (movePieceTo board piece newX newY): tryMoveOrCaptureInDirection' board piece (dx,dy) (currentMoves+1) maxMoves
+    | not $ isPosValid newX newY = [] -- outside board stop searching
+    | occupiedByMe = [] -- cannot move here, stop searhing
+    
+    -- occupiedByOther, Capture The piece but then stop searching
+    | occupiedByOther = [moveThere]
+    -- not occupied, move there but also continue searching in direction
+    | otherwise = moveThere: tryMoveOrCaptureInDirection' board piece (dx,dy) (currentMoves+1) maxMoves
                         
     where newX = curX + dx * currentMoves
           newY = curY + dy * currentMoves
           (curX,curY) = piecePosition piece
+          moveThere = movePieceTo board piece newX newY
           
           occupiedByMe = isSpaceOccupiedByColor board (toMove board) newX newY
+          occupiedByOther = isSpaceOccupiedByColor board (notToMove board) newX newY
 
 
 

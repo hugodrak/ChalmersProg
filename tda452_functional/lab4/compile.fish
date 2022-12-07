@@ -4,7 +4,7 @@
 set outputPath uci-gui/src/HaskellChessEngine || echo no engine exists, cannot remove
 
 rm $outputPath
-stack ghc Main.hs
+stack ghc Main.hs || exit
 
 cp Main $outputPath
 
