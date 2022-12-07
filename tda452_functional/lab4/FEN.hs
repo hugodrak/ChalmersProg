@@ -80,6 +80,11 @@ formatCell board x y = [case pieceMaybee of
                             
     where letter = case typ of
                     Pawn -> 'p'
+                    Queen  -> 'q'
+                    Rook -> 'r'
+                    Bishop -> 'b'
+                    Knight -> 'n'
+                    King -> 'k'
         
           pieceMaybee = getPieceAt board x y
           piece = fromJust pieceMaybee

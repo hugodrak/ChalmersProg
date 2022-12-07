@@ -17,6 +17,9 @@ data Board = Board [Piece] Color
 toMove :: Board -> Color
 toMove (Board _ color) = color
 
+notToMove :: Board -> Color
+notToMove = otherColor . toMove
+
 otherColor :: Color -> Color
 otherColor c | c == Black = White
              | c == White = Black
@@ -41,6 +44,9 @@ piecesContains pieces piece = any (==piece) pieces
 
 boardContains :: Board -> Piece -> Bool
 boardContains board piece = piecesContains (pieces board) piece
+
+isPosValid :: Int -> Int -> Bool
+isPosValid x y = (x>=0) && (x<=7) && (y>=0) && (y<=7)  
           
 
 movePieceTo :: Board -> Piece -> Int -> Int -> Board
@@ -70,6 +76,7 @@ findValidMovesForPiece board piece =  (subfunction piece) board piece
     
     where subfunction (Piece t _ _ _) = case (t) of
                                 Pawn -> findValidMovesForPawn
+                                King -> findValidMovesForKing
                                 _ -> findNoMoves
           findNoMoves _ _= [] 
                         
@@ -82,7 +89,7 @@ getPieceAt (Board pieces _) x y = case maybePiece of
                             otherwise -> Nothing
             where maybePiece = filter (isThisPieceAt x y) pieces
 
-isThisPieceAt x y (Piece _ _ x1 y1) = (x1,y1)==(x,y)
+isThisPieceAt x y piece = piecePosition piece == (x,y)
 
 pickPiece (Board pieces _) n = pieces !! n
 
@@ -91,7 +98,28 @@ tryCaptureAt :: Board -> Piece -> Int -> Int -> Maybe Board
 tryCaptureAt board piece x y | isSpaceOccupiedByColor board (otherColor $ toMove board) x y 
                                     = Just $ movePieceTo board piece x y
                              | otherwise = Nothing
+
+--                                               maxMoves dx     dy     
+tryMoveOrCaptureInDirection :: Board -> Piece -> Int -> (Int,Int) -> [Board]
+tryMoveOrCaptureInDirection board piece maxMoves dPos= tryMoveOrCaptureInDirection' board piece dPos 1 maxMoves
+
+
+tryMoveOrCaptureInDirection' :: Board -> Piece -> (Int,Int) -> Int -> Int -> [Board]          
+tryMoveOrCaptureInDirection' _ _ _ currentMoves maxMoves | currentMoves > maxMoves = []
+tryMoveOrCaptureInDirection' board piece (dx,dy) currentMoves maxMoves
+    | not $ isPosValid newX newY = []
+    | occupiedByMe = []
+    | otherwise = (movePieceTo board piece newX newY): tryMoveOrCaptureInDirection' board piece (dx,dy) (currentMoves+1) maxMoves
                         
+    where newX = curX + dx * currentMoves
+          newY = curY + dy * currentMoves
+          (curX,curY) = piecePosition piece
+          
+          occupiedByMe = isSpaceOccupiedByColor board (toMove board) newX newY
+
+
+
+                             
 findValidMovesForPawn :: Board -> Piece -> [Board]
 findValidMovesForPawn board piece = catMaybes $
                             tryMoveSingleForward:tryMoveDoubleForward:tryCaptureLeft:tryCaptureRight:[]
@@ -108,7 +136,8 @@ findValidMovesForPawn board piece = catMaybes $
           tryCaptureLeft = tryCaptureAt board piece (x-1) (y+forwardDir)
           tryCaptureRight = tryCaptureAt board piece (x+1) (y+forwardDir)
           
-
+findValidMovesForKing :: Board -> Piece -> [Board]
+findValidMovesForKing board piece = concat $ map (tryMoveOrCaptureInDirection board piece 1) [(dx,dy) |dx<-[(-1),0,1], dy<-[(-1),0,1], (dx/=0) || (dy/=0)]
 
 
 
