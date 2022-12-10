@@ -24,11 +24,20 @@ otherColor :: Color -> Color
 otherColor c | c == Black = White
              | c == White = Black
              
+nextTurn :: Board -> Board
+nextTurn board = Board (pieces board) (notToMove board)
+             
 isPieceOfColor :: Color -> Piece -> Bool
 isPieceOfColor c (Piece _ col _ _) = c==col
 
 piecePosition :: Piece -> (Int,Int)
 piecePosition (Piece _ _ x y) = (x,y)
+
+pieceType :: Piece -> PieceType
+pieceType (Piece typ _ _ _) = typ
+
+pieceColor :: Piece -> Color
+pieceColor (Piece _ col _ _) = col
 
 pieces :: Board -> [Piece]
 pieces (Board p _) = p
@@ -77,6 +86,10 @@ findValidMovesForPiece board piece =  (subfunction piece) board piece
     where subfunction (Piece t _ _ _) = case (t) of
                                 Pawn -> findValidMovesForPawn
                                 King -> findValidMovesForKing
+                                Queen -> findValidMovesForQueen
+                                Knight -> findValidMovesForKnight
+                                Rook -> findValidMovesForRook
+                                Bishop -> findValidMovesForBishop
                                 _ -> findNoMoves
           findNoMoves _ _= [] 
                         
@@ -142,10 +155,21 @@ findValidMovesForPawn board piece = catMaybes $
           
           tryCaptureLeft = tryCaptureAt board piece (x-1) (y+forwardDir)
           tryCaptureRight = tryCaptureAt board piece (x+1) (y+forwardDir)
-          
+
+
+diagonals = [(1,1),(-1,1),(1,-1),(-1,-1)]
+orthogonals = [(-1,0),(1,0),(0,-1),(0,1)]
+allDirections = diagonals ++ orthogonals
+
+knightMoves = [(dx,dy) | dx <- [-2,-1,1,2], dy<-[-2,-1,1,2], (abs dx + abs dy) == 3]
+
+
 findValidMovesForKing :: Board -> Piece -> [Board]
-findValidMovesForKing board piece = concat $ map (tryMoveOrCaptureInDirection board piece 1) [(dx,dy) |dx<-[(-1),0,1], dy<-[(-1),0,1], (dx/=0) || (dy/=0)]
+findValidMovesForKing board piece = concat $ map (tryMoveOrCaptureInDirection board piece 1) allDirections
 
-
+findValidMovesForQueen board piece = concat $ map (tryMoveOrCaptureInDirection board piece 7) allDirections
+findValidMovesForRook board piece = concat $ map (tryMoveOrCaptureInDirection board piece 7) orthogonals
+findValidMovesForBishop board piece= concat $ map (tryMoveOrCaptureInDirection board piece 7) diagonals
+findValidMovesForKnight board piece = concat $ map (tryMoveOrCaptureInDirection board piece 1) knightMoves
 
       
