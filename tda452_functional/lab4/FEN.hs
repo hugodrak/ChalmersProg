@@ -4,37 +4,58 @@ import Data.Char
 import Data.Maybe
 
 
--- rnbqkbnr/pppppppp/8/8/8/3P4/PPP1PPPP/RNBQKBNR b KQkq - 0 1
+--FEN string look like this:
+-- pieces                                         who to play    junk we dont care about
+--"rnbqkbnr/pppppppp/8/8/8/3P4/PPP1PPPP/RNBQKBNR   b             KQkq - 0 1"
+--   /\             /\                /\
+--   ||             ||                ||
+-- Piece    8 Empty positions         Goto next row
 
-parseFEN :: String -> Board
-parseFEN fen = Board (parseBoard ((words fen) !! 0)) toPlay -- Only the first part is of interest, the rest is an-passant
-    
-    where parseBoard str = parseBoard' [] str 7 0
-          
-                       -- Current parsed board   rest of the fen    row    col    result
-          parseBoard' :: [Piece]              -> String          -> Int -> Int -> [Piece]
-          parseBoard' board "" _ _ = board -- Stop parseBoard
-          parseBoard' board ('/':f) row _ = parseBoard' board f (row-1) 0  -- Continue to next row
-          parseBoard' board (digit:f) row col | isDigit digit = parseBoard' board f row (col+ (digitToInt digit)) -- digit means we should skip N positions
-          parseBoard' board (letter:f) row col = let updatedBoard = (letterToPiece letter (row,col)) : board in
-                                                  parseBoard' updatedBoard f row (col+1)
-    
-          letterToPiece :: Char -> (Int,Int) -> Piece
-          letterToPiece d (row, col)= Piece (piecetype d) (color d) col row
-          
-          color d = case (toLower d) == d of
+
+-- We wanna parse it using foldl. Define a state to hold the current parser state
+
+--                                  x  y
+data FenParser = FenParser [Piece] Int Int
+
+result :: FenParser -> [Piece]
+result (FenParser pieces _ _) = pieces
+
+initialParser = FenParser [] 0 7
+
+-- Parse a single letter
+parseFenLetter :: FenParser -> Char -> FenParser
+parseFenLetter (FenParser currentPieces x y) char | char == '/' = FenParser currentPieces 0 (y-1) -- Continue to next row
+                                                  | isDigit char = FenParser currentPieces (x+digitToInt char) y -- skip this many m positions
+                                                  | otherwise = FenParser (newPiece:currentPieces) (x+1) y -- Parse piece
+    where newPiece = Piece typ color x y
+          color = case (toLower char) == char of
                             True -> Black  --lowercase
                             False -> White -- uppercase
-          piecetype d = case (toLower d) of
+          typ = case (toLower char) of
                             'p' -> Pawn
                             'q' -> Queen
                             'r' -> Rook
                             'b' -> Bishop
                             'n' -> Knight
                             'k' -> King
-          toPlay = color $ head ((words fen) !! 1)
+                
+
+parseFEN :: String -> Board
+parseFEN fen = Board pieces whoStarts 
+    
+    where pieces = result $ foldl parseFenLetter initialParser piecesStr
+          whoStarts = case whoStartsStr of
+                            "w" -> White
+                            "b" -> Black
+          
+          -- Only the first part is of interest, the rest is an-passant
+          piecesStr = (words fen) !! 0
+          whoStartsStr = (words fen) !! 1
           
           
+          
+-- Get a move representation by comparing two boards
+-- If a piece moves from g2 to g3 the move representation is "g2g3"
 getMoveRepresentation :: Board -> Board -> String
 getMoveRepresentation prevBoard newBoard  = 
     (colToLetter pieceMovedFrom) ++
@@ -49,9 +70,11 @@ getMoveRepresentation prevBoard newBoard  =
             pieceMovedTo = head $ difference prevBoard newBoard
             pieceMovedFrom = head $ difference newBoard prevBoard
         
-            xpos (Piece _ _ x y) = x
-            ypos (Piece _ _ x y) = y
-        
+            xpos :: Piece -> Int
+            ypos :: Piece -> Int
+            xpos p = fst $ piecePosition p
+            ypos p = snd $ piecePosition p
+            
             difference prev after = filter (not . piecesContains (piecesOfColor prev moveColor)) $ piecesOfColor after moveColor
         
             rowToLetter piece = show ((ypos piece)+1) 
