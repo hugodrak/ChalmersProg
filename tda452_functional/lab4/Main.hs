@@ -35,7 +35,7 @@ main = do
         let input = unwords args
         
         let baseBoard = parseFEN input
-        continuation <- selectRandomMove baseBoard
+        continuation <- selectGreedyCapture baseBoard
         
         let move = getMoveRepresentation baseBoard continuation
         
