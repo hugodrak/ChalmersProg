@@ -35,7 +35,7 @@ main = do
         let input = unwords args
         
         let baseBoard = parseFEN input
-        continuation <- selectGreedyCapture baseBoard
+        continuation <- recursionRating baseBoard
         
         let move = getMoveRepresentation baseBoard continuation
         

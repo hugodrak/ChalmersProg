@@ -38,7 +38,6 @@ parseFenLetter (FenParser currentPieces x y) char | char == '/' = FenParser curr
                             'b' -> Bishop
                             'n' -> Knight
                             'k' -> King
-                
 
 parseFEN :: String -> Board
 parseFEN fen = Board pieces whoStarts 
@@ -60,6 +59,7 @@ getMoveRepresentation :: Board -> Board -> String
 getMoveRepresentation prevBoard newBoard  = 
     (colToLetter pieceMovedFrom) ++
     (rowToLetter pieceMovedFrom) ++
+    --(if isCapture then "x" else "") ++
     (colToLetter pieceMovedTo) ++
     (rowToLetter pieceMovedTo) 
     
@@ -76,6 +76,8 @@ getMoveRepresentation prevBoard newBoard  =
             ypos p = snd $ piecePosition p
             
             difference prev after = filter (not . piecesContains (piecesOfColor prev moveColor)) $ piecesOfColor after moveColor
+        
+            isCapture = length (pieces prevBoard) /= length (pieces newBoard)
         
             rowToLetter piece = show ((ypos piece)+1) 
             colToLetter piece = case xpos piece of

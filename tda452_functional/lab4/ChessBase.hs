@@ -29,7 +29,7 @@ nextTurn :: Board -> Board
 nextTurn board = Board (pieces board) (notToMove board)
              
 isPieceOfColor :: Color -> Piece -> Bool
-isPieceOfColor c (Piece _ col _ _) = c==col
+isPieceOfColor c p = c == pieceColor p
 
 piecePosition :: Piece -> (Int,Int)
 piecePosition (Piece _ _ x y) = (x,y)
@@ -95,9 +95,7 @@ findValidMovesForPiece board piece = subfunction board piece
                                 Knight -> findValidMovesForKnight
                                 Rook -> findValidMovesForRook
                                 Bishop -> findValidMovesForBishop
-                                _ -> findNoMoves
-          findNoMoves _ _= [] 
-                        
+
 
 -- If there is any piece at a specific position
 isSpaceOccupied board x y = any (isThisPieceAt x y) (pieces board)
@@ -168,8 +166,7 @@ findValidMovesForPawn board piece = catMaybes $
           tryCaptureLeft = tryCaptureAt board piece (x-1) (y+forwardDir)
           tryCaptureRight = tryCaptureAt board piece (x+1) (y+forwardDir)
 
-
--- Define the directions the pieces can move in
+          
 diagonals = [(1,1),(-1,1),(1,-1),(-1,-1)]
 orthogonals = [(-1,0),(1,0),(0,-1),(0,1)]
 allDirections = diagonals ++ orthogonals
@@ -179,7 +176,6 @@ knightMoves = [(dx,dy) | dx <- [-2,-1,1,2], dy<-[-2,-1,1,2], (abs dx + abs dy) =
 
 
 -- The moves for all pieces (but pawns) is the sum of trying to move in all legal directions for the pieceType
-
 findValidMovesForKing :: Board -> Piece -> [Board]
 findValidMovesForKing board piece = concat $ map (tryMoveOrCaptureInDirection board piece 1) allDirections
 
