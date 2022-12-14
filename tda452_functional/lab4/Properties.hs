@@ -1,7 +1,11 @@
 import Test.QuickCheck
 import Data.Maybe
+import System.Random
 
 import ChessBase
+import FEN
+import MovePredictor
+
 
 ------------------------------------------------------------------------------------------- [Arbitraries] ---------------------------------------------------------------------------------------------------
 
@@ -54,7 +58,7 @@ instance Arbitrary Board where
 
 
 {-
-    -- The arbitrary for the board that only produces a board with 32 random pieces 
+    -- The arbitrary for the board that only produces a not valid board with 32 random pieces 
     instance Arbitrary Board where
         arbitrary = do
                     c <- arbitrary
@@ -62,7 +66,20 @@ instance Arbitrary Board where
                     return (Board p c)
 -}
 
+instance Arbitrary FenParser where
+    arbitrary = do 
+                x <- choose (0,7)
+                y <- choose (0,7)
+                n <- choose (10,20)
+                ps <- vectorOf n genPiece
+                return (FenParser ps x y)
 
+
+instance Arbitrary RatedBoard where
+    arbitrary = do
+                b <- arbitrary
+                d <- arbitrary
+                return $ RatedBoard b (abs d)
 ------------------------------------------------------------------------------------------- [ChessBase Properties] ---------------------------------------------------------------------------------------------------
 {-
     The purpose of writing properties is three-fold:
@@ -244,3 +261,176 @@ prop_getPieceAt :: Board -> Int -> Int -> Property
 prop_getPieceAt b x y = isPosValid x y ==> if (p == Nothing) then True else (boardContains b (fromJust p))
             where 
                 p = getPieceAt b x y 
+
+
+-- Function (tryCaptureAt) should satisfy this property
+-- Given an arbitrary board, a piece of same color as the board and a position (x,y)
+-- If the p is able to capture the piece at position (x,y) then the newB should contain the new piece newP and exactly one 
+-- There will be som discarded cases due to precondition 
+prop_tryCaptureAt :: Board -> Piece -> Int -> Int -> Property
+prop_tryCaptureAt b p x y = (pieceColor p == (toMove b)) ==> if (newB == Nothing) then True else (length (filter (== newP) (myPieces (fromJust newB))) == 1) 
+            where
+                newB = tryCaptureAt b p x y 
+                newP = Piece (pieceType p) (pieceColor p) x y
+                lBefore = length $ pieces b
+                lAfter = length $ pieces (fromJust newB)
+
+
+-- Function (findValidMovesForPawn) should satisfy this property
+-- Given an arbitrary board and taken a piece p of type Pawn from the board 
+-- Then if function (findValidMovesForPawn) finds a valid move, then the new board newB1 should contain that peice in one of these positions
+-- Not general as it only tests the first board produced by function (findValidMovesForPawn), but by logic it still should be aplicable to the rest of the boards as well
+prop_movesForPawn :: Board -> Bool 
+prop_movesForPawn b = if (l == 0) then True else contain
+    where 
+        p = head[p | p <- (pieces b), pieceType p == Pawn]
+        (x,y) = piecePosition p
+        col = pieceColor p
+        newB = findValidMovesForPawn b p
+        l = length newB
+        newB1 = head newB
+        contain = or [boardContains newB1 (Piece Pawn col (x+nX) (y+nY)) | nX <- [-1,0,1], nY <- [-1,1]]
+
+
+-- Function (findValidMovesForKing) should satisfy this property
+-- Same reasoning as for prop_movesForPawn
+-- Not general as it only tests the first board produced by function (findValidMovesForKing), but by logic it still should be aplicable to the rest of the boards as well
+prop_movesForKing :: Board -> Bool 
+prop_movesForKing b = if (l == 0) then True else contain
+    where 
+        p = head[p | p <- (pieces b), pieceType p == King]
+        (x,y) = piecePosition p
+        col = pieceColor p
+        newB = findValidMovesForKing b p
+        l = length newB
+        newB1 = head newB
+        contain = or [boardContains newB1 (Piece King col (x+nX) (y+nY)) | (nX,nY) <- allDirections]
+
+
+-- Function (findValidMovesForQueen) should satisfy this property
+-- There will be many discarded cases and few tests that pass due to precondition
+-- Tests only the first board produced by function (findValidMovesForQueen), but by logic it still should be aplicable to the rest of the boards as well
+prop_movesForQueen :: Board -> Piece -> Property 
+prop_movesForQueen b p = (pieceType p == Queen) ==> if (l == 0) then True else contain
+    where 
+        boardWithQueen = Board ((pieces b) ++ [p]) (toMove b)
+        (x,y) = piecePosition p
+        col = pieceColor p
+        newB = findValidMovesForQueen boardWithQueen p
+        l = length newB
+        newB1 = head newB
+        contain = or [boardContains newB1 (Piece Queen col (x+nX) (y+nY)) | (nX,nY) <- allDirections]
+
+
+-- Function (findValidMovesForRook) should satisfy this property
+-- There will be some discarded cases due to precondition
+-- Tests only the first board produced by function (findValidMovesForRook), but by logic it still should be aplicable to the rest of the boards as well
+prop_movesForRook :: Board -> Piece -> Property 
+prop_movesForRook b p = (pieceType p == Rook) ==> if (l == 0) then True else contain
+    where 
+        boardWithRook = Board ((pieces b) ++ [p]) (toMove b)
+        (x,y) = piecePosition p
+        col = pieceColor p
+        newB = findValidMovesForRook boardWithRook p
+        l = length newB
+        newB1 = head newB
+        contain = or [boardContains newB1 (Piece Rook col (x+nX) (y+nY)) | (nX,nY) <- orthogonals]
+
+
+-- Function (findValidMovesForBishop) should satisfy this property
+-- There will be some discarded cases due to precondition
+-- Tests only the first board produced by function (findValidMovesForBishop), but by logic it still should be aplicable to the rest of the boards as well
+prop_movesForBishop :: Board -> Piece -> Property 
+prop_movesForBishop b p = (pieceType p == Bishop) ==> if (l == 0) then True else contain
+    where 
+        boardWithBishop = Board ((pieces b) ++ [p]) (toMove b)
+        (x,y) = piecePosition p
+        col = pieceColor p
+        newB = findValidMovesForBishop boardWithBishop p
+        l = length newB
+        newB1 = head newB
+        contain = or [boardContains newB1 (Piece Bishop col (x+nX) (y+nY)) | (nX,nY) <- diagonals]
+
+
+-- Function (findValidMovesForKnight) should satisfy this property
+-- There will be some discarded cases due to precondition
+-- Tests only the first board produced by function (findValidMovesForKnight), but by logic it still should be aplicable to the rest of the boards as well
+prop_movesForKnight :: Board -> Piece -> Property 
+prop_movesForKnight b p = (pieceType p == Knight) ==> if (l == 0) then True else contain
+    where 
+        boardWithKnight = Board ((pieces b) ++ [p]) (toMove b)
+        (x,y) = piecePosition p
+        col = pieceColor p
+        newB = findValidMovesForKnight boardWithKnight p
+        l = length newB
+        newB1 = head newB
+        contain = or [boardContains newB1 (Piece Knight col (x+nX) (y+nY)) | (nX,nY) <- knightMoves]
+
+
+------------------------------------------------------------------------------------------- [FEN Properties] ---------------------------------------------------------------------------------------------------
+
+pos :: FenParser -> (Int,Int)
+pos (FenParser _ x y) = (x,y)
+
+-- Function (parseFenLetter) should satisfy this property
+-- There will be many discarded cases and few tests that pass due to precondition
+prop_parseFenLetter :: FenParser -> Char -> Property
+prop_parseFenLetter f c = validChar ==> (nX == x+1 && nY == y) && (px == x && py == y)
+            where
+                validChar = or[v == c | v <- ['p','q','r','b','n','k']]
+                fp = parseFenLetter f c
+                (x,y) = pos f
+                (nX,nY) = pos fp
+                p = head $ result fp
+                (px,py) = piecePosition p
+
+g1 = mkStdGen 7
+g2 = mkStdGen 10
+g3 = mkStdGen 15
+
+-- The testing board for prop_moveRepresentation since the function (getMoveRepresentation) doesn't give accurate results if the board consist of duplicate positions
+-- b is a valid Board in every aspect, hence why the prop_moveRepresentation would fail if run by quickCheck
+b = Board [Piece Rook White 7 0,Piece Knight White 6 0,Piece Bishop White 5 0,Piece King White 4 0,Piece Queen White 3 0,Piece Bishop White 2 0,Piece Knight White 1 0,Piece Rook White 0 0,Piece Pawn White 7 1,Piece Pawn White 6 1,Piece Pawn White 5 1,Piece Pawn White 4 1,Piece Pawn White 2 1,Piece Pawn White 1 1,Piece Pawn White 0 1,Piece Pawn White 3 2,Piece Pawn Black 7 6,Piece Pawn Black 6 6,Piece Pawn Black 5 6,Piece Pawn Black 4 6,Piece Pawn Black 3 6,Piece Pawn Black 2 6,Piece Pawn Black 1 6,Piece Pawn Black 0 6,Piece Rook Black 7 7,Piece Knight Black 6 7,Piece Bishop Black 5 7,Piece King Black 4 7,Piece Queen Black 3 7,Piece Bishop Black 2 7,Piece Knight Black 1 7,Piece Rook Black 0 7] Black
+prop_moveRepresentation b = s1 == s2
+        where
+            (n1,g4) = randomR (0,7) g1
+            (x,y) = (map (piecePosition) (pieces b)) !! n1
+            newB1 = Board [p | p <- (pieces b), (piecePosition p) /= (x,y)] (toMove b)
+            p = last (pieces b)
+            (px,py) = piecePosition p
+            newP = Piece (pieceType p) (pieceColor p) x y
+            removeP = [pi | pi <- (pieces newB1), pi /= p]
+            newB2 = Board (removeP ++ [newP]) (toMove b)
+            s1 = getMoveRepresentation newB1 newB2
+            col1 = ['a'..'h'] !! px
+            row1 = [1..8] !! py
+            col2 = ['a'..'h'] !! x
+            row2 = [1..8] !! y
+            s2 = [col1] ++ (show row1) ++ [col2] ++ (show row2)
+
+
+------------------------------------------------------------------------------------------- [MovePredictor Properties] ---------------------------------------------------------------------------------------------------
+
+-- Function (addScore) should satisfy this property
+prop_addScore :: RatedBoard -> Double -> Bool
+prop_addScore rb d = sum == originald + d
+    where
+        ratedB = addScore rb d 
+        sum = rating ratedB
+        originald = rating rb
+
+
+-- Function (bestBoard) should satisfy this property
+prop_bestBoard :: [RatedBoard] -> Property
+prop_bestBoard rBoards = (length rBoards) /= 0 ==> (b == newRB)
+        where
+            allD = map (rating) rBoards
+            maxD = maximum allD
+            b = head [b | b <- rBoards, (rating b) == maxD]
+            bestB = bestBoard rBoards
+            newRB = RatedBoard bestB maxD
+
+
+
+
+
