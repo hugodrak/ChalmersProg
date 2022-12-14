@@ -1,6 +1,8 @@
 module MovePredictor where
 import System.Random (randomRIO, random,StdGen,newStdGen)
 import Data.List (maximumBy)
+import Control.Parallel.Strategies
+
 
 import ChessBase
 
@@ -77,7 +79,7 @@ rateBoard ::  Color -> Board -> RatedBoard
 rateBoard inFavorOf board  = RatedBoard board totalRating
     where totalRating = sum $ map (\scoreFunc -> scoreFunc inFavorOf board) ratingFunctions
           
-          ratingFunctions = [materialValue, penalizePiecesOnBackRank, penalizeMissingKing          ]
+          ratingFunctions = [materialValue, penalizePiecesOnBackRank]--, penalizeMissingKing          ]
     
 
     
@@ -127,7 +129,10 @@ recursionRating board = do
                                 let availableMoves = findAllValidMoves board
                                 let playerColor = toMove board
                                 
-                                let scores = zipWith RatedBoard availableMoves (map (recursionRating' playerColor recursionDepth) availableMoves)
+                                
+                                let rating = parMap rdeepseq (recursionRating' playerColor recursionDepth) availableMoves
+                                
+                                let scores = zipWith RatedBoard availableMoves rating
                                 
                                 scoresWithRandom <- addNoiseToBoards scores
                                 return $ bestBoard scoresWithRandom
