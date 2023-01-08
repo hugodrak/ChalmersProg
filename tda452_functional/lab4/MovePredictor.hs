@@ -1,5 +1,5 @@
 module MovePredictor where
-import System.Random (randomRIO, random,StdGen,newStdGen)
+import System.Random (random,StdGen,randomR)
 import Data.List (maximumBy)
 import Control.Parallel.Strategies
 
@@ -86,32 +86,27 @@ rateBoard inFavorOf board  = RatedBoard board totalRating
 
           
 -- Method of selecting a board purely random
-selectRandomMove :: Board -> IO (Board)
-selectRandomMove board = do
-                            let availableMoves = concat $ map (findValidMovesForPiece board) (myPieces board)
-                            indextoPick <- randomRIO (0, length availableMoves - 1)
-                            let selected = availableMoves !! indextoPick
-                            return selected
-
+selectRandomMove :: Board -> StdGen -> Board
+selectRandomMove board g = selected
+    where availableMoves = concat $ map (findValidMovesForPiece board) (myPieces board)
+          (indextoPick,_) =  randomR (0, length availableMoves - 1) g
+          selected = availableMoves !! indextoPick
+          
 -- Method of selecing a move based on if it manage to capture an opposing piece.
 -- Not really good as this engine will eagerly sacrifice its own queen for a pawn.
-selectGreedyCapture :: Board -> IO (Board)
-selectGreedyCapture board = do
+selectGreedyCapture :: Board -> StdGen -> Board
+selectGreedyCapture board g = bestBoard scoresWithRandom
+    where availableMoves = findAllValidMoves board
+          playerColor = toMove board
                                 
-                                let availableMoves = findAllValidMoves board
-                                let playerColor = toMove board
+          scores = map (rateBoard playerColor) availableMoves
                                 
-                                let scores = map (rateBoard playerColor) availableMoves
+          scoresWithRandom = addNoiseToBoards scores g
                                 
-                                scoresWithRandom <- addNoiseToBoards scores
-                                
-                                return $ bestBoard scoresWithRandom
 
 -- Add a random rating-noise to each rated board.
-addNoiseToBoards :: [RatedBoard] -> IO ([RatedBoard])
-addNoiseToBoards scores = do 
-                            g <- newStdGen
-                            return $ map (\(s,n) -> addScore s n) $ zip scores (noise g)
+addNoiseToBoards :: [RatedBoard] -> StdGen -> [RatedBoard]
+addNoiseToBoards scores g = map (\(s,n) -> addScore s n) $ zip scores (noise g)
 
 -- Generates an infinite list of random doubles in the range [0-1]
 noise  :: StdGen  -> [Double]
@@ -124,18 +119,16 @@ noise g = randomVal:noise g'
 -- Assume the engine plays the best rated move and then the player respond with the best move for them
 recursionDepth = 3
 
-recursionRating :: Board -> IO (Board)
-recursionRating board = do
-                                let availableMoves = findAllValidMoves board
-                                let playerColor = toMove board
+recursionRating :: Board -> StdGen -> Board
+recursionRating board g = bestBoard scoresWithRandom
+        where availableMoves = findAllValidMoves board
+              playerColor = toMove board
                                 
+              rating = parMap rdeepseq (recursionRating' playerColor recursionDepth) availableMoves
                                 
-                                let rating = parMap rdeepseq (recursionRating' playerColor recursionDepth) availableMoves
+              scores = zipWith RatedBoard availableMoves rating
                                 
-                                let scores = zipWith RatedBoard availableMoves rating
-                                
-                                scoresWithRandom <- addNoiseToBoards scores
-                                return $ bestBoard scoresWithRandom
+              scoresWithRandom = addNoiseToBoards scores g
 
                                 
 recursionRating' :: Color -> Int -> Board -> Double

@@ -4,6 +4,7 @@ import FEN
 import MovePredictor
 import System.Environment
 import Data.List
+import System.Random (StdGen,newStdGen)
 
 
 exampleFEN = "rnbqkbnr/pppppppp/8/8/8/3P4/PPP1PPPP/RNBQKBNR b KQkq - 0 1"
@@ -18,7 +19,8 @@ printBoard board = do
               
 printRandomContinuation :: Board -> IO ()
 printRandomContinuation board = do
-                                    continuation <- selectRandomMove board
+                                    stdGen <- newStdGen
+                                    let continuation = selectRandomMove board stdGen
                                     printBoard continuation
 
                                     
@@ -34,8 +36,10 @@ main = do
         
         let input = unwords args
         
+        stdGen <- newStdGen
+        
         let baseBoard = parseFEN input
-        continuation <- recursionRating baseBoard
+        let continuation = recursionRating baseBoard stdGen
         
         let move = getMoveRepresentation baseBoard continuation
         
