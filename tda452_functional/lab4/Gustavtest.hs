@@ -64,14 +64,38 @@ prop_noPiecesOverlapping (Board pieces _) = all ((<2) . amountPiecesAtPosition) 
 
 prop_pieceValid :: Piece -> Bool
 prop_pieceValid = isPieceAtValidPosition
-    
+
+prop_containTwoKings :: Board -> Bool 
+prop_containTwoKings (Board ps _) = l == 2 && fstKingColor /= sndKingColor
+    where 
+        allKings = [p | p <- ps, pieceType p == King]
+        l = length allKings
+        fstKingColor = pieceColor $ head allKings
+        sndKingColor = pieceColor $ last allKings
+
+
+prop_piecesPerColor :: Board -> Bool 
+prop_piecesPerColor (Board ps _) = numbers l1 && numbers l2 
+    where 
+        allColor = map pieceColor ps 
+        allWhite = filter (== White) allColor
+        allBlack = filter (== Black) allColor
+        l1 = length allWhite
+        l2 = length allBlack
+        numbers l = l >= 1 && l <= 16 
+
 -- Check that a board fullfill all invariants
 prop_boardValid :: Board -> Bool
-prop_boardValid board = all prop_pieceValid (pieces board) && prop_noPiecesOverlapping board
+prop_boardValid board = all prop_pieceValid (pieces board) && prop_noPiecesOverlapping board && prop_containTwoKings board && prop_piecesPerColor board
+
+
 
 -- Define a generator which only generate valid board
 genValidBoard :: Gen Board
 genValidBoard = genPerhapsInvalidBoard `suchThat` prop_boardValid
+
+
+prop_findAllValidMoves b = prop_boardValid b ==> all prop_boardValid (findAllValidMoves b)
 
 instance Arbitrary Board where
     arbitrary = genValidBoard
