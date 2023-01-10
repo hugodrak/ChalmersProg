@@ -65,13 +65,17 @@ prop_noPiecesOverlapping (Board pieces _) = all ((<2) . amountPiecesAtPosition) 
 prop_pieceValid :: Piece -> Bool
 prop_pieceValid = isPieceAtValidPosition
 
-prop_containTwoKings :: Board -> Bool 
-prop_containTwoKings (Board ps _) = l == 2 && fstKingColor /= sndKingColor
+prop_containsKings :: Board -> Bool 
+prop_containsKings (Board ps _) = lw <= 1 && lb <= 1  
     where 
         allKings = [p | p <- ps, pieceType p == King]
-        l = length allKings
-        fstKingColor = pieceColor $ head allKings
-        sndKingColor = pieceColor $ last allKings
+        allColor = map pieceColor allKings
+        white = filter (==White) allColor 
+        black = filter (==Black) allColor
+        lw = length white
+        lb = length black
+    
+
 
 
 prop_piecesPerColor :: Board -> Bool 
@@ -86,7 +90,7 @@ prop_piecesPerColor (Board ps _) = numbers l1 && numbers l2
 
 -- Check that a board fullfill all invariants
 prop_boardValid :: Board -> Bool
-prop_boardValid board = all prop_pieceValid (pieces board) && prop_noPiecesOverlapping board && prop_containTwoKings board && prop_piecesPerColor board
+prop_boardValid board = all prop_pieceValid (pieces board) && prop_noPiecesOverlapping board && prop_containsKings board && prop_piecesPerColor board
 
 
 
