@@ -124,7 +124,7 @@ recursionRating :: Board -> StdGen -> Board
 recursionRating board g = bestBoard scoresWithRandom
         where availableMoves = findAllValidMoves board
               playerColor = toMove board
-                                
+              --       parMap rdeepseq (recursionRating' playerColor recursionDepth) availableMoves           
               rating = map (recursionRating' playerColor recursionDepth) availableMoves
                                 
               scores = zipWith RatedBoard availableMoves rating

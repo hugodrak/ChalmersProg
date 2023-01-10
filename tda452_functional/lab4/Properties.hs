@@ -12,23 +12,19 @@ import MovePredictor
 ------------------------------------------------------------------------------------------- [Arbitraries] ---------------------------------------------------------------------------------------------------
 -- Generate a random color
 instance Arbitrary Color where
-    arbitrary :: Gen Color
     arbitrary = elements [White, Black]
 
 instance Arbitrary PieceType where
-    arbitrary :: Gen PieceType
     arbitrary = frequency [(8,(return Pawn)), (2,(return Bishop)), (2,(return Knight)), (2,(return Rook)), (1,(return King)), (1,(return Queen))]
 
 genPiece :: Gen (Piece)
 genPiece = do
-           r1 <- choose (0,7)
-           r2 <- choose (0,7)
+           (r1,r2) <- genPosition
            p <- arbitrary
            c <- arbitrary
            return (Piece p c r1 r2)
 
 instance Arbitrary Piece where
-    arbitrary :: Gen Piece
     arbitrary = genPiece
 
 -- Generate a random position on the board
@@ -40,13 +36,9 @@ genPosition = do
     
     
 genPieceNotKing :: Gen Piece
-genPieceNotKing = do
-    
-    typ <- frequency [(8,return Pawn), (2,return Bishop), (2,return Knight), (2,return Rook), (1,return Queen)]
-    color <- arbitrary
-    (col,row) <- genPosition
-    return $ Piece typ color col row
- 
+genPieceNotKing = genPiece `suchThat` ((/= King) . pieceType)
+
+
 -- Generate a king of the given color on a random position
 genKing :: Color -> Gen Piece
 genKing color = do
@@ -76,7 +68,6 @@ genValidBoard = genPerhapsInvalidBoard `suchThat` prop_boardValid
 
 
 instance Arbitrary Board where
-    arbitrary :: Gen Board
     arbitrary = genValidBoard
 
 printRandomBoard :: IO ()
@@ -86,7 +77,6 @@ printRandomBoard = do
                     putStr s
 
 instance Arbitrary FenParser where
-    arbitrary :: Gen FenParser
     arbitrary = do 
                 x <- choose (0,7)
                 y <- choose (0,7)
@@ -96,11 +86,17 @@ instance Arbitrary FenParser where
 
 
 instance Arbitrary RatedBoard where
-    arbitrary :: Gen RatedBoard
     arbitrary = do
                 b <- arbitrary
                 d <- arbitrary
                 return $ RatedBoard b (abs d)
+                
+
+                
+instance Arbitrary StdGen where
+    arbitrary = do 
+                seed <- chooseInt (0,1000000)
+                return $ mkStdGen seed
 ------------------------------------------------------------------------------------------- [ChessBase Properties] ---------------------------------------------------------------------------------------------------
 {-
     The purpose of writing properties is three-fold:
@@ -383,8 +379,13 @@ prop_bestBoard rBoards = (length rBoards) /= 0 ==> (b == newRB)
             b = head [b | b <- rBoards, (rating b) == maxD]
             bestB = bestBoard rBoards
             newRB = RatedBoard bestB maxD
+            
+prop_selectRandomMoveValid :: Board -> StdGen -> Bool
+prop_selectRandomMoveValid board g = prop_boardValid $ selectRandomMove board g
 
 
 
+prop_recursionMoveValid :: Board -> StdGen -> Property
+prop_recursionMoveValid board g = ( length ( pieces board) > 6) ==>  prop_boardValid $ recursionRating board g
 
 
