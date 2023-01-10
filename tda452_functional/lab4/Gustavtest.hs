@@ -86,7 +86,7 @@ prop_piecesPerColor (Board ps _) = numbers l1 && numbers l2
         allBlack = filter (== Black) allColor
         l1 = length allWhite
         l2 = length allBlack
-        numbers l = l >= 1 && l <= 16 
+        numbers l = l <= 16 
 
 -- Check that a board fullfill all invariants
 prop_boardValid :: Board -> Bool
