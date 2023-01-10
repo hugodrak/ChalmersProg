@@ -1,3 +1,5 @@
+{-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
+{-# HLINT ignore "Use <$>" #-}
 import Test.QuickCheck
 import Data.Maybe
 import System.Random
@@ -8,11 +10,13 @@ import MovePredictor
 
 
 ------------------------------------------------------------------------------------------- [Arbitraries] ---------------------------------------------------------------------------------------------------
-
+-- Generate a random color
 instance Arbitrary Color where
+    arbitrary :: Gen Color
     arbitrary = elements [White, Black]
 
 instance Arbitrary PieceType where
+    arbitrary :: Gen PieceType
     arbitrary = frequency [(8,(return Pawn)), (2,(return Bishop)), (2,(return Knight)), (2,(return Rook)), (1,(return King)), (1,(return Queen))]
 
 genPiece :: Gen (Piece)
@@ -24,49 +28,65 @@ genPiece = do
            return (Piece p c r1 r2)
 
 instance Arbitrary Piece where
+    arbitrary :: Gen Piece
     arbitrary = genPiece
 
-genTypeBlack :: Gen (Piece)
-genTypeBlack = do
-               r1 <- choose (0,7)
-               r2 <- choose (0,7)
-               frequency [(8,(return (Piece Pawn Black r1 r2))), (2, (return (Piece Bishop Black r1 r2))), (2, (return (Piece Knight Black r1 r2))), (2, (return (Piece Rook Black r1 r2))), (1, (return (Piece Queen Black r1 r2)))]
+-- Generate a random position on the board
+genPosition :: Gen (Int,Int)
+genPosition = do
+    col <- choose (0,7)
+    row <- choose (0,7)
+    return (col,row)
+    
+    
+genPieceNotKing :: Gen Piece
+genPieceNotKing = do
+    
+    typ <- frequency [(8,return Pawn), (2,return Bishop), (2,return Knight), (2,return Rook), (1,return Queen)]
+    color <- arbitrary
+    (col,row) <- genPosition
+    return $ Piece typ color col row
+ 
+-- Generate a king of the given color on a random position
+genKing :: Color -> Gen Piece
+genKing color = do
+    (col,row) <- genPosition
+    return $ Piece King color col row 
 
-genTypeWhite :: Gen (Piece)
-genTypeWhite = do
-               r1 <- choose (0,7)
-               r2 <- choose (0,7)
-               frequency [(8,(return (Piece Pawn White r1 r2))), (2, (return (Piece Bishop White r1 r2))), (2, (return (Piece Knight White r1 r2))), (2, (return (Piece Rook White r1 r2))), (1, (return (Piece Queen White r1 r2)))]
+-- Generate a board containing a bunch of random pieces. It's guaranteed to have at least one king of each color.
+-- The generated board could break some of our invariants however:
+--      * Pieces may be outside the board ([0..7])
+--      * Multiple pieces may occupy the same square
+genPerhapsInvalidBoard :: Gen (Board)
+genPerhapsInvalidBoard = do
+    
+    amountPieces <- choose (0,30) 
+    pieces <- vectorOf amountPieces genPieceNotKing
+    whiteKing <- genKing White
+    blackKing <- genKing Black
+    
+    let allPieces = whiteKing:blackKing:pieces
+    toMove <- arbitrary
+    
+    return $ Board allPieces toMove
 
--- The arbitrary for the board should produce a valid board 
--- One of the strongest condition is that the board contains exactly one White and one Black King 
--- The other is that there should be <= 16 pieces of each type Black and White
+-- Define a generator which only generate valid board
+genValidBoard :: Gen Board
+genValidBoard = genPerhapsInvalidBoard `suchThat` prop_boardValid
+
+
 instance Arbitrary Board where
-    arbitrary = do 
-                c <- arbitrary
-                nBlack <- choose (10,15) -- Black pieces between 10-15
-                nWhite <- choose (10,15) -- White pieces between 10-15
-                x <- choose (4,7)
-                y <- choose (0,3)
-                p1 <- vectorOf nBlack $ genTypeBlack
-                p2 <- vectorOf nWhite $ genTypeWhite
-                k1 <- elements [(Piece King Black x y)] -- the reason why the two Kings are added somewhat manually 
-                k2 <- elements [(Piece King White y x)]
-                let p = p1 ++ p2 ++ [k1] ++ [k2]   
-                return (Board p c)
+    arbitrary :: Gen Board
+    arbitrary = genValidBoard
 
-
-
-{-
-    -- The arbitrary for the board that only produces a not valid board with 32 random pieces 
-    instance Arbitrary Board where
-        arbitrary = do
-                    c <- arbitrary
-                    p <- vectorOf 32 genPiece
-                    return (Board p c)
--}
+printRandomBoard :: IO ()
+printRandomBoard = do
+                    board <- generate arbitrary
+                    let s = formatBoard board
+                    putStr s
 
 instance Arbitrary FenParser where
+    arbitrary :: Gen FenParser
     arbitrary = do 
                 x <- choose (0,7)
                 y <- choose (0,7)
@@ -76,6 +96,7 @@ instance Arbitrary FenParser where
 
 
 instance Arbitrary RatedBoard where
+    arbitrary :: Gen RatedBoard
     arbitrary = do
                 b <- arbitrary
                 d <- arbitrary
@@ -89,6 +110,53 @@ instance Arbitrary RatedBoard where
     * When you are finished they serve as mathematically precise documentation for your program.
 
 -}
+
+-- Checks that all found valid boards fulfills the property of prop_boardValid 
+prop_findAllValidMoves :: Board -> Bool
+prop_findAllValidMoves b = all prop_boardValid (findAllValidMoves b)
+
+
+-- Invariant all pieces should fullfill. Row and column must be in range [0..7]
+isPieceAtValidPosition :: Piece -> Bool
+isPieceAtValidPosition piece = (x>=0) && (x<=7) && (y>=0) && (y<=7)
+    where (x,y) = piecePosition piece
+
+-- No pieces may be at the same square. An invariant all board should fullfill
+-- We implments this by asserting that the number of pieces on each square is either 0 or 1. E.i less than 2
+prop_noPiecesOverlapping :: Board -> Bool
+prop_noPiecesOverlapping (Board pieces _) = all ((<2) . amountPiecesAtPosition) [(x,y) | x<-[0..7], y<-[0..7]]
+
+    where amountPiecesAtPosition (x,y) = length $ filter (isThisPieceAt x y) pieces
+
+prop_pieceValid :: Piece -> Bool
+prop_pieceValid = isPieceAtValidPosition
+
+prop_containsKings :: Board -> Bool 
+prop_containsKings (Board ps _) = lw <= 1 && lb <= 1  
+    where 
+        allKings = [p | p <- ps, pieceType p == King]
+        allColor = map pieceColor allKings
+        white = filter (==White) allColor 
+        black = filter (==Black) allColor
+        lw = length white
+        lb = length black
+    
+
+prop_piecesPerColor :: Board -> Bool 
+prop_piecesPerColor (Board ps _) = numbers l1 && numbers l2 
+    where 
+        allColor = map pieceColor ps 
+        allWhite = filter (== White) allColor
+        allBlack = filter (== Black) allColor
+        l1 = length allWhite
+        l2 = length allBlack
+        numbers l = l <= 16 
+
+-- Check that a board fullfill all invariants
+prop_boardValid :: Board -> Bool
+prop_boardValid board = all prop_pieceValid (pieces board) && prop_noPiecesOverlapping board && prop_containsKings board && prop_piecesPerColor board
+
+
 
 -- Function (pieceType) should satisfy this property i.e.
 -- The return type should be one of the piece types 
@@ -174,17 +242,6 @@ prop_boardContains b p = boardContains b p ==> (length $ filter (== p) (pieces b
         where
             found = boardContains b p
 
-{-
-    -- Function (boardContains) should satisfy this property
-    -- Given an arbitrary board and manually taken a piece from it then the return value of function (boardContains) should always be True
-    -- Not general
-    prop_boardContains :: Board -> Property
-    prop_boardContains b = boardContains b p 
-            where
-                ps = pieces b
-                p = head ps 
--}            
-
 
 -- Function (movePieceTo) should satisfy this property
 -- Given an arbitrary board, a position (x,y) and an index, taken a pieces from the board's pieces at index 
@@ -192,7 +249,7 @@ prop_boardContains b p = boardContains b p ==> (length $ filter (== p) (pieces b
 -- Then the newBoard should contain the newPiece with positions (x,y) i.e. being True 
 -- There will be many discarded cases and few passed due to the preconditions 
 prop_movePieceTo :: Board -> Int -> Int -> Int -> Property    
-prop_movePieceTo b x y index = (isPosValid x y) && (index > 2 && index <= (length (pieces b))) ==> moved
+prop_movePieceTo b x y index = (isPosValid x y) && (index > 2 && index < (length (pieces b))) ==> moved
             where
                 p = (pieces b) !! index
                 newB = movePieceTo b p x y
@@ -209,16 +266,6 @@ prop_thisPieceAt b p = boardContains b p ==> (isThisPieceAt x y p)
         where
             (x,y) = piecePosition p
 
-{-  
-    -- Function (isThisPieceAt) should satisfy this property
-    -- Given an arbitrary board and taken a piece from the board's pieces then the return value of function (isThisPieceAt) should always be True 
-    -- Not general
-    prop_thisPieceAt :: Board -> Bool
-    prop_thisPieceAt b = isThisPieceAt x y p
-            where
-                p = head (pieces b)
-                (x,y) = piecePosition p
--}
 
 
 -- Function (isSpaceOccupied) should satisfy this property
@@ -280,9 +327,10 @@ prop_tryCaptureAt b p x y = (pieceColor p == (toMove b)) ==> if (newB == Nothing
 -- Given an arbitrary board and taken a piece p of type Pawn from the board 
 -- Then if function (findValidMovesForPawn) finds a valid move, then the new board newB1 should contain that peice in one of these positions
 -- Not general as it only tests the first board produced by function (findValidMovesForPawn), but by logic it still should be aplicable to the rest of the boards as well
-prop_movesForPawn :: Board -> Bool 
-prop_movesForPawn b = if (l == 0) then True else contain
+prop_movesForPawn :: Board -> Property 
+prop_movesForPawn b = pawnExist ==> if (l == 0) then True else contain
     where 
+        pawnExist = any ((== Pawn) . pieceType) (pieces b)
         p = head[p | p <- (pieces b), pieceType p == Pawn]
         (x,y) = piecePosition p
         col = pieceColor p
@@ -292,85 +340,14 @@ prop_movesForPawn b = if (l == 0) then True else contain
         contain = or [boardContains newB1 (Piece Pawn col (x+nX) (y+nY)) | nX <- [-1,0,1], nY <- [-1,1]]
 
 
--- Function (findValidMovesForKing) should satisfy this property
--- Same reasoning as for prop_movesForPawn
--- Not general as it only tests the first board produced by function (findValidMovesForKing), but by logic it still should be aplicable to the rest of the boards as well
-prop_movesForKing :: Board -> Bool 
-prop_movesForKing b = if (l == 0) then True else contain
-    where 
-        p = head[p | p <- (pieces b), pieceType p == King]
-        (x,y) = piecePosition p
-        col = pieceColor p
-        newB = findValidMovesForKing b p
-        l = length newB
-        newB1 = head newB
-        contain = or [boardContains newB1 (Piece King col (x+nX) (y+nY)) | (nX,nY) <- allDirections]
-
-
--- Function (findValidMovesForQueen) should satisfy this property
--- There will be many discarded cases and few tests that pass due to precondition
--- Tests only the first board produced by function (findValidMovesForQueen), but by logic it still should be aplicable to the rest of the boards as well
-prop_movesForQueen :: Board -> Piece -> Property 
-prop_movesForQueen b p = (pieceType p == Queen) ==> if (l == 0) then True else contain
-    where 
-        boardWithQueen = Board ((pieces b) ++ [p]) (toMove b)
-        (x,y) = piecePosition p
-        col = pieceColor p
-        newB = findValidMovesForQueen boardWithQueen p
-        l = length newB
-        newB1 = head newB
-        contain = or [boardContains newB1 (Piece Queen col (x+nX) (y+nY)) | (nX,nY) <- allDirections]
-
-
--- Function (findValidMovesForRook) should satisfy this property
--- There will be some discarded cases due to precondition
--- Tests only the first board produced by function (findValidMovesForRook), but by logic it still should be aplicable to the rest of the boards as well
-prop_movesForRook :: Board -> Piece -> Property 
-prop_movesForRook b p = (pieceType p == Rook) ==> if (l == 0) then True else contain
-    where 
-        boardWithRook = Board ((pieces b) ++ [p]) (toMove b)
-        (x,y) = piecePosition p
-        col = pieceColor p
-        newB = findValidMovesForRook boardWithRook p
-        l = length newB
-        newB1 = head newB
-        contain = or [boardContains newB1 (Piece Rook col (x+nX) (y+nY)) | (nX,nY) <- orthogonals]
-
-
--- Function (findValidMovesForBishop) should satisfy this property
--- There will be some discarded cases due to precondition
--- Tests only the first board produced by function (findValidMovesForBishop), but by logic it still should be aplicable to the rest of the boards as well
-prop_movesForBishop :: Board -> Piece -> Property 
-prop_movesForBishop b p = (pieceType p == Bishop) ==> if (l == 0) then True else contain
-    where 
-        boardWithBishop = Board ((pieces b) ++ [p]) (toMove b)
-        (x,y) = piecePosition p
-        col = pieceColor p
-        newB = findValidMovesForBishop boardWithBishop p
-        l = length newB
-        newB1 = head newB
-        contain = or [boardContains newB1 (Piece Bishop col (x+nX) (y+nY)) | (nX,nY) <- diagonals]
-
-
--- Function (findValidMovesForKnight) should satisfy this property
--- There will be some discarded cases due to precondition
--- Tests only the first board produced by function (findValidMovesForKnight), but by logic it still should be aplicable to the rest of the boards as well
-prop_movesForKnight :: Board -> Piece -> Property 
-prop_movesForKnight b p = (pieceType p == Knight) ==> if (l == 0) then True else contain
-    where 
-        boardWithKnight = Board ((pieces b) ++ [p]) (toMove b)
-        (x,y) = piecePosition p
-        col = pieceColor p
-        newB = findValidMovesForKnight boardWithKnight p
-        l = length newB
-        newB1 = head newB
-        contain = or [boardContains newB1 (Piece Knight col (x+nX) (y+nY)) | (nX,nY) <- knightMoves]
-
-
 ------------------------------------------------------------------------------------------- [FEN Properties] ---------------------------------------------------------------------------------------------------
 
 pos :: FenParser -> (Int,Int)
 pos (FenParser _ x y) = (x,y)
+
+prop_FENisValid :: Bool
+prop_FENisValid = prop_boardValid board
+    where board = parseFEN "rnbqkbnr/pppppppp/8/8/8/3P4/PPP1PPPP/RNBQKBNR b KQkq - 0 1"
 
 -- Function (parseFenLetter) should satisfy this property
 -- There will be many discarded cases and few tests that pass due to precondition
@@ -384,29 +361,6 @@ prop_parseFenLetter f c = validChar ==> (nX == x+1 && nY == y) && (px == x && py
                 p = head $ result fp
                 (px,py) = piecePosition p
 
-g1 = mkStdGen 7
-g2 = mkStdGen 10
-g3 = mkStdGen 15
-
--- The testing board for prop_moveRepresentation since the function (getMoveRepresentation) doesn't give accurate results if the board consist of duplicate positions
--- b is a valid Board in every aspect, hence why the prop_moveRepresentation would fail if run by quickCheck
-b = Board [Piece Rook White 7 0,Piece Knight White 6 0,Piece Bishop White 5 0,Piece King White 4 0,Piece Queen White 3 0,Piece Bishop White 2 0,Piece Knight White 1 0,Piece Rook White 0 0,Piece Pawn White 7 1,Piece Pawn White 6 1,Piece Pawn White 5 1,Piece Pawn White 4 1,Piece Pawn White 2 1,Piece Pawn White 1 1,Piece Pawn White 0 1,Piece Pawn White 3 2,Piece Pawn Black 7 6,Piece Pawn Black 6 6,Piece Pawn Black 5 6,Piece Pawn Black 4 6,Piece Pawn Black 3 6,Piece Pawn Black 2 6,Piece Pawn Black 1 6,Piece Pawn Black 0 6,Piece Rook Black 7 7,Piece Knight Black 6 7,Piece Bishop Black 5 7,Piece King Black 4 7,Piece Queen Black 3 7,Piece Bishop Black 2 7,Piece Knight Black 1 7,Piece Rook Black 0 7] Black
-prop_moveRepresentation b = s1 == s2
-        where
-            (n1,g4) = randomR (0,7) g1
-            (x,y) = (map (piecePosition) (pieces b)) !! n1
-            newB1 = Board [p | p <- (pieces b), (piecePosition p) /= (x,y)] (toMove b)
-            p = last (pieces b)
-            (px,py) = piecePosition p
-            newP = Piece (pieceType p) (pieceColor p) x y
-            removeP = [pi | pi <- (pieces newB1), pi /= p]
-            newB2 = Board (removeP ++ [newP]) (toMove b)
-            s1 = getMoveRepresentation newB1 newB2
-            col1 = ['a'..'h'] !! px
-            row1 = [1..8] !! py
-            col2 = ['a'..'h'] !! x
-            row2 = [1..8] !! y
-            s2 = [col1] ++ (show row1) ++ [col2] ++ (show row2)
 
 
 ------------------------------------------------------------------------------------------- [MovePredictor Properties] ---------------------------------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 module MovePredictor where
 import System.Random (random,StdGen,randomR)
 import Data.List (maximumBy)
-import Control.Parallel.Strategies
+--import Control.Parallel.Strategies
 
 
 import ChessBase
@@ -9,7 +9,8 @@ import ChessBase
 -- Represent a board which has a scored assigned to it. Can be ordered based on score
 --                             board score
 data RatedBoard = RatedBoard Board Double
-
+    deriving (Show)
+    
 rating :: RatedBoard -> Double
 rating (RatedBoard _ s) = s
 
@@ -124,7 +125,7 @@ recursionRating board g = bestBoard scoresWithRandom
         where availableMoves = findAllValidMoves board
               playerColor = toMove board
                                 
-              rating = parMap rdeepseq (recursionRating' playerColor recursionDepth) availableMoves
+              rating = map (recursionRating' playerColor recursionDepth) availableMoves
                                 
               scores = zipWith RatedBoard availableMoves rating
                                 

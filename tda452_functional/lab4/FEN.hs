@@ -16,6 +16,7 @@ import Data.Maybe
 
 --                                  x  y
 data FenParser = FenParser [Piece] Int Int
+    deriving (Show)
 
 result :: FenParser -> [Piece]
 result (FenParser pieces _ _) = pieces
