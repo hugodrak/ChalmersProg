@@ -180,8 +180,7 @@ findValidMovesForPawn board piece = catMaybes $
     where forwardDir = if isPieceOfColor White piece then 1 else (-1)
           startRow = if isPieceOfColor White piece then 1 else 6
           (x,y) = piecePosition piece
-          
-          tryMoveSingleForward = tryMoveTo board piece x (y+forwardDir)
+          tryMoveSingleForward = if isPosValid x (y+forwardDir) then tryMoveTo board piece x (y+forwardDir) else Nothing
           tryMoveDoubleForward = if y == startRow && (not $ isSpaceOccupied board x (y+forwardDir)) 
                                     then tryMoveTo board piece x (y+2*forwardDir)
                                     else Nothing
