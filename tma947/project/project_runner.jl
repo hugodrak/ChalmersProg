@@ -3,9 +3,12 @@ import Ipopt
 
 # Import data from the data file
 include("project_data.jl")
-
+# ======================
+# MODEL DEFINITION
+# ======================
 # Create the the_model object
 the_model = Model(Ipopt.Optimizer)
+# Registering the functions for using in the optimizing
 register(the_model, :p_kl, 6, p_kl; autodiff = true)
 register(the_model, :q_kl, 6, q_kl; autodiff = true)
 # Create (one set of) variables, and their lower and upper bounds
@@ -32,9 +35,9 @@ reactive_power_constraints = []
 for k in 1:M
     # Constrain the flow of (-active power + generation power - consumed power) at each node to be 0
     a_constraint = @NLconstraint(the_model,  
-            - sum(p_kl(v[k], v[l], theta[k], theta[l], g_kl[k, l], b_kl[k, l]) for l in 1:M) 
-            + sum(W[i] for i in G[k]) 
-            - sum(D[m] for m in K[k]) 
+            - sum(p_kl(v[k], v[l], theta[k], theta[l], g_kl[k, l], b_kl[k, l]) for l in 1:M)  # transfered from this node to others
+            + sum(W[i] for i in G[k])  # Generated active power
+            - sum(D[m] for m in K[k])  # consumed active power
             == 0
         )
     push!(active_power_constraints, a_constraint)
@@ -42,7 +45,7 @@ for k in 1:M
     # Constrain the net flow of reactive power flowing into each node to be within the allowed limits for the generators at this location 
     r_constraint = @NLconstraint(the_model, 
             -Q_max[k] <= 
-            sum(q_kl(v[k], v[l], theta[k], theta[l], g_kl[k, l], b_kl[k, l]) for l in 1:M) 
+            sum(q_kl(v[k], v[l], theta[k], theta[l], g_kl[k, l], b_kl[k, l]) for l in 1:M)  # reactive power in this node
             <= Q_max[k]
         )
     push!(reactive_power_constraints, r_constraint)
@@ -50,7 +53,9 @@ end
 println("=====================OPTIMIZATION========================")
 # Solve the optimization problem
 optimize!(the_model)
-
+# ======================
+# RESULTS DISPLAY
+# ======================
 println("=======================EXTRA STATS=======================")
 println("Termination status: ", JuMP.termination_status(the_model))
 println("Total cost: ", round.(JuMP.objective_value(the_model), digits=6), " SEK")
@@ -73,4 +78,24 @@ for k in 1:M
     rpad( string( round.(Q_max[k], digits=6) ), pad ) * 
     rpad( string( round.(JuMP.value.(reactive_power_constraints)[k], digits=6) ), pad )
     println("Node", k, ":\t", out3)
+end
+
+
+# 3. Results
+# Need to create a matrix that can hold active and reactive flows between nodes:
+active_flow = spzeros(M, M)
+reactive_flow = spzeros(M, M)
+
+W_out = JuMP.value.(W)
+v_out = JuMP.value.(v)
+theta_out = JuMP.value.(theta)
+
+for (k,l) in node_pairs
+    active_flow[k,l] = p_kl_float(v_out[k], v_out[l], theta_out[k], theta_out[l], g_kl[k, l], b_kl[k, l]) # from k to l
+    active_flow[l,k] = p_kl_float(v_out[l], v_out[k], theta_out[l], theta_out[k], g_kl[l, k], b_kl[l, k]) # and reverse
+
+    reactive_flow[k,l] = q_kl_float(v_out[k], v_out[l], theta_out[k], theta_out[l], g_kl[k, l], b_kl[k, l]) # from k to l
+    reactive_flow[l,k] = q_kl_float(v_out[l], v_out[k], theta_out[l], theta_out[k], g_kl[l, k], b_kl[l, k]) # and reverse
+    println("("*string(k)*"->"*string(l)*"): A k->l "*string(round(active_flow[k,l],digits=6)))
+    println("("*string(l)*"->"*string(k)*"): A l->k "*string(round(active_flow[l,k],digits=6)))
 end
